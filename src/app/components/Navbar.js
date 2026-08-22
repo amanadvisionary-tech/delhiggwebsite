@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { ChevronDown } from "lucide-react";
@@ -11,6 +12,10 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isLocationsOpen, setIsLocationsOpen] = useState(false);
+  const pathname = usePathname();
+
+  // On blog post pages always show solid navbar
+  const isBlogPost = pathname?.startsWith("/blog/");
 
   // scroll effect
   useEffect(() => {
@@ -44,7 +49,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed w-full top-0 z-50 transition-all ${
-        isScrolled ? "bg-white/80 backdrop-blur-lg shadow-md" : "bg-transparent"
+        isBlogPost || isScrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center h-20">
