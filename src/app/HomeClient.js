@@ -17,7 +17,7 @@ export default function Home({
   title = 'Affordable call girl Services',
   subtitle = '• Pay after Meeting, NO Advance Payment',
   cta = 'Book Now',
-  ctaHref = '#',
+  ctaHref = 'https://api.whatsapp.com/send?phone=918826482370',
 }) {
   const [isVisible, setIsVisible] = useState(false);
    useEffect(() => {
@@ -438,18 +438,18 @@ export default function Home({
     : articles.filter(article => article.category === activeCategory);
   {/* End Sample content data */}
   const cities = [
-{ name: 'Noida', img: '/Webpimages/hotel3.webp' },
-{ name: 'Gurgaon', img: '/Webpimages/lajpatnagahotel.webp' },
-{ name: 'Faridabaad', img: '/Webpimages/RoseateHouse.webp' },
-{ name: 'Mahipalpur', img: '/Webpimages/paschimvihar.webp' },
-{ name: 'Aerocity', img: '/Webpimages/JwMarriott_CP.webp' },
-{ name: 'Connaught Place', img: '/Webpimages/connaught-place-delhi.webp' },
-{ name: 'New Friends Colony', img: '/Webpimages/holidayIn_CP.webp' },
-{ name: 'Dwarka', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp' },
-{ name: 'Paharganj', img: '/Webpimages/paschimvihar.webp' },
-{ name: 'Vasant kunj', img: '/Webpimages/hotel2.webp' },
-{ name: 'Lajpat Nagar ', img: '/Webpimages/pullmanAerocity.webp' },
-{ name: 'Kalkaji', img: '/Webpimages/jwmarriott.webp' },
+{ name: 'Noida', img: '/Webpimages/hotel3.webp', href: '/call-girls-in-noida' },
+{ name: 'Gurgaon', img: '/Webpimages/lajpatnagahotel.webp', href: '/call-girls-in-gurgaon' },
+{ name: 'Faridabaad', img: '/Webpimages/RoseateHouse.webp', href: '/escort-service-in-delhi' },
+{ name: 'Mahipalpur', img: '/Webpimages/paschimvihar.webp', href: '/escort-service-in-delhi' },
+{ name: 'Aerocity', img: '/Webpimages/JwMarriott_CP.webp', href: '/aerocity-escorts' },
+{ name: 'Connaught Place', img: '/Webpimages/connaught-place-delhi.webp', href: '/call-girls-in-connaught-place' },
+{ name: 'New Friends Colony', img: '/Webpimages/holidayIn_CP.webp', href: '/escort-service-in-delhi' },
+{ name: 'Dwarka', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp', href: '/escort-service-in-delhi' },
+{ name: 'Paharganj', img: '/Webpimages/paschimvihar.webp', href: '/escort-service-in-delhi' },
+{ name: 'Vasant kunj', img: '/Webpimages/hotel2.webp', href: '/escort-service-in-delhi' },
+{ name: 'Lajpat Nagar ', img: '/Webpimages/pullmanAerocity.webp', href: '/escort-service-in-delhi' },
+{ name: 'Kalkaji', img: '/Webpimages/jwmarriott.webp', href: '/escort-service-in-delhi' },
 ]
 const profiles = [
   { image: '/Webpimages/download7.webp' },
@@ -524,8 +524,17 @@ const locations = [
   "Call girl in Dilshad Garden",
   "Call girl in Dwarka",
   "Call girl in East Of Kailash",
-  "Call girl in Nehru Place", 
+  "Call girl in Nehru Place",
 ];
+
+const getLocationHref = (label) => {
+  const l = label.toLowerCase();
+  if (l.includes('cp')) return '/call-girls-in-connaught-place';
+  if (l.includes('noida')) return '/call-girls-in-noida';
+  if (l.includes('aerocity')) return '/aerocity-escorts';
+  if (l.includes('gurgaon')) return '/call-girls-in-gurgaon';
+  return '/escort-service-in-delhi';
+};
   return (
     <>
     {/* Banner */}
@@ -567,6 +576,8 @@ const locations = [
                   <div className="mt-6 flex items-center gap-3 flex-wrap">
                     <a
                       href={ctaHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center justify-center rounded-full px-5 py-2.5 bg-gradient-to-r from-red-500 to-pink-600 text-white font-semibold shadow-lg transform transition hover:scale-105 text-sm sm:text-base"
                       aria-label="Book now"
                     >
@@ -574,7 +585,7 @@ const locations = [
                     </a>
 
                     <a
-                      href="#services"
+                      href="/delhi-call-girl-service"
                       className="text-sm text-white/90 underline underline-offset-4"
                     >
                       View Services
@@ -627,6 +638,8 @@ const locations = [
 
     <a
       href={ctaHref}
+      target="_blank"
+      rel="noopener noreferrer"
       className="inline-flex items-center justify-center rounded-full p-2 bg-green-500 text-white"
       aria-label="Chat on WhatsApp"
     >
@@ -646,6 +659,8 @@ const locations = [
           </div>
           <a
             href={ctaHref}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full px-4 py-2 bg-gradient-to-r from-red-500 to-pink-600 text-white font-medium"
           >
             {cta}
@@ -765,7 +780,9 @@ const locations = [
     
           <div className="mt-10 flex justify-center lg:justify-start">
             <a
-              href="#"
+              href="https://api.whatsapp.com/send?phone=918826482370"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium shadow-lg hover:shadow-xl transition-shadow duration-200"
             >
               Book Now
@@ -944,7 +961,7 @@ const locations = [
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href="#contact"
+                href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-medium shadow-lg hover:bg-emerald-600 transition"
               >
                 Book a Consultation
@@ -954,7 +971,7 @@ const locations = [
               </a>
 
               <a
-                href="#services"
+                href="/delhi-call-girl-service"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gray-200 bg-white text-gray-800 text-sm font-medium shadow-sm hover:shadow-md transition"
               >
                 View Services
@@ -1033,7 +1050,7 @@ const locations = [
       </div>
 
       <div className="mt-3">
-        <a href="#contact" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
+        <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
       </div>
     </motion.div>
   ))}
@@ -1061,7 +1078,7 @@ const locations = [
             <div className="text-xs text-gray-500">Visit Delhi Girls, which eases stress and also pampers you. Both services will boost your mood, ease your muscles and give you a luxurious experience tailored to your preferences.</div>
           </div>
           <div className="flex gap-3">
-            <a href="#contact" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm">Enquire Now</a>
+            <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm">Enquire Now</a>
             <a href="#faq" className="px-5 py-2 rounded-full border border-gray-200 text-sm">Read FAQ</a>
           </div>
         </div>
@@ -1199,7 +1216,7 @@ const locations = [
                 </a>
                 
                 <a
-                  href="/pricing"
+                  href="/cheap-call-girls-in-delhi"
                   className="flex-1 inline-flex items-center justify-center bg-white border-2 border-purple-600 text-purple-700 px-6 py-4 rounded-full text-lg font-medium hover:bg-purple-50 transition-all duration-300 shadow hover:shadow-md"
                 >
                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -1292,14 +1309,14 @@ const locations = [
                 <p className="text-gray-600 mb-4">{staff.description}</p>
                 
                 <div className="flex space-x-3">
-                  <button className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+                  <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="flex-1 text-center bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
                     View Profile
-                  </button>
-                  <button className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
+                  </a>
+                  <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -1356,7 +1373,7 @@ const locations = [
 {cities.map((c, i) => (
 <motion.a
 key={c.name}
-href={`#/cities/${c.name.toLowerCase()}`}
+href={c.href}
 initial={{ opacity: 0, y: 8 }}
 animate={{ opacity: 1, y: 0 }}
 transition={{ delay: i * 0.04, duration: 0.35 }}
@@ -1385,7 +1402,7 @@ className="group-hover:scale-105 transition-transform duration-500"
 
 <div className="flex justify-center mt-10">
 <a
-href="#/cities"
+href="/escort-service-in-delhi"
 className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
 >
 View All Cities
@@ -1602,9 +1619,9 @@ You want a person sensual, a person playful, a person charming, a person fiercel
                 <div className="text-5xl mb-6">{feature.icon}</div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">{feature.title}</h3>
                 <p className="text-gray-600 mb-6">{feature.description}</p>
-                <button className="px-6 py-3 bg-pink-500 text-white font-medium rounded-full hover:bg-pink-600 transition-colors">
+                <a href="/delhi-call-girl-service" className="inline-block px-6 py-3 bg-pink-500 text-white font-medium rounded-full hover:bg-pink-600 transition-colors">
                   Explore
-                </button>
+                </a>
               </div>
             </div>
           ))}
@@ -1670,9 +1687,9 @@ You want a person sensual, a person playful, a person charming, a person fiercel
             These are not just call girls. They are women who know fantasy, romance, flirtation, seduction, and smacking hot, sweet sex. They fit any of your moods, from quiet to passionate to adventurous. Your nights in Noida end up being tales you would love to repeat over and over after watching Delhi Girl.
           </p>
           
-          <button className="bg-rose-600 hover:bg-rose-700 text-white px-8 py-3 rounded-full shadow-lg transition-all text-lg">
-            Book Now 
-          </button>
+          <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="inline-block bg-rose-600 hover:bg-rose-700 text-white px-8 py-3 rounded-full shadow-lg transition-all text-lg">
+            Book Now
+          </a>
         </motion.div>
       </div>
     </section>
@@ -1712,12 +1729,12 @@ You want a person sensual, a person playful, a person charming, a person fiercel
           </p>
           
           <div className="flex gap-4">
-            <button className="px-6 py-3 rounded-xl bg-pink-600 text-white font-semibold shadow-lg hover:bg-pink-700 transition">
+            <a href="/delhi-call-girl-service" className="px-6 py-3 rounded-xl bg-pink-600 text-white font-semibold shadow-lg hover:bg-pink-700 transition">
               View Services
-            </button>
-            <button className="px-6 py-3 rounded-xl border border-pink-600 text-pink-600 font-semibold hover:bg-pink-50 transition">
-              Book Now 
-            </button>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-xl border border-pink-600 text-pink-600 font-semibold hover:bg-pink-50 transition">
+              Book Now
+            </a>
           </div>
         </motion.div>
       </div>
@@ -1790,10 +1807,10 @@ With our Delhi Call Girls, you will enjoy the organic chemistry, real-life warmt
     
     
     {/* pricing */}
-     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+     <div id="Pricing" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4"
@@ -1887,13 +1904,17 @@ With our Delhi Call Girls, you will enjoy the organic chemistry, real-life warmt
                   ))}
                 </ul>
                 
-                <button className={`mt-6 w-full py-3 rounded-lg font-semibold transition-all duration-300 ${
-                  plan.id === 'celebrity' 
-                    ? 'bg-gradient-to-r from-purple-700 to-pink-700 text-white hover:from-purple-800 hover:to-pink-800' 
+                <a
+                  href="https://api.whatsapp.com/send?phone=918826482370"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`mt-6 block text-center w-full py-3 rounded-lg font-semibold transition-all duration-300 ${
+                  plan.id === 'celebrity'
+                    ? 'bg-gradient-to-r from-purple-700 to-pink-700 text-white hover:from-purple-800 hover:to-pink-800'
                     : 'bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 hover:from-gray-200 hover:to-gray-300'
                 }`}>
                   Book Now
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}
@@ -2082,9 +2103,9 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
               </div>
               
               <div className="mt-8 flex flex-wrap gap-4">
-                <button className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity">
+                <a href="/call-girls-in-gurgaon" className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity">
                   Read More
-                </button>
+                </a>
                 <button className="px-6 py-3 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">
                   Share Article
                 </button>
@@ -2217,9 +2238,9 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
                                         </div>
                                       </div>
                                       {/* Button */}
-                                      <button className="mt-6 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all">
+                                      <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="mt-6 block text-center w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all">
                                         View Details
-                                      </button>
+                                      </a>
                                     </div>
                                   </motion.div>
                                 ))}
@@ -2296,12 +2317,12 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
                                 </ul>
 
                                 <div className="flex space-x-4">
-                                  <button className="px-6 py-3 bg-white text-purple-800 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                                  <a href="/cheap-call-girls-in-delhi" className="px-6 py-3 bg-white text-purple-800 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
                                     Explore Packages
-                                  </button>
-                                  <button className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+                                  </a>
+                                  <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
                                     Contact Concierge
-                                  </button>
+                                  </a>
                                 </div>
                               </div>
                             </div>
@@ -2383,9 +2404,9 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
                 <p className="text-gray-600 mb-6">{article.description}</p>
                 
                 <div className="flex items-center justify-between">
-                  <button className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity">
+                  <a href="/blogs" className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity">
                     Read Full Article
-                  </button>
+                  </a>
                   <div className="flex space-x-3">
                     <button className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -2417,9 +2438,9 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
                 <p className="mb-6">
                   Delhi Girl is best at those who like pure sensual magic right to your door in Noida. Our call girls come with charisma dripping with their grin, the self-belief in their walk and an erotic vulnerability that adjoins your area when she walks in. It can be a passionate, intimate affair, leisurely and erotic, fun and games, rendezvous, a blend of all these or some combination of all these — these friends know how to mould the night to your requirements. Each motion, each word, each touch, seems to be purposeful, alluring, and designed to drag you further into the realm of pleasure.                </p>
                 
-                <button className="px-6 py-3 bg-white text-purple-700 font-bold rounded-lg hover:bg-gray-100 transition-colors">
+                <a href="/call-girls-in-noida" className="inline-block px-6 py-3 bg-white text-purple-700 font-bold rounded-lg hover:bg-gray-100 transition-colors">
                   Read Full Story
-                </button>
+                </a>
               </div>
               <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden">
                 <Image
@@ -2504,9 +2525,9 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
                     ))}
                   </div>
                 </div>
-                <button className="mt-6 w-full bg-gradient-to-r from-amber-500 to-amber-600 text-white font-medium py-3 rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all">
+                <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="mt-6 block text-center w-full bg-gradient-to-r from-amber-500 to-amber-600 text-white font-medium py-3 rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all">
                   View Details
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}
@@ -2565,12 +2586,12 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
               </ul>
               
               <div className="flex space-x-4">
-                <button className="px-6 py-3 bg-white text-amber-800 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                <a href="/cheap-call-girls-in-delhi" className="px-6 py-3 bg-white text-amber-800 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
                   Explore Packages
-                </button>
-                <button className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
                   Contact Concierge
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -2601,7 +2622,7 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
           {locations.map((location, i) => (
             <motion.a
               key={i}
-              href="#"
+              href={getLocationHref(location)}
               className="block bg-red-800 text-white font-semibold text-lg py-4 rounded-xl shadow-md hover:bg-red-700 transition duration-300"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -2616,7 +2637,7 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
     </section>
 
     {/* FAQ Section */}
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+    <div id="faq" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <motion.div
@@ -2651,28 +2672,10 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
         </div>
 
         {/* Search Bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
-          className="mb-12"
-        >
-          <div className="relative max-w-2xl mx-auto">
-            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-              <FiSearch className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              type="text"
-              placeholder="Search for questions..."
-              className="block w-full pl-12 pr-4 py-4 border border-gray-300 rounded-2xl bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </div>
-        </motion.div>
+        
 
         {/* Category Filters */}
-        <motion.div 
+        {/* <motion.div 
           className="flex flex-wrap justify-center gap-3 mb-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -2691,7 +2694,7 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
               {category.name}
             </button>
           ))}
-        </motion.div>
+        </motion.div> */}
 
         {/* FAQ List */}
         <div className="space-y-4 mb-16">
@@ -2765,15 +2768,15 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
                 </div>
                 
                 <div className="space-y-4">
-                  <a 
-                    href="mailto:support@example.com" 
+                  <a
+                    href="mailto:info@delhigirl.in"
                     className="flex items-center justify-center bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                   >
                     <FiMail className="mr-2" />
                     Email Support
                   </a>
-                  <a 
-                    href="/contact" 
+                  <a
+                    href="/contact-us"
                     className="flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors"
                   >
                     <FiMessageSquare className="mr-2" />
