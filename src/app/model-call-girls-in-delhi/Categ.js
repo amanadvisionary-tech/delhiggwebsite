@@ -759,7 +759,7 @@ export default function Category() {
               {/* Enhanced CTA Buttons */}
               <div className="flex flex-wrap gap-4">
                 <motion.a
-                  href="/about"
+                  href="/about-us"
                   className="relative overflow-hidden px-8 py-4 rounded-full font-medium text-white group"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -1016,7 +1016,7 @@ You want to find a late-night company that is relaxing, respectful and luxurious
                   {/* CTA Buttons */}
                   <div className="flex flex-wrap gap-4">
                     <a
-                      href="/about"
+                      href="/about-us"
                       className="relative overflow-hidden px-8 py-4 rounded-full font-medium text-white group"
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 group-hover:opacity-90 transition-all"></div>
@@ -1261,10 +1261,12 @@ Our celebrity escorts are the ideal choice to those clients who desire exclusivi
                           <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-1 rounded-2xl">
                             <div className="bg-white p-6 rounded-2xl shadow-sm">
                               <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
-                                <img
+                                <Image
                                   src="/Webpimages/download34.webp"
                                   alt="Premium Body Spa"
-                                  className="w-full h-full object-cover rounded-xl"
+                                  fill
+                                  sizes="(max-width: 1024px) 100vw, 50vw"
+                                  className="object-cover rounded-xl"
                                 />
                                 <div className="absolute top-4 right-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm px-3 py-1 rounded-full shadow-md">
                                   Most Popular

@@ -46,7 +46,7 @@ export default function Foreignmodel() {
       role: 'Senior Airhostess',
       category: 'airhostess',
       description: '5+ years experience with international airlines. Fluent in 4 languages.',
-      image: '/Webpimages/Airhostess_girl.webp', // Placeholder image path
+      image: '/Webpimages/download (30).webp', // Placeholder image path
     },
     {
       id: 2,
@@ -102,7 +102,7 @@ export default function Foreignmodel() {
       role: 'Engineering Student',
       category: 'college',
       description: 'Robotics club president. Developing AI solutions for sustainable energy.',
-      image: '/Webpimages/1.webp', // Placeholder image path
+      image: '/Webpimages/download (31).webp', // Placeholder image path
     },
   ];
     const filteredStaff = activeCategory === 'all' 
@@ -928,10 +928,12 @@ Their spotless grooming, fresh appearance, and polite behaviour clearly set them
 
         {/* Right Image */}
         <div className="relative">
-          <img
+          <Image
             src="/Webpimages/redhot.webp"
             alt="Elegant Independent Delhi Girl"
-            className="rounded-3xl shadow-xl object-cover"
+            width={564}
+            height={1002}
+            className="w-full h-auto rounded-3xl shadow-xl object-cover"
           />
 
           <div className="absolute -bottom-6 -left-6 bg-white px-6 py-4 rounded-2xl shadow-lg">
@@ -960,11 +962,13 @@ Their spotless grooming, fresh appearance, and polite behaviour clearly set them
 
         {/* LEFT – IMAGE */}
         <div className="relative">
-          <div className="relative rounded-[30px] overflow-hidden shadow-2xl">
-            <img
+          <div className="relative rounded-[30px] overflow-hidden shadow-2xl h-[590px]">
+            <Image
               src="/Webpimages/downloadd6.webp"
               alt="Luxury late night ambience"
-              className="w-full h-[590px] object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -1192,10 +1196,12 @@ Their spotless grooming, fresh appearance, and polite behaviour clearly set them
             {/* Image */}
             <div className="relative min-h-[400px]">
               <div>
-          <img
+          <Image
             src="/Webpimages/young-woman.webp"
             alt="Luxury Spa"
-            className="rounded-2xl shadow-xl w-full object-cover"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="rounded-2xl shadow-xl object-cover"
           />
         </div>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-800/30 to-pink-800/30 z-10"></div>
@@ -1553,10 +1559,12 @@ Their spotless grooming, fresh appearance, and polite behaviour clearly set them
 
         {/* Image Section */}
         <div>
-          <img
+          <Image
             src="/Webpimages/pretty-sensual-blonde-model-laying-bed-enjoy-her-morning-luxury-hotel-wearing-burgundy-silk-nightdress-robe-blind-hairs-beauty-face-boudoir-style.webp"
             alt="Luxury Spa"
-            className="rounded-2xl shadow-xl w-full object-cover"
+            width={4500}
+            height={3000}
+            className="rounded-2xl shadow-xl w-full h-auto object-cover"
           />
         </div>
 

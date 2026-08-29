@@ -281,7 +281,7 @@ export default function Delhiescorts({
 { name: 'NOIDA', img: '/Webpimages/RoseateHouse.webp' },
 { name: 'BANGALORE', img: '/Webpimages/paschimvihar.webp' },
 { name: 'PUNE', img: '/Webpimages/JwMarriott_CP.webp' },
-{ name: 'AHMEDABAD', img: '/Webpimages/Andazhat.webp' },
+{ name: 'AHMEDABAD', img: '/Webpimages/connaught-place-delhi.webp' },
 { name: 'GURGAON', img: '/Webpimages/holidayIn_CP.webp' },
 { name: 'HYDERABAD', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp' },
 { name: 'KOLKATA', img: '/Webpimages/paschimvihar.webp' },
@@ -293,10 +293,13 @@ export default function Delhiescorts({
     <>
     <header className="relative overflow-hidden bg-gradient-to-r from-rose-50 via-white to-amber-50">
       <div className="absolute inset-0">
-        <img
+        <Image
           src="/Webpimages/pretty-sensual-blonde-model-laying-bed-enjoy-her-morning-luxury-hotel-wearing-burgundy-silk-nightdress-robe-blind-hairs-beauty-face-boudoir-style.webp"  // 👉 apni image yaha lagao
           alt="Hero background"
-          className="w-full h-full object-cover object-center filter brightness-75 sm:brightness-90"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center filter brightness-75 sm:brightness-90"
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/20 mix-blend-multiply" />
@@ -367,11 +370,13 @@ export default function Delhiescorts({
             >
               <div className="p-6 sm:p-8">
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
-                    <img
+                  <div className="relative w-16 h-16 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
+                    <Image
                       src="/Webpimages/18244.webp"
                       alt="Service sample"
-                      className="w-full h-full object-cover"
+                      fill
+                      sizes="64px"
+                      className="object-cover"
                     />
                   </div>
 
@@ -856,12 +861,14 @@ export default function Delhiescorts({
                                 <p className="mt-2 max-w-md">Book 3 nights and receive complimentary spa treatments, airport transfers, and dining credits</p>
                               </div>
                               {/* Placeholder Image */}
-                              <div className="bg-gradient-to-br from-purple-300 to-pink-400 w-full h-full flex items-center justify-center">
+                              <div className="relative bg-gradient-to-br from-purple-300 to-pink-400 w-full h-full flex items-center justify-center">
                                 {/* <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" /> */}
-                                <img
+                                <Image
                                   src="/Webpimages/SexyWomen.webp"
                                   alt="Luxury Spa"
-                                  className="rounded-2xl shadow-xl w-full object-cover"
+                                  fill
+                                  sizes="(max-width: 1024px) 100vw, 50vw"
+                                  className="rounded-2xl shadow-xl object-cover"
                                 />
                               </div>
                             </div>
@@ -898,126 +905,6 @@ export default function Delhiescorts({
                       </div>
                     </div>
                     {/* END Hotel */}
-                    {/* cont */}
-                    <div className="min-h-screen flex items-center justify-center p-4 md:p-8">
-                      <div className="max-w-7xl w-full">
-                        <div className="relative">
-                          {/* Main content card */}
-                          <div className="bg-white rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/10">
-                            
-                            {/* Gradient header stripe */}
-                            {/* <div className="relative h-2 bg-gradient-to-r from-purple-600 via-pink-500 to-purple-600"></div> */}
-                            
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 md:p-10">
-                              
-                              {/* Text Content */}
-                              <div className="space-y-6 lg:pr-8">
-                                <div>
-                                  <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-600/10 to-pink-600/10 text-purple-600 text-sm font-medium mb-4">
-                                    Featured Content
-                                  </span>
-                                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
-                                    Modern Design with <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Stunning Gradient</span> Effects
-                                  </h1>
-                                </div>
-                                
-                                <div className="space-y-4 text-gray-600 leading-relaxed">
-                                  <p>
-                                    Welcome to our modern content section, designed with a captivating purple-to-pink gradient theme. 
-                                    This design leverages Next.js and Tailwind CSS to create a visually stunning and performant user 
-                                    experience. The gradient flow from purple-600 to pink-600 creates a dynamic visual hierarchy that 
-                                    guides the users attention through the content.
-                                  </p>   
-                                  <p>
-                                    The implementation uses Tailwinds gradient utilities for a subtle yet engaging effect. Notice how 
-                                    the gradient accents create depth without overwhelming the content. This approach ensures readability 
-                                    while maintaining visual appeal.
-                                  </p>                          
-                                  <p>
-                                    Responsive design is built in with mobile-first breakpoints. The layout adapts seamlessly from 
-                                    mobile to desktop, with the image and text reordering naturally. The clean white background ensures 
-                                    the content remains the focal point while gradient elements provide visual interest.
-                                  </p>                               
-                                  <p>
-                                    This component demonstrates how to effectively use color gradients in modern web design. The 
-                                    purple-pink combination evokes creativity, innovation, and energy - perfect for technology, 
-                                    design, or creative industry applications.
-                                  </p>
-                                </div>
-                                
-                                <div className="flex flex-wrap gap-4 pt-4">
-                                  <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30">
-                                    Learn More
-                                  </button>
-                                  <button className="px-6 py-3 rounded-xl bg-transparent text-gray-700 font-semibold border border-gray-300 hover:border-purple-400 hover:text-purple-700 transition-all duration-300">
-                                    View Examples
-                                  </button>
-                                </div>
-                                
-                                {/* Stats */}
-                                <div className="grid grid-cols-3 gap-4 pt-6 border-t border-gray-200">
-                                  <div className="text-center">
-                                    <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">98%</div>
-                                    <div className="text-sm text-gray-500">Satisfaction</div>
-                                  </div>
-                                  <div className="text-center">
-                                    <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">24/7</div>
-                                    <div className="text-sm text-gray-500">Support</div>
-                                  </div>
-                                  <div className="text-center">
-                                    <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">5.0</div>
-                                    <div className="text-sm text-gray-500">Rating</div>
-                                  </div>
-                                </div>
-                              </div>
-                              
-                              {/* Image Section */}
-                              <div className="relative flex items-center justify-center lg:justify-end">
-                                <div className="relative w-full max-w-md">
-                                  {/* Main image container */}
-                                  <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
-                                    <div className="aspect-video relative bg-gradient-to-br from-purple-50 to-pink-50 flex items-center justify-center">
-                                      {/* Placeholder image - replace with your actual image */}
-                                      <div className="text-center p-8">
-                                        <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center">
-                                          <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                          </svg>
-                                        </div>
-                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">Visual Content</h3>
-                                        <p className="text-gray-600">Replace with your image</p>
-                                        <p className="text-sm text-purple-600 mt-4">Recommended: 800×600px</p>
-                                      </div>
-                                    </div>
-                                    {/* Image caption with gradient */}
-                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-purple-600 to-pink-600 p-3">
-                                      <p className="text-white text-sm font-medium text-center">Modern gradient design</p>
-                                    </div>
-                                  </div>
-                                  {/* Gradient accent element */}
-                                  <div className="absolute -bottom-3 -right-3 w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center text-white font-bold text-sm shadow-lg">
-                                    NEW
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            
-                            {/* Footer with subtle gradient */}
-                            <div className="px-8 py-4 bg-gradient-to-r from-purple-50 to-pink-50 border-t border-gray-200">
-                              <div className="flex flex-wrap justify-between items-center text-sm text-gray-600">
-                                <div>Gradient Content Section • Built with Next.js & Tailwind</div>
-                                <div className="flex space-x-4">
-                                  <a href="#" className="hover:text-purple-600 transition-colors font-medium">Share</a>
-                                  <a href="#" className="hover:text-pink-600 transition-colors font-medium">Save</a>
-                                  <a href="#" className="hover:text-purple-600 transition-colors font-medium">Export</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
                     {/* hhhh */}
                     <section className="w-full py-16 px-6 bg-gradient-to-r from-pink-600 to-purple-600 text-white">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
@@ -1045,10 +932,12 @@ export default function Delhiescorts({
 
         {/* Image Section */}
         <div>
-          <img
+          <Image
             src="/Webpimages/SexyWomen.webp"
             alt="Luxury Spa"
-            className="rounded-2xl shadow-xl w-full object-cover"
+            width={735}
+            height={490}
+            className="rounded-2xl shadow-xl w-full h-auto object-cover"
           />
         </div>
 

@@ -1,12 +1,13 @@
 import Celebprofile from "./Celebprofile";
 
 export const metadata = {
-  title: "Call Girls in Aerocity ₹6k/shot | Free Airport Pickup",
-  description: "Call girls in Aerocity hotels: JW Marriott, Pullman, IBIS. Uniform role-play, duo showers, overnight discounts. Discreeet billing—WhatsApp for pics.",
+  title: "High Profile Escorts in Delhi | Elite, Verified Companions",
+  description: "Book high profile escorts in Delhi for elite, premium companionship — verified profiles, discreet hotel outcall, and a polished experience for corporate clients and travellers.",
+  alternates: { canonical: "/high-profile-escorts-in-delhi" },
   openGraph: {
-    title: "Call Girls in Aerocity ₹6k/shot | Free Airport Pickup",
-    description: "Call girls in Aerocity hotels: JW Marriott, Pullman, IBIS. Uniform role-play, duo showers, overnight discounts. Discreeet billing—WhatsApp for pics.",
-    images: ["/images/luxuryspaicon.png"], 
+    title: "High Profile Escorts in Delhi | Elite, Verified Companions",
+    description: "Book high profile escorts in Delhi for elite, premium companionship — verified profiles, discreet hotel outcall, and a polished experience for corporate clients and travellers.",
+    images: ["/Webpimages/JwMarriott_CP.webp"], 
     type: "website",
   },
   

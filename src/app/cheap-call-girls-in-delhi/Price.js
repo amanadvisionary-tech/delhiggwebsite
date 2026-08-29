@@ -498,7 +498,7 @@ export default function Pricing() {
             viewport={{ once: true }}
           >
             <motion.a
-              href="/about"
+              href="/about-us"
               className="relative overflow-hidden px-8 py-4 rounded-full font-medium text-white group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -644,7 +644,7 @@ export default function Pricing() {
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4">
             <a
-              href="/about"
+              href="/about-us"
               className="relative overflow-hidden px-8 py-4 rounded-full font-medium text-white group"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 group-hover:opacity-90 transition-all"></div>

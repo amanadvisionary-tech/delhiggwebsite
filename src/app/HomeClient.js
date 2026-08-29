@@ -12,7 +12,7 @@ import {   Users } from "lucide-react";
 
 
 export default function Home({
-  Webpimages = ['/Webpimages/6631.webp'], // keep single image or pass swiper Webpimages externally
+  Webpimages = ['/Webpimages/bannermodel.webp'], // keep single image or pass swiper Webpimages externally
   imageUrl = '/Webpimages/pretty-sensual-blonde-model-laying-bed-enjoy-her-morning-luxury-hotel-wearing-burgundy-silk-nightdress-robe-blind-hairs-beauty-face-boudoir-style.webp',
   title = 'Affordable call girl Services',
   subtitle = '• Pay after Meeting, NO Advance Payment',
@@ -443,7 +443,7 @@ export default function Home({
 { name: 'Faridabaad', img: '/Webpimages/RoseateHouse.webp' },
 { name: 'Mahipalpur', img: '/Webpimages/paschimvihar.webp' },
 { name: 'Aerocity', img: '/Webpimages/JwMarriott_CP.webp' },
-{ name: 'Connaught Place', img: '/Webpimages/Andazhat.webp' },
+{ name: 'Connaught Place', img: '/Webpimages/connaught-place-delhi.webp' },
 { name: 'New Friends Colony', img: '/Webpimages/holidayIn_CP.webp' },
 { name: 'Dwarka', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp' },
 { name: 'Paharganj', img: '/Webpimages/paschimvihar.webp' },
@@ -981,7 +981,7 @@ const locations = [
                   </svg>
                 </div>
                 <h4 className="text-sm font-semibold">No Advance Payment</h4>
-                <p className="mt-1 text-xs text-gray-500">We don't recommend you to give advance payment. After attending a satisfying session, then payment will be made.</p>
+                <p className="mt-1 text-xs text-gray-500">We don&apos;t recommend you to give advance payment. After attending a satisfying session, then payment will be made.</p>
               </div>
 
               <div className="bg-white rounded-2xl p-4 shadow-sm text-center">
@@ -1514,7 +1514,7 @@ You want a person sensual, a person playful, a person charming, a person fiercel
                 viewport={{ once: true }}
               >
                 <motion.a
-                  href="/about"
+                  href="/about-us"
                   className="relative overflow-hidden px-8 py-4 rounded-full font-medium text-white group"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -1973,7 +1973,7 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
               </h3>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              One of Delhi's busiest luxury areas is Connaught Place, and Delhi Girl offers an upscale choice of elegant, relaxed, and confident company that would fit in. You may have a desirable dinner partner, an unwinded evening partner, or anyone who brings out your personality and warmth; our call girls in Connaught Place are the best option.
+              One of Delhi&apos;s busiest luxury areas is Connaught Place, and Delhi Girl offers an upscale choice of elegant, relaxed, and confident company that would fit in. You may have a desirable dinner partner, an unwinded evening partner, or anyone who brings out your personality and warmth; our call girls in Connaught Place are the best option.
             </p>
           </div>
 
@@ -2036,11 +2036,13 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
               <div className="relative w-full h-full">
                 <div className="bg-gradient-to-br from-purple-100 to-pink-100 w-full h-full flex items-center justify-center">
                   <div className="relative w-full h-full">
-                    <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full flex items-center justify-center">
-                      <img 
-                        src="/Webpimages/download (12).webp" 
-                        alt="Delhi Fashion" 
-                        className="object-cover w-full h-full rounded-xl"
+                    <div className="relative bg-gray-200 border-2 border-dashed rounded-xl w-full h-full flex items-center justify-center">
+                      <Image
+                        src="/Webpimages/download (12).webp"
+                        alt="Delhi Fashion"
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        className="object-cover rounded-xl"
                       />
                     </div>
                   </div>

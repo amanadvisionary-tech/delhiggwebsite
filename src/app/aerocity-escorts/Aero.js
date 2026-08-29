@@ -295,7 +295,7 @@ export default function Delhiescorts({
 { name: 'NOIDA', img: '/Webpimages/RoseateHouse.webp' },
 { name: 'BANGALORE', img: '/Webpimages/paschimvihar.webp' },
 { name: 'PUNE', img: '/Webpimages/JwMarriott_CP.webp' },
-{ name: 'AHMEDABAD', img: '/Webpimages/Andazhat.webp' },
+{ name: 'AHMEDABAD', img: '/Webpimages/connaught-place-delhi.webp' },
 { name: 'GURGAON', img: '/Webpimages/holidayIn_CP.webp' },
 { name: 'HYDERABAD', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp' },
 { name: 'KOLKATA', img: '/Webpimages/paschimvihar.webp' },
@@ -463,10 +463,13 @@ const benefits = [
     <>
     <header className="relative overflow-hidden bg-gradient-to-r from-rose-50 via-white to-amber-50">
       <div className="absolute inset-0">
-        <img
+        <Image
           src={image}
           alt="Hero background"
-          className="w-full h-full object-cover object-center filter brightness-75 sm:brightness-90"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center filter brightness-75 sm:brightness-90"
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/20 mix-blend-multiply" />
@@ -537,11 +540,13 @@ const benefits = [
             >
               <div className="p-6 sm:p-8">
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
-                    <img
+                  <div className="relative w-16 h-16 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
+                    <Image
                       src="/Webpimages/18244.webp"
                       alt="Service sample"
-                      className="w-full h-full object-cover"
+                      fill
+                      sizes="64px"
+                      className="object-cover"
                     />
                   </div>
 
@@ -931,12 +936,14 @@ const benefits = [
                                 <p className="mt-2 max-w-md">Book 3 nights and receive complimentary spa treatments, airport transfers, and dining credits</p>
                               </div>
                               {/* Placeholder Image */}
-                              <div className="bg-gradient-to-br from-purple-300 to-pink-400 w-full h-full flex items-center justify-center">
+                              <div className="relative bg-gradient-to-br from-purple-300 to-pink-400 w-full h-full flex items-center justify-center">
                                 {/* <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" /> */}
-                                <img
+                                <Image
                                   src="/Webpimages/ph_ miller_millka.webp"
                                   alt="Luxury Spa"
-                                  className="rounded-2xl shadow-xl w-full object-cover"
+                                  fill
+                                  sizes="(max-width: 1024px) 100vw, 50vw"
+                                  className="rounded-2xl shadow-xl object-cover"
                                 />
                               </div>
                             </div>
@@ -1247,10 +1254,12 @@ Delhi Girl takes that ease a notch higher by having friends who will make you fe
 
         {/* Image Section */}
         <div>
-          <img
+          <Image
             src="/Webpimages/Model2.webp"
             alt="Luxury Spa"
-            className="rounded-2xl shadow-xl w-full object-cover"
+            width={736}
+            height={412}
+            className="rounded-2xl shadow-xl w-full h-auto object-cover"
           />
         </div>
 

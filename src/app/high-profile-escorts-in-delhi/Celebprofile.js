@@ -42,7 +42,7 @@ import {
   UserIcon,
 } from "@heroicons/react/24/outline";
 
-export default function page() {
+export default function Celebprofile() {
   {/* staff showcase */}
     const [activeCategory, setActiveCategory] = useState('foreign');
     const categories = [
@@ -60,7 +60,7 @@ export default function page() {
       role: 'Senior Airhostess',
       category: 'airhostess',
       description: '5+ years experience with international airlines. Fluent in 4 languages.',
-      image: '/Webpimages/Airhostess_girl.webp', // Placeholder image path
+      image: '/Webpimages/download (30).webp', // Placeholder image path
     },
     {
       id: 2,
@@ -116,7 +116,7 @@ export default function page() {
       role: 'Engineering Student',
       category: 'college',
       description: 'Robotics club president. Developing AI solutions for sustainable energy.',
-      image: '/Webpimages/1.webp', // Placeholder image path
+      image: '/Webpimages/download (31).webp', // Placeholder image path
     },
   ];
     const filteredStaff = activeCategory === 'all' 
@@ -412,8 +412,8 @@ const features1 = [
               transition={{ duration: 0.6 }}
               className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-white"
             >
-              Try College Call <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">Girls in Delhi for Youthful,</span>
-              <br /> Tempting, Slow-Burn Chemistry <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">| Book Now</span>
+              Try High Profile <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">Escorts in Delhi for Elite,</span>
+              <br /> Premium Companionship <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">| Book Now</span>
             </motion.h1>
 
             <motion.p
@@ -422,7 +422,7 @@ const features1 = [
               transition={{ delay: 0.2, duration: 0.6 }}
               className="mt-6 max-w-2xl text-gray-600"
             >
-              Enjoy the warm, playful, dangerously tempting charm of College call Girls in Delhi  who carry youthful spark, soft, teasing confidence, and a closeness that turns a simple moment into a slow-burning flame. Book College call Girls in Delhi  now and pay only when they arrive.
+              Enjoy the class, elegance and premium charm of high profile escorts in Delhi who bring confidence, warmth and a polished companionship experience. Book high profile escorts in Delhi now and pay only when they arrive.
             </motion.p>
 
             <motion.div
@@ -612,10 +612,10 @@ const features1 = [
                             transition={{ delay: 0.3 }}
                             viewport={{ once: true }}
                           >
-                            Choose College Escort{" "}
+                            Choose High Profile Escort{" "}
                             <span className="relative">
                               <span className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
-                                 Service in Delhi for Playful, Teasing, Warm Companionship
+                                 Service in Delhi for Elite, Sophisticated Companionship
                               </span>
                               <span className="absolute bottom-2 left-0 w-full h-3 bg-purple-200/60 z-0"></span>
                             </span>
@@ -633,7 +633,7 @@ const features1 = [
                               {" "}
                               <strong className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 font-medium">
                               </strong>
-                              Our college escort service in Delhi suits clients who love innocent looks mixed with a quiet, seductive pull. These girls speak softly, laugh warmly, and fill the room with youthful energy. Their closeness feels natural, their teasing feels smooth, and the chemistry grows before you realize what happened.
+                              Our high profile escort service in Delhi suits clients who love mature confidence mixed with a quiet, magnetic charm. These companions speak with polish, carry themselves with grace, and fill the room with effortless class. Their presence feels natural, their conversation feels smooth, and the connection builds before you realize what happened.
                             </p>
                             
                           </motion.div>
@@ -912,10 +912,12 @@ const features1 = [
         </div>
 
         {/* Right Image */}
-        <div className="relative">
-          <img
+        <div className="relative w-full aspect-[4/5]">
+          <Image
             src="/Webpimages/downloadd5.webp"
             alt="Elegant Independent Delhi Girl"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="rounded-3xl shadow-xl object-cover"
           />
 
@@ -943,11 +945,13 @@ const features1 = [
       <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* RIGHT – IMAGE */}
         <div className="relative">
-          <div className="relative rounded-[28px] overflow-hidden shadow-2xl">
-            <img
+          <div className="relative rounded-[28px] overflow-hidden shadow-2xl h-[750px]">
+            <Image
               src="/Webpimages/download (9).webp"
               alt="Luxury lounge ambience"
-              className="w-full h-[750px] object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -981,7 +985,7 @@ const features1 = [
             <p>
              Clients choose them because they offer the benefits of consistency, reliability, and balanced sensuality without the needless drama and discomfort.
             </p>
-            {/* <p>These girls stay smart, modern, and naturally seductive. They talk well, tease lightly, and turn your night into a story you do not want to stop. Whether you prefer bubbly energy, shy romance, or slow, tempting attraction, our Delhi college call girls match your style with ease.</p> */}
+            {/* <p>These companions stay smart, sophisticated, and naturally magnetic. They talk well, engage lightly, and turn your night into a story you do not want to stop. Whether you prefer vibrant energy, gentle warmth, or slow, refined attraction, our Delhi high profile escorts match your style with ease.</p> */}
            
           </div>
 
@@ -1032,11 +1036,13 @@ const features1 = [
 
         {/* LEFT – IMAGE */}
         <div className="relative">
-          <div className="relative rounded-[30px] overflow-hidden shadow-2xl">
-            <img
+          <div className="relative rounded-[30px] overflow-hidden shadow-2xl h-[640px]">
+            <Image
               src="/Webpimages/download (13).webp"
               alt="Luxury late night ambience"
-              className="w-full h-[640px] object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -1057,14 +1063,14 @@ const features1 = [
           </span>
 
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-8">
-            18+ College Call Girls Available
+            High Profile Escorts Available
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600">
               24/7 for Your Pleasure
             </span>
           </h2>
 
           <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
-           Our 18+ Delhi college call girls stay ready to bring thrill into your night. Whether it is late-night boredom, a business trip, a quiet evening, or a moment where you want to treat yourself, our College call Girls in Delhi carry the spark you want.
+           Our Delhi high profile escorts stay ready to bring elegance into your night. Whether it is late-night boredom, a business trip, a quiet evening, or a moment where you want to treat yourself, our high profile escorts in Delhi carry the class you want.
           </p>
           
 
@@ -1086,7 +1092,7 @@ const features1 = [
             })}
           </div>
           <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
-Spend your night with our College call Girls in Delhi who brings wild imagination, soft laughter, and moments that feel close and addictive. She becomes the highlight of your day and the thrill you did not know you needed.
+Spend your night with our high profile escort in Delhi who brings refined charm, warm conversation, and moments that feel close and unforgettable. She becomes the highlight of your day and the sophistication you did not know you needed.
 </p>
 
           {/* CTA */}
@@ -1114,16 +1120,16 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         {/* Content */}
         <div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-snug">
-           College Girls in Delhi Ready <span className="text-pink-600">to Fulfil Your Secret Fantasies</span>
+           High Profile Escorts in Delhi Ready <span className="text-pink-600">to Fulfil Your Elite Companionship Desires</span>
           </h2>
 
           <p className="mt-6 text-gray-600 leading-relaxed">
-            Everyone holds fantasies about cute, naughty, charming college girls. Now you get to explore that world in a safe and premium way.
+            Everyone holds a vision of the perfect elite companion, poised, charming, and sophisticated. Now you get to explore that world in a safe and premium way.
           </p>
 
           {/* <p className="mt-4 text-gray-600 leading-relaxed">
             Whether it’s a quiet evening indoors, a relaxed outing, or simply
-            someone to talk with, these Delhi college girls add energy and charm
+            someone to talk with, these Delhi high profile escorts add energy and charm
             that lifts the mood without pressure or formality.
           </p> */}
 
@@ -1162,10 +1168,12 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         </div>
 
         {/* Image */}
-        <div className="relative">
-          <img
+        <div className="relative w-full aspect-[4/5]">
+          <Image
             src="/Webpimages/download (33).webp"
-            alt="College Girl Companionship Delhi"
+            alt="High Profile Escort Companionship Delhi"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="rounded-3xl shadow-xl object-cover"
           />
 
@@ -1189,37 +1197,39 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         {/* Text Content */}
         <div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-snug">
-            Premium College Escorts for Wild, <span className="text-pink-600"> Naughty, and Deeply Satisfying Nights</span>
+            Premium High Profile Escorts for Elegant, <span className="text-pink-600"> Refined, and Deeply Satisfying Nights</span>
           </h2>
 
           <p className="mt-6 text-gray-600 leading-relaxed">
-            The moment you meet a premium college escort, you see why our service holds the top spot.
+            The moment you meet a premium high profile escort, you see why our service holds the top spot.
           </p>
 
           {/* Simple List */}
           <ul className="mt-6 grid grid-cols-2 gap-y-3 text-gray-700">
-            <li>• These girls feel different.</li>
+            <li>• These companions feel different.</li>
             <li>• They look stunning.</li>
-            <li>• They stay energetic.</li>
-            <li>• They stay adventurous.</li>
+            <li>• They stay poised.</li>
+            <li>• They stay engaging.</li>
           </ul>
 
           <p className="mt-6 text-gray-600 leading-relaxed">
-           They like to come up with romantic, thrilling, and fun-filled scenes.
+           They like to create romantic, memorable, and thoroughly enjoyable evenings.
           </p>
           <p className="mt-6 text-gray-600 leading-relaxed">
-           They interpret your mood quickly, toy with your senses with the most minimal movements, and make your body respond with lightness. Their flame diffuses through the room. Their laughter draws you in. Their closeness becomes impossible to resist.
+           They read your mood quickly, put you at ease with the most subtle gestures, and make every conversation feel effortless. Their presence fills the room. Their charm draws you in. Their company becomes impossible to resist.
           </p>
           <p className="mt-6 text-gray-600 leading-relaxed">
-           You are not just booking a date. You are stepping into a world of youth, thrill, and tempting heat.
+           You are not just booking a date. You are stepping into a world of class, confidence, and refined allure.
           </p>
         </div>
 
         {/* Image */}
-        <div>
-          <img
+        <div className="relative w-full aspect-[4/5]">
+          <Image
             src="/Webpimages/download (32).webp"
-            alt="College Girl Companionship Delhi"
+            alt="High Profile Escort Companionship Delhi"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="rounded-2xl shadow-lg object-cover"
           />
         </div>
@@ -1239,13 +1249,13 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         {/* Content */}
         <div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-snug">
-            College Escort Service in Delhi <br />
+            High Profile Escort Service in Delhi <br />
             <span className="text-pink-600">Starting at ₹6999</span>
             – Cash Payment Available
           </h2>
 
           <p className="mt-6 text-gray-600 leading-relaxed">
-            Searching for a college girl without long steps or hidden rules? Our service stays simple.
+            Searching for a high profile escort without long steps or hidden rules? Our service stays simple.
           </p>
 
           {/* Booking Points */}
@@ -1282,20 +1292,22 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
           </div>
 
           <p className="mt-6 text-gray-600 leading-relaxed">
-            There is no end of entertainment in Delhi and not many people can be unaware of the secret night-life where college girls can turn fantasy into actuality.
+            There is no end of sophistication in Delhi and not many people can be unaware of the elite social circles where high profile escorts can turn a premium evening into reality.
           </p>
 
           <p className="mt-6 text-gray-600 leading-relaxed">
-            Our escorts remain sexy, seductresses, naughty, and very beautiful. They fit men who desire to be excited without being pressured, and friends without having stuttering moments.
+            Our escorts remain elegant, confident, poised, and very beautiful. They fit men who desire to be impressed without being pressured, and companions without any awkward moments.
           </p>
-          <p className="mt-6 text-gray-600 leading-relaxed">These girls like new friends, having good moments together, and creating the chemistry you desire. Their friendly and spontaneous nature keeps the meeting smooth and natural.</p>
+          <p className="mt-6 text-gray-600 leading-relaxed">These companions enjoy new introductions, having good moments together, and creating the rapport you desire. Their polished and spontaneous nature keeps the meeting smooth and natural.</p>
         </div>
 
         {/* Image */}
-        <div className="relative">
-          <img
+        <div className="relative w-full aspect-[4/5]">
+          <Image
             src="/Webpimages/downloadee.webp"
-            alt="College Escort Service in Delhi"
+            alt="High Profile Escort Service in Delhi"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="rounded-3xl shadow-xl object-cover"
           />
 
@@ -1319,22 +1331,22 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         {/* Header */}
         <div className="max-w-3xl mb-14">
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
-            Types of College Girls You Can Hire in Delhi
+            Types of High Profile Escorts You Can Hire in Delhi
           </h2>
           <p className="mt-4 text-gray-600 leading-relaxed">
-            personalities, looks, and styles so you find the exact vibe you want. Each girl carries her own charm, her own tone, and her own way of making your night stay in your memory for days.
+            personalities, looks, and styles so you find the exact companion you want. Each escort carries her own charm, her own poise, and her own way of making your night stay in your memory for days.
           </p>
            <ul className="text-gray-700 space-y-1">
-              <li>• Some want soft and shy.</li>
-              <li>• Some want bold and stylish.</li>
-              <li>• Some want bubbly and lively.</li>
-              <li>• Some want slow, teasing attraction.</li>
+              <li>• Some prefer soft and gentle.</li>
+              <li>• Some prefer bold and stylish.</li>
+              <li>• Some prefer lively and sociable.</li>
+              <li>• Some prefer slow, refined attraction.</li>
             </ul>
             <p className="mt-4 text-gray-600 leading-relaxed">
-           No matter what your fantasy looks like, there is a college girl in Delhi who matches it perfectly. Warm, playful, charming, and naturally seductive.
+           No matter what your preference looks like, there is a high profile escort in Delhi who matches it perfectly. Warm, engaging, charming, and naturally magnetic.
           </p>
           <p className="mt-4 text-gray-600 leading-relaxed">
-            Below are the most loved types of college escorts in Delhi.
+            Below are the most loved types of high profile escorts in Delhi.
           </p>
         </div>
 
@@ -1344,91 +1356,91 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
           {/* Card 1 */}
           <div className="rounded-3xl border border-gray-200 p-6 hover:shadow-lg transition">
             <h3 className="text-xl font-semibold text-gray-900 mb-3">
-              The Fashion Student Diva
+              The Socialite
             </h3>
             <p className="text-gray-600 mb-4">
-            These are girls who remain up-to-date, trendy, and self-assured. You can spot them as soon as they enter the door. Cool clothes, bright eyes, and flawless grooming produce an irresistible appeal at a glance.
+            These are companions who remain up-to-date, fashionable, and self-assured. You can spot them as soon as they enter the door. Designer style, bright eyes, and flawless grooming produce an irresistible appeal at a glance.
             </p>
             <ul className="text-gray-700 space-y-1">
               <li>• Runway-style looks</li>
-              <li>• Flirtatious charm</li>
-              <li>• Bold confidence</li>
-              <li>• Smooth testing talk</li>
+              <li>• Effortless charm</li>
+              <li>• Poised confidence</li>
+              <li>• Smooth, engaging talk</li>
             </ul>
             <p className="text-gray-600 mb-4">
-            They suit clients who want a girl with style, presence, and steady excitement. Their vibe feels polished and nightlife-ready.
+            They suit clients who want a companion with style, presence, and steady sophistication. Their vibe feels polished and event-ready.
             </p>
           </div>
 
           {/* Card 2 */}
           <div className="rounded-3xl border border-gray-200 p-6 hover:shadow-lg transition">
             <h3 className="text-xl font-semibold text-gray-900 mb-3">
-              The Shy, Sweet, Introverted Girl
+              The Cultured Companion
             </h3>
             <p className="text-gray-600 mb-4">
-              Some clients crave innocence and soft warmth. These girls stay gentle, quiet, and comforting. Their shy smile alone lifts your stress.
+              Some clients crave grace and soft warmth. These companions stay gentle, refined, and comforting. Their quiet smile alone lifts your stress.
             </p>
             <ul className="text-gray-700 space-y-1">
-              <li>• sweet innocence</li>
+              <li>• graceful elegance</li>
               <li>• calm presence</li>
-              <li>• tender behaviour</li>
-              <li>• slow teasing chemistry</li>
+              <li>• tender manner</li>
+              <li>• slow-building chemistry</li>
             </ul>
              <p className="text-gray-600 mb-4">
-             They move at a natural pace. They build a soft bond that grows into warm, irresistible attraction. Perfect for men who love subtle, pure, close moments.
+             They move at a natural pace. They build a soft bond that grows into warm, genuine attraction. Perfect for men who love subtle, pure, close moments.
             </p>
           </div>
 
           {/* Card 3 */}
           <div className="rounded-3xl border border-gray-200 p-6 hover:shadow-lg transition">
             <h3 className="text-xl font-semibold text-gray-900 mb-3">
-               The Bold & Fearless Delhi Girl
+               The Bold & Confident Delhi Escort
             </h3>
             <p className="text-gray-600 mb-4">
-              This type stays in high demand. She walks in with fire. Playful, fearless, teasing, and bold. She loves fun, loves chemistry, and loves nights filled with thrill.
+              This type stays in high demand. She walks in with presence. Playful, fearless, engaging, and bold. She loves conversation, loves chemistry, and loves nights filled with excitement.
             </p>
             <ul className="text-gray-700 space-y-1">
-              <li>• spontaneous flirting</li>
-              <li>• mischievous humour</li>
-              <li>• adventurous energy</li>
-              <li>• addictive boldness</li>
+              <li>• spontaneous wit</li>
+              <li>• playful humour</li>
+              <li>• vibrant energy</li>
+              <li>• magnetic boldness</li>
             </ul>
             <p className="text-gray-600 mb-4">
-              If you want a girl who keeps the spark high and knows how to build heat with one look, this type fits you perfectly.
+              If you want a companion who keeps the energy high and knows how to command a room with one look, this type fits you perfectly.
             </p>
           </div>
 
           {/* Card 4 */}
           <div className="rounded-3xl border border-gray-200 p-6 hover:shadow-lg transition">
             <h3 className="text-xl font-semibold text-gray-900 mb-3">
-              Cute First-Year Girl With Fresh Charm
+              The Polished Newcomer With Fresh Charm
             </h3>
             <p className="text-gray-600 mb-4">
-              These girls feel new, young, and full of natural temptation. Their innocence mixed with curiosity creates a fantasy-like vibe clients adore. Everything about them feels fresh.
+              These companions feel new, poised, and full of natural allure. Their elegance mixed with curiosity creates an appeal clients adore. Everything about them feels fresh.
             </p>
             <ul className="text-gray-700 space-y-1">
-              <li>• playful giggles</li>
-              <li>• natural sweetness</li>
+              <li>• genuine warmth</li>
+              <li>• natural sophistication</li>
               <li>• soft chemistry</li>
-              <li>• fresh addictive charm</li>
+              <li>• fresh, refined charm</li>
             </ul>
             <p className="text-gray-600 mb-4">
-              Their presence alone clears your stress. They suit men who want a first-crush feeling that is warm, joyful, and close.
+              Their presence alone clears your stress. They suit men who want a warm, joyful, and close connection.
             </p>
           </div>
 
           {/* Card 5 */}
           <div className="rounded-3xl border border-gray-200 p-6 hover:shadow-lg transition">
             <h3 className="text-xl font-semibold text-gray-900 mb-3">
-               The Smart, Intellectual College Companion
+               The Corporate Companion
             </h3>
             <p className="text-gray-600 mb-4">
-              Some men want depth instead of loud energy. These girls offer thoughtful talk, mature warmth, and slow emotional chemistry. Many come from literature, psychology, law, or business streams.
+              Some men want depth instead of loud energy. These companions offer thoughtful conversation, mature warmth, and slow emotional connection. Many carry backgrounds in business, law, or the arts.
             </p>
             <ul className="text-gray-700 space-y-1">
               <li>• deep conversation</li>
               <li>• warm presence</li>
-              <li>• quiet seduction</li>
+              <li>• quiet sophistication</li>
               <li>• a calming vibe</li>
             </ul>
             <p className="text-gray-600 mb-4">
@@ -1439,19 +1451,19 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
           {/* Card 6 */}
           <div className="rounded-3xl border border-gray-200 p-6 hover:shadow-lg transition">
             <h3 className="text-xl font-semibold text-gray-900 mb-3">
-              The Fun, Bubbly, Party-Loving Girl
+              The Vibrant, Sociable Companion
             </h3>
             <p className="text-gray-600 mb-4">
-              These girls bring spark and excitement. They fill the room with fun the moment they walk in. Their teasing and playful tone make every minute feel electric.
+              These companions bring energy and excitement. They fill the room with charm the moment they walk in. Their wit and engaging tone make every minute feel lively.
             </p>
             <ul className="text-gray-700 space-y-1">
               <li>• lively energy</li>
-              <li>• cheerful flirting</li>
+              <li>• cheerful conversation</li>
               <li>• adventurous spirit</li>
-              <li>• playful seduction</li>
+              <li>• playful sophistication</li>
             </ul>
             <p className="text-gray-600 mb-4">
-             They suit men who want a party-like vibe filled with warmth, laughs, and non-stop excitement.
+             They suit men who want an event-ready companion filled with warmth, laughs, and non-stop engagement.
             </p>
           </div>
 
@@ -1471,7 +1483,7 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
 
       {/* Content */}
       <div className="relative z-10 rounded-3xl lg:bg-transparent bg-gradient-to-br from-purple-700 via-pink-500 to-rose-400 p-8 sm:p-10 lg:py-24 lg:px-12 text-white">
-        <h3 className="text-2xl sm:text-3xl font-semibold">Why College Call Girls in Delhi Make Your Nights Unforgettable</h3>
+        <h3 className="text-2xl sm:text-3xl font-semibold">Why High Profile Escorts in Delhi Make Your Nights Unforgettable</h3>
         <div className="w-14 h-1 bg-white rounded mt-4 mb-5"></div>
         <p className="text-white/90 text-sm sm:text-base leading-relaxed">
           We focus on verified profiles and private companionship.
@@ -1506,10 +1518,10 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
             </div>
             <div>
               <h4 className="font-semibold text-slate-800 text-base">
-                Youthful Energy With Slow, Teasing Heat
+                Mature Confidence With Slow-Building Charm
               </h4>
               <p className="mt-1 text-sm text-slate-500 leading-relaxed">
-                College call Girls in Delhi bring playful charm that turns into warm, tempting pull. Their shy smiles and soft touches create rising tension that feels natural and thrilling.
+                High profile escorts in Delhi bring effortless charm that turns into warm, magnetic pull. Their poised smiles and refined manner create rising rapport that feels natural and captivating.
               </p>
             </div>
           </div>
@@ -1561,10 +1573,10 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
             </div>
             <div>
               <h4 className="font-semibold text-slate-800 text-base">
-                Soft-Spoken, Clean, and Freshly Groomed
+                Soft-Spoken, Polished, and Impeccably Groomed
               </h4>
               <p className="mt-1 text-sm text-slate-500 leading-relaxed">
-                Delhi college call girls keep a simple and attractive look. Light fragrance, neat style, and a fresh vibe that draws you in.
+                Delhi high profile escorts keep a refined and elegant look. Light fragrance, sharp style, and a polished vibe that draws you in.
               </p>
             </div>
           </div>
@@ -1586,12 +1598,12 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         {/* Text Content */}
         <div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-snug">
-            How Our College Escorts Create{" "}
+            How Our High Profile Escorts Create{" "}
             <span className="text-pink-600">No-Limit Nights</span>
           </h2>
 
           <p className="mt-6 text-gray-600 leading-relaxed">
-            Our college escort service in Delhi focuses on fulfilling your hidden desires in a safe and suggestive way.
+            Our high profile escort service in Delhi focuses on fulfilling your hidden desires in a safe and refined way.
           </p>
 
           <p className="mt-4 text-gray-600 leading-relaxed">
@@ -1627,10 +1639,12 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         </div>
 
         {/* Image */}
-        <div className="relative">
-          <img
+        <div className="relative w-full aspect-[4/5]">
+          <Image
             src="/Webpimages/download (4).webp"
             alt="Luxury Night Companionship Delhi"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="rounded-3xl shadow-xl object-cover"
           />
 
@@ -1655,7 +1669,7 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Book College Call Girls in Delhi Without Advance – 100% Guaranteed
+                  Book High Profile Escorts in Delhi Without Advance – 100% Guaranteed
                 </h2>
                 {/* <p className="text-gray-400">Booking an independent call-girl in Delhi stays simple and private. </p> */}
               </div>
@@ -1664,7 +1678,7 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
                 {[
                   {
                     step: '01',
-                    title: 'Select Your Preferred College Girl',
+                    title: 'Select Your Preferred High Profile Escort',
                     desc: 'Browse fresh, charming, verified profiles and choose the vibe you like.',
                     icon: <UserCheck className="w-8 h-8" />
                   },
@@ -1683,7 +1697,7 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
                   {
                     step: '04',
                     title: 'Pay After She Arrives',
-                    desc: 'Give payment only when your college escort reaches your door.',
+                    desc: 'Give payment only when your high profile escort reaches your door.',
                     icon: <CreditCard className="w-8 h-8" />
                   }
                 ].map((item, idx) => (
@@ -1785,18 +1799,18 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
       </span>
 
       <h2 className="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
-        College Escort Service in Delhi for <br className="hidden sm:block" />
-        Men Who Want Real Pleasure & Real Excitement
+        High Profile Escort Service in Delhi for <br className="hidden sm:block" />
+        Men Who Want Real Class & Real Excitement
       </h2>
 
       <div className="w-16 h-1 bg-gradient-to-r from-purple-600 to-pink-500 rounded mt-4 mb-6"></div>
 
       <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-       Our Delhi college call girls bring joy, heat, and real excitement. Whether you want playful romance, girlfriend-like warmth, deep emotional connection, or late-night fun, they deliver that spark without hesitation.
+       Our Delhi high profile escorts bring joy, elegance, and real excitement. Whether you want playful romance, girlfriend-like warmth, deep emotional connection, or late-night fun, they deliver that spark without hesitation.
       </p>
       <ul className="text-gray-700 space-y-1">
-              <li>• wild fantasies</li>
-              <li>• youthful temptation</li>
+              <li>• premium experiences</li>
+              <li>• sophisticated allure</li>
               <li>• soft intimacy</li>
               <li>• warm chemistry</li>
               <li>• irresistible closeness</li>
@@ -1811,7 +1825,7 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
 
       <div className="relative bg-gradient-to-br from-purple-700 via-pink-500 to-rose-400 rounded-3xl p-8 sm:p-10 text-white shadow-xl">
         <h3 className="text-2xl sm:text-3xl font-semibold mb-4">
-          Book Your College Escort in Delhi Now – Let the Night Begin
+          Book Your High Profile Escort in Delhi Now – Let the Night Begin
         </h3>
 
         <p className="text-white/90 text-sm sm:text-base leading-relaxed">
@@ -1853,10 +1867,10 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         {/* Text Section */}
         <div className="space-y-6">
           <h2 className="text-4xl font-bold leading-tight">
-            Book Youthful College Call Girls in Delhi Tonight
+            Book High Profile Escorts in Delhi Tonight
           </h2>
           <p className="text-lg opacity-90 leading-relaxed">
-           Pick your favourite college girl and enjoy warm, irresistible chemistry that turns your night into something you remember. Private booking, no advance, verified profiles, and complete satisfaction.
+           Pick your favourite high profile escort and enjoy warm, irresistible chemistry that turns your night into something you remember. Private booking, no advance, verified profiles, and complete satisfaction.
           </p>
           
 
@@ -1866,11 +1880,13 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         </div>
 
         {/* Image Section */}
-        <div>
-          <img
+        <div className="relative w-full aspect-[4/3]">
+          <Image
             src="/Webpimages/download34.webp"
             alt="Luxury Spa"
-            className="rounded-2xl shadow-xl w-full object-cover"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="rounded-2xl shadow-xl object-cover"
           />
         </div>
 

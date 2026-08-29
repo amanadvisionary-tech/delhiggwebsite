@@ -29,7 +29,7 @@ export default function Russianmodels() {
       role: 'Senior Airhostess',
       category: 'Independentprofile',
       description: '5+ years experience with international airlines. Fluent in 4 languages.',
-      image: '/Webpimages/Airhostess_girl.webp', // Placeholder image path
+      image: '/Webpimages/download (30).webp', // Placeholder image path
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ export default function Russianmodels() {
       role: 'TV Personality',
       category: 'Independentprofile',
       description: 'Award-winning host of "Nightlife" show. Known for vibrant personality.',
-      image: '/Webpimages/Celebrity_girl.webp', // Placeholder image pathss
+      image: '/Webpimages/download (32).webp', // Placeholder image pathss
     },
     {
       id: 3,
@@ -85,7 +85,7 @@ export default function Russianmodels() {
       role: 'Engineering Student',
       category: 'college',
       description: 'Robotics club president. Developing AI solutions for sustainable energy.',
-      image: '/Webpimages/1.webp', // Placeholder image path
+      image: '/Webpimages/download (31).webp', // Placeholder image path
     },
   ];
     const filteredStaff = activeCategory === 'all' 
@@ -185,18 +185,18 @@ const current = priceMap[tier]
   { image: '/Webpimages/modelg.webp' },
   { image: '/Webpimages/18244.webp' },
   { image: '/Webpimages/172420-8871.webp' },
-  { image: '/Webpimages/4201724.webp' },
+  { image: '/Webpimages/Model2.webp' },
   { image: '/Webpimages/7168.webp' },
   { image: '/Webpimages/49.webp' },
-  { image: '/Webpimages/2291.webp' },
+  { image: '/Webpimages/Model21.webp' },
 
   { image: '/Webpimages/modelg.webp' },
   { image: '/Webpimages/18244.webp' },
   { image: '/Webpimages/172420-8871.webp' },
-  { image: '/Webpimages/4201724.webp' },
+  { image: '/Webpimages/Model2.webp' },
   { image: '/Webpimages/7168.webp' },
   { image: '/Webpimages/49.webp' },
-  { image: '/Webpimages/2291.webp' },
+  { image: '/Webpimages/Model21.webp' },
 ]
 
 const features = [
@@ -265,7 +265,7 @@ points: ["Safe home visits", "Verified profiles", "Discreet arrival & departure"
       {/* Background image - place your image at /public/Webpimages/hero-banner.webp */}
       <div className="absolute inset-0 -z-20">
         <Image
-          src="/Webpimages/6637.webp"
+          src="/Webpimages/fashion-portrait-beautiful-blonde-model.webp"
           alt="Luxury spa background"
           fill
           sizes="(max-width: 1024px) 100vw, 50vw"
@@ -733,7 +733,7 @@ points: ["Safe home visits", "Verified profiles", "Discreet arrival & departure"
             <div className="absolute -top-8 -right-6 transform rotate-6 shadow-2xl rounded-xl border-8 border-white bg-white">
               {/* Replace the src with your public path or a remote URL */}
               <div className="w-72 h-48 relative rounded-lg overflow-hidden">
-                <Image src="/Webpimages/27110283.webp" alt="top" layout="fill" objectFit="cover" />
+                <Image src="/Webpimages/model1.webp" alt="top" layout="fill" objectFit="cover" />
               </div>
             </div>
 

@@ -39,7 +39,7 @@ export default function Navbar() {
   const Locations = [
     { name: "Delhi Escorts", href: "/delhi-escorts" },
     { name: "Gurugram Escorts", href: "/call-girls-in-gurgaon" },
-    { name: "NOida Escorts", href: "/call-girls-in-noida"},
+    { name: "Noida Escorts", href: "/call-girls-in-noida"},
     { name: "Aerocity Escorts", href: "/aerocity-escorts" },
     { name: "Connaught Place Escorts", href: "/call-girls-in-connaught-place" },
    
@@ -156,13 +156,15 @@ export default function Navbar() {
             <a
               href="https://instagram.com"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-600 hover:text-pink-600 text-lg"
             >
               <FaInstagram />
             </a>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/918826482370"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-600 hover:text-green-600 text-lg"
             >
               <FaWhatsapp />
@@ -192,6 +194,9 @@ export default function Navbar() {
             <div className="flex flex-col p-6 space-y-4">
               <Link href="/" onClick={() => setIsMenuOpen(false)}>
                 Home
+              </Link>
+              <Link href="/about-us" onClick={() => setIsMenuOpen(false)}>
+                About us
               </Link>
 
               {/* Services inside mobile */}
@@ -230,7 +235,7 @@ export default function Navbar() {
               <Link href="/cheap-call-girls-in-delhi" onClick={() => setIsMenuOpen(false)}>
                 Pricing
               </Link>
-              <Link href="/Blogs" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/blogs" onClick={() => setIsMenuOpen(false)}>
                 Blog
               </Link>
               <Link href="/delhi-call-girl-service" onClick={() => setIsMenuOpen(false)}>
@@ -239,19 +244,24 @@ export default function Navbar() {
               <Link href="/escort-service-in-delhi" onClick={() => setIsMenuOpen(false)}>
                 Locations
               </Link>
+              <Link href="/contact-us" onClick={() => setIsMenuOpen(false)}>
+                Contact us
+              </Link>
 
               {/* Social */}
               <div className="flex gap-4 mt-4">
                 <a
                   href="https://instagram.com"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 hover:text-pink-600 text-lg"
                 >
                   <FaInstagram />
                 </a>
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/918826482370"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 hover:text-green-600 text-lg"
                 >
                   <FaWhatsapp />

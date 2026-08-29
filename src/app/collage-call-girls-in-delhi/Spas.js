@@ -60,7 +60,7 @@ export default function Foreignmodel() {
       role: 'Senior Airhostess',
       category: 'airhostess',
       description: '5+ years experience with international airlines. Fluent in 4 languages.',
-      image: '/Webpimages/Airhostess_girl.webp', // Placeholder image path
+      image: '/Webpimages/download (30).webp', // Placeholder image path
     },
     {
       id: 2,
@@ -116,7 +116,7 @@ export default function Foreignmodel() {
       role: 'Engineering Student',
       category: 'college',
       description: 'Robotics club president. Developing AI solutions for sustainable energy.',
-      image: '/Webpimages/1.webp', // Placeholder image path
+      image: '/Webpimages/download (31).webp', // Placeholder image path
     },
   ];
     const filteredStaff = activeCategory === 'all' 
@@ -942,10 +942,12 @@ This is why Delhi college call girls feel so addictive. They carry a raw charm t
         </div>
 
         {/* Right Image */}
-        <div className="relative">
-          <img
+        <div className="relative w-full aspect-[4/5]">
+          <Image
             src="/Webpimages/download432.webp"
             alt="Elegant Independent Delhi Girl"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="rounded-3xl shadow-xl object-cover"
           />
 
@@ -973,11 +975,13 @@ This is why Delhi college call girls feel so addictive. They carry a raw charm t
       <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* RIGHT – IMAGE */}
         <div className="relative">
-          <div className="relative rounded-[28px] overflow-hidden shadow-2xl">
-            <img
+          <div className="relative rounded-[28px] overflow-hidden shadow-2xl h-[500px]">
+            <Image
               src="/Webpimages/download645.webp"
               alt="Luxury lounge ambience"
-              className="w-full h-[500px] object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -1062,11 +1066,13 @@ This is why Delhi college call girls feel so addictive. They carry a raw charm t
 
         {/* LEFT – IMAGE */}
         <div className="relative">
-          <div className="relative rounded-[30px] overflow-hidden shadow-2xl">
-            <img
+          <div className="relative rounded-[30px] overflow-hidden shadow-2xl h-[440px]">
+            <Image
               src="/Webpimages/download31.webp"
               alt="Luxury late night ambience"
-              className="w-full h-[440px] object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -1192,10 +1198,12 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         </div>
 
         {/* Image */}
-        <div className="relative">
-          <img
+        <div className="relative w-full aspect-[4/5]">
+          <Image
             src="/Webpimages/download (5).webp"
             alt="College Girl Companionship Delhi"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="rounded-3xl shadow-xl object-cover"
           />
 
@@ -1246,10 +1254,12 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         </div>
 
         {/* Image */}
-        <div>
-          <img
+        <div className="relative w-full aspect-[4/5]">
+          <Image
             src="/Webpimages/download (27).webp"
             alt="College Girl Companionship Delhi"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="rounded-2xl shadow-lg object-cover"
           />
         </div>
@@ -1322,10 +1332,12 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         </div>
 
         {/* Image */}
-        <div className="relative">
-          <img
+        <div className="relative w-full aspect-[4/5]">
+          <Image
             src="/Webpimages/download (28).webp"
             alt="College Escort Service in Delhi"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="rounded-3xl shadow-xl object-cover"
           />
 
@@ -1657,10 +1669,12 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         </div>
 
         {/* Image */}
-        <div className="relative">
-          <img
-            src="https://Webpimages.unsplash.com/photo-1505693416388-ac5ce068fe85"
+        <div className="relative w-full aspect-[4/5]">
+          <Image
+            src="/Webpimages/download (34).webp"
             alt="Luxury Night Companionship Delhi"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="rounded-3xl shadow-xl object-cover"
           />
 
@@ -1896,11 +1910,13 @@ Spend your night with our College call Girls in Delhi who brings wild imaginatio
         </div>
 
         {/* Image Section */}
-        <div>
-          <img
+        <div className="relative w-full aspect-[4/3]">
+          <Image
             src="/Webpimages/download32.webp"
             alt="Luxury Spa"
-            className="rounded-2xl shadow-xl w-full object-cover"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="rounded-2xl shadow-xl object-cover"
           />
         </div>
 

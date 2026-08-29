@@ -46,7 +46,7 @@ export default function Foreignmodel() {
       role: 'Senior Airhostess',
       category: 'airhostess',
       description: '5+ years experience with international airlines. Fluent in 4 languages.',
-      image: '/Webpimages/Airhostess_girl.webp', // Placeholder image path
+      image: '/Webpimages/download (30).webp', // Placeholder image path
     },
     {
       id: 2,
@@ -102,7 +102,7 @@ export default function Foreignmodel() {
       role: 'Engineering Student',
       category: 'college',
       description: 'Robotics club president. Developing AI solutions for sustainable energy.',
-      image: '/Webpimages/1.webp', // Placeholder image path
+      image: '/Webpimages/download (31).webp', // Placeholder image path
     },
   ];
     const filteredStaff = activeCategory === 'all' 
@@ -832,10 +832,12 @@ const features1 = [
         </div>
 
         {/* Right Image */}
-        <div className="relative">
-          <img
+        <div className="relative w-full aspect-[4/5]">
+          <Image
             src="/Webpimages/download.webp"
             alt="Elegant Independent Delhi Girl"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="rounded-3xl shadow-xl object-cover"
           />
 
@@ -955,11 +957,13 @@ const features1 = [
       <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* RIGHT – IMAGE */}
         <div className="relative">
-          <div className="relative rounded-[28px] overflow-hidden shadow-2xl">
-            <img
+          <div className="relative rounded-[28px] overflow-hidden shadow-2xl h-[650px]">
+            <Image
               src="/Webpimages/download (3).webp"
               alt="Luxury lounge ambience"
-              className="w-full h-[650px] object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -1044,11 +1048,13 @@ const features1 = [
 
         {/* LEFT – IMAGE */}
         <div className="relative">
-          <div className="relative rounded-[30px] overflow-hidden shadow-2xl">
-            <img
+          <div className="relative rounded-[30px] overflow-hidden shadow-2xl h-[650px]">
+            <Image
               src="/Webpimages/download (2).webp"
               alt="Luxury late night ambience"
-              className="w-full h-[650px] object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -1274,13 +1280,13 @@ const features1 = [
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Image */}
             <div className="relative min-h-[400px]">
-              <div>
-          <img
-            src="/Webpimages/modelg.webp"
-            alt="Luxury Spa"
-            className="rounded-2xl shadow-xl w-full object-cover"
-          />
-        </div>
+              <Image
+                src="/Webpimages/modelg.webp"
+                alt="Luxury Spa"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="rounded-2xl shadow-xl object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-r from-purple-800/30 to-pink-800/30 z-10"></div>
               <div className="absolute bottom-6 left-6 z-20 text-white">
                 <h3 className="text-2xl font-bold">Exclusive Packages For Escort Service in Delhi</h3>
@@ -1635,11 +1641,13 @@ const features1 = [
         </div>
 
         {/* Image Section */}
-        <div>
-          <img
+        <div className="relative w-full aspect-[4/3]">
+          <Image
             src="/Webpimages/download (35).webp"
             alt="Luxury Spa"
-            className="rounded-2xl shadow-xl w-full object-cover"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="rounded-2xl shadow-xl object-cover"
           />
         </div>
 

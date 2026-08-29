@@ -237,7 +237,7 @@ const cities = [
 { name: 'NOIDA', img: '/Webpimages/RoseateHouse.webp' },
 { name: 'BANGALORE', img: '/Webpimages/paschimvihar.webp' },
 { name: 'PUNE', img: '/Webpimages/JwMarriott_CP.webp' },
-{ name: 'AHMEDABAD', img: '/Webpimages/Andazhat.webp' },
+{ name: 'AHMEDABAD', img: '/Webpimages/connaught-place-delhi.webp' },
 { name: 'GURGAON', img: '/Webpimages/holidayIn_CP.webp' },
 { name: 'HYDERABAD', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp' },
 { name: 'KOLKATA', img: '/Webpimages/paschimvihar.webp' },
@@ -249,10 +249,10 @@ const profiles = [
   { image: '/Webpimages/modelg.webp' },
   { image: '/Webpimages/18244.webp' },
   { image: '/Webpimages/172420-8871.webp' },
-  { image: '/Webpimages/4201724.webp' },
+  { image: '/Webpimages/Model2.webp' },
   { image: '/Webpimages/7168.webp' },
   { image: '/Webpimages/49.webp' },
-  { image: '/Webpimages/2291.webp' },
+  { image: '/Webpimages/Model21.webp' },
 ]
 
 const services = [
@@ -1190,7 +1190,7 @@ const services = [
       {/* Enhanced CTA Buttons */}
       <div className="flex flex-wrap gap-4">
         <motion.a
-          href="/about"
+          href="/about-us"
           className="relative overflow-hidden px-8 py-4 rounded-full font-medium text-white group"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -1239,9 +1239,9 @@ const services = [
       <span className="text-lg font-medium text-purple-700 tracking-widest">
         OUR SIGNATURE OFFERINGS
       </span>
-      <h1 className="text-4xl md:text-5xl font-bold text-[#2d1f2f] mt-4 mb-6">
+      <h2 className="text-4xl md:text-5xl font-bold text-[#2d1f2f] mt-4 mb-6">
         Premium Spa Experiences
-      </h1>
+      </h2>
       <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full"></div>
     </motion.div> */}
 
@@ -1479,7 +1479,7 @@ Your room turns into the comfort zone, your fantasy turns out to be the way, and
       {/* CTA Buttons */}
       <div className="flex flex-wrap gap-4">
         <a
-          href="/about"
+          href="/about-us"
           className="relative overflow-hidden px-8 py-4 rounded-full font-medium text-white group"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 group-hover:opacity-90 transition-all"></div>

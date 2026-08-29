@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  FaTelegram, FaInstagram, FaTwitter, FaFacebookF, 
-  FaMapMarkerAlt, FaPhone, FaEnvelope, FaPaperPlane 
+import {
+  FaTelegram, FaInstagram, FaWhatsapp,
+  FaMapMarkerAlt, FaPhone, FaEnvelope, FaPaperPlane
 } from 'react-icons/fa';
 import Link from 'next/link';
 
@@ -48,13 +48,15 @@ const ModernFooter = () => {
             
             <div className="flex space-x-4">
               {[
-                { icon: <FaInstagram />, color: "from-fuchsia-500 to-pink-500", link: "#" },
-                { icon: <FaTwitter />, color: "from-sky-500 to-blue-500", link: "#" },
-                { icon: <FaFacebookF />, color: "from-blue-600 to-indigo-700", link: "#" },
+                { icon: <FaInstagram />, color: "from-fuchsia-500 to-pink-500", link: "https://instagram.com" },
+                { icon: <FaTelegram />, color: "from-sky-500 to-blue-500", link: "https://t.me/Tanuspa" },
+                { icon: <FaWhatsapp />, color: "from-green-500 to-emerald-600", link: "https://wa.me/918826482370" },
               ].map((social, i) => (
                 <motion.a
                   key={i}
                   href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ y: -5 }}
                   className={`bg-gradient-to-r ${social.color} w-10 h-10 rounded-full flex items-center justify-center text-white shadow-lg`}
                 >
@@ -75,12 +77,11 @@ const ModernFooter = () => {
             </h3>
             <ul className="space-y-3">
               {[
-                { name: "Foreigner Staff", link: "/Category/Foreignmodel" },
-                { name: "Air Hostess", link: "/Category/Airhostess" },
-                { name: "Independent Profile", link: "/Category/Independentprofile" },
-                { name: "High Profile", link: "/Category/Celebrityprofile" },
-                { name: "College Girl", link: "/Category/spastaff" },
-                // { name: "Corporate Events", link: "#" },
+                { name: "Foreigner Staff", link: "/russian-escorts-in-delhi" },
+                { name: "Air Hostess", link: "/air-hostess-escorts-in-delhi" },
+                { name: "Independent Profile", link: "/independent-escorts-in-delhi" },
+                { name: "High Profile", link: "/high-profile-escorts-in-delhi" },
+                { name: "College Girl", link: "/collage-call-girls-in-delhi" },
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.link} className="text-gray-400 hover:text-amber-400 transition-colors flex items-center">
@@ -103,17 +104,17 @@ const ModernFooter = () => {
             </h3>
             <ul className="space-y-4">
               {[
-                { 
-                  icon: <FaMapMarkerAlt className="text-amber-500" />, 
-                  text: "123 Luxury Avenue, Beverly Hills, CA 90210" 
+                {
+                  icon: <FaMapMarkerAlt className="text-amber-500" />,
+                  text: "Delhi NCR (Delhi, Gurgaon, Noida & Aerocity), India",
                 },
-                { 
-                  icon: <FaPhone className="text-amber-500" />, 
-                  text: "+1 (555) 123-4567" 
+                {
+                  icon: <FaPhone className="text-amber-500" />,
+                  text: <a href="https://wa.me/918826482370" className="hover:text-amber-400 transition-colors">+91 88264 82370</a>,
                 },
-                { 
-                  icon: <FaEnvelope className="text-amber-500" />, 
-                  text: "contact@luxeconnect.com" 
+                {
+                  icon: <FaEnvelope className="text-amber-500" />,
+                  text: "info@delhigirl.in",
                 },
               ].map((item, i) => (
                 <li key={i} className="flex">
@@ -145,7 +146,7 @@ const ModernFooter = () => {
             {/* Telegram Link */}
             <div className="mb-8">
               <a 
-                href="https://t.me/luxeconnect" 
+                href="https://t.me/Tanuspa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-lg flex items-center justify-center transition-all shadow-lg"
@@ -189,7 +190,7 @@ const ModernFooter = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-gray-500 text-sm"
           >
-            &copy; {currentYear} LuxeConnect. All rights reserved.
+            &copy; {currentYear} Delhi Girl. All rights reserved.
           </motion.div>
           
           <motion.div
@@ -198,16 +199,16 @@ const ModernFooter = () => {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="flex flex-wrap gap-4 md:justify-end text-sm"
           >
-            <Link href="#" className="text-gray-500 hover:text-amber-400 transition-colors">
+            <Link href="/privacy-policy" className="text-gray-500 hover:text-amber-400 transition-colors">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-gray-500 hover:text-amber-400 transition-colors">
+            <Link href="/terms-of-service" className="text-gray-500 hover:text-amber-400 transition-colors">
               Terms of Service
             </Link>
-            <Link href="#" className="text-gray-500 hover:text-amber-400 transition-colors">
+            <Link href="/discretion-policy" className="text-gray-500 hover:text-amber-400 transition-colors">
               Discretion Policy
             </Link>
-            <Link href="#" className="text-gray-500 hover:text-amber-400 transition-colors">
+            <Link href="/blogs#faq" className="text-gray-500 hover:text-amber-400 transition-colors">
               FAQ
             </Link>
           </motion.div>

@@ -643,10 +643,12 @@ n                </a>
           <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-1 rounded-2xl">
             <div className="bg-white p-6 rounded-2xl shadow-sm">
               <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
-                <img
+                <Image
                   src="/Webpimages/7170.webp"
                   alt="Premium Body Spa"
-                  className="w-full h-full object-cover rounded-xl"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover rounded-xl"
                 />
                 <div className="absolute top-4 right-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm px-3 py-1 rounded-full shadow-md">
                   Most Popular
@@ -1112,9 +1114,9 @@ n                </a>
       <span className="text-lg font-medium text-purple-700 tracking-widest">
         OUR SIGNATURE OFFERINGS
       </span>
-      <h1 className="text-4xl md:text-5xl font-bold text-[#2d1f2f] mt-4 mb-6">
+      <h2 className="text-4xl md:text-5xl font-bold text-[#2d1f2f] mt-4 mb-6">
         Premium Spa Experiences
-      </h1>
+      </h2>
       <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full"></div>
     </motion.div>
 

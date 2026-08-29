@@ -42,7 +42,7 @@ export default function Foreignmodel() {
       role: 'Senior Airhostess',
       category: 'airhostess',
       description: '5+ years experience with international airlines. Fluent in 4 languages.',
-      image: '/Webpimages/Airhostess_girl.webp', // Placeholder image path
+      image: '/Webpimages/download (30).webp', // Placeholder image path
     },
     {
       id: 2,
@@ -98,7 +98,7 @@ export default function Foreignmodel() {
       role: 'Engineering Student',
       category: 'college',
       description: 'Robotics club president. Developing AI solutions for sustainable energy.',
-      image: '/Webpimages/1.webp', // Placeholder image path
+      image: '/Webpimages/download (31).webp', // Placeholder image path
     },
   ];
     const filteredStaff = activeCategory === 'all' 
@@ -884,11 +884,13 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
       <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* RIGHT – IMAGE */}
         <div className="relative">
-          <div className="relative rounded-[28px] overflow-hidden shadow-2xl">
-            <img
+          <div className="relative rounded-[28px] overflow-hidden shadow-2xl h-[650px]">
+            <Image
               src="/Webpimages/Evie Lee Mikomin (1).webp"
               alt="Luxury lounge ambience"
-              className="w-full h-[650px] object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -972,11 +974,13 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
 
         {/* LEFT – IMAGE */}
         <div className="relative">
-          <div className="relative rounded-[30px] overflow-hidden shadow-2xl">
-            <img
+          <div className="relative rounded-[30px] overflow-hidden shadow-2xl h-[500px]">
+            <Image
               src="/Webpimages/model.webp"
               alt="Luxury late night ambience"
-              className="w-full h-[500px] object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -1207,17 +1211,13 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
                 <h3 className="text-2xl font-bold">Exclusive Packages For Escort Service in Delhi</h3>
                 <p className="mt-2 max-w-md">The ultimate packages of pleasure are made to fatten you with beauty, fire, intimacy, and wild satisfaction.</p>
               </div>
-              {/* Placeholder Image */}
-              <div className="bg-gradient-to-br from-purple-300 to-pink-400 w-full h-full flex items-center justify-center">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
-                <div>
-                  <img
-                    src="/Webpimages/young-woman-lying-alone.webp"
-                    alt="Luxury Spa"
-                    className="rounded-2xl shadow-xl w-full object-cover"
-                  />
-                </div>
-              </div>
+              <Image
+                src="/Webpimages/young-woman-lying-alone.webp"
+                alt="Luxury Spa"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="rounded-2xl shadow-xl object-cover"
+              />
             </div>
     
             {/* Details */}
@@ -1588,11 +1588,13 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
         </div>
 
         {/* Image Section */}
-        <div>
-          <img
+        <div className="relative w-full aspect-[4/3]">
+          <Image
             src="/Webpimages/young-woman.webp"
             alt="Luxury Spa"
-            className="rounded-2xl shadow-xl w-full object-cover"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="rounded-2xl shadow-xl object-cover"
           />
         </div>
 

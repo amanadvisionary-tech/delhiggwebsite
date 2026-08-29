@@ -205,7 +205,7 @@ const cities = [
 { name: 'NOIDA', img: '/Webpimages/RoseateHouse.webp' },
 { name: 'BANGALORE', img: '/Webpimages/paschimvihar.webp' },
 { name: 'PUNE', img: '/Webpimages/JwMarriott_CP.webp' },
-{ name: 'AHMEDABAD', img: '/Webpimages/Andazhat.webp' },
+{ name: 'AHMEDABAD', img: '/Webpimages/connaught-place-delhi.webp' },
 { name: 'GURGAON', img: '/Webpimages/holidayIn_CP.webp' },
 { name: 'HYDERABAD', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp' },
 { name: 'KOLKATA', img: '/Webpimages/paschimvihar.webp' },
@@ -217,10 +217,10 @@ const profiles = [
   { image: '/Webpimages/modelg.webp' },
   { image: '/Webpimages/18244.webp' },
   { image: '/Webpimages/172420-8871.webp' },
-  { image: '/Webpimages/4201724.webp' },
+  { image: '/Webpimages/Model2.webp' },
   { image: '/Webpimages/7168.webp' },
   { image: '/Webpimages/49.webp' },
-  { image: '/Webpimages/2291.webp' },
+  { image: '/Webpimages/Model21.webp' },
 ]
 
 const services = [
@@ -293,10 +293,13 @@ const services = [
     <>
     <header className="relative overflow-hidden bg-gradient-to-r from-rose-50 via-white to-amber-50">
       <div className="absolute inset-0">
-        <img
+        <Image
           src="/Webpimages/fashion-portrait-beautiful-blonde-model.webp"  // 👉 apni banner image yaha lagao
           alt="Hero background"
-          className="w-full h-full object-cover object-center filter brightness-75 sm:brightness-90"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center filter brightness-75 sm:brightness-90"
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/20 mix-blend-multiply" />
@@ -367,11 +370,13 @@ const services = [
             >
               <div className="p-6 sm:p-8">
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
-                    <img
+                  <div className="relative w-16 h-16 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
+                    <Image
                       src="/Webpimages/18244.webp"
                       alt="Service sample"
-                      className="w-full h-full object-cover"
+                      fill
+                      sizes="64px"
+                      className="object-cover"
                     />
                   </div>
 
@@ -442,7 +447,7 @@ const services = [
             </p>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold font-serif leading-tight">
+          <h2 className="text-5xl md:text-6xl font-bold font-serif leading-tight">
   <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
     Top-Tier Bliss
   </span>{' '}
@@ -451,7 +456,7 @@ const services = [
   <span className="bg-black text-white px-3 py-1 rounded-md inline-block mt-2">
      Escorts
   </span>
-</h1>
+</h2>
 
           <p className="text-gray-600 max-w-md">
             Where real charm, close comfort, and those genuine adult moments make your night feel all kinds of different.
@@ -960,11 +965,13 @@ const services = [
                     <p className="mt-2 max-w-md">Book 3 nights and receive complimentary spa treatments, airport transfers, and dining credits</p>
                   </div>
                   {/* Placeholder Image */}
-                  <div className="bg-gradient-to-br from-purple-300 to-pink-400 w-full h-full flex items-center justify-center">
-                    <img
+                  <div className="relative bg-gradient-to-br from-purple-300 to-pink-400 w-full h-full flex items-center justify-center">
+                    <Image
                         src="/Webpimages/32586.webp"
                         alt="Luxury Spa"
-                        className="rounded-2xl shadow-xl w-full object-cover"
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        className="rounded-2xl shadow-xl object-cover"
                       />
                     {/* <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" /> */}
                   </div>
@@ -1089,9 +1096,9 @@ const services = [
       <span className="text-lg font-medium text-purple-700 tracking-widest">
         OUR SIGNATURE OFFERINGS
       </span>
-      <h1 className="text-4xl md:text-5xl font-bold text-[#2d1f2f] mt-4 mb-6">
+      <h2 className="text-4xl md:text-5xl font-bold text-[#2d1f2f] mt-4 mb-6">
         Premium Spa Experiences
-      </h1>
+      </h2>
       <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full"></div>
     </motion.div>
 
