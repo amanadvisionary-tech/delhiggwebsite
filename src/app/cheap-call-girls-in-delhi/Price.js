@@ -104,7 +104,7 @@ export default function Pricing() {
         two: '10k',
         night: '15k'
       },
-      features: [ 'Delhi Local Girls', 'Complete satisfaction', 'Girlfriend Experience', 'Full Body To Body Nuru massage - Nude']
+      features: [ 'Delhi Local Girls', 'Complete satisfaction', 'Girlfriend Experience', 'Full Body Relaxation Session']
     },
     {
       id: 'college',
@@ -117,7 +117,7 @@ export default function Pricing() {
         two: '20k',
         night: '30k'
       },
-      features: ['5 Star Hotel', 'Girlfriend Experience', 'Deep French Kiss', 'Blow Job (BJ)']
+      features: ['5 Star Hotel', 'Girlfriend Experience', 'Deep French Kiss', 'Full Night Companionship']
     },
     {
       id: 'airhostess',

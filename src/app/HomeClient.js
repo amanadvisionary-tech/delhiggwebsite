@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState, useEffect } from "react";
 import { FaCheck, FaStar, FaCrown, FaPlane, FaGraduationCap, FaGlobeAsia, FaSpa } from 'react-icons/fa';
 import {  FaSwimmingPool, FaWifi, FaUtensils, FaConciergeBell, FaParking } from 'react-icons/fa';
@@ -118,7 +119,7 @@ export default function Home({
         two: '10k',
         night: '15k'
       },
-      features: [ 'Delhi Local Girls', 'Complete satisfaction', 'Girlfriend Experience', 'Full Body To Body Nuru massage - Nude']
+      features: [ 'Delhi Local Girls', 'Complete satisfaction', 'Girlfriend Experience', 'Full Body Relaxation Session']
     },
     {
       id: 'college',
@@ -131,7 +132,7 @@ export default function Home({
         two: '20k',
         night: '30k'
       },
-      features: ['5 Star Hotel', 'Girlfriend Experience', 'Deep French Kiss', 'Blow Job (BJ)']
+      features: ['5 Star Hotel', 'Girlfriend Experience', 'Deep French Kiss', 'Full Night Companionship']
     },
     {
       id: 'airhostess',
@@ -389,67 +390,20 @@ export default function Home({
     }
   ];
 
-  
-  const categories3 = [
-    { id: 'all', name: 'All Articles' },
-    { id: 'fashion', name: 'Fashion' },
-    { id: 'beauty', name: 'Beauty' },
-    { id: 'lifestyle', name: 'Lifestyle' },
-    { id: 'culture', name: 'Culture' },
-  ];
-
-  const articles = [
-    {
-      id: 1,
-      title: "Delhi Street Style Revolution",
-      description: "Delhi's fashion scene is undergoing a remarkable transformation. Young women across the capital are redefining street style with a blend of traditional and contemporary elements. From Chandni Chowk's vibrant markets to the chic boutiques of South Delhi, a new fashion movement is emerging that celebrates individuality while honoring cultural heritage.",
-      category: 'fashion',
-      readTime: '8 min read',
-      image: '/delhi-fashion.webp'
-    },
-    {
-      id: 2,
-      title: "Monsoon Skincare Secrets",
-      description: "The humid Delhi monsoon brings unique challenges for skincare. Discover how to maintain glowing skin during the rainy season with these dermatologist-approved tips. Learn about the best ingredients to combat humidity-induced breakouts and how to adjust your routine for maximum effectiveness during Delhi's wettest months.",
-      category: 'beauty',
-      readTime: '6 min read',
-      image: '/monsoon-skincare.webp'
-    },
-    {
-      id: 3,
-      title: "Empowering Women in Delhi",
-      description: "Delhi is witnessing a surge in women-led initiatives that are transforming communities. From tech startups in Cyber Hub to social enterprises in Old Delhi, women are breaking barriers and creating impactful change. This article explores the inspiring stories of 5 Delhi women who are reshaping their industries and paving the way for future generations.",
-      category: 'lifestyle',
-      readTime: '10 min read',
-      image: '/women-empowerment.webp'
-    },
-    {
-      id: 4,
-      title: "Festival Fashion Guide",
-      description: "As Delhi prepares for the festive season, discover how to create stunning looks that blend tradition with modern flair. This comprehensive guide covers everything from selecting the perfect fabrics for Delhi's climate to accessorizing your outfit with locally-made jewelry. We've curated looks for every occasion, whether you're attending a Diwali gathering or a wedding celebration.",
-      category: 'fashion',
-      readTime: '12 min read',
-      image: '/festival-fashion.webp'
-    },
-  ];
-
-  const filteredArticles = activeCategory === 'all' 
-    ? articles 
-    : articles.filter(article => article.category === activeCategory);
   {/* End Sample content data */}
   const cities = [
-{ name: 'Noida', img: '/Webpimages/hotel3.webp' },
-{ name: 'Gurgaon', img: '/Webpimages/lajpatnagahotel.webp' },
-{ name: 'Faridabaad', img: '/Webpimages/RoseateHouse.webp' },
-{ name: 'Mahipalpur', img: '/Webpimages/paschimvihar.webp' },
-{ name: 'Aerocity', img: '/Webpimages/JwMarriott_CP.webp' },
-{ name: 'Connaught Place', img: '/Webpimages/connaught-place-delhi.webp' },
-{ name: 'New Friends Colony', img: '/Webpimages/holidayIn_CP.webp' },
-{ name: 'Dwarka', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp' },
-{ name: 'Paharganj', img: '/Webpimages/paschimvihar.webp' },
-{ name: 'Vasant kunj', img: '/Webpimages/hotel2.webp' },
-{ name: 'Lajpat Nagar ', img: '/Webpimages/pullmanAerocity.webp' },
-{ name: 'Kalkaji', img: '/Webpimages/jwmarriott.webp' },
+{ name: 'Noida', img: '/Webpimages/hotel3.webp', href: '/call-girls-in-noida' },
+{ name: 'Gurgaon', img: '/Webpimages/lajpatnagahotel.webp', href: '/call-girls-in-gurgaon' },
+{ name: 'Aerocity', img: '/Webpimages/JwMarriott_CP.webp', href: '/aerocity-escorts' },
+{ name: 'Connaught Place', img: '/Webpimages/connaught-place-delhi.webp', href: '/call-girls-in-connaught-place' },
+{ name: 'Faridabad', img: '/Webpimages/RoseateHouse.webp', href: '/escort-service-in-delhi' },
+{ name: 'Mahipalpur', img: '/Webpimages/paschimvihar.webp', href: '/escort-service-in-delhi' },
+{ name: 'New Friends Colony', img: '/Webpimages/holidayIn_CP.webp', href: '/escort-service-in-delhi' },
+{ name: 'Dwarka', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp', href: '/escort-service-in-delhi' },
+{ name: 'Paharganj', img: '/Webpimages/paschimvihar.webp', href: '/escort-service-in-delhi' },
+{ name: 'Vasant Kunj', img: '/Webpimages/hotel2.webp', href: '/escort-service-in-delhi' },
+{ name: 'Lajpat Nagar', img: '/Webpimages/pullmanAerocity.webp', href: '/escort-service-in-delhi' },
+{ name: 'Kalkaji', img: '/Webpimages/jwmarriott.webp', href: '/escort-service-in-delhi' },
 ]
 const profiles = [
   { image: '/Webpimages/download7.webp' },
@@ -471,63 +425,46 @@ const profiles = [
   { image: '/Webpimages/49.webp' },
   
 ]
-const items = [
-{
-title: 'Adult Companion Only for 18+',
-// subtitle: 'Only for 18+',
-src: '/Webpimages/18+.webp',
-},
-{
-title: 'Anal Sex on Special Deman',
-// subtitle: 'Special Deman',
-src: '/Webpimages/anal.webp',
-},
-{
-title: 'Kama-Sutra Sex Pose',
-// subtitle: 'Sex Pose',
-src: '/Webpimages/kamasutra.webp',
-},
-{
-title: 'Without Condom Sucking',
-// subtitle: 'Sucking',
-src: '/Webpimages/SUCKING.webp',
-},
-{
-title: 'Enjoy All Sexual Activity',
-// subtitle: 'Sexual Activity',
-src: '/Webpimages/anal.webp',
-},
-{
-title: 'Get Best Sensual Encounter in Bed',
-subtitle: 'Sensual Encounter in Bed',
-src: '/Webpimages/bedposition.webp',
-}
-]
-
 const locations = [
-  "Call Girl in CP",
-  "Call girl in dwaka",
-  "Call girl in janakpuri",
-  "Call girl in ghaziabad",
-  "Call girl in Paharganj",
-  "Call girl in Rohini",
-  "Call girl in Noida",
-  "Call girl in Lajpat Nagar",
-  "Call girl in Aerocity",
-  "Call girl in Gurgaon",
-  "Call girl in Mahipalpur",
-  "Call girl in Vasant Kunj",
-  "Call girl in Karol Bagh",
-  "Call girl in Saket",
-  "Call girl in Hauz Khas",
-  "Call girl in Greater Kailash",
-  "Call girl in Dilshad Garden",
-  "Call girl in Dwarka",
-  "Call girl in East Of Kailash",
-  "Call girl in Nehru Place", 
+  { name: "Call Girl in CP", href: "/call-girls-in-connaught-place" },
+  { name: "Call Girl in Noida", href: "/call-girls-in-noida" },
+  { name: "Call Girl in Aerocity", href: "/aerocity-escorts" },
+  { name: "Call Girl in Gurgaon", href: "/call-girls-in-gurgaon" },
+  { name: "Call Girl in Dwarka", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in Janakpuri", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in Ghaziabad", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in Paharganj", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in Rohini", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in Lajpat Nagar", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in Mahipalpur", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in Vasant Kunj", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in Karol Bagh", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in Saket", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in Hauz Khas", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in Greater Kailash", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in Dilshad Garden", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in East Of Kailash", href: "/escort-service-in-delhi" },
+  { name: "Call Girl in Nehru Place", href: "/escort-service-in-delhi" },
 ];
   return (
     <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        }),
+      }}
+    />
     {/* Banner */}
     <section className="relative w-full py-20">
       {/* Background image with dark gradient overlay */}
@@ -654,59 +591,6 @@ const locations = [
       </div>
     </section>
     {/* End Banner */}
-    
-            <section className="py-10 bg-white">
-  <div className="max-w-7xl mx-auto px-6">
-
-    {/* ===== SECTION HEADING ===== */}
-    <div className="text-center max-w-2xl mx-auto mb-12">
-      <p className="text-sm font-medium text-pink-600 tracking-wide">
-        Our Premium Services
-      </p>
-
-      <h2 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
-        Fullfill all your sexual fantasies with best call girl service in Delhi
-      </h2>
-
-      <p className="mt-3 text-sm sm:text-base text-gray-600">
-        Whether you have a fantasy to cum on face or want anal sex without hearing no, turn to Delhi Girls, most reliable team of call girls in Delhi. Book now pay later at best 24x7 call girl services in Delhi
-      </p>
-    </div>
-    {/* ===== END HEADING ===== */}
-
-    {/* Responsive grid: 1 on xs, 2 on sm, 3 on md, 4 on lg, 6 on xl */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-x-8 gap-y-10 items-start">
-      {items.map((it, idx) => (
-        <div
-          key={idx}
-          className="flex flex-col items-center text-center px-2"
-        >
-          {/* Image */}
-          <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full bg-white shadow-sm hover:shadow-lg transition duration-200 flex items-center justify-center overflow-hidden">
-            <Image
-              src={it.src}
-              alt={it.title}
-              fill
-              style={{ objectFit: "contain" }}
-              sizes="(max-width: 640px) 56px, (max-width: 1024px) 80px, 96px"
-              priority={false}
-            />
-          </div>
-
-          {/* Title */}
-          <h3 className="mt-4 text-base sm:text-lg font-semibold text-gray-800 leading-tight">
-            {it.title}
-          </h3>
-
-          {/* Subtitle */}
-          <p className="mt-2 text-sm text-gray-600 max-w-[160px]">
-            {it.subtitle}
-          </p>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
 
     {/* Content Hero Section */}
                   <section className="bg-gray-50 py-24">
@@ -765,7 +649,9 @@ const locations = [
     
           <div className="mt-10 flex justify-center lg:justify-start">
             <a
-              href="#"
+              href="https://api.whatsapp.com/send?phone=918826482370"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium shadow-lg hover:shadow-xl transition-shadow duration-200"
             >
               Book Now
@@ -790,7 +676,7 @@ const locations = [
               <div className="rounded-md overflow-hidden border-1 border-white">
                 <Image
                   src='/Webpimages1/image2.webp'
-                  alt="property 1"
+                  alt="Delhi Girl companion at a luxury hotel"
                   width={900}
                   height={600}
                   className="object-cover w-full h-64 sm:h-72 lg:h-[22rem]"
@@ -809,7 +695,7 @@ const locations = [
               <div className="rounded-md overflow-hidden border-1 border-white">
                 <Image
                   src='/Webpimages1/Wantto.webp'
-                  alt="property 2"
+                  alt="Delhi Girl call girl service hotel room"
                   width={900}
                   height={600}
                   className="object-cover w-full h-64 sm:h-72 lg:h-[22rem]"
@@ -838,7 +724,7 @@ const locations = [
         <div className="max-w-5xl mx-auto text-center mb-16">
           
 
-          <h2 className="text-3xl Female to Male Massagemd:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Affordable call girl services in Delhi
           </h2>
 
@@ -890,7 +776,7 @@ const locations = [
           </div>
           
         </div>
-        <h2 className="text-2xl mt-5 Female to Male Massagemd:text-4xl font-bold text-gray-700 mb-4">
+        <h2 className="text-2xl mt-5 md:text-4xl font-bold text-gray-700 mb-4">
             We offer services in prime location of Delhi
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
@@ -944,7 +830,9 @@ const locations = [
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href="#contact"
+                href="https://api.whatsapp.com/send?phone=918826482370"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-medium shadow-lg hover:bg-emerald-600 transition"
               >
                 Book a Consultation
@@ -1020,7 +908,7 @@ const locations = [
         {/* use p.image not p (object) */}
         <Image
           src={p.image}
-          alt={`profile-${idx}`}
+          alt="Featured call girl profile in Delhi"
           width={400}
           height={300}
           className="object-cover w-full h-full"
@@ -1033,7 +921,7 @@ const locations = [
       </div>
 
       <div className="mt-3">
-        <a href="#contact" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
+        <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
       </div>
     </motion.div>
   ))}
@@ -1061,7 +949,7 @@ const locations = [
             <div className="text-xs text-gray-500">Visit Delhi Girls, which eases stress and also pampers you. Both services will boost your mood, ease your muscles and give you a luxurious experience tailored to your preferences.</div>
           </div>
           <div className="flex gap-3">
-            <a href="#contact" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm">Enquire Now</a>
+            <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm">Enquire Now</a>
             <a href="#faq" className="px-5 py-2 rounded-full border border-gray-200 text-sm">Read FAQ</a>
           </div>
         </div>
@@ -1140,7 +1028,7 @@ const locations = [
     
               {/* <span className="block font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">24+ Exclusive Body Spa Outlets</span> */}
               <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-               Delhi Girl has a team of call girls in Delhi, celebrity girls, Russians and college girls to offer full services, cum in mouth and be your free use soulmate at best luxury hotels in Delhi NCR with well-chosen partners. Our Delhi call girls are well-behaved, groomed, and elegant, and fit in places such as Aerocity, Connaught Place, Mahipalpur, and South Delhi. Clients booking with Delhi Girl enjoy:
+               Delhi Girl has a team of call girls in Delhi, celebrity girls, Russians and college girls to offer premium companionship at the best luxury hotels in Delhi NCR with well-chosen partners. Our Delhi call girls are well-behaved, groomed, and elegant, and fit in places such as Aerocity, Connaught Place, Mahipalpur, and South Delhi. Clients booking with Delhi Girl enjoy:
               </p>
     
               {/* <span className="block font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">The Finest Massages in Delhi</span>
@@ -1215,7 +1103,7 @@ const locations = [
     </section>
     {/* Content */}
     {/* staff showcase */}
- <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+ <div id="services" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -1354,18 +1242,20 @@ const locations = [
 
 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
 {cities.map((c, i) => (
-<motion.a
+<motion.div
 key={c.name}
-href={`#/cities/${c.name.toLowerCase()}`}
 initial={{ opacity: 0, y: 8 }}
 animate={{ opacity: 1, y: 0 }}
 transition={{ delay: i * 0.04, duration: 0.35 }}
+>
+<Link
+href={c.href}
 className="group block rounded-2xl overflow-hidden shadow-lg relative transform hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 bg-white"
 >
 <div className="relative w-full h-44 sm:h-48 lg:h-52">
 <Image
 src={c.img}
-alt={c.name}
+alt={`Call girls in ${c.name}`}
 fill
 sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
 style={{ objectFit: 'cover' }}
@@ -1378,21 +1268,22 @@ className="group-hover:scale-105 transition-transform duration-500"
 <div className="absolute left-0 right-0 bottom-4 px-4 text-center">
 <span className="text-white text-lg sm:text-xl font-semibold tracking-wider drop-shadow-lg uppercase">{c.name}</span>
 </div>
-</motion.a>
+</Link>
+</motion.div>
 ))}
 </div>
 
 
 <div className="flex justify-center mt-10">
-<a
-href="#/cities"
+<Link
+href="/escort-service-in-delhi"
 className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
 >
 View All Cities
 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
 </svg>
-</a>
+</Link>
 </div>
 </div>
 </section>
@@ -1550,7 +1441,7 @@ You want a person sensual, a person playful, a person charming, a person fiercel
                 <Image
                   loading="lazy"
                   src="/Webpimages/Evie Lee Mikomin (1).webp"
-                  alt="Spa Interior"
+                  alt="Delhi Girl Russian call girl companion"
                   layout="fill"
                   objectFit="cover"
                   className="rounded-[2.5rem] z-0"
@@ -1626,7 +1517,7 @@ You want a person sensual, a person playful, a person charming, a person fiercel
       </div>
     </section>
     {/* End Content */}
-    {/* ///// */}
+    {/* Content Section */}
     <section className="relative bg-gradient-to-br from-amber-50 via-rose-50 to-white py-24 px-6 md:px-16 overflow-hidden">
       {/* Decorative blurred circles */}
       <div className="absolute -top-16 left-10 w-72 h-72 rounded-full bg-rose-200/30 blur-3xl"></div>
@@ -1676,52 +1567,6 @@ You want a person sensual, a person playful, a person charming, a person fiercel
         </motion.div>
       </div>
     </section>
-    {/* ///////////// */}
-      {/* <section className="relative bg-gradient-to-r from-pink-100 via-rose-50 to-pink-200 py-20 px-6 md:px-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          className="flex justify-center"
-        >
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-            <Image
-              src="/Webpimages/32586.webp" 
-              alt="Delhi Girl"
-              width={500}
-              height={600}
-              className="rounded-2xl object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          className="space-y-6"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-            Relax and Rejuvenate At 5 star  <span className="text-pink-600">hotels with VIP call girls in Delhi</span>
-          </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            There is no better than a Delhi Girl in terms of clothes that mix high-end beauty and irresistible sensuality. Our call girls know how to make even a normal night magnetic when her eyes are fixed on yours and all the rest of the world is forgotten. There is organic chemistry, real-life warmth, and the pleasure goes deeper than you imagine. You feel the sparkling intimacy whether she lays her arms around you, brings her lips closer with an inviting smile, or draws you towards her, embracing you.
-          </p>
-          
-          <div className="flex gap-4">
-            <button className="px-6 py-3 rounded-xl bg-pink-600 text-white font-semibold shadow-lg hover:bg-pink-700 transition">
-              View Services
-            </button>
-            <button className="px-6 py-3 rounded-xl border border-pink-600 text-pink-600 font-semibold hover:bg-pink-50 transition">
-              Book Now 
-            </button>
-          </div>
-        </motion.div>
-      </div>
-    </section> */}
     {/* /////? */}
     <section className="relative bg-white py-24 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -1790,7 +1635,7 @@ With our Delhi Call Girls, you will enjoy the organic chemistry, real-life warmt
     
     
     {/* pricing */}
-     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+     <div id="Pricing" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.h2 
@@ -1911,12 +1756,12 @@ With our Delhi Call Girls, you will enjoy the organic chemistry, real-life warmt
               <div>
                 <h3 className="text-2xl font-bold mb-4">Premium service with Delhi Girl to the rescue</h3>
                 <ul className="space-y-2 text-gray-300">
-                  <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> ●	Confidential arrangements</li>
-                  <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> ●	Verified elite companions</li>
-                  <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> ●	Smooth booking experience</li>
-                  <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> ●	Multiple location availability</li>
-                  <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> ●	24/7 support</li>
-                  <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> ●	Individualized Call Girlservices.</li>
+                  <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Confidential arrangements</li>
+                  <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Verified elite companions</li>
+                  <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Smooth booking experience</li>
+                  <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Multiple location availability</li>
+                  <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> 24/7 support</li>
+                  <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Personalized call girl services</li>
                 </ul>
               </div>
               <div className="bg-gray-700/50 rounded-xl p-6 min-w-[300px]">
@@ -1947,17 +1792,17 @@ With our Delhi Call Girls, you will enjoy the organic chemistry, real-life warmt
         {/* Heading */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-pink-100 text-pink-600 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
-            <Sparkles className="w-4 h-4" />
-            Natural • Playful • Relaxed
+            <MapPin className="w-4 h-4" />
+            Prime Locations • Verified • Discreet
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Meet Top Delhi College Girl Profiles for Natural, Playful Companionship
+            Call Girls Available Across Delhi&apos;s Prime Locations
           </h2>
 
           <p className="text-gray-600 text-lg leading-relaxed">
-            Delhi Girl also introduces one to the profiles of the Delhi college girls who are young, attractive, social, and full of natural energy.
-These friends introduce a fresh breeze, light humour, easy-going interaction, playful behaviour, and slow-paced chemistry. They suit the best customers who desire a cool zest and are not inundated.
+            Delhi Girl offers verified companions at the city&apos;s most in-demand areas, from central business hubs to airport hotels.
+            Wherever you&apos;re staying in Delhi NCR, we bring discreet, reliable service straight to you.
           </p>
         </div>
 
@@ -1969,11 +1814,17 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
             <div className="flex items-center gap-3 mb-4">
               <MapPin className="text-pink-500 w-6 h-6" />
               <h3 className="text-xl font-semibold text-gray-900">
-                Call Girls in Connaught Place
+                <Link href="/call-girls-in-connaught-place" className="hover:text-pink-600 transition">
+                  Call Girls in Connaught Place
+                </Link>
               </h3>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              One of Delhi&apos;s busiest luxury areas is Connaught Place, and Delhi Girl offers an upscale choice of elegant, relaxed, and confident company that would fit in. You may have a desirable dinner partner, an unwinded evening partner, or anyone who brings out your personality and warmth; our call girls in Connaught Place are the best option.
+              One of Delhi&apos;s busiest luxury areas is Connaught Place, and Delhi Girl offers an upscale choice of elegant, relaxed, and confident company that would fit in. You may have a desirable dinner partner, an unwinded evening partner, or anyone who brings out your personality and warmth; our{" "}
+              <Link href="/call-girls-in-connaught-place" className="text-pink-600 font-medium hover:underline">
+                call girls in Connaught Place
+              </Link>{" "}
+              are the best option.
             </p>
           </div>
 
@@ -1982,11 +1833,17 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
             <div className="flex items-center gap-3 mb-4">
               <Users className="text-purple-500 w-6 h-6" />
               <h3 className="text-xl font-semibold text-gray-900">
-                Call Girls in Aerocity
+                <Link href="/aerocity-escorts" className="hover:text-purple-600 transition">
+                  Call Girls in Aerocity
+                </Link>
               </h3>
             </div>
             <p className="text-gray-600 leading-relaxed">
-             Aerocity is one of the best places where travellers can be found, and Delhi Girl can get hotel companionship in Aerocity by offering elegant and professional call girls. These call girls are very mature and composed, befitting the high-end international traveller. They come silently, socialize without any issues, and create a friendly atmosphere the moment they arrive.
+             Aerocity is one of the best places where travellers can be found, and Delhi Girl can get hotel companionship in Aerocity by offering elegant and professional{" "}
+              <Link href="/aerocity-escorts" className="text-purple-600 font-medium hover:underline">
+                call girls in Aerocity
+              </Link>
+              . These call girls are very mature and composed, befitting the high-end international traveller. They come silently, socialize without any issues, and create a friendly atmosphere the moment they arrive.
             </p>
           </div>
 
@@ -1995,18 +1852,24 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
             <div className="flex items-center gap-3 mb-4">
               <MapPin className="text-indigo-500 w-6 h-6" />
               <h3 className="text-xl font-semibold text-gray-900">
-                Call Girls in Mahipalpur
+                <Link href="/escort-service-in-delhi" className="hover:text-indigo-600 transition">
+                  Call Girls in Mahipalpur
+                </Link>
               </h3>
             </div>
             <p className="text-gray-600 leading-relaxed">
-             Clients staying in areas close to the airport consider Mahipalpur one of the most convenient places to stay. Delhi Girl offers quick, unobtrusive access to refined call girls in Mahipalpur, particularly for guests with a tight schedule or who need call girls at night.
+             Clients staying in areas close to the airport consider Mahipalpur one of the most convenient places to stay. Delhi Girl offers quick, unobtrusive access to refined{" "}
+              <Link href="/escort-service-in-delhi" className="text-indigo-600 font-medium hover:underline">
+                call girls in Mahipalpur
+              </Link>
+              , particularly for guests with a tight schedule or who need call girls at night.
             </p>
           </div>
 
         </div>
       </div>
     </section>
-    {/* DFGDHDFGH///////////////////// */}
+    {/* Companionship Highlight Section */}
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -2016,10 +1879,10 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
-            Premium Delhi call girls for Sexual Entertainment 24/7
+            Premium Delhi Call Girls for Unforgettable Companionship 24/7
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            How the Capital is Redefining Style and Empowerment
+            Trusted, discreet booking across Delhi NCR — verified companions, ready around the clock.
           </p>
         </motion.div>
 
@@ -2039,7 +1902,7 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
                     <div className="relative bg-gray-200 border-2 border-dashed rounded-xl w-full h-full flex items-center justify-center">
                       <Image
                         src="/Webpimages/download (12).webp"
-                        alt="Delhi Fashion"
+                        alt="Delhi Girl call girl service in Gurgaon"
                         fill
                         sizes="(max-width: 1024px) 100vw, 50vw"
                         className="object-cover rounded-xl"
@@ -2099,7 +1962,7 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-gray-600">●	Corruption that goes to the very bottom.</span>
+                    <span className="text-gray-600">Verified, discreet companions</span>
                   </li>
                   <li className="flex items-start">
                     <div className="bg-purple-100 text-purple-800 rounded-full p-2 mr-3">
@@ -2107,7 +1970,7 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-gray-600">●	Natural explosive chemistry.</span>
+                    <span className="text-gray-600">Natural, genuine chemistry</span>
                   </li>
                   <li className="flex items-start">
                     <div className="bg-purple-100 text-purple-800 rounded-full p-2 mr-3">
@@ -2115,7 +1978,7 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-gray-600">●	Sometimes it becomes memories.</span>
+                    <span className="text-gray-600">Moments worth remembering</span>
                   </li>
                   <li className="flex items-start">
                     <div className="bg-purple-100 text-purple-800 rounded-full p-2 mr-3">
@@ -2123,7 +1986,7 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-gray-600">●	Shaped in your own way by pleasure.</span>
+                    <span className="text-gray-600">Companionship on your terms</span>
                   </li>
                 </ul>
               </div>
@@ -2310,275 +2173,7 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
                             </div>
                           </div>
                           {/* END Hotel */}
-{/* CCCC */}
-    {/* <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
-            Delhi Girls Insights
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore our curated content on fashion, beauty, lifestyle, and culture in Delhi
-          </p>
-        </motion.div>
-
-        <motion.div 
-          className="flex flex-wrap justify-center gap-3 mb-12"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-        >
-          {categories3.map(category => (
-            <button
-              key={category.id}
-              onClick={() => setActiveCategory(category.id)}
-              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeCategory === category.id
-                  ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg'
-                  : 'bg-white text-gray-700 hover:bg-gray-100 shadow'
-              }`}
-            >
-              {category.name}
-            </button>
-          ))}
-        </motion.div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {filteredArticles.map((article) => (
-            <motion.div
-              key={article.id}
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4 }}
-              whileHover={{ y: -10 }}
-              className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group"
-            >
-              <div className="relative h-64 lg:h-80 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 z-10"></div>
-                <div className="absolute inset-0 flex items-end p-6 z-20">
-                  <div>
-                    <h3 className="text-xl lg:text-2xl font-bold text-white">{article.title}</h3>
-                    <p className="text-pink-300 font-medium">{article.readTime}</p>
-                  </div>
-                </div>
-                <div className="absolute top-4 right-4 bg-white/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs font-semibold text-gray-800 z-20">
-                  {categories3.find(cat => cat.id === article.category)?.name}
-                </div>
-                
-                <div className="bg-gradient-to-br from-purple-100 to-pink-100 w-full h-full flex items-center justify-center">
-                  <div className="relative w-full h-full">
-                    <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full flex items-center justify-center">
-                      <span className="text-gray-500">Article Image</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="p-6 lg:p-8">
-                <p className="text-gray-600 mb-6">{article.description}</p>
-                
-                <div className="flex items-center justify-between">
-                  <button className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity">
-                    Read Full Article
-                  </button>
-                  <div className="flex space-x-3">
-                    <button className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                      </svg>
-                    </button>
-                    <button className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        <motion.div 
-          className="mt-16 bg-gradient-to-r from-purple-700 to-pink-700 rounded-3xl p-8 text-white shadow-2xl overflow-hidden"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-        >
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-2xl lg:text-3xl font-bold mb-4">Enjoy the Finest Pleasure to your doorstep with call girl Service in Noida</h3>
-                <p className="mb-6">
-                  Delhi Girl is best at those who like pure sensual magic right to your door in Noida. Our call girls come with charisma dripping with their grin, the self-belief in their walk and an erotic vulnerability that adjoins your area when she walks in. It can be a passionate, intimate affair, leisurely and erotic, fun and games, rendezvous, a blend of all these or some combination of all these — these friends know how to mould the night to your requirements. Each motion, each word, each touch, seems to be purposeful, alluring, and designed to drag you further into the realm of pleasure.                </p>
-                
-                <button className="px-6 py-3 bg-white text-purple-700 font-bold rounded-lg hover:bg-gray-100 transition-colors">
-                  Read Full Story
-                </button>
-              </div>
-              <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden">
-                <Image
-                  src='/Webpimages/cda1687d-1464-4b62-9549-2dd04a5cbb05.webp'
-                  alt='{hotel.name}'
-                  fill                                        
-                  className="object-cover object-center"     
-                  priority={false}                            
-                />
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      </div>
-    </div> */}
-    {/* ///theme difference 5 star hotel section */}
-    {/* <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-amber-500 to-amber-700 bg-clip-text text-transparent mb-4">
-            Our 5-Star Hotel Collection
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover the world's most exclusive luxury hotels and resorts, each offering unparalleled service and unforgettable experiences.
-          </p>
-        </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {hotels.map((hotel) => (
-            <motion.div
-              key={hotel.id}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              whileHover={{ y: -10 }}
-              className={`bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group ${
-                activeHotel === hotel.id ? "ring-4 ring-amber-500" : ""
-              }`}
-              onClick={() => setActiveHotel(activeHotel === hotel.id ? null : hotel.id)}
-            >
-              <div className="relative h-60 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 z-10"></div>
-                <div className="absolute top-4 right-4 z-20 flex items-center bg-amber-500 text-white px-3 py-1 rounded-full">
-                  <FaStar className="mr-1" />
-                  <span className="font-semibold">{hotel.rating}</span>
-                </div>
-                <div className="absolute bottom-4 left-4 z-20 text-white">
-                  <h3 className="text-xl font-bold">{hotel.name}</h3>
-                  <p className="text-sm">{hotel.location}</p>
-                </div>
-                
-                <div className="bg-gradient-to-br from-amber-100 to-amber-200 w-full h-full flex items-center justify-center">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
-                </div>
-              </div>
-              <div className="p-6">
-                <p className="text-gray-600 mb-4">{hotel.description}</p>
-                <div className="mb-6">
-                  <h4 className="font-bold text-gray-800 mb-2">Key Amenities</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {hotel.amenities.slice(0, 4).map((amenity, index) => (
-                      <div key={index} className="flex items-center bg-gray-100 px-3 py-1.5 rounded-full text-sm">
-                        <span className="mr-2">{amenitiesIcons[amenity]}</span>
-                        {amenity}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="flex justify-between items-center">
-                  <div>
-                    <div className="text-2xl font-bold text-amber-600">{hotel.price}</div>
-                    <div className="text-sm text-gray-500">per night</div>
-                  </div>
-                  <div className="flex space-x-2">
-                    {hotel.features.slice(0, 2).map((feature, index) => (
-                      <div key={index} className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">
-                        {feature}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <button className="mt-6 w-full bg-gradient-to-r from-amber-500 to-amber-600 text-white font-medium py-3 rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all">
-                  View Details
-                </button>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-        <motion.div 
-          className="mt-16 bg-gradient-to-r from-amber-700 to-amber-900 rounded-3xl overflow-hidden shadow-2xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        >
-          <div className="grid grid-cols-1 lg:grid-cols-2">
-            <div className="relative min-h-[400px]">
-              <div className="absolute inset-0 bg-gradient-to-r from-amber-800/30 to-amber-900/30 z-10"></div>
-              <div className="absolute bottom-6 left-6 z-20 text-white">
-                <h3 className="text-2xl font-bold">Luxury Experience Package</h3>
-                <p className="mt-2 max-w-md">Book 3 nights and receive complimentary spa treatments, airport transfers, and dining credits</p>
-              </div>
-
-              <div className="bg-gradient-to-br from-amber-300 to-amber-500 w-full h-full flex items-center justify-center">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
-              </div>
-            </div>
-
-            <div className="p-8 text-white">
-              <div className="flex items-center mb-4">
-                <FaStar className="text-amber-300 mr-1" />
-                <FaStar className="text-amber-300 mr-1" />
-                <FaStar className="text-amber-300 mr-1" />
-                <FaStar className="text-amber-300 mr-1" />
-                <FaStar className="text-amber-300 mr-1" />
-                <span className="ml-2 font-semibold">Premium Collection</span>
-              </div>
-              
-              <h3 className="text-3xl font-bold mb-4">Exclusive Benefits for Our Guests</h3>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-center">
-                  <FaCheck className="text-green-400 mr-2" />
-                  Complimentary airport transfers in luxury vehicles
-                </li>
-                <li className="flex items-center">
-                  <FaCheck className="text-green-400 mr-2" />
-                  24/7 personal concierge service
-                </li>
-                <li className="flex items-center">
-                  <FaCheck className="text-green-400 mr-2" />
-                  Access to exclusive members-only lounges
-                </li>
-                <li className="flex items-center">
-                  <FaCheck className="text-green-400 mr-2" />
-                  Priority reservations at Michelin-star restaurants
-                </li>
-                <li className="flex items-center">
-                  <FaCheck className="text-green-400 mr-2" />
-                  Spa credits for all bookings of 3+ nights
-                </li>
-              </ul>
-              
-              <div className="flex space-x-4">
-                <button className="px-6 py-3 bg-white text-amber-800 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
-                  Explore Packages
-                </button>
-                <button className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
-                  Contact Concierge
-                </button>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      </div>
-    </div> */}
-    {/* end 5 star hotel */}
-    {/* //// */}
+    {/* 5-Star Hotel Section */}
 <section className="py-16">
       <div className="max-w-7xl mx-auto px-6 text-center">
         
@@ -2589,34 +2184,37 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
-            Book the Best call girl Service in Delhi Today
+            Book the Best Call Girl Service in Delhi Today
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-           The luxurious beauty, cozy romance and sexually charged dates are designed to experience memorable nights.
+            Verified companions and memorable, discreet dates across every corner of Delhi NCR.
           </p>
         </motion.div>
 
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {locations.map((location, i) => (
-            <motion.a
-              key={i}
-              href="#"
-              className="block bg-red-800 text-white font-semibold text-lg py-4 rounded-xl shadow-md hover:bg-red-700 transition duration-300"
+            <motion.div
+              key={location.name}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4, delay: i * 0.05 }}
               whileHover={{ scale: 1.05 }}
             >
-              {location}
-            </motion.a>
+              <Link
+                href={location.href}
+                className="block bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold text-lg py-4 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center"
+              >
+                {location.name}
+              </Link>
+            </motion.div>
           ))}
         </div>
       </div>
     </section>
 
     {/* FAQ Section */}
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+    <div id="faq" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <motion.div
@@ -2678,7 +2276,7 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.5 }}
         >
-          {categories.map(category => (
+          {categories1.map(category => (
             <button
               key={category.id}
               onClick={() => setActiveCategory1(category.id)}
@@ -2765,19 +2363,21 @@ These friends introduce a fresh breeze, light humour, easy-going interaction, pl
                 </div>
                 
                 <div className="space-y-4">
-                  <a 
-                    href="mailto:support@example.com" 
+                  <a
+                    href="mailto:info@delhigirl.in"
                     className="flex items-center justify-center bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                   >
                     <FiMail className="mr-2" />
                     Email Support
                   </a>
-                  <a 
-                    href="/contact" 
+                  <a
+                    href="https://wa.me/918826482370"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors"
                   >
                     <FiMessageSquare className="mr-2" />
-                    Live Chat
+                    WhatsApp Chat
                   </a>
                 </div>
               </div>
