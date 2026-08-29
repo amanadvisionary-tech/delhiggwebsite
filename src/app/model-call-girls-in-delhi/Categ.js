@@ -128,7 +128,7 @@ export default function Category() {
         two: '10k',
         night: '15k'
       },
-      features: [ 'Delhi Local Girls', 'Complete satisfaction', 'Girlfriend Experience', 'Full Body Relaxation Session']
+      features: [ 'Delhi Local Girls', 'Complete satisfaction', 'Girlfriend Experience', 'Full Body To Body Nuru massage - Nude']
     },
     {
       id: 'college',
@@ -141,7 +141,7 @@ export default function Category() {
         two: '20k',
         night: '30k'
       },
-      features: ['5 Star Hotel', 'Girlfriend Experience', 'Deep French Kiss', 'Full Night Companionship']
+      features: ['5 Star Hotel', 'Girlfriend Experience', 'Deep French Kiss', 'Blow Job (BJ)']
     },
     {
       id: 'airhostess',

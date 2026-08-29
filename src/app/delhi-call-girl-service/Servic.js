@@ -187,7 +187,7 @@ export default function Services() {
         two: '10k',
         night: '15k'
       },
-      features: [ 'Delhi Local Girls', 'Complete satisfaction', 'Girlfriend Experience', 'Full Body Relaxation Session']
+      features: [ 'Delhi Local Girls', 'Complete satisfaction', 'Girlfriend Experience', 'Full Body To Body Nuru massage - Nude']
     },
     {
       id: 'college',
@@ -200,7 +200,7 @@ export default function Services() {
         two: '20k',
         night: '30k'
       },
-      features: ['5 Star Hotel', 'Girlfriend Experience', 'Deep French Kiss', 'Full Night Companionship']
+      features: ['5 Star Hotel', 'Girlfriend Experience', 'Deep French Kiss', 'Blow Job (BJ)']
     },
     {
       id: 'airhostess',
@@ -273,16 +273,16 @@ export default function Services() {
   // End Features
   const services = [
   {
-    title: "MODEL PROFILES",
+    title: "BUSTY BOOBS",
     description:
-      "We have stunning female models available for premium companionship and private meetings.",
+      "We have busty female models with big boobs to provide boobs pressing services to young boys and men.",
     icon: "/path-to-your-icon1.svg",
     image: "/Webpimages/client-1.webp",
   },
   {
-    title: "GIRLFRIEND EXPERIENCE",
+    title: "CUM IN MOUTH",
     description:
-      "Enjoy a warm, personal connection with a companion who makes every moment feel genuine.",
+      "Most of the men enjoy when he climax in the mouth of their girl. Now you can enjoy Cum in mouth with Sonal.",
     icon: "/path-to-your-icon2.svg",
     image: "/Webpimages/client-2.webp",
   },
@@ -294,9 +294,9 @@ export default function Services() {
     image: "/Webpimages/client-3.webp",
   },
   {
-    title: "FULL NIGHT COMPANIONSHIP",
+    title: "ANAL SEX",
     description:
-      "Book a full night of premium companionship with a verified, professional companion.",
+      "We all know that Anal Sex is hard to find, but with Sexy Sonal, you can enjoy Anal or DP Sex service with your girl.",
     icon: "/path-to-your-icon4.svg",
     image: "/Webpimages/client-4.webp",
   },
