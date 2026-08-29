@@ -1078,8 +1078,8 @@ const getLocationHref = (label) => {
             <div className="text-xs text-gray-500">Visit Delhi Girls, which eases stress and also pampers you. Both services will boost your mood, ease your muscles and give you a luxurious experience tailored to your preferences.</div>
           </div>
           <div className="flex gap-3">
-            <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm">Enquire Now</a>
-            <a href="#faq" className="px-5 py-2 rounded-full border border-gray-200 text-sm">Read FAQ</a>
+            <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm whitespace-nowrap">Enquire Now</a>
+            <a href="#faq" className="px-5 py-2 rounded-full border border-gray-200 text-sm whitespace-nowrap">Read FAQ</a>
           </div>
         </div>
       </div>
