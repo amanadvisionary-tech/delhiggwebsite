@@ -46,7 +46,7 @@ export default function Foreignmodel() {
       role: 'Senior Airhostess',
       category: 'airhostess',
       description: '5+ years experience with international airlines. Fluent in 4 languages.',
-      image: '/Webpimages/download (30).webp', // Placeholder image path
+      image: '/Webpimages/mmm.webp', // Placeholder image path
     },
     {
       id: 2,
@@ -54,7 +54,7 @@ export default function Foreignmodel() {
       role: 'TV Personality',
       category: 'foreign',
       description: 'Award-winning host of "Nightlife" show. Known for vibrant personality.',
-      image: '/Webpimages/Signin.webp', // Placeholder image pathss
+      image: '/Webpimages/model1.webp', // Placeholder image pathss
     },
     {
       id: 3,
@@ -62,7 +62,7 @@ export default function Foreignmodel() {
       role: 'Marketing Student',
       category: 'college',
       description: 'Top of her class at NYU. Passionate about digital marketing trends.',
-      image: '/Webpimages/spaStaffInsta.webp', // Placeholder image path
+      image: '/Webpimages/housewife.webp', // Placeholder image path
     },
     {
       id: 4,
@@ -70,7 +70,7 @@ export default function Foreignmodel() {
       role: 'International Model',
       category: 'foreign',
       description: 'Milan-born fashion model. Featured in Vogue and Elle magazines.',
-      image: '/Webpimages/celebrityspastaff.webp', // Placeholder image path
+      image: '/Webpimages/pretty-sensual-blonde-model-laying-bed-enjoy-her-morning-luxury-hotel-wearing-burgundy-silk-nightdress-robe-blind-hairs-beauty-face-boudoir-style.webp', // Placeholder image path
     },
     {
       id: 5,
@@ -78,7 +78,7 @@ export default function Foreignmodel() {
       role: 'Corporate Executive',
       category: 'foreign',
       description: 'Fortune 500 company board member. MBA from Harvard Business School.',
-      image: '/Webpimages/49.webp',
+      image: '/Webpimages/young-woman-lying-alone.webp',
     },
     {
       id: 6,
@@ -86,7 +86,7 @@ export default function Foreignmodel() {
       role: 'First Class Hostess',
       category: 'foreign',
       description: 'Specialized in luxury travel experience. Trained in hospitality management.',
-      image: '/Webpimages/smiling.webp', // Placeholder image path
+      image: '/Webpimages/downloadd6.webp', // Placeholder image path
     },
     {
       id: 7,
@@ -94,7 +94,7 @@ export default function Foreignmodel() {
       role: 'Film Actress',
       category: 'celebrity',
       description: 'Rising star in independent cinema. Trained at Royal Academy of Dramatic Art.',
-      image: '/Webpimages/413965.webp', // Placeholder image path
+      image: '/Webpimages/spaStaffInsta.webp', // Placeholder image path
     },
     {
       id: 8,
@@ -102,7 +102,7 @@ export default function Foreignmodel() {
       role: 'Engineering Student',
       category: 'college',
       description: 'Robotics club president. Developing AI solutions for sustainable energy.',
-      image: '/Webpimages/download (31).webp', // Placeholder image path
+      image: '/Webpimages/celebrityspastaff.webp', // Placeholder image path
     },
   ];
     const filteredStaff = activeCategory === 'all' 
@@ -418,11 +418,11 @@ const features1 = [
               transition={{ delay: 0.4 }}
               className="mt-8 flex flex-wrap gap-4"
             >
-              <a href="#book" className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-violet-500 text-white px-6 py-3 rounded-full shadow-lg hover:scale-[1.02] transform transition">
-                Book a Consultation
+              <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-violet-500 text-white px-6 py-3 rounded-full shadow-lg hover:scale-[1.02] transform transition">
+                Book on WhatsApp
               </a>
 
-              <a href="#services" className="inline-flex items-center gap-3 bg-white border border-gray-200 px-6 py-3 rounded-full shadow-sm text-gray-700 hover:shadow-md transition">
+              <a href="#faq" className="inline-flex items-center gap-3 bg-white border border-gray-200 px-6 py-3 rounded-full shadow-sm text-gray-700 hover:shadow-md transition">
                 View Services
               </a>
             </motion.div>
@@ -541,7 +541,7 @@ const features1 = [
           </ul> */}
 
           <div className="mt-8">
-            <a href="#book" className="inline-flex items-center gap-3 px-6 py-3 rounded-full font-medium bg-gradient-to-r from-purple-600 to-pink-500 text-white shadow-lg">
+            <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-6 py-3 rounded-full font-medium bg-gradient-to-r from-purple-600 to-pink-500 text-white shadow-lg">
               Book Now
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -629,17 +629,19 @@ const features1 = [
         
                     <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                       <a
-                        href="#contact"
+                        href="https://api.whatsapp.com/send?phone=918826482370"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-medium shadow-lg hover:bg-emerald-600 transition"
                       >
-                        Book a Consultation
+                        Book on WhatsApp
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                         </svg>
                       </a>
-        
+
                       <a
-                        href="#services"
+                        href="#faq"
                         className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gray-200 bg-white text-gray-800 text-sm font-medium shadow-sm hover:shadow-md transition"
                       >
                         View Services
@@ -718,7 +720,7 @@ const features1 = [
               </div>
         
               <div className="mt-3">
-                <a href="#contact" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
+                <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
               </div>
             </motion.div>
           ))}
@@ -746,7 +748,7 @@ const features1 = [
                     <div className="text-xs text-gray-500">Custom experiences for birthdays, corporate events, travel & more.</div>
                   </div>
                   <div className="flex gap-3">
-                    <a href="#contact" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm">Enquire Now</a>
+                    <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm">Enquire Now</a>
                     <a href="#faq" className="px-5 py-2 rounded-full border border-gray-200 text-sm">Read FAQ</a>
                   </div>
                 </div>
@@ -1571,7 +1573,7 @@ Their spotless grooming, fresh appearance, and polite behaviour clearly set them
       </div>
     </section>
                 {/* FAQ Section */}
-                    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+                    <div id="faq" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
                       <div className="max-w-5xl mx-auto">
                         <div className="text-center mb-16">
                           <motion.div
@@ -1720,15 +1722,15 @@ Their spotless grooming, fresh appearance, and polite behaviour clearly set them
                                 </div>
                                 
                                 <div className="space-y-4">
-                                  <a 
-                                    href="mailto:support@example.com" 
+                                  <a
+                                    href="mailto:info@delhigirl.in"
                                     className="flex items-center justify-center bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                                   >
                                     <FiMail className="mr-2" />
                                     Email Support
                                   </a>
-                                  <a 
-                                    href="/contact" 
+                                  <a
+                                    href="/contact-us"
                                     className="flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors"
                                   >
                                     <FiMessageSquare className="mr-2" />

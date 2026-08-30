@@ -42,8 +42,9 @@ export default function Navbar() {
     { name: "Noida Escorts", href: "/call-girls-in-noida"},
     { name: "Aerocity Escorts", href: "/aerocity-escorts" },
     { name: "Connaught Place Escorts", href: "/call-girls-in-connaught-place" },
-   
-    
+    { name: "Mahipalpur Escorts", href: "/call-girls-in-mahipalpur" },
+    { name: "Dwarka Escorts", href: "/call-girls-in-dwarka" },
+    { name: "Lajpat Nagar Escorts", href: "/call-girls-in-lajpat-nagar" },
   ];
 
   return (

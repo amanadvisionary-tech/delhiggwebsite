@@ -629,9 +629,12 @@ const benefits = [
               Our Aerocity escorts enter your suite with an air of quiet assurance and that assuring quality which quiets the mind immediately. They know the rhythm of business travellers, the silence after meetings, the need to talk to real people, and the need for a company that is more welcoming than suffocating.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              You are looking to relax with someone, someone to take you to a lounge or someone who just gets you and does not need to push the mood on you; these Call girls in Aerocity fit well in any case. Delhi Girl makes each of the experiences in Aerocity premium, intimate, well-organized, and an emotional experience
+              You are looking to relax with someone, someone to take you to a lounge or someone who just gets you and does not need to push the mood on you; these Call girls in Aerocity fit well in any case. Delhi Girl makes each of the experiences in Aerocity premium, intimate, well-organized, and an emotional experience.
             </p>
-            
+            <p className="text-gray-700 text-lg leading-relaxed mb-4">
+              Our Aerocity call girl service runs 24×7, so whether you need to book call girls in Aerocity after a late landing or want to arrange something for tomorrow evening, help is always close by.
+            </p>
+
 
             <button className="mt-6 px-8 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold text-lg shadow-md hover:bg-emerald-700 transition-all">
               Book Appointment
@@ -656,7 +659,7 @@ const benefits = [
                             Prime Areas We Cover for Escort service in Aerocity
                           </h2>
                           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Every hotel, lounge, luxurious suites, and private meeting areas around the Aerocity hospitality belt.
+                            Every hotel, lounge, and luxury suite around the Aerocity hospitality belt — including clients searching for call girls near IGI Airport, who land right in this same corridor.
                           </p>
                         </motion.div>
                 
@@ -997,7 +1000,7 @@ const benefits = [
           </h2>
 
           <p className="mt-4 text-sm sm:text-base text-slate-300/80">
-            Designed to appeal to travellers, business visitors, luxury staycationers,and men who want to have a smooth companion.
+            Designed to appeal to travellers and business visitors — from high profile escorts in Aerocity for a polished evening out to independent escorts in Aerocity and Russian escorts in Aerocity for clients with a specific preference.
           </p>
         </div>
 
@@ -1139,8 +1142,8 @@ const benefits = [
             Ready for an Exceptional Experience?
           </h3>
           <p className="text-gray-300 mb-8">
-            Book your premium Aerocity escort service with complete discretion 
-            and professional handling. Perfect for business travelers, executives, 
+            Book your premium Aerocity escort service — including VIP escorts in Aerocity — with complete discretion
+            and professional handling. Perfect for business travelers, executives,
             and discerning visitors.
           </p>
           
@@ -1417,15 +1420,15 @@ Delhi Girl takes that ease a notch higher by having friends who will make you fe
                 </div>
                 
                 <div className="space-y-4">
-                  <a 
-                    href="mailto:support@example.com" 
+                  <a
+                    href="mailto:info@delhigirl.in"
                     className="flex items-center justify-center bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                   >
                     <FiMail className="mr-2" />
                     Email Support
                   </a>
-                  <a 
-                    href="/contact" 
+                  <a
+                    href="/contact-us"
                     className="flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors"
                   >
                     <FiMessageSquare className="mr-2" />

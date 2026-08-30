@@ -9,104 +9,102 @@ import { AnimatePresence } from "framer-motion";
 // blogs section
 const categories = [
   "All",
-  "Spa Tips",
-  "Therapies",
-  "Couple Massage",
-  "Skin & Body",
-  "Wellness",
+  "Booking Guide",
+  "Area Guide",
+  "Safety & Discretion",
+  "Companionship",
+  "First-Timers",
 ];
 
 const posts = [
   {
-    id: 8,
-    title: "Massage Etiquette: What to Know Before Your First Spa Session",
-    excerpt:
-      "First time? Learn how to behave, what to do, and how to enjoy your first spa visit like a pro.",
-    image: "/Webpimages/celebrityspastaff.webp",
-    author: "Delhi Body Spa",
-    date: "Aug 22, 2026",
-    readTime: "5 min",
-    tags: ["Spa Tips", "Guide"],
-    featured: false,
-  },
-  {
-    id: 7,
-    title: "Full Body Massage Spa in Delhi: Benefits, Types & Costs",
-    excerpt:
-      "First time? Learn how to get ready, pick the right massage, and have a nice, relaxing time.",
-    image: "/Webpimages/staff.webp",
-    author: "Delhi Body Spa",
-    date: "Aug 21, 2026",
-    readTime: "5 min",
-    tags: ["Spa Tips", "Wellness"],
-    featured: false,
-  },
-  {
     id: 1,
-    title: "How to Choose the Perfect Spa Therapy for Deep Relaxation",
+    title: "How to Book a Verified Companion in Delhi: A First-Timer's Guide",
     excerpt:
-      "Confused between Swedish, Thai, and Aromatherapy? Here’s a crisp guide to pick the right treatment for your mood and body.",
-    image: "/Webpimages/smiling.webp",
-    author: "Delhi Body Spa",
-    date: "Aug 20, 2025",
-    readTime: "6 min",
-    tags: ["Therapies", "Relaxation"],
+      "New to booking with us? Here's exactly how verification, messaging, and payment work — no surprises, no confusion.",
+    image: "/Webpimages/bannermodel.webp",
+    author: "Delhi Girl Team",
+    date: "Aug 28, 2026",
+    readTime: "5 min",
+    tags: ["First-Timers", "Booking Guide"],
     featured: true,
   },
   {
     id: 2,
-    title: "Female to Male Massage: Etiquette, Benefits & What to Expect",
+    title: "Dinner Date or Hotel Visit? Choosing the Right Companion Experience",
     excerpt:
-      "First time? Learn how to prepare, communicate preferences, and enjoy a respectful, professional session.",
-    image: "/Webpimages/fashion-portrait-beautiful-blonde-model.webp",
-    author: "Team DBS",
-    date: "Aug 16, 2025",
+      "Not every booking is the same kind of evening. Here's how to think about what you actually want before you message us.",
+    image: "/Webpimages/download (34).webp",
+    author: "Delhi Girl Team",
+    date: "Aug 26, 2026",
     readTime: "5 min",
-    tags: ["Female To Male Massage", "Guide"],
+    tags: ["Companionship", "Booking Guide"],
   },
   {
     id: 3,
-    title: "Couple Massage in Delhi: Make It a Date to Remember",
+    title: "Airport to Hotel: Booking Companionship Near IGI Airport",
     excerpt:
-      "From room ambiance to synchronized techniques—here’s how couples can elevate their spa day.",
-    image: "/Webpimages/young-woman-lying-alone.webp",
-    author: "Team DBS",
-    date: "Aug 12, 2025",
-    readTime: "7 min",
-    tags: ["Couple Massage", "Experience"],
+      "Landing late or flying out early? Here's how bookings near Mahipalpur and Aerocity work around your flight schedule.",
+    image: "/Webpimages/paschimvihar.webp",
+    author: "Delhi Girl Team",
+    date: "Aug 24, 2026",
+    readTime: "5 min",
+    tags: ["Area Guide", "First-Timers"],
   },
   {
     id: 4,
-    title: "Body to Body Spa: Myths vs. Reality (What’s Actually Offered)",
+    title: "Sector by Sector: Navigating Bookings Across Delhi NCR",
     excerpt:
-      "We debunk the most common misconceptions and explain the genuine wellness benefits.",
-    image: "/Webpimages/pretty-sensual-blonde-model-laying-bed-enjoy-her-morning-luxury-hotel-wearing-burgundy-silk-nightdress-robe-blind-hairs-beauty-face-boudoir-style.webp",
-    author: "Delhi Body Spa",
-    date: "Aug 05, 2025",
-    readTime: "4 min",
-    tags: ["Body To Body", "Wellness"],
+      "Delhi NCR isn't one booking zone. Here's why telling us your exact sector or area matters more than you'd think.",
+    image: "/Webpimages/hotel3.webp",
+    author: "Delhi Girl Team",
+    date: "Aug 20, 2026",
+    readTime: "6 min",
+    tags: ["Area Guide"],
   },
   {
     id: 5,
-    title: "Pre & Post-Spa Skincare: Keep That Glow for Days",
+    title: "Discretion 101: How We Protect Your Privacy",
     excerpt:
-      "Small routine changes before and after your session make a big difference to results.",
-    image: "/Webpimages/modelg.webp",
-    author: "Skin Studio",
-    date: "Jul 28, 2025",
-    readTime: "6 min",
-    tags: ["Skin & Body", "Glow"],
+      "Discretion is the reason most clients choose us in the first place. Here's exactly how we handle it, step by step.",
+    image: "/Webpimages/download (35).webp",
+    author: "Delhi Girl Team",
+    date: "Aug 18, 2026",
+    readTime: "5 min",
+    tags: ["Safety & Discretion"],
   },
   {
     id: 6,
-    title: "Meet Our Foreigner Therapists: Training, Techniques & Ethics",
+    title: "Independent, High Profile, or Model: Which Companion Fits Your Evening?",
     excerpt:
-      "World-class practices, certifications, and the philosophy behind our global therapist team.",
-    image: "/Webpimages/young-woman.webp",
-    author: "Delhi Body Spa",
-    date: "Jul 21, 2025",
+      "The different companion categories aren't just about price — here's what actually separates them.",
+    image: "/Webpimages/download (36).webp",
+    author: "Delhi Girl Team",
+    date: "Aug 15, 2026",
     readTime: "5 min",
-    tags: ["Foreigner Therapist", "Standards"],
+    tags: ["Companionship"],
+  },
+  {
+    id: 7,
+    title: "Corporate Travel Companions: What Business Travelers Should Know",
+    excerpt:
+      "Business trips to Delhi come with their own booking rhythm — here's what corporate clients ask us most.",
+    image: "/Webpimages/JwMarriott_CP.webp",
+    author: "Delhi Girl Team",
+    date: "Aug 10, 2026",
+    readTime: "5 min",
+    tags: ["Companionship", "Booking Guide"],
+  },
+  {
+    id: 8,
+    title: "What to Expect on Your First Booking: Etiquette & Safety Tips",
+    excerpt:
+      "Booking for the first time can feel unfamiliar. Here's a plain, practical walkthrough of what actually happens.",
+    image: "/Webpimages/tajmahalhotel_lajpatnagar.webp",
+    author: "Delhi Girl Team",
+    date: "Aug 05, 2026",
+    readTime: "5 min",
+    tags: ["First-Timers", "Safety & Discretion"],
   },
 ];
 
@@ -150,50 +148,50 @@ export default function Blogs() {
   const faqs = [
     {
       id: 1,
-      question: 'How do I create an account?',
-      answer: 'Creating an account is simple. Click on the "Sign Up" button in the top right corner, fill in your details including name, email, and password, then verify your email address.',
-      category: 'account',
+      question: 'How often do you publish new posts?',
+      answer: 'We add new guides and articles regularly — subscribe below or check back here for the latest.',
+      category: 'services',
     },
     {
       id: 2,
-      question: 'What payment methods do you accept?',
-      answer: 'We accept all major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and bank transfers. All transactions are securely processed with 256-bit encryption.',
+      question: 'Do I need to pay in advance to book through Delhi Girl?',
+      answer: 'No. Pay after you meet is standard for every booking — confirm on WhatsApp and settle payment once your companion has arrived.',
       category: 'payments',
     },
     {
       id: 3,
-      question: 'Can I modify my booking after confirmation?',
-      answer: 'Yes, you can modify your booking up to 24 hours before your scheduled appointment. Simply log into your account, go to "My Bookings", and select "Modify". Changes are subject to availability.',
-      category: 'booking',
+      question: 'Can I suggest a topic for a future article?',
+      answer: 'Yes, message us on WhatsApp or email with what you\'d like covered and we\'ll consider it for an upcoming post.',
+      category: 'services',
     },
     {
       id: 4,
-      question: 'How do I cancel a reservation?',
-      answer: 'To cancel a reservation, go to "My Bookings" in your account dashboard, select the booking you wish to cancel, and click "Cancel". Cancellation policies vary by service type - please review before confirming.',
+      question: 'Where do I go to actually book a companion?',
+      answer: 'Message us directly on WhatsApp, or visit any of our location pages (Aerocity, Connaught Place, Dwarka, and more) to see verified profiles.',
       category: 'booking',
     },
     {
       id: 5,
-      question: 'What is your refund policy?',
-      answer: 'We offer full refunds for cancellations made at least 48 hours in advance. Cancellations within 24-48 hours receive a 50% refund. No refunds are available for cancellations within 24 hours of the appointment.',
+      question: 'Is subscribing to updates free?',
+      answer: 'Yes, there\'s no cost to subscribe — it\'s just occasional emails about new posts and offers.',
       category: 'payments',
     },
     {
       id: 6,
-      question: 'Are your services available internationally?',
-      answer: 'Yes, we currently operate in 15 countries worldwide. Please check our locations page for specific service availability in your region. Additional fees may apply for international bookings.',
+      question: 'Do your articles apply across Delhi NCR, or just Delhi?',
+      answer: 'Our guides generally apply across Delhi, Noida, and Gurgaon — we\'ll note anything location-specific within the article.',
       category: 'services',
     },
     {
       id: 7,
-      question: 'How do I reset my password?',
-      answer: 'Click "Forgot Password" on the login page, enter your registered email, and you will receive a password reset link. This link expires in 30 minutes for security reasons.',
+      question: 'How do I contact support directly?',
+      answer: 'Email us or message on WhatsApp — both are checked regularly and are the fastest way to reach us.',
       category: 'account',
     },
     {
       id: 8,
-      question: 'What safety measures do you have in place?',
-      answer: 'All our staff undergo thorough background checks and professional training. We offer contactless payment options, 24/7 support, and an emergency contact system for your safety.',
+      question: 'Is my information kept private if I contact you?',
+      answer: 'Yes, every enquiry is handled discreetly and your details are never shared.',
       category: 'services',
     },
   ];
@@ -479,7 +477,7 @@ export default function Blogs() {
       </section>
       {/* end content section */}
       {/* blog section */}
-      <section className="py-24 px-4 md:px-8 bg-gradient-to-b from-[#fdf9f5] to-[#fefaf6] relative overflow-hidden">
+      <section id="latest" className="py-24 px-4 md:px-8 bg-gradient-to-b from-[#fdf9f5] to-[#fefaf6] relative overflow-hidden">
         {/* Decorative Elements (matching your About section theme) */}
         <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-purple-50 to-transparent opacity-70" />
         <div className="absolute top-24 right-10 w-80 h-80 rounded-full bg-purple-200/30 blur-3xl" />
@@ -677,12 +675,12 @@ export default function Blogs() {
           </div>
 
           {/* Newsletter CTA */}
-          <div className="mt-16 relative">
+          <div id="subscribe" className="mt-16 relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-200 via-pink-200 to-purple-200 rounded-3xl blur opacity-40" />
             <div className="relative bg-white/80 backdrop-blur rounded-3xl p-8 md:p-10 border border-purple-100 flex flex-col md:flex-row md:items-center gap-6">
               <div className="flex-1">
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-                  Get spa tips & exclusive offers
+                  Get new posts & exclusive offers
                 </h3>
                 <p className="text-gray-600">One short email each week. No spam, only calm.</p>
               </div>
@@ -867,14 +865,14 @@ export default function Blogs() {
 
                   <div className="space-y-4">
                     <a
-                      href="mailto:support@example.com"
+                      href="mailto:info@delhigirl.in"
                       className="flex items-center justify-center bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                     >
                       <FiMail className="mr-2" />
                       Email Support
                     </a>
                     <a
-                      href="/contact"
+                      href="/contact-us"
                       className="flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors"
                     >
                       <FiMessageSquare className="mr-2" />

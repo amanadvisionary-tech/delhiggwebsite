@@ -33,50 +33,50 @@ export default function Services() {
     const faqs = [
       {
         id: 1,
-        question: 'How do I create an account?',
-        answer: 'Creating an account is simple. Click on the "Sign Up" button in the top right corner, fill in your details including name, email, and password, then verify your email address.',
-        category: 'account',
+        question: 'How fast can your call girl service reach me in Delhi?',
+        answer: 'Most bookings arrive within 30 minutes, depending on your exact location — message us your area on WhatsApp and we\'ll give you an accurate estimate.',
+        category: 'booking',
       },
       {
         id: 2,
         question: 'What payment methods do you accept?',
-        answer: 'We accept all major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and bank transfers. All transactions are securely processed with 256-bit encryption.',
+        answer: 'Cash or UPI, paid after you meet. There\'s no advance payment or online checkout — you confirm on WhatsApp and settle up once your companion has arrived.',
         category: 'payments',
       },
       {
         id: 3,
-        question: 'Can I modify my booking after confirmation?',
-        answer: 'Yes, you can modify your booking up to 24 hours before your scheduled appointment. Simply log into your account, go to "My Bookings", and select "Modify". Changes are subject to availability.',
+        question: 'Can I change my booking time after confirming?',
+        answer: 'Yes, just message us on WhatsApp as early as you can and we\'ll adjust the time based on availability.',
         category: 'booking',
       },
       {
         id: 4,
-        question: 'How do I cancel a reservation?',
-        answer: 'To cancel a reservation, go to "My Bookings" in your account dashboard, select the booking you wish to cancel, and click "Cancel". Cancellation policies vary by service type - please review before confirming.',
+        question: 'How do I cancel a booking?',
+        answer: 'Message us on WhatsApp before your scheduled time. Since payment only happens after you meet, there\'s nothing to refund if you cancel in advance.',
         category: 'booking',
       },
       {
         id: 5,
-        question: 'What is your refund policy?',
-        answer: 'We offer full refunds for cancellations made at least 48 hours in advance. Cancellations within 24-48 hours receive a 50% refund. No refunds are available for cancellations within 24 hours of the appointment.',
+        question: 'Do I need to pay anything in advance?',
+        answer: 'No. Pay after you meet is standard for every booking — no advance, no deposit, no hidden charges.',
         category: 'payments',
       },
       {
         id: 6,
-        question: 'Are your services available internationally?',
-        answer: 'Yes, we currently operate in 15 countries worldwide. Please check our locations page for specific service availability in your region. Additional fees may apply for international bookings.',
+        question: 'Which areas of Delhi do you cover?',
+        answer: 'We cover Delhi and the wider NCR, including dedicated coverage in Aerocity, Connaught Place, Dwarka, Mahipalpur, Lajpat Nagar, Noida, and Gurgaon.',
         category: 'services',
       },
       {
         id: 7,
-        question: 'How do I reset my password?',
-        answer: 'Click "Forgot Password" on the login page, enter your registered email, and you will receive a password reset link. This link expires in 30 minutes for security reasons.',
+        question: 'Is booking discreet?',
+        answer: 'Yes, every booking is handled privately over WhatsApp with minimal details required, and your information is never shared.',
         category: 'account',
       },
       {
         id: 8,
         question: 'What safety measures do you have in place?',
-        answer: 'All our staff undergo thorough background checks and professional training. We offer contactless payment options, 24/7 support, and an emergency contact system for your safety.',
+        answer: 'Every companion is identity-verified before being listed, and bookings are confirmed only through WhatsApp — no walk-ins, no unverified profiles.',
         category: 'services',
       },
     ];
@@ -109,7 +109,7 @@ export default function Services() {
       role: 'Senior Airhostess',
       category: 'airhostess',
       description: '5+ years experience with international airlines. Fluent in 4 languages.',
-      image: '/Webpimages/follow for more.webp', // Placeholder image path
+      image: '/Webpimages/download31.webp', // Placeholder image path
     },
     {
       id: 2,
@@ -117,7 +117,7 @@ export default function Services() {
       role: 'TV Personality',
       category: 'celebrity',
       description: 'Award-winning host of "Nightlife" show. Known for vibrant personality.',
-      image: '/Webpimages/downloadd6.webp', // Placeholder image pathss
+      image: '/Webpimages/download32.webp', // Placeholder image pathss
     },
     {
       id: 3,
@@ -125,7 +125,7 @@ export default function Services() {
       role: 'Marketing Student',
       category: 'college',
       description: 'Top of her class at NYU. Passionate about digital marketing trends.',
-      image: '/Webpimages/spaStaffInsta.webp', // Placeholder image path
+      image: '/Webpimages/download33.webp', // Placeholder image path
     },
     {
       id: 4,
@@ -133,7 +133,7 @@ export default function Services() {
       role: 'International Model',
       category: 'foreign',
       description: 'Milan-born fashion model. Featured in Vogue and Elle magazines.',
-      image: '/Webpimages/celebrityspastaff.webp', // Placeholder image path
+      image: '/Webpimages/download34.webp', // Placeholder image path
     },
     {
       id: 5,
@@ -141,7 +141,7 @@ export default function Services() {
       role: 'Corporate Executive',
       category: 'highprofile',
       description: 'Fortune 500 company board member. MBA from Harvard Business School.',
-      image: '/Webpimages/49.webp',
+      image: '/Webpimages/download35.webp',
     },
     {
       id: 6,
@@ -149,7 +149,7 @@ export default function Services() {
       role: 'First Class Hostess',
       category: 'airhostess',
       description: 'Specialized in luxury travel experience. Trained in hospitality management.',
-      image: '/Webpimages/smiling.webp', // Placeholder image path
+      image: '/Webpimages/download4.webp', // Placeholder image path
     },
     {
       id: 7,
@@ -157,7 +157,7 @@ export default function Services() {
       role: 'Film Actress',
       category: 'celebrity',
       description: 'Rising star in independent cinema. Trained at Royal Academy of Dramatic Art.',
-      image: '/Webpimages/413965.webp', // Placeholder image path
+      image: '/Webpimages/download645.webp', // Placeholder image path
     },
     {
       id: 8,
@@ -165,7 +165,7 @@ export default function Services() {
       role: 'Engineering Student',
       category: 'college',
       description: 'Robotics club president. Developing AI solutions for sustainable energy.',
-      image: '/Webpimages/image1.webp', // Placeholder image path
+      image: '/Webpimages/download7.webp', // Placeholder image path
     },
   ];
         const filteredStaff = activeCategory === 'all' 
@@ -364,7 +364,7 @@ const services1= [
     title: "Russian Escorts",
     description:
       "College girls escorts refers to individuals who are currently enrolled in college or university and offer escort services. These escorts are typically young women pursuing higher education.",
-    image: "/Webpimages/Signin.webp", // Add your image path here
+    image: "/Webpimages/download432.webp", // Add your image path here
   },
   {
     title: "Strip Escorts",
@@ -404,16 +404,16 @@ const services1= [
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 2a1 1 0 0 0-.707.293l-1.5 1.5A1 1 0 0 0 9 4h6a1 1 0 0 0 .707-1.707l-1.5-1.5A1 1 0 0 0 12 2z" />
                 </svg>
-                Special Launch — 20% OFF
+                24/7 Doorstep Service
               </span>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
-                Pricing that <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-600">grows with you</span>
+                Call Girls Service in Delhi — <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-600">Doorstep Delivery in 30 Minutes</span>
               </h1>
 
               <p className="text-gray-600 max-w-xl text-base md:text-lg">
-                Choose a plan that fits your pace. No hidden fees, transparent billing and flexible upgrades — designed for freelancers, teams and
-                studios that want simple, beautiful tools to get results.
+                Wherever you are in Delhi, our call girl service is built to reach you fast — verified
+                companions, discreet booking, and a straightforward process from message to arrival.
               </p>
 
               <ul className="mt-4 space-y-3">
@@ -423,7 +423,7 @@ const services1= [
                       <path fillRule="evenodd" clipRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
                     </svg>
                   </span>
-                  <span className="text-gray-700">14-day free trial on every plan</span>
+                  <span className="text-gray-700">Verified profiles, updated regularly</span>
                 </li>
 
                 <li className="flex items-start gap-3">
@@ -432,7 +432,7 @@ const services1= [
                       <path d="M10 2a8 8 0 100 16 8 8 0 000-16z" />
                     </svg>
                   </span>
-                  <span className="text-gray-700">Cancel anytime — simple billing</span>
+                  <span className="text-gray-700">Average arrival time under 30 minutes</span>
                 </li>
 
                 <li className="flex items-start gap-3">
@@ -441,7 +441,7 @@ const services1= [
                       <path d="M12 2l2 6h6l-4.9 3.6L18 20l-6-4-6 4 1.9-8.4L3 8h6z" />
                     </svg>
                   </span>
-                  <span className="text-gray-700">No credit card needed to start</span>
+                  <span className="text-gray-700">Pay after you meet — cash or UPI</span>
                 </li>
               </ul>
 
@@ -449,21 +449,26 @@ const services1= [
                 <a
                   href="#plans"
                   className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold px-6 py-3 shadow-lg transform hover:-translate-y-1 transition-transform"
-                  aria-label="Explore plans"
+                  aria-label="View pricing"
                 >
-                  Explore Plans
+                  View Pricing
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                   </svg>
                 </a>
 
-                <a href="#contact" className="inline-flex items-center justify-center rounded-xl border border-gray-200 px-5 py-3 text-gray-700 font-medium shadow-sm">
-                  Talk to Sales
-n                </a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=918826482370"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-xl border border-gray-200 px-5 py-3 text-gray-700 font-medium shadow-sm"
+                >
+                  Message on WhatsApp
+                </a>
               </div>
 
               <div className="mt-4 text-sm text-gray-500">
-                <strong>Limited time:</strong> 20% off first month. Offer applied at checkout.
+                <strong>No advance payment:</strong> confirm on WhatsApp, pay only after you meet.
               </div>
             </motion.div>
           </div>
@@ -956,10 +961,10 @@ n                </a>
             </div>
             {/* End Staff Showcase */}
             {/* pricing */}
-                     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+                     <div id="plans" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
                       <div className="max-w-7xl mx-auto">
                         <div className="text-center mb-16">
-                          <motion.h2 
+                          <motion.h2
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4"
@@ -1617,15 +1622,15 @@ n                </a>
                 </div>
                 
                 <div className="space-y-4">
-                  <a 
-                    href="mailto:support@example.com" 
+                  <a
+                    href="mailto:info@delhigirl.in"
                     className="flex items-center justify-center bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                   >
                     <FiMail className="mr-2" />
                     Email Support
                   </a>
-                  <a 
-                    href="/contact" 
+                  <a
+                    href="/contact-us"
                     className="flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors"
                   >
                     <FiMessageSquare className="mr-2" />

@@ -50,15 +50,15 @@ export default function Category() {
       role: 'Senior Airhostess',
       category: 'airhostess',
       description: 'Our airhostess call girls are elegant, well-spoken, and professionally trained. They know how to make every moment comfortable and classy. If you are looking for a premium airhostess call girls in Delhi for private meetings, dinners, or hotel stays, these girls offer a calm, mature, and luxurious experience with complete privacy.',
-      image: '/Webpimages/follow for more.webp', // Placeholder image path
+      image: '/Webpimages/modelg.webp', // Placeholder image path
     },
-    { 
+    {
       id: 2,
       name: 'Alex Johnson',
       role: 'TV Personality',
       category: 'celebrity',
       description: 'Alex Johnson is a confident and stylish TV personality with a charming presence. She knows how to connect easily and make every moment enjoyable. If you are looking for a celebrity call Girls in Delhi with class, confidence, and elegance, Alex offers premium companionship for parties, events, and private meetings with full discretion.',
-      image: '/Webpimages/downloadd6.webp', // Placeholder image pathss
+      image: '/Webpimages/7170.webp', // Placeholder image pathss
     },
     {
       id: 3,
@@ -66,7 +66,7 @@ export default function Category() {
       role: 'Marketing Student',
       category: 'college',
       description: 'Emma Wilson is a smart and confident marketing student with a friendly and positive nature. She is well-spoken and easy to connect with, making her a great choice for relaxed companionship. If you are looking for a Delhi college girl with a modern mindset and classy presence, Emma offers a comfortable and discreet experience.',
-      image: '/Webpimages/downloadd5.webp', // Placeholder image path
+      image: '/Webpimages/Cindy.webp', // Placeholder image path
     },
     {
       id: 4,
@@ -74,7 +74,7 @@ export default function Category() {
       role: 'International Model',
       category: 'foreign',
       description: 'Isabella Rossi is a stunning international model with a confident personality and elegant style. She carries herself with grace and knows how to make every meeting special. If you are looking for a foreign call Girls in Delhi with premium looks and classy companionship, Isabella offers a luxurious and discreet experience.',
-      image: '/Webpimages/celebrityspastaff.webp', // Placeholder image path
+      image: '/Webpimages/Evie Lee Mikomin.webp', // Placeholder image path
     },
     {
       id: 5,
@@ -82,7 +82,7 @@ export default function Category() {
       role: 'Corporate Executive',
       category: 'highprofile',
       description: 'Olivia Chen is a smart and confident corporate executive with a polished personality. She understands professionalism, good conversation, and classy company. If you are looking for a high profile call Girls in Delhi for business dinners, meetings, or private time, Olivia offers premium companionship with complete discretion and comfort.',
-      image: '/Webpimages/Evie Lee Mikomin.webp',
+      image: '/Webpimages/172420-8871.webp',
     },
     {
       id: 6,
@@ -90,7 +90,7 @@ export default function Category() {
       role: 'First Class Hostess',
       category: 'airhostess',
       description: 'Mia Thompson is a well-groomed and elegant first class hostess with a calm and confident personality. She knows how to make people feel comfortable with her polite nature and smooth conversation. If you are looking for an airhostess call Girls in Delhi who offers premium companionship with class and discretion, Mia is a perfect choice.',
-      image: '/Webpimages/downloadee.webp', // Placeholder image path
+      image: '/Webpimages/imagee.webp', // Placeholder image path
     },
     {
       id: 7,
@@ -98,7 +98,7 @@ export default function Category() {
       role: 'Film Actress',
       category: 'celebrity',
       description: 'Chloe Williams is a graceful film actress with a strong screen presence and elegant personality. She is confident, well-mannered, and knows how to carry herself with style. If you are looking for a celebrity call Girls in Delhi who offers premium companionship for events, parties, or private meetings, Chloe brings class, charm, and complete discretion.',
-      image: '/Webpimages/413965.webp', // Placeholder image path
+      image: '/Webpimages/model.webp', // Placeholder image path
     },
     {
       id: 8,
@@ -106,7 +106,7 @@ export default function Category() {
       role: 'Engineering Student',
       category: 'college',
       description: 'Ava Garcia is a smart and confident engineering student with a friendly and calm personality. She is well-spoken and easy to connect with. If you are looking for a college girl call Girls in Delhi who offers comfortable companionship with privacy and respect, Ava is a great choice.',
-      image: '/Webpimages/American full videos.webp', // Placeholder image path
+      image: '/Webpimages/MODEL (1).webp', // Placeholder image path
     },
   ];
     const filteredStaff = activeCategory === 'all' 
@@ -200,50 +200,44 @@ export default function Category() {
             const faqs = [
               {
                 id: 1,
-                question: 'How do I create an account?',
-                answer: 'Creating an account is simple. Click on the "Sign Up" button in the top right corner, fill in your details including name, email, and password, then verify your email address.',
+                question: 'Are the model call girls the same as shown in the photos?',
+                answer: 'Yes. Every profile is verified before it goes live, so the person who arrives is the same one you see in the photos — no last-minute swaps.',
                 category: 'account',
               },
               {
                 id: 2,
-                question: 'What payment methods do you accept?',
-                answer: 'We accept all major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and bank transfers. All transactions are securely processed with 256-bit encryption.',
+                question: 'Do I need to pay in advance to book a model escort in Delhi?',
+                answer: 'No. Pay after you meet is standard — confirm your booking on WhatsApp and settle payment once your companion has arrived.',
                 category: 'payments',
               },
               {
                 id: 3,
-                question: 'Can I modify my booking after confirmation?',
-                answer: 'Yes, you can modify your booking up to 24 hours before your scheduled appointment. Simply log into your account, go to "My Bookings", and select "Modify". Changes are subject to availability.',
+                question: 'Can I change my booking time after confirming?',
+                answer: 'Yes, message us on WhatsApp as early as you can and we will adjust the time, subject to your companion\'s availability.',
                 category: 'booking',
               },
               {
                 id: 4,
-                question: 'How do I cancel a reservation?',
-                answer: 'To cancel a reservation, go to "My Bookings" in your account dashboard, select the booking you wish to cancel, and click "Cancel". Cancellation policies vary by service type - please review before confirming.',
+                question: 'How do I cancel a booking?',
+                answer: 'Just message us on WhatsApp before your scheduled time. Since payment only happens after you meet, there is nothing to refund if you cancel in advance.',
                 category: 'booking',
               },
               {
                 id: 5,
-                question: 'What is your refund policy?',
-                answer: 'We offer full refunds for cancellations made at least 48 hours in advance. Cancellations within 24-48 hours receive a 50% refund. No refunds are available for cancellations within 24 hours of the appointment.',
-                category: 'payments',
-              },
-              {
-                id: 6,
-                question: 'Are your services available internationally?',
-                answer: 'Yes, we currently operate in 15 countries worldwide. Please check our locations page for specific service availability in your region. Additional fees may apply for international bookings.',
+                question: 'Do you cover 5-star hotels across Delhi for these bookings?',
+                answer: 'Yes, our model escorts are experienced with 5-star hotel check-ins across Delhi and NCR, and arrive discreetly regardless of the property.',
                 category: 'services',
               },
               {
-                id: 7,
-                question: 'How do I reset my password?',
-                answer: 'Click "Forgot Password" on the login page, enter your registered email, and you will receive a password reset link. This link expires in 30 minutes for security reasons.',
+                id: 6,
+                question: 'Is booking a model call girl in Delhi discreet?',
+                answer: 'Yes. Every booking is handled privately over WhatsApp, and your details are never shared.',
                 category: 'account',
               },
               {
-                id: 8,
+                id: 7,
                 question: 'What safety measures do you have in place?',
-                answer: 'All our staff undergo thorough background checks and professional training. We offer contactless payment options, 24/7 support, and an emergency contact system for your safety.',
+                answer: 'Every companion is identity-verified before being listed, and bookings are confirmed only through WhatsApp with minimal details required.',
                 category: 'services',
               },
             ];
@@ -329,7 +323,7 @@ export default function Category() {
               <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clipRule="evenodd" />
               </svg>
-              Special Launch Offer - 20% Off First Treatment!
+              Verified Profiles, Same-Day Booking
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold">
@@ -349,12 +343,17 @@ export default function Category() {
             </div>
 
             {/* CTA Button */}
-            <button className="group mt-8 bg-white text-purple-900 hover:bg-gray-100 font-semibold py-4 px-10 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex items-center">
+            <a
+              href="https://api.whatsapp.com/send?phone=918826482370"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-8 bg-white text-purple-900 hover:bg-gray-100 font-semibold py-4 px-10 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1 inline-flex items-center"
+            >
               Book Now
               <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
               </svg>
-            </button>
+            </a>
           </div>
 
           {/* Stats Card */}
@@ -368,15 +367,12 @@ export default function Category() {
         <section className="bg-gradient-to-r from-amber-50 to-white py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-gray-800 mb-12"
+          className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
-                     Our High Profile Escort Categories to Hire Call Girls
-                  </h2>
-         
+          Our High Profile Escort Categories to Hire Call Girls
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -568,7 +564,9 @@ export default function Category() {
             <motion.a
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
-              href="#book"
+              href="https://api.whatsapp.com/send?phone=918826482370"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full font-medium shadow-2xl bg-gradient-to-r from-purple-600 to-pink-500 text-white text-sm sm:text-base"
             >
               Book A Session
@@ -629,7 +627,7 @@ export default function Category() {
               style={{ boxShadow: '0 20px 40px rgba(0,0,0,0.12)' }}
             >
               <div className="relative aspect-[16/10] w-full">
-                <Image src='/Webpimages/HD Videos.webp' alt="spa2" fill style={{ objectFit: 'cover' }} />
+                <Image src='/Webpimages/download331.webp' alt="Model call girl profile in Delhi" fill style={{ objectFit: 'cover' }} />
               </div>
             </motion.div>
 
@@ -777,7 +775,9 @@ export default function Category() {
                 </motion.a>
         
                 <motion.a
-                  href="#contact"
+                  href="https://api.whatsapp.com/send?phone=918826482370"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-8 py-4 rounded-full font-medium border-2 bg-white/80 backdrop-blur-sm border-transparent bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 hover:shadow-lg transition-all relative group"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -1024,7 +1024,9 @@ You want to find a late-night company that is relaxing, respectful and luxurious
                     </a>
             
                     <a
-                      href="#contact"
+                      href="https://api.whatsapp.com/send?phone=918826482370"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="px-8 py-4 rounded-full font-medium border-2 border-transparent bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-purple-50 transition-colors relative overflow-hidden group"
                     >
                       <span className="relative z-10">Book Appointment</span>
@@ -1719,15 +1721,15 @@ Our celebrity escorts are the ideal choice to those clients who desire exclusivi
                                 </div>
                                 
                                 <div className="space-y-4">
-                                  <a 
-                                    href="mailto:support@example.com" 
+                                  <a
+                                    href="mailto:info@delhigirl.in"
                                     className="flex items-center justify-center bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                                   >
                                     <FiMail className="mr-2" />
                                     Email Support
                                   </a>
-                                  <a 
-                                    href="/contact" 
+                                  <a
+                                    href="/contact-us"
                                     className="flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors"
                                   >
                                     <FiMessageSquare className="mr-2" />

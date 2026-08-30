@@ -21,68 +21,68 @@ export default function Locations() {
       {
         id: 1,
         name: "The Oberoi, Gurgaon",
-        location: "Bangkok, Thailand",
+        location: "Golf Course Road, Gurugram",
         rating: 5,
         description: "Modern architecture, close luxury. She walks in, and suddenly the room feels warmer and more welcoming — like you actually want to stay in.",
-        image: "/hotel-royale.webp",
+        image: "/Webpimages/hotel-suite-interior.webp",
         amenities: ["Infinity Pool", "Michelin-star Restaurant", "Luxury Spa", "24/7 Butler Service"],
-        price: "₹25,000",
-        features: ["Ocean View", "Private Beach", "Helipad"]
+        price: "₹18,000",
+        features: ["Golf Course View", "Rooftop Pool", "Business Lounge"]
       },
       {
         id: 2,
         name: "The Leela Ambience, Gurugram",
-        location: "Maldives",
+        location: "Ambience Island, NH-8, Gurugram",
         rating: 5,
         description: "The vibe’s upscale, but not stiff. She’ll stroll right through, turn the space into a relaxed night, and lift your spirits without a word.",
-        image: "/hotel-azure.webp",
-        amenities: ["Overwater Bungalows", "Coral Reef Access", "Underwater Restaurant", "Spa Sanctuary"],
-        price: "₹45,000",
-        features: ["Private Island", "Seaplane Transfer", "Glass Floor"]
+        image: "/Webpimages/hotel-lounge-chandelier.webp",
+        amenities: ["Luxury Spa", "Personal Shopper", "Sky Lounge", "24/7 Butler Service"],
+        price: "₹16,000",
+        features: ["Mall-Adjacent", "Late Checkout", "Business Lounge"]
       },
       {
         id: 3,
         name: "Trident, Gurgaon",
-        location: "Swiss Alps, Switzerland",
+        location: "DLF Cyber City, Gurugram",
         rating: 5,
         description: "Known for being peaceful and polished. It’s the kind of place you can talk for hours, laugh, and genuinely feel lighter with someone beside you.",
-        image: "/hotel-alpine.webp",
-        amenities: ["Ski Valet", "Heated Indoor Pool", "Mountain Spa", "Fondue Restaurant"],
-        price: "₹38,000",
-        features: ["Private Ski Lift", "Fireplace Lounges", "Chocolate Atelier"]
+        image: "/Webpimages/hotel-atrium-lobby.webp",
+        amenities: ["Rooftop Pool", "Michelin-star Restaurant", "24/7 Butler Service"],
+        price: "₹14,000",
+        features: ["Cyber City Views", "Business Lounge", "Late Checkout"]
       },
       {
         id: 4,
         name: "OITC Grand Bharat (Gurgaon region)",
-        location: "Dubai, UAE",
+        location: "Sohna Road, Gurugram",
         rating: 5,
         description: "Feels like a weekend getaway even if you’re here for work — she brings the same energy, making it less about the crowd and more about you two.",
-        image: "/hotel-oasis.webp",
-        amenities: ["Private Oasis Pool", "Camel Rides", "Desert Spa", "Starlight Dining"],
-        price: "₹32,000",
-        features: ["Falconry Experience", "Gold-plated Interiors", "Private Dune"]
+        image: "/Webpimages/hotel-exterior-night.webp",
+        amenities: ["Luxury Spa", "Infinity Pool", "Personal Shopper"],
+        price: "₹20,000",
+        features: ["Resort-Style", "Golf View", "Quiet Setting"]
       },
       {
         id: 5,
         name: "Taj City Centre, Gurugram",
-        location: "Bali, Indonesia",
+        location: "MG Road, Gurugram",
         rating: 5,
         description: "Fun, upbeat, colorful. She fits right in, brightens things up, and makes sure there’s never a dull minute in your stay.",
-        image: "/hotel-emerald.webp",
-        amenities: ["Cliffside Infinity Pool", "Jungle Spa", "Rice Terrace Dining", "Cultural Workshops"],
-        price: "₹28,000",
-        features: ["Volcano Views", "Sacred Spring", "Monkey Sanctuary"]
+        image: "/Webpimages/hotel-dining-wood.webp",
+        amenities: ["Sky Lounge", "Michelin-star Restaurant", "24/7 Butler Service"],
+        price: "₹15,000",
+        features: ["Metro-Adjacent", "Rooftop Bar", "Business Lounge"]
       },
       {
         id: 6,
         name: "The Westin, Gurgaon",
-        location: "New York City, USA",
+        location: "Sushant Lok, Gurugram",
         rating: 5,
         description: "Luxury with a homey touch. The room feels just right — calm, private, and personal, the way you want after a long day.",
-        image: "/hotel-sapphire.webp",
-        amenities: ["Rooftop Pool", "Sky Lounge", "Personal Shopper", "Broadway Concierge"],
-        price: "₹52,000",
-        features: ["Central Park View", "Penthouse Suites", "Private Elevator"]
+        image: "/Webpimages/hotel-lounge-nook.webp",
+        amenities: ["Rooftop Pool", "Luxury Spa", "Personal Shopper"],
+        price: "₹17,000",
+        features: ["Sushant Lok Views", "Late Checkout", "Quiet Setting"]
       }
     ];
   
@@ -314,7 +314,7 @@ const services = [
               transition={{ delay: 0.1, duration: 0.6 }}
               className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white drop-shadow-lg"
             >
-              Experience Elite Companionship in Gurugram
+              Escort Service in Gurugram — Elite, Verified Companionship
             </motion.h1>
 
             <motion.p
@@ -333,7 +333,9 @@ const services = [
               className="mt-8 flex flex-col sm:flex-row gap-4"
             >
               <a
-                href="#book"
+                href="https://api.whatsapp.com/send?phone=918826482370"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-white text-gray-900 px-6 py-3 text-sm font-semibold shadow-md hover:shadow-lg transition"
                 aria-label="Primary action - Book now"
               >
@@ -341,7 +343,7 @@ const services = [
               </a>
 
               <a
-                href="#services"
+                href="#hotels"
                 className="inline-flex items-center justify-center rounded-full border border-white/40 text-white px-5 py-3 text-sm font-medium backdrop-blur-sm hover:bg-white/10 transition"
                 aria-label="Secondary action - View services"
               >
@@ -399,7 +401,9 @@ const services = [
                 </div>
 
                 <a
-                  href="#quickbook"
+                  href="https://api.whatsapp.com/send?phone=918826482370"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-6 inline-block w-full text-center rounded-md bg-white text-gray-900 px-4 py-2 font-medium shadow-sm hover:shadow-md transition"
                 >
                   Quick Book
@@ -465,29 +469,24 @@ const services = [
           {/* CTA Buttons */}
           <div className="flex items-center gap-4">
             <a
-              href="tel:+00123456789"
+              href="https://api.whatsapp.com/send?phone=918826482370"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 font-medium bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent hover:opacity-90 transition"
             >
-              📞 +00 123 456 789
+              📞 Message on WhatsApp
             </a>
 
             {/* Book Now uses matching gradient background */}
             <a
-              href="#book"
+              href="https://api.whatsapp.com/send?phone=918826482370"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 rounded-xl bg-gradient-to-r from-pink-600 to-purple-600 text-white font-medium shadow-lg hover:scale-[1.02] transition-transform"
             >
               Book Now
             </a>
           </div>
-
-          <a
-            href="https://www.website.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-gray-500 hover:text-amber-600"
-          >
-            🌐 www.website.com
-          </a>
         </motion.div>
 
         {/* Right Image */}
@@ -549,7 +548,7 @@ const services = [
                       <strong className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 font-medium">
                        travel,
                       </strong>{" "}
-                      and curated experiences across Delhi.{" "}
+                      and curated experiences across Gurugram.{" "}
                       
                     </p>
                     
@@ -558,17 +557,19 @@ const services = [
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href="#contact"
+                href="https://api.whatsapp.com/send?phone=918826482370"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-medium shadow-lg hover:bg-emerald-600 transition"
               >
-                Book a Consultation
+                Book on WhatsApp
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                 </svg>
               </a>
 
               <a
-                href="#services"
+                href="#hotels"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gray-200 bg-white text-gray-800 text-sm font-medium shadow-sm hover:shadow-md transition"
               >
                 View Services
@@ -647,7 +648,7 @@ const services = [
       </div>
 
       <div className="mt-3">
-        <a href="#contact" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
+        <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
       </div>
     </motion.div>
   ))}
@@ -675,7 +676,7 @@ const services = [
             <div className="text-xs text-gray-500">Custom experiences for birthdays, corporate events, travel & more.</div>
           </div>
           <div className="flex gap-3">
-            <a href="#contact" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm">Enquire Now</a>
+            <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm">Enquire Now</a>
             <a href="#faq" className="px-5 py-2 rounded-full border border-gray-200 text-sm">Read FAQ</a>
           </div>
         </div>
@@ -738,7 +739,7 @@ const services = [
 
       <div className="mt-10 flex justify-center lg:justify-start">
         <a
-          href="#"
+          href="#hotels"
           className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium shadow-lg hover:shadow-xl transition-shadow duration-200"
         >
           View Properties
@@ -819,9 +820,8 @@ const services = [
             
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
             {cities.map((c, i) => (
-            <motion.a
+            <motion.div
             key={c.name}
-            href={`#/cities/${c.name.toLowerCase()}`}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.04, duration: 0.35 }}
@@ -838,22 +838,22 @@ const services = [
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
             </div>
-            
-            
+
+
             <div className="absolute left-0 right-0 bottom-4 px-4 text-center">
             <span className="text-white text-lg sm:text-xl font-semibold tracking-wider drop-shadow-lg uppercase">{c.name}</span>
             </div>
-            </motion.a>
+            </motion.div>
             ))}
             </div>
-            
-            
+
+
             <div className="flex justify-center mt-10">
             <a
-            href="#/cities"
+            href="/escort-service-in-delhi"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
             >
-            View All Cities
+            View All Locations
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
             </svg>
@@ -865,7 +865,7 @@ const services = [
            
             
             {/* 5 star hotel */}
-        <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+        <div id="hotels" className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
@@ -896,6 +896,13 @@ const services = [
                 >
                   {/* Hotel Image */}
                   <div className="relative h-60 overflow-hidden">
+                    <Image
+                      src={hotel.image}
+                      alt={`${hotel.name}, ${hotel.location}`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover object-center"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 z-10"></div>
                     <div className="absolute top-4 right-4 z-20 flex items-center bg-purple-600 text-white px-3 py-1 rounded-full text-sm">
                       <FaStar className="mr-1" />
@@ -904,10 +911,6 @@ const services = [
                     <div className="absolute bottom-4 left-4 z-20 text-white">
                       <h3 className="text-xl font-bold">{hotel.name}</h3>
                       <p className="text-sm">{hotel.location}</p>
-                    </div>
-                    {/* Placeholder Image */}
-                    <div className="bg-gradient-to-br from-purple-100 to-pink-200 w-full h-full flex items-center justify-center">
-                      <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
                     </div>
                   </div>
 
@@ -1094,10 +1097,10 @@ const services = [
       transition={{ duration: 0.6 }}
     >
       <span className="text-lg font-medium text-purple-700 tracking-widest">
-        OUR SIGNATURE OFFERINGS
+        WHY CLIENTS COME BACK
       </span>
       <h2 className="text-4xl md:text-5xl font-bold text-[#2d1f2f] mt-4 mb-6">
-        Premium Spa Experiences
+        Trusted Escort Service in Gurugram
       </h2>
       <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full"></div>
     </motion.div>
@@ -1145,12 +1148,12 @@ const services = [
           </p> */}
           <div className="mt-6">
             <span className="inline-block bg-purple-100 text-purple-700 py-1 px-4 rounded-full text-sm font-medium">
-              60-90 min | From ₹2,800
+              Verified Profiles, Every Booking
             </span>
           </div>
         </motion.div>
 
-        {/* Why Go For Delhi Spa */}
+        {/* How to book */}
         <motion.div 
           className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-purple-100"
           initial={{ opacity: 0, x: -30 }}
@@ -1171,8 +1174,8 @@ const services = [
           </p>
           <ul className="grid grid-cols-2 gap-3 mb-6">
             {[
-              'Pick your match from real profiles — there’s always enough variety for any mood or preference.', 'Drop the location and your preferred meeting time.', 'Book with one tap and relax — you get a fast, secure reply, and your privacy is locked in all the way.', 
-              'AYour escort shows up right on time, looking sharp and setting the right vibe from the start.', 'The rest? Conversation, comfort, and fun — all revolving around you.'
+              'Pick your match from real profiles — there’s always enough variety for any mood or preference.', 'Drop the location and your preferred meeting time.', 'Book with one tap and relax — you get a fast, secure reply, and your privacy is locked in all the way.',
+              'Your escort shows up right on time, looking sharp and setting the right vibe from the start.', 'The rest? Conversation, comfort, and fun — all revolving around you.'
             ].map((item, index) => (
               <li key={index} className="flex items-center">
                 <div className="w-2 h-2 bg-purple-700 rounded-full mr-3"></div>
@@ -1185,7 +1188,7 @@ const services = [
           </p> */}
           <div className="mt-6">
             <span className="inline-block bg-purple-100 text-purple-700 py-1 px-4 rounded-full text-sm font-medium">
-              75-90 min | From ₹3,200
+              Pay After You Meet
             </span>
           </div>
         </motion.div>
@@ -1269,7 +1272,7 @@ const services = [
 
 
 {/* FAQ Section */}
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+    <div id="faq" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <motion.div
@@ -1418,15 +1421,15 @@ const services = [
                 </div>
                 
                 <div className="space-y-4">
-                  <a 
-                    href="mailto:support@example.com" 
+                  <a
+                    href="mailto:info@delhigirl.in"
                     className="flex items-center justify-center bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                   >
                     <FiMail className="mr-2" />
                     Email Support
                   </a>
-                  <a 
-                    href="/contact" 
+                  <a
+                    href="/contact-us"
                     className="flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors"
                   >
                     <FiMessageSquare className="mr-2" />

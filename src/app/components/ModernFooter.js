@@ -91,16 +91,38 @@ const ModernFooter = () => {
                 </li>
               ))}
             </ul>
+
+            <h3 className="text-xl font-bold mt-8 mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-gradient-to-r after:from-amber-500 after:to-orange-500">
+              Locations
+            </h3>
+            <ul className="space-y-3">
+              {[
+                { name: "Noida", link: "/call-girls-in-noida" },
+                { name: "Gurgaon", link: "/call-girls-in-gurgaon" },
+                { name: "Aerocity", link: "/aerocity-escorts" },
+                { name: "Connaught Place", link: "/call-girls-in-connaught-place" },
+                { name: "Mahipalpur", link: "/call-girls-in-mahipalpur" },
+                { name: "Dwarka", link: "/call-girls-in-dwarka" },
+                { name: "Lajpat Nagar", link: "/call-girls-in-lajpat-nagar" },
+              ].map((item, i) => (
+                <li key={i}>
+                  <Link href={item.link} className="text-gray-400 hover:text-amber-400 transition-colors flex items-center">
+                    <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-3"></span>
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </motion.div>
-          
-          {/* Location */}
+
+          {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h3 className="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-gradient-to-r after:from-amber-500 after:to-orange-500">
-              Our Locations
+              Contact Info
             </h3>
             <ul className="space-y-4">
               {[

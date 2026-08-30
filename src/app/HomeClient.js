@@ -441,14 +441,14 @@ export default function Home({
 { name: 'Noida', img: '/Webpimages/hotel3.webp', href: '/call-girls-in-noida' },
 { name: 'Gurgaon', img: '/Webpimages/lajpatnagahotel.webp', href: '/call-girls-in-gurgaon' },
 { name: 'Faridabaad', img: '/Webpimages/RoseateHouse.webp', href: '/escort-service-in-delhi' },
-{ name: 'Mahipalpur', img: '/Webpimages/paschimvihar.webp', href: '/escort-service-in-delhi' },
+{ name: 'Mahipalpur', img: '/Webpimages/paschimvihar.webp', href: '/call-girls-in-mahipalpur' },
 { name: 'Aerocity', img: '/Webpimages/JwMarriott_CP.webp', href: '/aerocity-escorts' },
 { name: 'Connaught Place', img: '/Webpimages/connaught-place-delhi.webp', href: '/call-girls-in-connaught-place' },
 { name: 'New Friends Colony', img: '/Webpimages/holidayIn_CP.webp', href: '/escort-service-in-delhi' },
-{ name: 'Dwarka', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp', href: '/escort-service-in-delhi' },
+{ name: 'Dwarka', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp', href: '/call-girls-in-dwarka' },
 { name: 'Paharganj', img: '/Webpimages/paschimvihar.webp', href: '/escort-service-in-delhi' },
 { name: 'Vasant kunj', img: '/Webpimages/hotel2.webp', href: '/escort-service-in-delhi' },
-{ name: 'Lajpat Nagar ', img: '/Webpimages/pullmanAerocity.webp', href: '/escort-service-in-delhi' },
+{ name: 'Lajpat Nagar ', img: '/Webpimages/pullmanAerocity.webp', href: '/call-girls-in-lajpat-nagar' },
 { name: 'Kalkaji', img: '/Webpimages/jwmarriott.webp', href: '/escort-service-in-delhi' },
 ]
 const profiles = [
@@ -533,6 +533,9 @@ const getLocationHref = (label) => {
   if (l.includes('noida')) return '/call-girls-in-noida';
   if (l.includes('aerocity')) return '/aerocity-escorts';
   if (l.includes('gurgaon')) return '/call-girls-in-gurgaon';
+  if (l.includes('mahipalpur')) return '/call-girls-in-mahipalpur';
+  if (l.includes('dwaka') || l.includes('dwarka')) return '/call-girls-in-dwarka';
+  if (l.includes('lajpat')) return '/call-girls-in-lajpat-nagar';
   return '/escort-service-in-delhi';
 };
   return (

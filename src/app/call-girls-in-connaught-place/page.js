@@ -2,21 +2,30 @@ import Connaught from "./Connaught";
 
 export const metadata = {
   title: "Call Girls in Connaught Place (CP) | 15-min Hotel Delivery",
-  description: "CP escorts available from ₹4k/shot. Radisson, Lalit, Royal Plaza in-call suites. Sexy college girls & air-hostesses ready now—discreet entry, no questions asked.",
+  description: "Call girls in Connaught Place, Delhi's most central hub — minutes from The Lalit, Royal Plaza & Shangri-La Eros. Verified companions, pay after you meet.",
   alternates: { canonical: "/call-girls-in-connaught-place" },
+  // Reference list only — Google has ignored this tag for ranking since 2009.
+  // Kept here so it's easy to see the target keyword set for backlink/anchor-text planning.
+  keywords: [
+    "Call Girls in Connaught Place",
+    "Connaught Place Escorts",
+    "CP Escorts",
+    "Escort Service in Connaught Place",
+    "College Call Girls in Connaught Place",
+    "Air Hostess Escorts in Connaught Place",
+    "High Profile Escorts in Connaught Place",
+    "Book Call Girls in Connaught Place",
+    "Call Girls near CP Metro",
+    "Radisson Connaught Place Escorts",
+  ],
   openGraph: {
     title: "Call Girls in Connaught Place (CP) | 15-min Hotel Delivery",
-    description: "CP escorts available from ₹4k/shot. Radisson, Lalit, Royal Plaza in-call suites. Sexy college girls & air-hostesses ready now—discreet entry, no questions asked.",
-    images: ["/Webpimages/JwMarriott_CP.webp"], 
+    description: "Call girls in Connaught Place, Delhi's most central hub — minutes from The Lalit, Royal Plaza & Shangri-La Eros. Verified companions, pay after you meet.",
+    images: ["/Webpimages/connaught-place-delhi.webp"],
     type: "website",
   },
-  
 };
+
 export default function page() {
-  return (
-    <Connaught
-      title="Call Girls in Connaught Place (CP) for 15-Min Hotel Delivery"
-      subtitle="Radisson, Lalit & Royal Plaza in-call suites — discreet entry, sexy college girls & air-hostesses ready now."
-    />
-  );
+  return <Connaught />;
 }

@@ -26,7 +26,7 @@ export default function Pricing() {
       role: 'Senior Airhostess',
       category: 'airhostess',
       description: '5+ years experience with international airlines. Fluent in 4 languages.',
-      image: '/Webpimages/download (33).webp', // Placeholder image path
+      image: '/Webpimages/2.webp', // Placeholder image path
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ export default function Pricing() {
       role: 'TV Personality',
       category: 'celebrity',
       description: 'Award-winning host of "Nightlife" show. Known for vibrant personality.',
-      image: '/Webpimages/image1.webp', // Placeholder image pathss
+      image: '/Webpimages/32586.webp', // Placeholder image pathss
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ export default function Pricing() {
       role: 'Marketing Student',
       category: 'college',
       description: 'Top of her class at NYU. Passionate about digital marketing trends.',
-      image: '/Webpimages/spaStaffInsta.webp', // Placeholder image path
+      image: '/Webpimages/download.webp', // Placeholder image path
     },
     {
       id: 4,
@@ -50,7 +50,7 @@ export default function Pricing() {
       role: 'International Model',
       category: 'foreign',
       description: 'Milan-born fashion model. Featured in Vogue and Elle magazines.',
-      image: '/Webpimages/celebrityspastaff.webp', // Placeholder image path
+      image: '/Webpimages/download22.webp', // Placeholder image path
     },
     {
       id: 5,
@@ -58,7 +58,7 @@ export default function Pricing() {
       role: 'Corporate Executive',
       category: 'highprofile',
       description: 'Fortune 500 company board member. MBA from Harvard Business School.',
-      image: '/Webpimages/49.webp',
+      image: '/Webpimages/download27.webp',
     },
     {
       id: 6,
@@ -66,7 +66,7 @@ export default function Pricing() {
       role: 'First Class Hostess',
       category: 'airhostess',
       description: 'Specialized in luxury travel experience. Trained in hospitality management.',
-      image: '/Webpimages/smiling.webp', // Placeholder image path
+      image: '/Webpimages/download28.webp', // Placeholder image path
     },
     {
       id: 7,
@@ -74,7 +74,7 @@ export default function Pricing() {
       role: 'Film Actress',
       category: 'celebrity',
       description: 'Rising star in independent cinema. Trained at Royal Academy of Dramatic Art.',
-      image: '/Webpimages/413965.webp', // Placeholder image path
+      image: '/Webpimages/download29.webp', // Placeholder image path
     },
     {
       id: 8,
@@ -82,7 +82,7 @@ export default function Pricing() {
       role: 'Engineering Student',
       category: 'college',
       description: 'Robotics club president. Developing AI solutions for sustainable energy.',
-      image: '/Webpimages/download (15).webp', // Placeholder image path
+      image: '/Webpimages/download30.webp', // Placeholder image path
     },
   ];
       const filteredStaff = activeCategory === 'all' 
@@ -176,50 +176,50 @@ export default function Pricing() {
         const faqs = [
           {
             id: 1,
-            question: 'How do I create an account?',
-            answer: 'Creating an account is simple. Click on the "Sign Up" button in the top right corner, fill in your details including name, email, and password, then verify your email address.',
+            question: 'Are cheap call girls in Delhi still verified and safe to book?',
+            answer: 'Yes. A lower price bracket doesn\'t mean a lower verification standard — every profile goes through the same identity checks regardless of package.',
             category: 'account',
           },
           {
             id: 2,
-            question: 'What payment methods do you accept?',
-            answer: 'We accept all major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and bank transfers. All transactions are securely processed with 256-bit encryption.',
+            question: 'Do I need to pay in advance for a budget booking?',
+            answer: 'No. Pay after you meet is standard across every price tier — confirm on WhatsApp and settle payment once your companion has arrived.',
             category: 'payments',
           },
           {
             id: 3,
-            question: 'Can I modify my booking after confirmation?',
-            answer: 'Yes, you can modify your booking up to 24 hours before your scheduled appointment. Simply log into your account, go to "My Bookings", and select "Modify". Changes are subject to availability.',
+            question: 'Can I change my booking time after confirming?',
+            answer: 'Yes, message us on WhatsApp as early as possible and we\'ll adjust the time based on your companion\'s availability.',
             category: 'booking',
           },
           {
             id: 4,
-            question: 'How do I cancel a reservation?',
-            answer: 'To cancel a reservation, go to "My Bookings" in your account dashboard, select the booking you wish to cancel, and click "Cancel". Cancellation policies vary by service type - please review before confirming.',
+            question: 'How do I cancel a booking?',
+            answer: 'Just message us on WhatsApp before your scheduled time. Since payment only happens after you meet, there\'s nothing to refund if you cancel in advance.',
             category: 'booking',
           },
           {
             id: 5,
-            question: 'What is your refund policy?',
-            answer: 'We offer full refunds for cancellations made at least 48 hours in advance. Cancellations within 24-48 hours receive a 50% refund. No refunds are available for cancellations within 24 hours of the appointment.',
+            question: 'What\'s the difference between the pricing tiers?',
+            answer: 'Pricing mainly reflects duration and profile category — the verification, discretion, and booking process stay the same across every tier.',
             category: 'payments',
           },
           {
             id: 6,
-            question: 'Are your services available internationally?',
-            answer: 'Yes, we currently operate in 15 countries worldwide. Please check our locations page for specific service availability in your region. Additional fees may apply for international bookings.',
+            question: 'Do you cover budget hotels as well as 5-star properties?',
+            answer: 'Yes, our companions are used to check-ins at both budget and premium hotels across Delhi NCR.',
             category: 'services',
           },
           {
             id: 7,
-            question: 'How do I reset my password?',
-            answer: 'Click "Forgot Password" on the login page, enter your registered email, and you will receive a password reset link. This link expires in 30 minutes for security reasons.',
+            question: 'Is a cheaper booking still discreet?',
+            answer: 'Yes. Every booking, regardless of price, is handled privately over WhatsApp with minimal details required.',
             category: 'account',
           },
           {
             id: 8,
             question: 'What safety measures do you have in place?',
-            answer: 'All our staff undergo thorough background checks and professional training. We offer contactless payment options, 24/7 support, and an emergency contact system for your safety.',
+            answer: 'Every companion is identity-verified before being listed, and bookings are confirmed only through WhatsApp — no walk-ins, no unverified profiles.',
             category: 'services',
           },
         ];
@@ -652,7 +652,9 @@ export default function Pricing() {
             </a>
     
             <a
-              href="#contact"
+              href="https://api.whatsapp.com/send?phone=918826482370"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 rounded-full font-medium border-2 border-transparent bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-purple-50 transition-colors relative overflow-hidden group"
             >
               <span className="relative z-10">Book Appointment</span>
@@ -663,7 +665,7 @@ export default function Pricing() {
     </section>
     {/* end 300 content section  */}
     {/* pricing */}
-         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+         <div id="Pricing" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <motion.h2 
@@ -1416,15 +1418,15 @@ export default function Pricing() {
                 </div>
                 
                 <div className="space-y-4">
-                  <a 
-                    href="mailto:support@example.com" 
+                  <a
+                    href="mailto:info@delhigirl.in"
                     className="flex items-center justify-center bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                   >
                     <FiMail className="mr-2" />
                     Email Support
                   </a>
-                  <a 
-                    href="/contact" 
+                  <a
+                    href="/contact-us"
                     className="flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors"
                   >
                     <FiMessageSquare className="mr-2" />

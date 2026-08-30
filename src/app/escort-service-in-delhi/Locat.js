@@ -423,29 +423,24 @@ const services = [
           {/* CTA Buttons */}
           <div className="flex items-center gap-4">
             <a
-              href="tel:+00123456789"
+              href="https://api.whatsapp.com/send?phone=918826482370"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 font-medium bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent hover:opacity-90 transition"
             >
-              📞 +00 123 456 789
+              📞 Message on WhatsApp
             </a>
 
             {/* Book Now uses matching gradient background */}
             <a
-              href="#book"
+              href="https://api.whatsapp.com/send?phone=918826482370"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 rounded-xl bg-gradient-to-r from-pink-600 to-purple-600 text-white font-medium shadow-lg hover:scale-[1.02] transition-transform"
             >
               Book Now
             </a>
           </div>
-
-          <a
-            href="https://www.website.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-gray-500 hover:text-amber-600"
-          >
-            🌐 www.website.com
-          </a>
         </motion.div>
 
         {/* Right Image */}
@@ -516,17 +511,19 @@ const services = [
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href="#contact"
+                href="https://api.whatsapp.com/send?phone=918826482370"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-medium shadow-lg hover:bg-emerald-600 transition"
               >
-                Book a Consultation
+                Book on WhatsApp
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                 </svg>
               </a>
 
               <a
-                href="#services"
+                href="#faq"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gray-200 bg-white text-gray-800 text-sm font-medium shadow-sm hover:shadow-md transition"
               >
                 View Services
@@ -605,7 +602,7 @@ const services = [
       </div>
 
       <div className="mt-3">
-        <a href="#contact" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
+        <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
       </div>
     </motion.div>
   ))}
@@ -633,7 +630,7 @@ const services = [
             <div className="text-xs text-gray-500">Custom experiences for birthdays, corporate events, travel & more.</div>
           </div>
           <div className="flex gap-3">
-            <a href="#contact" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm">Enquire Now</a>
+            <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm">Enquire Now</a>
             <a href="#faq" className="px-5 py-2 rounded-full border border-gray-200 text-sm">Read FAQ</a>
           </div>
         </div>
@@ -694,7 +691,7 @@ const services = [
 
       <div className="mt-10 flex justify-center lg:justify-start">
         <a
-          href="#"
+          href="#hotels"
           className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium shadow-lg hover:shadow-xl transition-shadow duration-200"
         >
           View Properties
@@ -775,9 +772,8 @@ const services = [
             
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
             {cities.map((c, i) => (
-            <motion.a
+            <motion.div
             key={c.name}
-            href={`#/cities/${c.name.toLowerCase()}`}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.04, duration: 0.35 }}
@@ -794,22 +790,24 @@ const services = [
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
             </div>
-            
-            
+
+
             <div className="absolute left-0 right-0 bottom-4 px-4 text-center">
             <span className="text-white text-lg sm:text-xl font-semibold tracking-wider drop-shadow-lg uppercase">{c.name}</span>
             </div>
-            </motion.a>
+            </motion.div>
             ))}
             </div>
-            
-            
+
+
             <div className="flex justify-center mt-10">
             <a
-            href="#/cities"
+            href="https://api.whatsapp.com/send?phone=918826482370"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
             >
-            View All Cities
+            Message on WhatsApp
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
             </svg>
@@ -820,7 +818,7 @@ const services = [
                 {/* End Location */}
            
             {/* 5 star hotel */}
-<div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+<div id="hotels" className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
   <div className="max-w-7xl mx-auto">
     <motion.div
       initial={{ opacity: 0, y: -20 }}
@@ -1103,8 +1101,8 @@ const services = [
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         <Image
           loading="lazy"
-          src="/Webpimages/Signin.webp"
-          alt="Luxury Spa Experience"
+          src="/Webpimages/hotel-suite-interior.webp"
+          alt="Escort service in Delhi — luxury hotel suite"
           fill
           className="object-cover rounded-[2.5rem] transform group-hover:scale-105 transition-transform duration-700"
         />
@@ -1208,7 +1206,9 @@ const services = [
         </motion.a>
 
         <motion.a
-          href="#contact"
+          href="https://api.whatsapp.com/send?phone=918826482370"
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-8 py-4 rounded-full font-medium border-2 bg-white/80 backdrop-blur-sm border-transparent bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 hover:shadow-lg transition-all relative group"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -1487,7 +1487,9 @@ Your room turns into the comfort zone, your fantasy turns out to be the way, and
         </a>
 
         <a
-          href="#contact"
+          href="https://api.whatsapp.com/send?phone=918826482370"
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-8 py-4 rounded-full font-medium border-2 border-transparent bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-purple-50 transition-colors relative overflow-hidden group"
         >
           <span className="relative z-10">Book Appointment</span>
@@ -1514,7 +1516,7 @@ Your room turns into the comfort zone, your fantasy turns out to be the way, and
 {/* end 300 content section  */}
 
 {/* FAQ Section */}
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+    <div id="faq" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <motion.div
@@ -1663,15 +1665,15 @@ Your room turns into the comfort zone, your fantasy turns out to be the way, and
                 </div>
                 
                 <div className="space-y-4">
-                  <a 
-                    href="mailto:support@example.com" 
+                  <a
+                    href="mailto:info@delhigirl.in"
                     className="flex items-center justify-center bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                   >
                     <FiMail className="mr-2" />
                     Email Support
                   </a>
-                  <a 
-                    href="/contact" 
+                  <a
+                    href="/contact-us"
                     className="flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors"
                   >
                     <FiMessageSquare className="mr-2" />

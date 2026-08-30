@@ -29,7 +29,7 @@ export default function Russianmodels() {
       role: 'Senior Airhostess',
       category: 'Independentprofile',
       description: '5+ years experience with international airlines. Fluent in 4 languages.',
-      image: '/Webpimages/download (30).webp', // Placeholder image path
+      image: '/Webpimages/downloadd1.webp', // Placeholder image path
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ export default function Russianmodels() {
       role: 'TV Personality',
       category: 'Independentprofile',
       description: 'Award-winning host of "Nightlife" show. Known for vibrant personality.',
-      image: '/Webpimages/download (32).webp', // Placeholder image pathss
+      image: '/Webpimages/downloadd2.webp', // Placeholder image pathss
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ export default function Russianmodels() {
       role: 'Marketing Student',
       category: 'college',
       description: 'Top of her class at NYU. Passionate about digital marketing trends.',
-      image: '/Webpimages/spaStaffInsta.webp', // Placeholder image path
+      image: '/Webpimages/downloadd3.webp', // Placeholder image path
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ export default function Russianmodels() {
       role: 'International Model',
       category: 'foreign',
       description: 'Milan-born fashion model. Featured in Vogue and Elle magazines.',
-      image: '/Webpimages/celebrityspastaff.webp', // Placeholder image path
+      image: '/Webpimages/downloadd4.webp', // Placeholder image path
     },
     {
       id: 5,
@@ -61,7 +61,7 @@ export default function Russianmodels() {
       role: 'Corporate Executive',
       category: 'Russianmodels',
       description: 'Fortune 500 company board member. MBA from Harvard Business School.',
-      image: '/Webpimages/49.webp',
+      image: '/Webpimages/downloadd5.webp',
     },
     {
       id: 6,
@@ -69,7 +69,7 @@ export default function Russianmodels() {
       role: 'First Class Hostess',
       category: 'Russianmodels',
       description: 'Specialized in luxury travel experience. Trained in hospitality management.',
-      image: '/Webpimages/smiling.webp', // Placeholder image path
+      image: '/Webpimages/downloadee.webp', // Placeholder image path
     },
     {
       id: 7,
@@ -77,7 +77,7 @@ export default function Russianmodels() {
       role: 'Film Actress',
       category: 'Russianmodels',
       description: 'Rising star in independent cinema. Trained at Royal Academy of Dramatic Art.',
-      image: '/Webpimages/413965.webp', // Placeholder image path
+      image: '/Webpimages/49 (1).webp', // Placeholder image path
     },
     {
       id: 8,
@@ -85,7 +85,7 @@ export default function Russianmodels() {
       role: 'Engineering Student',
       category: 'college',
       description: 'Robotics club president. Developing AI solutions for sustainable energy.',
-      image: '/Webpimages/download (31).webp', // Placeholder image path
+      image: '/Webpimages/7168.webp', // Placeholder image path
     },
   ];
     const filteredStaff = activeCategory === 'all' 
@@ -121,50 +121,50 @@ const current = priceMap[tier]
             const faqs = [
               {
                 id: 1,
-                question: 'How do I create an account?',
-                answer: 'Creating an account is simple. Click on the "Sign Up" button in the top right corner, fill in your details including name, email, and password, then verify your email address.',
+                question: 'Are the Russian model profiles genuine?',
+                answer: 'Yes. Every Russian escort profile is verified before it goes live, so the person who arrives is the same one you see in the photos.',
                 category: 'account',
               },
               {
                 id: 2,
                 question: 'What payment methods do you accept?',
-                answer: 'We accept all major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and bank transfers. All transactions are securely processed with 256-bit encryption.',
+                answer: 'Cash or UPI, paid after you meet. There\'s no advance payment — you confirm on WhatsApp and settle up once your companion has arrived.',
                 category: 'payments',
               },
               {
                 id: 3,
-                question: 'Can I modify my booking after confirmation?',
-                answer: 'Yes, you can modify your booking up to 24 hours before your scheduled appointment. Simply log into your account, go to "My Bookings", and select "Modify". Changes are subject to availability.',
+                question: 'Can I change my booking time after confirming?',
+                answer: 'Yes, message us on WhatsApp as early as you can and we\'ll adjust the time based on your companion\'s availability.',
                 category: 'booking',
               },
               {
                 id: 4,
-                question: 'How do I cancel a reservation?',
-                answer: 'To cancel a reservation, go to "My Bookings" in your account dashboard, select the booking you wish to cancel, and click "Cancel". Cancellation policies vary by service type - please review before confirming.',
+                question: 'How do I cancel a booking?',
+                answer: 'Just message us on WhatsApp before your scheduled time. Since payment only happens after you meet, there\'s nothing to refund if you cancel in advance.',
                 category: 'booking',
               },
               {
                 id: 5,
-                question: 'What is your refund policy?',
-                answer: 'We offer full refunds for cancellations made at least 48 hours in advance. Cancellations within 24-48 hours receive a 50% refund. No refunds are available for cancellations within 24 hours of the appointment.',
+                question: 'Do I need to pay anything in advance?',
+                answer: 'No. Pay after you meet is standard for every booking — no advance, no deposit.',
                 category: 'payments',
               },
               {
                 id: 6,
-                question: 'Are your services available internationally?',
-                answer: 'Yes, we currently operate in 15 countries worldwide. Please check our locations page for specific service availability in your region. Additional fees may apply for international bookings.',
+                question: 'Do you cover 5-star hotels across Delhi NCR?',
+                answer: 'Yes, our Russian model escorts are experienced with 5-star hotel check-ins across Delhi and NCR, and arrive discreetly regardless of the property.',
                 category: 'services',
               },
               {
                 id: 7,
-                question: 'How do I reset my password?',
-                answer: 'Click "Forgot Password" on the login page, enter your registered email, and you will receive a password reset link. This link expires in 30 minutes for security reasons.',
+                question: 'Is booking discreet?',
+                answer: 'Yes, every booking is handled privately over WhatsApp with minimal details required, and your information is never shared.',
                 category: 'account',
               },
               {
                 id: 8,
                 question: 'What safety measures do you have in place?',
-                answer: 'All our staff undergo thorough background checks and professional training. We offer contactless payment options, 24/7 support, and an emergency contact system for your safety.',
+                answer: 'Every companion is identity-verified before being listed, and bookings are confirmed only through WhatsApp — no walk-ins, no unverified profiles.',
                 category: 'services',
               },
             ];
@@ -182,21 +182,13 @@ const current = priceMap[tier]
               //End FAQ Section
 
               const profiles = [
-  { image: '/Webpimages/modelg.webp' },
-  { image: '/Webpimages/18244.webp' },
-  { image: '/Webpimages/172420-8871.webp' },
-  { image: '/Webpimages/Model2.webp' },
-  { image: '/Webpimages/7168.webp' },
-  { image: '/Webpimages/49.webp' },
-  { image: '/Webpimages/Model21.webp' },
-
-  { image: '/Webpimages/modelg.webp' },
-  { image: '/Webpimages/18244.webp' },
-  { image: '/Webpimages/172420-8871.webp' },
-  { image: '/Webpimages/Model2.webp' },
-  { image: '/Webpimages/7168.webp' },
-  { image: '/Webpimages/49.webp' },
-  { image: '/Webpimages/Model21.webp' },
+  { image: '/Webpimages/fashion-portrait-beautiful-blonde-model.webp', label: 'Featured Companion 1' },
+  { image: '/Webpimages/Evie Lee Mikomin (1).webp', label: 'Featured Companion 2' },
+  { image: '/Webpimages/model1 (1).webp', label: 'Featured Companion 3' },
+  { image: '/Webpimages/ph_ miller_millka.webp', label: 'Featured Companion 4' },
+  { image: '/Webpimages/staff.webp', label: 'Featured Companion 5' },
+  { image: '/Webpimages/young-woman.webp', label: 'Featured Companion 6' },
+  { image: '/Webpimages/young-woman-lying-alone-black-seductive-lingerie-white-sofa-tropical-villa-listening-music-player-earphones-smiling.webp', label: 'Featured Companion 7' },
 ]
 
 const features = [
@@ -307,11 +299,11 @@ points: ["Safe home visits", "Verified profiles", "Discreet arrival & departure"
               transition={{ delay: 0.4 }}
               className="mt-8 flex flex-wrap gap-4"
             >
-              <a href="#book" className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-violet-500 text-white px-6 py-3 rounded-full shadow-lg hover:scale-[1.02] transform transition">
-                Book a Consultation
+              <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-violet-500 text-white px-6 py-3 rounded-full shadow-lg hover:scale-[1.02] transform transition">
+                Book on WhatsApp
               </a>
 
-              <a href="#services" className="inline-flex items-center gap-3 bg-white border border-gray-200 px-6 py-3 rounded-full shadow-sm text-gray-700 hover:shadow-md transition">
+              <a href="#faq" className="inline-flex items-center gap-3 bg-white border border-gray-200 px-6 py-3 rounded-full shadow-sm text-gray-700 hover:shadow-md transition">
                 View Services
               </a>
             </motion.div>
@@ -433,17 +425,19 @@ points: ["Safe home visits", "Verified profiles", "Discreet arrival & departure"
         
                     <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                       <a
-                        href="#contact"
+                        href="https://api.whatsapp.com/send?phone=918826482370"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-medium shadow-lg hover:bg-emerald-600 transition"
                       >
-                        Book a Consultation
+                        Book on WhatsApp
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                         </svg>
                       </a>
-        
+
                       <a
-                        href="#services"
+                        href="#faq"
                         className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gray-200 bg-white text-gray-800 text-sm font-medium shadow-sm hover:shadow-md transition"
                       >
                         View Services
@@ -497,19 +491,18 @@ points: ["Safe home visits", "Verified profiles", "Discreet arrival & departure"
                         <div className="text-xs text-gray-400">Delhi</div>
                       </div>
         
-                      {/* Carousel-like simple row (replace with real carousel if you want) */}
-                      <div className="flex gap-3 overflow-x-auto pb-2 -mx-2 px-2">
+                      {/* Companion gallery grid */}
+                      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           {profiles.map((p, idx) => (
             <motion.div
               key={idx}
               whileHover={{ scale: 1.03 }}
-              className="min-w-[160px] bg-gray-50 rounded-2xl p-3 shadow-sm"
+              className="bg-gray-50 rounded-2xl p-3 shadow-sm"
             >
               <div className="w-full h-50 rounded-lg overflow-hidden bg-gray-200">
-                {/* use p.image not p (object) */}
                 <Image
                   src={p.image}
-                  alt={`profile-${idx}`}
+                  alt={`Russian model call girl profile in Delhi — ${p.label}`}
                   width={400}
                   height={300}
                   className="object-cover w-full h-full"
@@ -522,7 +515,7 @@ points: ["Safe home visits", "Verified profiles", "Discreet arrival & departure"
               </div>
         
               <div className="mt-3">
-                <a href="#contact" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
+                <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
               </div>
             </motion.div>
           ))}
@@ -550,7 +543,7 @@ points: ["Safe home visits", "Verified profiles", "Discreet arrival & departure"
                     <div className="text-xs text-gray-500">Custom experiences for birthdays, corporate events, travel & more.</div>
                   </div>
                   <div className="flex gap-3">
-                    <a href="#contact" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm">Enquire Now</a>
+                    <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-full bg-emerald-500 text-white text-sm">Enquire Now</a>
                     <a href="#faq" className="px-5 py-2 rounded-full border border-gray-200 text-sm">Read FAQ</a>
                   </div>
                 </div>
@@ -717,7 +710,7 @@ points: ["Safe home visits", "Verified profiles", "Discreet arrival & departure"
           </ul>
 
           <div className="mt-8">
-            <a href="#book" className="inline-flex items-center gap-3 px-6 py-3 rounded-full font-medium bg-gradient-to-r from-purple-600 to-pink-500 text-white shadow-lg">
+            <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-6 py-3 rounded-full font-medium bg-gradient-to-r from-purple-600 to-pink-500 text-white shadow-lg">
               Book Now
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -996,7 +989,9 @@ When you are with the Delhi Independent Escorts, you not only have a date, but y
               <div className="mt-6 flex items-center justify-between">
                 <span className="text-xs text-amber-700 font-medium">Available 24/7</span>
                 <a
-                  href="#booking"
+                  href="https://api.whatsapp.com/send?phone=918826482370"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg text-sm shadow hover:bg-amber-700 transition"
                 >
                   Book Now
@@ -1084,7 +1079,7 @@ When you are with the Delhi Independent Escorts, you not only have a date, but y
       `}</style>
     </section>
                 {/* FAQ Section */}
-                    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+                    <div id="faq" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
                       <div className="max-w-5xl mx-auto">
                         <div className="text-center mb-16">
                           <motion.div
@@ -1233,15 +1228,15 @@ When you are with the Delhi Independent Escorts, you not only have a date, but y
                                 </div>
                                 
                                 <div className="space-y-4">
-                                  <a 
-                                    href="mailto:support@example.com" 
+                                  <a
+                                    href="mailto:info@delhigirl.in"
                                     className="flex items-center justify-center bg-white text-purple-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                                   >
                                     <FiMail className="mr-2" />
                                     Email Support
                                   </a>
-                                  <a 
-                                    href="/contact" 
+                                  <a
+                                    href="/contact-us"
                                     className="flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors"
                                   >
                                     <FiMessageSquare className="mr-2" />

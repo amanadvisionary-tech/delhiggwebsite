@@ -4,68 +4,81 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { FaWhatsapp, FaBuilding, FaSubway, FaShieldAlt, FaClock, FaStar, FaConciergeBell, FaFilm } from 'react-icons/fa';
+import { FaWhatsapp, FaBuilding, FaTrain, FaUserTie, FaShieldAlt, FaClock, FaStar, FaConciergeBell } from 'react-icons/fa';
 import { FiChevronDown } from 'react-icons/fi';
 
 const gallery = [
-  { image: '/Webpimages/download (9).webp', label: 'Kavya • 24', tag: 'Sector 18 Regular' },
-  { image: '/Webpimages/download (12).webp', label: 'Diya • 25', tag: 'Corporate Evenings' },
-  { image: '/Webpimages/download (19).webp', label: 'Naina • 23', tag: 'Film City Bookings' },
-  { image: '/Webpimages/download (27).webp', label: 'Aarohi • 26', tag: 'Sector 62 Regular' },
-  { image: '/Webpimages/download (28).webp', label: 'Tara • 24', tag: 'Greater Noida' },
+  { image: '/Webpimages/download (21).webp', label: 'Tanya • 25', tag: 'Sector 10 Regular' },
+  { image: '/Webpimages/download (10).webp', label: 'Isha • 24', tag: 'Corporate Evenings' },
+  { image: '/Webpimages/download (11).webp', label: 'Priya • 26', tag: 'Residential Visits' },
+  { image: '/Webpimages/download (13).webp', label: 'Neha • 23', tag: 'Sector 21 Bookings' },
+  { image: '/Webpimages/download (14).webp', label: 'Aditi • 25', tag: 'Corporate Evenings' },
 ];
 
 const stays = [
-  { name: 'Radisson Blu, Noida', note: 'Sector 18, closest to the nightlife and shopping strip', amenities: ['Free WiFi', '24/7 Desk'] },
-  { name: 'Crowne Plaza, Greater Noida', note: 'Preferred by corporate clients off the Expressway', amenities: ['Business Lounge', 'Late Checkout'] },
-  { name: 'Jaypee Greens Resort', note: 'Quiet, resort-style stays away from the main city noise', amenities: ['Golf View', 'Room Service'] },
+  { name: 'Sector 10 Boutique Stay', note: 'Closest to the dining and nightlife strip', amenities: ['Free WiFi', 'Late Checkout'] },
+  { name: 'Expressway Business Hotel', note: 'Preferred by corporate clients from Sector 12/19', amenities: ['Business Lounge', '24/7 Desk'] },
+  { name: 'Metro View Residency', note: 'Steps from the Blue Line, quiet and residential', amenities: ['Metro Access', 'Room Service'] },
 ];
 
 const WHATSAPP = 'https://api.whatsapp.com/send?phone=918826482370';
 const SITE_URL = 'https://www.delhigirl.in';
 
 const otherAreas = [
+  { name: 'Noida', href: '/call-girls-in-noida' },
+  { name: 'Gurgaon', href: '/call-girls-in-gurgaon' },
   { name: 'Aerocity', href: '/aerocity-escorts' },
-  { name: 'Dwarka', href: '/call-girls-in-dwarka' },
+  { name: 'Connaught Place', href: '/call-girls-in-connaught-place' },
   { name: 'Mahipalpur', href: '/call-girls-in-mahipalpur' },
   { name: 'Lajpat Nagar', href: '/call-girls-in-lajpat-nagar' },
-  { name: 'Connaught Place', href: '/call-girls-in-connaught-place' },
-  { name: 'Gurgaon', href: '/call-girls-in-gurgaon' },
 ];
 
-const microAreas = [
-  { name: 'Sector 18', note: 'The shopping and nightlife hub, our busiest Noida zone' },
-  { name: 'Sector 62', note: 'Corporate offices, mostly after-work and business-travel bookings' },
-  { name: 'Film City / Sector 16', note: 'Media and production crowd, used to flexible late hours' },
-  { name: 'Sector 15 & Botanical Garden', note: 'Metro-adjacent, easy pickup coordination via the Blue Line' },
-  { name: 'Greater Noida Expressway', note: 'Residential and resort belt, slightly longer arrival window' },
-  { name: 'Noida Extension', note: 'Just outside the core sectors — message us, we usually still cover it' },
+const sectors = [
+  { name: 'Sector 6 & 7', note: 'Metro-adjacent, easiest pickup coordination' },
+  { name: 'Sector 10', note: 'Close to the club/dining strip, popular evening bookings' },
+  { name: 'Sector 12 & 19', note: 'Close to Dwarka Expressway offices' },
+  { name: 'Sector 21', note: 'Airport-side, popular with transit guests' },
+  { name: 'Dwarka Mor', note: 'Residential, quiet late-night access' },
+];
+
+const steps = [
+  {
+    n: '01',
+    title: 'Tell us your sector',
+    body: 'Dwarka is large — send your sector number or nearest metro station so we match you with someone already close by, not across the city.',
+  },
+  {
+    n: '02',
+    title: 'Pick your companion',
+    body: 'We share verified profiles based in or near your sector. No pressure, no obligation until you’re ready.',
+  },
+  {
+    n: '03',
+    title: 'Confirm and relax',
+    body: 'Once confirmed, arrival is typically 25–40 minutes depending on your exact sector — payment only after you meet.',
+  },
 ];
 
 const faqs = [
   {
-    q: 'Do you cover both Noida and Greater Noida?',
-    a: 'Yes. Sectors 18 and 62 get the fastest response since companions are based nearby, and Greater Noida along the Expressway is covered too, just with a slightly longer arrival window.',
+    q: 'Do you cover every sector of Dwarka, or just a few?',
+    a: 'We actively cover Sectors 6, 7, 10, 12, 19, 21, and the Dwarka Mor residential belt. If your sector isn’t on that list, message us anyway — most requests outside these are still handled, just with a slightly longer arrival window.',
   },
   {
-    q: 'Can I book call girls in Noida Sector 18 for the same evening?',
-    a: 'Yes, Sector 18 is our most-booked zone in Noida given the restaurants and nightlife there — most requests confirm within minutes and arrive inside 20-30 minutes.',
+    q: 'Is it discreet to book call girls in Dwarka if I live in a residential sector?',
+    a: 'Yes, discretion is the main reason clients choose Dwarka over more visible parts of Delhi. Our Dwarka escorts are used to quiet, low-profile visits to residential buildings and don’t draw attention on arrival.',
   },
   {
-    q: 'Do you serve clients working in Film City or the Sector 62 corporate belt?',
-    a: 'Yes, this is a steady part of our Noida bookings — after-work visits and business-travel stays near the offices are common, and companions here are used to that setting.',
+    q: 'Can I book VIP call girls in Dwarka Sector 10 for an evening near the restaurants there?',
+    a: 'Yes, Sector 10 is one of our more frequently booked areas given its dining and nightlife strip. Let us know your plan when you message and we’ll match a companion comfortable with that setting.',
   },
   {
-    q: 'Is it discreet to book a Noida escort at a residential address?',
-    a: 'Yes. Our Noida companions are used to quiet, low-profile visits to residential towers as well as hotels, and don’t draw attention on arrival.',
-  },
-  {
-    q: 'Do I need to pay in advance for a Noida booking?',
-    a: 'No. Pay after you meet is standard across every sector we cover — confirm on WhatsApp, and settle payment once your companion has arrived.',
+    q: 'Do I need to pay in advance for Dwarka bookings?',
+    a: 'No. Pay later is standard across every sector we serve — you confirm the booking on WhatsApp and pay only once your companion has arrived.',
   },
 ];
 
-export default function Noida() {
+export default function Dwarka() {
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
@@ -80,13 +93,13 @@ export default function Noida() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
               { '@type': 'ListItem', position: 2, name: 'Locations', item: `${SITE_URL}/escort-service-in-delhi` },
-              { '@type': 'ListItem', position: 3, name: 'Noida', item: `${SITE_URL}/call-girls-in-noida` },
+              { '@type': 'ListItem', position: 3, name: 'Dwarka', item: `${SITE_URL}/call-girls-in-dwarka` },
             ],
           }),
         }}
       />
 
-      {/* FAQPage structured data — static, matches the 5 visible FAQ items exactly */}
+      {/* FAQPage structured data — static, matches the 4 visible FAQ items exactly */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -96,42 +109,34 @@ export default function Noida() {
             mainEntity: [
               {
                 '@type': 'Question',
-                name: 'Do you cover both Noida and Greater Noida?',
+                name: 'Do you cover every sector of Dwarka, or just a few?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Yes. Sectors 18 and 62 get the fastest response since companions are based nearby, and Greater Noida along the Expressway is covered too, just with a slightly longer arrival window.',
+                  text: 'We actively cover Sectors 6, 7, 10, 12, 19, 21, and the Dwarka Mor residential belt. If your sector isn’t on that list, message us anyway — most requests outside these are still handled, just with a slightly longer arrival window.',
                 },
               },
               {
                 '@type': 'Question',
-                name: 'Can I book call girls in Noida Sector 18 for the same evening?',
+                name: 'Is it discreet to book call girls in Dwarka if I live in a residential sector?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Yes, Sector 18 is our most-booked zone in Noida given the restaurants and nightlife there — most requests confirm within minutes and arrive inside 20-30 minutes.',
+                  text: 'Yes, discretion is the main reason clients choose Dwarka over more visible parts of Delhi. Our Dwarka escorts are used to quiet, low-profile visits to residential buildings and don’t draw attention on arrival.',
                 },
               },
               {
                 '@type': 'Question',
-                name: 'Do you serve clients working in Film City or the Sector 62 corporate belt?',
+                name: 'Can I book VIP call girls in Dwarka Sector 10 for an evening near the restaurants there?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Yes, this is a steady part of our Noida bookings — after-work visits and business-travel stays near the offices are common, and companions here are used to that setting.',
+                  text: 'Yes, Sector 10 is one of our more frequently booked areas given its dining and nightlife strip. Let us know your plan when you message and we’ll match a companion comfortable with that setting.',
                 },
               },
               {
                 '@type': 'Question',
-                name: 'Is it discreet to book a Noida escort at a residential address?',
+                name: 'Do I need to pay in advance for Dwarka bookings?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Yes. Our Noida companions are used to quiet, low-profile visits to residential towers as well as hotels, and don’t draw attention on arrival.',
-                },
-              },
-              {
-                '@type': 'Question',
-                name: 'Do I need to pay in advance for a Noida booking?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'No. Pay after you meet is standard across every sector we cover — confirm on WhatsApp, and settle payment once your companion has arrived.',
+                  text: 'No. Pay later is standard across every sector we serve — you confirm the booking on WhatsApp and pay only once your companion has arrived.',
                 },
               },
             ],
@@ -144,15 +149,15 @@ export default function Noida() {
         <div className="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="inline-flex items-center gap-2 text-xs sm:text-sm bg-white/10 px-3 py-1 rounded-full mb-4">
-              <FaSubway className="w-3.5 h-3.5" /> Blue Line &amp; Aqua Line coverage
+              <FaTrain className="w-3.5 h-3.5" /> Blue Line metro coverage
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
-              Call Girls in Noida for Verified, Discreet Escort Service
+              Call Girls in Dwarka, Matched to Your Sector
             </h1>
             <p className="mt-5 text-white/85 text-base sm:text-lg max-w-xl">
-              From Sector 18&apos;s nightlife strip to the Sector 62 corporate belt and Film City, we
-              match you with a companion who&apos;s actually close by — verified, discreet, and ready
-              on short notice.
+              Dwarka spans over twenty sectors, so we don&apos;t give every client the same answer. Tell us
+              roughly where you are and we&apos;ll match you with a companion who&apos;s actually nearby —
+              not one commuting across sub-cities.
             </p>
             <a
               href={WHATSAPP}
@@ -160,15 +165,14 @@ export default function Noida() {
               rel="noopener noreferrer"
               className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold shadow-lg hover:shadow-xl transition"
             >
-              <FaWhatsapp /> Book on WhatsApp
+              <FaWhatsapp /> Share Your Sector on WhatsApp
             </a>
           </div>
           <div className="relative rounded-2xl overflow-hidden shadow-2xl h-72 md:h-96">
             <Image
-              src="/Webpimages/hotel3.webp"
-              alt="Call girls in Noida, Delhi NCR"
+              src="/Webpimages/hotel2.webp"
+              alt="Call girls in Dwarka sub-city, Delhi"
               fill
-              priority
               sizes="(max-width: 768px) 100vw, 50vw"
               style={{ objectFit: 'cover' }}
             />
@@ -180,18 +184,19 @@ export default function Noida() {
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <p className="text-gray-700 text-lg leading-relaxed mb-5">
-            Noida has grown into one of Delhi NCR&apos;s biggest hubs in its own right, which is why{' '}
-            <strong className="font-semibold text-gray-900">call girls in Noida</strong> is one of our
-            most consistently booked services outside Delhi proper. Between the Sector 18 nightlife
-            strip, the Sector 62 corporate offices, and the Film City media crowd, no two clients here
-            are looking for quite the same thing — so we don&apos;t treat it as a one-size booking.
+            Dwarka is one of the largest planned sub-cities in Asia, which is exactly why a generic
+            Dwarka call girl service rarely works well here — a companion based near Sector 21
+            isn&apos;t much use to someone staying in Sector 6. Our approach to{' '}
+            <strong className="font-semibold text-gray-900">call girls in Dwarka</strong> starts with
+            your sector first, so the person who arrives at your door is someone already close by, not
+            someone crossing half the sub-city in traffic.
           </p>
-          <p className="text-gray-700 leading-relaxed text-lg">
-            Whether you&apos;re a resident, a corporate traveller staying near the Expressway, or
-            visiting for a shoot in Film City, our{' '}
-            <strong className="font-semibold text-gray-900">escort service in Noida</strong> is built
-            around matching you with someone already based close to you, so response times here stay
-            faster than most of the NCR.
+          <p className="text-gray-700 text-lg leading-relaxed">
+            The area draws a genuinely mixed crowd — residents who live in Dwarka full-time, corporate
+            travellers working out of the offices along Dwarka Expressway, and guests staying near the
+            airport-adjacent sectors on the way through Delhi. Whatever brings you here, our Dwarka
+            escorts are chosen and verified with the same standard, and every booking is handled with
+            the discretion this mostly-residential sub-city expects.
           </p>
         </div>
       </section>
@@ -200,22 +205,35 @@ export default function Noida() {
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-            Noida Escorts, Sector by Sector
+            Escorts in Dwarka, Sector by Sector
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Sector 18 sees the most call girls in Noida Sector 18 requests we get, mostly evening
-            bookings that start with dinner or drinks nearby before heading back to a hotel. If
-            you&apos;re after Noida escorts for a more low-key visit, our companions based near the
-            residential sectors are just as easy to reach.
+            Metro-adjacent sectors like 6 and 7 tend to get the fastest turnaround, since companions
+            based near the Blue Line can reach you without depending on Dwarka&apos;s wider road network —
+            search call girls in Dwarka Sector 6 or call girls near Dwarka Metro and you&apos;ll almost
+            always land a match from this exact zone. If you&apos;re after{' '}
+            <strong className="font-semibold text-gray-900">VIP call girls in Dwarka
+            Sector 10</strong> for an evening near the restaurant and nightlife strip there, that&apos;s
+            one of our more regularly booked requests, and we typically have someone available with
+            little notice.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            For the corporate side of Dwarka — Sectors 12 and 19, closer to the Expressway offices —
+            clients looking for escorts in Dwarka Sector 12 are usually after-work or business-travel
+            bookings, where premium escorts in Dwarka are chosen more for a relaxed, unhurried evening
+            than a quick visit. Clients based in
+            Sector 21 near the airport side often combine a Dwarka booking with a short stay before or
+            after a flight, similar to how our{' '}
+            <Link href="/call-girls-in-mahipalpur" className="text-purple-700 font-medium hover:underline">
+              Mahipalpur clients
+            </Link>{' '}
+            operate.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            For the corporate side of Noida — Sector 62 and the offices along the Expressway — we see a
-            steady stream of after-work and business-travel bookings, similar in rhythm to how our{' '}
-            <Link href="/call-girls-in-gurgaon" className="text-purple-700 font-medium hover:underline">
-              Gurgaon clients
-            </Link>{' '}
-            book. Film City and Sector 16 bring a different crowd entirely, often working odd hours
-            around a shoot schedule, and we keep companions comfortable with that flexibility on hand.
+            Residential belts such as Dwarka Mor call for a different kind of care — quieter arrivals,
+            less visible pickup points, and companions who are simply used to that setting. Wherever you
+            fall, tell us your sector honestly rather than the nearest landmark; it&apos;s the single
+            biggest factor in how fast we can get someone to you.
           </p>
         </div>
       </section>
@@ -224,56 +242,34 @@ export default function Noida() {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 text-center">
-            Why Book Call Girls in Noida Through Us
+            Why Book Call Girls in Dwarka Through Us
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-14">
-            Noida is spread out — this is what makes sure your booking still moves fast.
+            Sub-city bookings live or die on how well the coordination is handled — this is what we get right.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
               <FaBuilding className="w-8 h-8 text-purple-600 mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Sector-Level Matching</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We send whoever is actually close to your sector, not whoever&apos;s free across the city.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-              <FaSubway className="w-8 h-8 text-purple-600 mb-4" />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Metro-Connected</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Companions based near the Blue Line and Aqua Line corridors reach you without depending
-                on Noida&apos;s wider road network.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-              <FaFilm className="w-8 h-8 text-purple-600 mb-4" />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Comfortable with Odd Hours</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                From late shoots in Film City to red-eye corporate schedules, our Noida companions are
-                used to flexible timing.
+                We don&apos;t send whoever&apos;s free — we send whoever is actually close to your sector,
+                which is the whole point in a sub-city this spread out.
               </p>
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
               <FaShieldAlt className="w-8 h-8 text-purple-600 mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Residential-Grade Discretion</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Quiet arrival and a low profile at the gate are standard for our residential-sector
-                bookings, not a special request.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-              <FaStar className="w-8 h-8 text-purple-600 mb-4" />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Verified, Not Just Listed</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Every profile goes through the same identity and safety checks across every sector we cover.
+                Dwarka has more residential towers than hotels, so quiet arrival and a low profile at
+                the gate are standard, not a special request.
               </p>
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
               <FaClock className="w-8 h-8 text-purple-600 mb-4" />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Pay After You Meet</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Pay Later, Every Sector</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                No advance payment anywhere in Noida — confirm on WhatsApp, and settle payment once your
-                companion has arrived.
+                Pay Later Dwarka is simple — no advance payment anywhere in the sub-city. Confirm on
+                WhatsApp, and settle payment once your companion has actually arrived.
               </p>
             </div>
           </div>
@@ -285,7 +281,7 @@ export default function Noida() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Featured Companions in Noida</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Featured Companions in Dwarka</h2>
               <p className="text-gray-600 text-sm mt-1">Verified profiles, updated regularly</p>
             </div>
           </div>
@@ -299,7 +295,7 @@ export default function Noida() {
                 <div className="relative w-full h-56 rounded-xl overflow-hidden bg-gray-100">
                   <Image
                     src={p.image}
-                    alt={`Call girl profile in Noida, Delhi NCR`}
+                    alt={`Call girl profile in Dwarka, Delhi`}
                     fill
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
                     className="object-cover"
@@ -327,7 +323,7 @@ export default function Noida() {
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">
-            Where Clients Usually Stay in Noida
+            Where Clients Usually Stay in Dwarka
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {stays.map((s) => (
@@ -354,13 +350,13 @@ export default function Noida() {
       <section className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 text-center">
-            Areas We Cover Inside Noida
+            Areas We Cover Inside Dwarka
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
             A rough guide — if your sector isn&apos;t listed, message us anyway, we likely still cover it.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {microAreas.map((s, i) => (
+            {sectors.map((s, i) => (
               <motion.div
                 key={s.name}
                 initial={{ opacity: 0, x: -10 }}
@@ -380,11 +376,35 @@ export default function Noida() {
         </div>
       </section>
 
+      {/* How it works */}
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex items-center gap-3 justify-center mb-3">
+            <FaUserTie className="text-purple-600 w-6 h-6" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">How Booking Works in Dwarka</h2>
+          </div>
+          <p className="text-gray-600 text-center max-w-xl mx-auto mb-14">
+            Popular with residents and the corporate crowd from the Dwarka Expressway offices — discretion
+            matters here more than most places, so the process is kept simple.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {steps.map((s) => (
+              <div key={s.n} className="relative">
+                <div className="text-5xl font-bold text-purple-100 mb-2">{s.n}</div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{s.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{s.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-10 text-center">
-            Noida Booking Questions
+            Dwarka Booking Questions
           </h2>
           <div className="space-y-3">
             {faqs.map((item, i) => (
@@ -428,13 +448,13 @@ export default function Noida() {
       {/* CTA */}
       <section className="py-16 px-6 text-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-          In Noida Right Now?
+          In Dwarka Right Now?
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-7">
-          Share your sector or hotel on WhatsApp and we&apos;ll tell you exactly who&apos;s available
-          near you tonight. Whether you want to book call girls in Noida for a quiet evening or need
-          someone near Sector 18 for a night out, there&apos;s no advance payment — just confirm and
-          pay later once you&apos;ve met.
+          Share your sector on WhatsApp and we&apos;ll tell you exactly who&apos;s available near you tonight.
+          Whether you want to book call girls in Dwarka for a quiet residential visit or need someone
+          near the Sector 10 restaurants for the evening, there&apos;s no advance payment — just confirm
+          and pay later once you&apos;ve met.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
           <a
