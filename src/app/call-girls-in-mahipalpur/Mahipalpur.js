@@ -140,7 +140,7 @@ export default function Mahipalpur() {
       />
 
       {/* Hero */}
-      <section className="relative w-full min-h-[70vh] flex items-center">
+      <section className="relative w-full min-h-[70vh] flex items-center isolate">
         <div className="absolute inset-0 -z-10">
           <Image
             src="/Webpimages/paschimvihar.webp"

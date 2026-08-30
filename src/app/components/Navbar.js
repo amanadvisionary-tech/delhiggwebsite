@@ -1,30 +1,15 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isLocationsOpen, setIsLocationsOpen] = useState(false);
-  const pathname = usePathname();
-
-  // On blog post pages always show solid navbar
-  const isBlogPost = pathname?.startsWith("/blog/");
-
-  // scroll effect
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const Services = [
     { name: "Foreigner Staff", href: "/russian-escorts-in-delhi" },
@@ -38,8 +23,8 @@ export default function Navbar() {
   ];
   const Locations = [
     { name: "Delhi Escorts", href: "/delhi-escorts" },
-    { name: "Gurugram Escorts", href: "/call-girls-in-gurgaon" },
-    { name: "Noida Escorts", href: "/call-girls-in-noida"},
+    // { name: "Gurugram Escorts", href: "/call-girls-in-gurgaon" },
+    // { name: "Noida Escorts", href: "/call-girls-in-noida"},
     { name: "Aerocity Escorts", href: "/aerocity-escorts" },
     { name: "Connaught Place Escorts", href: "/call-girls-in-connaught-place" },
     { name: "Mahipalpur Escorts", href: "/call-girls-in-mahipalpur" },
@@ -48,11 +33,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header
-      className={`fixed w-full top-0 z-50 transition-all ${
-        isBlogPost || isScrolled ? "bg-white shadow-md" : "bg-transparent"
-      }`}
-    >
+    <header className="fixed w-full top-0 z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center h-20">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-pink-600">
@@ -148,29 +129,14 @@ export default function Navbar() {
               )}
             </AnimatePresence>
           </div>
-          <Link href="/contact-us" className="hover:text-pink-600 transition">
-            Contact us
-          </Link>
-
-          {/* Social Icons */}
-          <div className="flex gap-4 ml-4">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-pink-600 text-lg"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://wa.me/918826482370"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-green-600 text-lg"
-            >
-              <FaWhatsapp />
-            </a>
-          </div>
+          <a
+            href="https://wa.me/918826482370"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-4 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold shadow-md hover:shadow-lg transition"
+          >
+            <FaWhatsapp className="text-lg" /> Book Now
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -245,29 +211,16 @@ export default function Navbar() {
               <Link href="/escort-service-in-delhi" onClick={() => setIsMenuOpen(false)}>
                 Locations
               </Link>
-              <Link href="/contact-us" onClick={() => setIsMenuOpen(false)}>
-                Contact us
-              </Link>
 
-              {/* Social */}
-              <div className="flex gap-4 mt-4">
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-pink-600 text-lg"
-                >
-                  <FaInstagram />
-                </a>
-                <a
-                  href="https://wa.me/918826482370"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-green-600 text-lg"
-                >
-                  <FaWhatsapp />
-                </a>
-              </div>
+              <a
+                href="https://wa.me/918826482370"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold shadow-md"
+              >
+                <FaWhatsapp className="text-lg" /> Book Now
+              </a>
             </div>
           </motion.div>
         )}

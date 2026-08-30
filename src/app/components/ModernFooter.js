@@ -1,34 +1,38 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
-  FaTelegram, FaInstagram, FaWhatsapp,
+  FaTelegram, FaWhatsapp,
   FaMapMarkerAlt, FaPhone, FaEnvelope, FaPaperPlane
 } from 'react-icons/fa';
 import Link from 'next/link';
 
 const ModernFooter = () => {
   const currentYear = new Date().getFullYear();
-  
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+
+  const handleNewsletterSubmit = (e) => {
+    e.preventDefault();
+    const text = `Please add me to the Delhi Girl updates list.\nEmail: ${newsletterEmail}`;
+    window.open(
+      `https://api.whatsapp.com/send?phone=918826482370&text=${encodeURIComponent(text)}`,
+      '_blank',
+      'noopener,noreferrer'
+    );
+    setNewsletterEmail('');
+  };
+
   return (
-    <footer className="bg-gradient-to-br from-gray-900 to-black text-white">
-      {/* Waves Divider */}
-      <div className="w-full overflow-hidden">
-        <svg 
-          viewBox="0 0 1200 120" 
-          preserveAspectRatio="none" 
-          className="w-full h-16 md:h-24 text-gray-900"
-        >
-          <path 
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
-            fill="currentColor"
-          ></path>
-        </svg>
+    <footer className="relative overflow-hidden bg-gradient-to-br from-gray-900 to-black text-white border-t border-amber-500/20">
+      {/* Decorative glow circles */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -bottom-10 left-10 w-64 h-64 bg-amber-400/10 rounded-full mix-blend-soft-light blur-3xl"></div>
+        <div className="absolute -bottom-10 right-10 w-80 h-80 bg-orange-500/10 rounded-full mix-blend-soft-light blur-3xl"></div>
       </div>
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand & Description */}
+          {/* Brand & Description + Join Our Community */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -43,30 +47,52 @@ const ModernFooter = () => {
               </span>
             </div>
             <p className="text-gray-400 mb-6 max-w-xs">
-              Premium companionship services connecting you with exceptional experiences worldwide. Discretion and excellence guaranteed.
+              Verified companions across Delhi NCR — fast booking, complete discretion, pay after you meet.
             </p>
-            
-            <div className="flex space-x-4">
-              {[
-                { icon: <FaInstagram />, color: "from-fuchsia-500 to-pink-500", link: "https://instagram.com" },
-                { icon: <FaTelegram />, color: "from-sky-500 to-blue-500", link: "https://t.me/Tanuspa" },
-                { icon: <FaWhatsapp />, color: "from-green-500 to-emerald-600", link: "https://wa.me/918826482370" },
-              ].map((social, i) => (
-                <motion.a
-                  key={i}
-                  href={social.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ y: -5 }}
-                  className={`bg-gradient-to-r ${social.color} w-10 h-10 rounded-full flex items-center justify-center text-white shadow-lg`}
-                >
-                  {social.icon}
-                </motion.a>
-              ))}
-            </div>
+
+            {/* <h3 className="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-gradient-to-r after:from-amber-500 after:to-orange-500">
+              Join Our Community
+            </h3> */}
+
+            {/* Telegram Link */}
+            {/* <div>
+              <a
+                href="https://t.me/Tanuspa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-lg flex items-center justify-center transition-all shadow-lg"
+              >
+                <FaTelegram className="text-xl mr-3" />
+                Join Telegram Channel
+              </a>
+              <p className="text-gray-400 text-sm mt-3">
+                Get exclusive updates, offers, and VIP announcements
+              </p>
+            </div> */}
+
+            {/* Newsletter */}
+            {/* <div className="mt-8">
+              <h4 className="font-medium mb-4">Subscribe to Newsletter</h4>
+              <form onSubmit={handleNewsletterSubmit} className="flex">
+                <input
+                  type="email"
+                  required
+                  placeholder="Your email address"
+                  value={newsletterEmail}
+                  onChange={(e) => setNewsletterEmail(e.target.value)}
+                  className="bg-gray-800 border border-gray-700 text-white rounded-l-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-amber-500"
+                />
+                <button type="submit" className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-5 rounded-r-lg font-medium transition-all">
+                  Join
+                </button>
+              </form>
+              <p className="text-gray-500 text-xs mt-3">
+                We respect your privacy. Unsubscribe at any time.
+              </p>
+            </div> */}
           </motion.div>
-          
-          {/* Category Links */}
+
+          {/* Categories */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -91,14 +117,21 @@ const ModernFooter = () => {
                 </li>
               ))}
             </ul>
+          </motion.div>
 
-            <h3 className="text-xl font-bold mt-8 mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-gradient-to-r after:from-amber-500 after:to-orange-500">
+          {/* Locations */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+          >
+            <h3 className="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-gradient-to-r after:from-amber-500 after:to-orange-500">
               Locations
             </h3>
             <ul className="space-y-3">
               {[
-                { name: "Noida", link: "/call-girls-in-noida" },
-                { name: "Gurgaon", link: "/call-girls-in-gurgaon" },
+                // { name: "Noida", link: "/call-girls-in-noida" },
+                // { name: "Gurgaon", link: "/call-girls-in-gurgaon" },
                 { name: "Aerocity", link: "/aerocity-escorts" },
                 { name: "Connaught Place", link: "/call-girls-in-connaught-place" },
                 { name: "Mahipalpur", link: "/call-girls-in-mahipalpur" },
@@ -127,8 +160,8 @@ const ModernFooter = () => {
             <ul className="space-y-4">
               {[
                 {
-                  icon: <FaMapMarkerAlt className="text-amber-500" />,
-                  text: "Delhi NCR (Delhi, Gurgaon, Noida & Aerocity), India",
+                  icon: <FaWhatsapp className="text-amber-500" />,
+                  text: <a href="https://wa.me/918826482370" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">Chat on WhatsApp</a>,
                 },
                 {
                   icon: <FaPhone className="text-amber-500" />,
@@ -138,6 +171,10 @@ const ModernFooter = () => {
                   icon: <FaEnvelope className="text-amber-500" />,
                   text: "info@delhigirl.in",
                 },
+                // {
+                //   icon: <FaMapMarkerAlt className="text-amber-500" />,
+                //   text: "Delhi, Gurgaon & Noida",
+                // },
               ].map((item, i) => (
                 <li key={i} className="flex">
                   <div className="mr-4 mt-1">{item.icon}</div>
@@ -145,59 +182,14 @@ const ModernFooter = () => {
                 </li>
               ))}
             </ul>
-            
-            <div className="mt-6 bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 border border-gray-700/50">
+
+            {/* <div className="mt-6 bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 border border-gray-700/50">
               <h4 className="font-medium mb-2">Operating Hours</h4>
               <p className="text-sm text-gray-400">
                 24/7 Service Availability<br />
                 Concierge Support: 9AM - 11PM Daily
               </p>
-            </div>
-          </motion.div>
-          
-          {/* Telegram & Newsletter */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            <h3 className="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-gradient-to-r after:from-amber-500 after:to-orange-500">
-              Join Our Community
-            </h3>
-            
-            {/* Telegram Link */}
-            <div className="mb-8">
-              <a 
-                href="https://t.me/Tanuspa"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-lg flex items-center justify-center transition-all shadow-lg"
-              >
-                <FaTelegram className="text-xl mr-3" />
-                Join Telegram Channel
-              </a>
-              <p className="text-gray-400 text-sm mt-3">
-                Get exclusive updates, offers, and VIP announcements
-              </p>
-            </div>
-            
-            {/* Newsletter */}
-            <div>
-              <h4 className="font-medium mb-4">Subscribe to Newsletter</h4>
-              <div className="flex">
-                <input 
-                  type="email" 
-                  placeholder="Your email address" 
-                  className="bg-gray-800 border border-gray-700 text-white rounded-l-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-amber-500"
-                />
-                <button className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-5 rounded-r-lg font-medium transition-all">
-                  Join
-                </button>
-              </div>
-              <p className="text-gray-500 text-xs mt-3">
-                We respect your privacy. Unsubscribe at any time.
-              </p>
-            </div>
+            </div> */}
           </motion.div>
         </div>
         
@@ -235,13 +227,6 @@ const ModernFooter = () => {
             </Link>
           </motion.div>
         </div>
-      </div>
-      
-      {/* Decorative Elements */}
-      <div className="relative overflow-hidden">
-        {/* Floating circles */}
-        <div className="absolute bottom-0 left-10 w-64 h-64 bg-amber-400/10 rounded-full mix-blend-soft-light blur-3xl"></div>
-        <div className="absolute bottom-0 right-10 w-80 h-80 bg-orange-500/10 rounded-full mix-blend-soft-light blur-3xl"></div>
       </div>
     </footer>
   );
