@@ -81,13 +81,20 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Delhi Girl",
+              description:
+                "Premium call girl service in Delhi offering verified companions with book now, pay later facility.",
               url: siteUrl,
               image: `${siteUrl}${defaultOgImage}`,
               telephone: "+91-8826482370",
-              areaServed: ["Delhi", "Gurgaon", "Noida", "Aerocity", "NCR"],
+              priceRange: "$$$",
+              openingHours: "Mo-Su 00:00-23:59",
+              areaServed: {
+                "@type": "City",
+                name: "Delhi NCR",
+              },
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Delhi",
+                addressLocality: "New Delhi",
                 addressRegion: "Delhi",
                 addressCountry: "IN",
               },

@@ -1,16 +1,16 @@
 import HomeClient from "./HomeClient";
 
 export const metadata = {
-  title: "Delhi Girl – Premium Escort Service in Delhi | Trusted Companions",
-  description: "Delhi Girl offers premium escort service in Delhi with verified companions across hotels, homes, Gurgaon, Noida, and Aerocity. Book discreetly.",
+  title: "Hire Premium Call Girls in Delhi | Book Now, Pay Later | 24/7 VIP Service",
+  description: "Find verified call girls in Delhi for VIP full service with no questions asked. Book now & pay later for premium Delhi escorts. Instant 24/7 booking. Call now!",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Delhi Girl – Premium Escort Service in Delhi | Trusted Companions",
-    description: "Delhi Girl offers premium escort service in Delhi with verified companions across hotels, homes, Gurgaon, Noida, and Aerocity. Book discreetly.",
-    images: ["/Webpimages/JwMarriott_CP.webp"], 
+    title: "Hire Premium Call Girls in Delhi | Book Now, Pay Later | 24/7 VIP Service",
+    description: "Find verified call girls in Delhi for VIP full service with no questions asked. Book now & pay later for premium Delhi escorts. Instant 24/7 booking. Call now!",
+    images: ["/Webpimages/JwMarriott_CP.webp"],
     type: "website",
   },
-  
+
 };
 export default function page() {
   return <HomeClient />;
