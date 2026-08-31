@@ -635,6 +635,7 @@ export default function Home({
               alt="Premium call girl in Delhi available for booking"
               fill
               priority
+              sizes="100vw"
               className="object-cover object-center"
             />
 
@@ -1383,9 +1384,10 @@ export default function Home({
                   <div className="bg-gradient-to-br from-purple-100 to-pink-100 w-full h-full flex items-center justify-center">
                     <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
                     <Image
-                      src={staff.image} // Make sure `staff.image` has full image URL or path
+                      src={staff.image}
                       alt={staff.name}
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                       className="object-cover"
                     />
                   </div>
@@ -2270,11 +2272,12 @@ export default function Home({
                 {/* Hotel Image */}
                 <div className="relative h-60 overflow-hidden">
                   <Image
-                    src={hotel.image} // string URL or local import
+                    src={hotel.image}
                     alt={hotel.name}
-                    fill                                        // fills the parent container
-                    className="object-cover object-center"     // cover behavior
-                    priority={false}                            // set true if critical for LCP
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover object-center"
+                    priority={false}
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 z-10"></div>
                   <div className="absolute top-4 right-4 z-20 flex items-center bg-purple-600 text-white px-3 py-1 rounded-full text-sm">
@@ -2359,6 +2362,7 @@ export default function Home({
                   src="/Webpimages/bannermodel.webp"
                   alt="Luxury escort service in Delhi"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                   loading="lazy"
                 />
