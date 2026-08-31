@@ -499,7 +499,7 @@ points: ["Safe home visits", "Verified profiles", "Discreet arrival & departure"
               whileHover={{ scale: 1.03 }}
               className="bg-gray-50 rounded-2xl p-3 shadow-sm"
             >
-              <div className="w-full h-50 rounded-lg overflow-hidden bg-gray-200">
+              <div className="w-full h-48 rounded-lg overflow-hidden bg-gray-200">
                 <Image
                   src={p.image}
                   alt={`Russian model call girl profile in Delhi — ${p.label}`}
@@ -726,14 +726,14 @@ points: ["Safe home visits", "Verified profiles", "Discreet arrival & departure"
             <div className="absolute -top-8 -right-6 transform rotate-6 shadow-2xl rounded-xl border-8 border-white bg-white">
               {/* Replace the src with your public path or a remote URL */}
               <div className="w-72 h-48 relative rounded-lg overflow-hidden">
-                <Image src="/Webpimages/model1.webp" alt="top" layout="fill" objectFit="cover" />
+                <Image src="/Webpimages/model1.webp" alt="top" fill sizes="288px" style={{ objectFit: "cover" }} />
               </div>
             </div>
 
             {/* Bottom image - rotated opposite */}
             <div className="absolute bottom-0 left-0 transform -rotate-3 shadow-2xl rounded-xl border-8 border-white bg-white">
               <div className="w-80 h-56 relative rounded-lg overflow-hidden">
-                <Image src="/Webpimages/modelg.webp" alt="bottom" layout="fill" objectFit="cover" />
+                <Image src="/Webpimages/modelg.webp" alt="bottom" fill sizes="320px" style={{ objectFit: "cover" }} />
               </div>
             </div>
 

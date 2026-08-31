@@ -536,14 +536,14 @@ export default function Locations() {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="relative rounded-2xl overflow-hidden shadow-lg h-72 md:h-96"
+            className="relative rounded-2xl overflow-hidden shadow-lg h-72 md:h-96 max-w-xl mx-auto lg:mx-0"
           >
             <Image
               src="/Webpimages/5-star-hotels.webp"
               alt="5-star luxury hotel in Delhi NCR for escort service bookings"
               fill
               priority
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 768px) 100vw, 36rem"
               style={{ objectFit: 'cover' }}
             />
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/10 to-transparent"></div>
@@ -674,7 +674,7 @@ export default function Locations() {
                       whileHover={{ scale: 1.03 }}
                       className="min-w-[160px] bg-gray-50 rounded-2xl p-3 shadow-sm"
                     >
-                      <div className="w-full h-50 rounded-lg overflow-hidden bg-gray-200">
+                      <div className="w-full h-48 rounded-lg overflow-hidden bg-gray-200">
                         <Image
                           src={p.image}
                           alt={`${p.name} — Delhi escort companion profile`}

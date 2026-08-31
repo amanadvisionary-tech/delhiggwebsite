@@ -311,8 +311,9 @@ export default function Pricing() {
               <Image
                 src="/Webpimages/spaStaffInsta.webp"
                 alt="Happy customer"
-                layout="fill"
-                objectFit="cover"
+                fill
+                sizes="(max-width: 768px) 50vw, 25vw"
+                style={{ objectFit: "cover" }}
                 className="transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -344,8 +345,9 @@ export default function Pricing() {
                 <Image
                   src="/Webpimages/download34.webp"
                   alt="Community image"
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  style={{ objectFit: "cover" }}
                   className="transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-pink-600/20 to-transparent"></div>
@@ -535,8 +537,9 @@ export default function Pricing() {
               loading="lazy"
               src="/Webpimages/celebrityspastaff.webp"
               alt="Spa Interior"
-              layout="fill"
-              objectFit="cover"
+              fill
+              sizes="100vw"
+              style={{ objectFit: "cover" }}
               className="rounded-[2.5rem] z-0"
             />
             <motion.div
@@ -580,8 +583,9 @@ export default function Pricing() {
               loading="lazy"
               src="/Webpimages/413965.webp"
               alt="Luxury Spa Experience"
-              layout="fill"
-              objectFit="cover"
+              fill
+              sizes="100vw"
+              style={{ objectFit: "cover" }}
               className="rounded-[2.5rem] transform group-hover:scale-105 transition-transform duration-700"
             />
             {/* Floating Accent Circle */}
@@ -894,8 +898,9 @@ export default function Pricing() {
             <Image
               src="/Webpimages/7168.webp"
               alt="Expert therapist performing massage"
-              layout="fill"
-              objectFit="cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
               className="transition-transform duration-700 hover:scale-105"
             />
           </div>
@@ -915,8 +920,9 @@ export default function Pricing() {
             <Image
               src="/Webpimages/download33.webp"
               alt="Premium spa oils"
-              layout="fill"
-              objectFit="cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
               className="transition-transform duration-700 hover:scale-105"
             />
           </div>
@@ -1150,12 +1156,13 @@ export default function Pricing() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image Section */}
           <div className="relative">
-            <div className="relative h-190 rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative h-[47.5rem] rounded-3xl overflow-hidden shadow-2xl">
               <Image
                 src="/Webpimages/download (4).webp"
                 alt="Girls using our platform"
-                layout="fill"
-                objectFit="cover"
+                fill
+                sizes="100vw"
+                style={{ objectFit: "cover" }}
                 className="transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent"></div>

@@ -631,7 +631,7 @@ const services = [
       whileHover={{ scale: 1.03 }}
       className="min-w-[160px] bg-gray-50 rounded-2xl p-3 shadow-sm"
     >
-      <div className="w-full h-50 rounded-lg overflow-hidden bg-gray-200">
+      <div className="w-full h-48 rounded-lg overflow-hidden bg-gray-200">
         {/* use p.image not p (object) */}
         <Image
           src={p.image}

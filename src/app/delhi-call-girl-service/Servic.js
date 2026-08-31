@@ -1357,11 +1357,12 @@ const services1= [
       <div className={`space-y-6 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-all duration-500 group">
           <div className="relative h-96">
-            <Image 
-              src="/Webpimages/Waarom ik dit álle.webp" 
+            <Image
+              src="/Webpimages/Waarom ik dit álle.webp"
               alt="Relaxing Spa Massage"
-              layout="fill"
-              objectFit="cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
               className="transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -1376,11 +1377,12 @@ const services1= [
           ].map((img, idx) => (
             <div key={idx} className="relative rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-all duration-500 group">
               <div className="relative h-56">
-                <Image 
-                  src={img.src} 
+                <Image
+                  src={img.src}
                   alt={img.alt}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  style={{ objectFit: "cover" }}
                   className="transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

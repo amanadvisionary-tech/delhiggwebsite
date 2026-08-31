@@ -962,8 +962,9 @@ export default function Category() {
                       loading="lazy"
                       src="/Webpimages/413965.webp"
                       alt="Luxury Spa Experience"
-                      layout="fill"
-                      objectFit="cover"
+                      fill
+                      sizes="100vw"
+                      style={{ objectFit: "cover" }}
                       className="rounded-[2.5rem] transform group-hover:scale-105 transition-transform duration-700"
                     />
                     {/* Floating Accent Circle */}

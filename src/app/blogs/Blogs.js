@@ -364,8 +364,9 @@ export default function Blogs() {
                   <Image
                     src="/Webpimages/spaStaffInsta.webp"
                     alt="Relaxing Spa Massage"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    style={{ objectFit: "cover" }}
                     className="transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -383,8 +384,9 @@ export default function Blogs() {
                       <Image
                         src={img.src}
                         alt={img.alt}
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        sizes="(max-width: 1024px) 50vw, 25vw"
+                        style={{ objectFit: "cover" }}
                         className="transition-transform duration-700 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

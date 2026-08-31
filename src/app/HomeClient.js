@@ -1120,7 +1120,7 @@ export default function Home({
                       whileHover={{ scale: 1.03 }}
                       className="min-w-[160px] bg-gray-50 rounded-2xl p-3 shadow-sm"
                     >
-                      <div className="w-full h-50 rounded-lg overflow-hidden bg-gray-200">
+                      <div className="w-full h-48 rounded-lg overflow-hidden bg-gray-200">
                         <Image
                           src={p.image}
                           alt={`${p.name} — Delhi escort companion profile`}
@@ -1654,8 +1654,9 @@ export default function Home({
                 loading="lazy"
                 src="/Webpimages/Evie Lee Mikomin (1).webp"
                 alt="Spa Interior"
-                layout="fill"
-                objectFit="cover"
+                fill
+                sizes="100vw"
+                style={{ objectFit: "cover" }}
                 className="rounded-[2.5rem] z-0"
               />
               <motion.div
@@ -1744,7 +1745,7 @@ export default function Home({
           >
             <Image
               src="/Webpimages/call-girl-8.webp"
-              alt="Premium hotel lounge for call girl service in Noida"
+              alt="call girl service in Noida"
               fill
               sizes="(max-width: 768px) 60vw, 24rem"
               style={{ objectFit: "cover" }}

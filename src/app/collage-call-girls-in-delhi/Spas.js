@@ -573,15 +573,15 @@ This is why Delhi college call girls feel so addictive. They carry a raw charm t
             {/* Top image - rotated slightly */}
             <div className="absolute -top-8 -right-6 transform rotate-6 shadow-2xl rounded-xl border-8 border-white bg-white">
               {/* Replace the src with your public path or a remote URL */}
-              <div className="w-82 h-68 relative rounded-lg overflow-hidden">
-                <Image src="/Webpimages/download33.webp" alt="top" layout="fill" objectFit="cover" />
+              <div className="relative w-[328px] h-[272px] rounded-lg overflow-hidden">
+                <Image src="/Webpimages/download33.webp" alt="top" fill sizes="328px" style={{ objectFit: "cover" }} />
               </div>
             </div>
 
             {/* Bottom image - rotated opposite */}
             <div className="absolute bottom-0 left-0 transform -rotate-3 shadow-2xl rounded-xl border-8 border-white bg-white">
-              <div className="w-90 h-76 relative rounded-lg overflow-hidden">
-                <Image src="/Webpimages/download34.webp" alt="bottom" layout="fill" objectFit="cover" />
+              <div className="relative w-[360px] h-[304px] rounded-lg overflow-hidden">
+                <Image src="/Webpimages/download34.webp" alt="bottom" fill sizes="360px" style={{ objectFit: "cover" }} />
               </div>
             </div>
 
@@ -720,7 +720,7 @@ This is why Delhi college call girls feel so addictive. They carry a raw charm t
               whileHover={{ scale: 1.03 }}
               className="min-w-[160px] bg-gray-50 rounded-2xl p-3 shadow-sm"
             >
-              <div className="w-full h-50 rounded-lg overflow-hidden bg-gray-200">
+              <div className="w-full h-48 rounded-lg overflow-hidden bg-gray-200">
                 {/* use p.image not p (object) */}
                 <Image
                   src={p.image}
