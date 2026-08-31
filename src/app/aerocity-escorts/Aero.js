@@ -4,6 +4,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 import {  FaSwimmingPool, FaWifi, FaUtensils, FaConciergeBell, FaParking, FaSpa, FaStar, FaCheck } from 'react-icons/fa';
 import { FiSearch, FiChevronDown, FiMail, FiMessageSquare, FiHelpCircle } from 'react-icons/fi';
@@ -43,10 +44,10 @@ export default function Delhiescorts({
             location: "Delhi, India ",
             rating: 5,
             description: "A well-dressed, energetic hotel wherein your guests act as a soothing, sophisticated atmosphere that transforms your hotel room into an exclusive getaway to the stress of the city.",
-            image: "/Webpimages/lajpatnagahotel.webp",
-            amenities: ["Infinity Pool", "Michelin-star Restaurant", "Luxury Spa", "24/7 Butler Service"],
+            image: "/Webpimages/JwMarriott_CP.webp",
+            amenities: ["Infinity Pool", "Multi-cuisine Restaurant", "Luxury Spa", "24/7 Butler Service"],
             price: "₹25,000",
-            features: ["Ocean View", "Private Beach", "Helipad"]
+            features: ["City View", "Airport Pickup", "Executive Lounge"]
           },
           {
             id: 2,
@@ -54,21 +55,21 @@ export default function Delhiescorts({
             location: "Delhi, India",
             rating: 5,
             description: "Friendly to modern environment and artistic interiors. Your friend improves the evening with style, friendliness, and an intelligent discussion that is very easy to follow.",
-            image: "/Webpimages/JwMarriott_CP.webp",
-            amenities: ["Overwater Bungalows", "Coral Reef Access", "Underwater Restaurant", "Spa Sanctuary"],
+            image: "/Webpimages/lajpatnagahotel.webp",
+            amenities: ["Rooftop Bar", "Fine-dining Restaurant", "Spa & Wellness Center", "Business Lounge"],
             price: "₹45,000",
-            features: ["Private Island", "Seaplane Transfer", "Glass Floor"]
+            features: ["Skyline View", "Valet Parking", "Late Checkout"]
           },
           {
             id: 3,
             name: "Pullman New Delhi Aerocity",
             location: "Delhi, India",
             rating: 5,
-            description: "An elegant, global-style hotel that can suit customers with fine companionship ,with a seamles,s easy interaction.",
-            image: "/Webpimages/jaypeeVasantAerocity.webp",
-            amenities: ["Ski Valet", "Heated Indoor Pool", "Mountain Spa", "Fondue Restaurant"],
+            description: "An elegant, global-style hotel that can suit customers with fine companionship, with a seamless, easy interaction.",
+            image: "/Webpimages/pullmanAerocity.webp",
+            amenities: ["Heated Indoor Pool", "Fitness Center", "Multi-cuisine Restaurant", "Airport Shuttle"],
             price: "₹38,000",
-            features: ["Private Ski Lift", "Fireplace Lounges", "Chocolate Atelier"]
+            features: ["Near IGI Airport", "Free WiFi", "24/7 Room Service"]
           },
           {
             id: 4,
@@ -76,10 +77,10 @@ export default function Delhiescorts({
             location: "Delhi, India",
             rating: 5,
             description: "The place is alive, and it gets even more so when accompanied by an escort that is charming, light-humoured and full of comfortable energy.",
-            image: "/Webpimages/holidayIn_CP.webp",
-            amenities: ["Private Oasis Pool", "Camel Rides", "Desert Spa", "Starlight Dining"],
+            image: "/Webpimages/jaypeeVasantAerocity.webp",
+            amenities: ["Outdoor Pool", "Spa & Wellness Center", "Banquet Halls", "24/7 Butler Service"],
             price: "₹32,000",
-            features: ["Falconry Experience", "Gold-plated Interiors", "Private Dune"]
+            features: ["Complimentary Breakfast", "Airport Pickup", "City View"]
           },
           {
             id: 5,
@@ -87,10 +88,10 @@ export default function Delhiescorts({
             location: "Delhi, India",
             rating: 5,
             description: "One of the most tranquil spots that the clients would want to be in, trying to relax after flights or a hard day at work, having the chance to find pleasant company.",
-            image: "/Webpimages/pullmanAerocity.webp",
-            amenities: ["Cliffside Infinity Pool", "Jungle Spa", "Rice Terrace Dining", "Cultural Workshops"],
+            image: "/Webpimages/holidayIn_CP.webp",
+            amenities: ["Fitness Center", "Multi-cuisine Restaurant", "Business Lounge", "Free WiFi"],
             price: "₹28,000",
-            features: ["Volcano Views", "Sacred Spring", "Monkey Sanctuary"]
+            features: ["Near IGI Airport", "Valet Parking", "24/7 Room Service"]
           },
           {
             id: 6,
@@ -99,37 +100,29 @@ export default function Delhiescorts({
             rating: 5,
             description: "An upscale, luxurious atmosphere that goes well with a friend who understands how to combine classiness with a feeling of comfort.",
             image: "/Webpimages/tajmahalhotel_lajpatnagar.webp",
-            amenities: ["Rooftop Pool", "Sky Lounge", "Personal Shopper", "Broadway Concierge"],
+            amenities: ["Rooftop Pool", "Sky Lounge", "Spa & Wellness Center", "Executive Lounge"],
             price: "₹52,000",
-            features: ["Central Park View", "Penthouse Suites", "Private Elevator"]
+            features: ["Skyline View", "Late Checkout", "Airport Pickup"]
           }
         ];
       
         const amenitiesIcons = {
           "Infinity Pool": <FaSwimmingPool className="text-blue-500" />,
-          "Michelin-star Restaurant": <FaUtensils className="text-red-500" />,
-          "Luxury Spa": <FaSpa className="text-pink-500" />,
-          "24/7 Butler Service": <FaConciergeBell className="text-amber-500" />,
-          "Overwater Bungalows": <FaSwimmingPool className="text-cyan-500" />,
-          "Coral Reef Access": <FaSwimmingPool className="text-teal-500" />,
-          "Underwater Restaurant": <FaUtensils className="text-indigo-500" />,
-          "Spa Sanctuary": <FaSpa className="text-purple-500" />,
-          "Ski Valet": <FaParking className="text-blue-600" />,
+          "Outdoor Pool": <FaSwimmingPool className="text-blue-400" />,
           "Heated Indoor Pool": <FaSwimmingPool className="text-amber-500" />,
-          "Mountain Spa": <FaSpa className="text-emerald-500" />,
-          "Fondue Restaurant": <FaUtensils className="text-yellow-600" />,
-          "Private Oasis Pool": <FaSwimmingPool className="text-amber-500" />,
-          "Camel Rides": <FaConciergeBell className="text-orange-800" />,
-          "Desert Spa": <FaSpa className="text-orange-600" />,
-          "Starlight Dining": <FaUtensils className="text-indigo-500" />,
-          "Cliffside Infinity Pool": <FaSwimmingPool className="text-emerald-500" />,
-          "Jungle Spa": <FaSpa className="text-green-600" />,
-          "Rice Terrace Dining": <FaUtensils className="text-lime-600" />,
-          "Cultural Workshops": <FaConciergeBell className="text-amber-700" />,
           "Rooftop Pool": <FaSwimmingPool className="text-sky-500" />,
-          "Sky Lounge": <FaConciergeBell className="text-purple-500" />,
-          "Personal Shopper": <FaConciergeBell className="text-pink-500" />,
-          "Broadway Concierge": <FaConciergeBell className="text-red-500" />
+          "Multi-cuisine Restaurant": <FaUtensils className="text-red-500" />,
+          "Luxury Spa": <FaSpa className="text-pink-500" />,
+          "Spa & Wellness Center": <FaSpa className="text-purple-500" />,
+          "24/7 Butler Service": <FaConciergeBell className="text-amber-500" />,
+          "Rooftop Bar": <FaConciergeBell className="text-cyan-500" />,
+          "Business Lounge": <FaConciergeBell className="text-indigo-500" />,
+          "Executive Lounge": <FaConciergeBell className="text-purple-500" />,
+          "Fitness Center": <FaParking className="text-blue-600" />,
+          "Airport Shuttle": <FaParking className="text-emerald-500" />,
+          "Banquet Halls": <FaConciergeBell className="text-yellow-600" />,
+          "Free WiFi": <FaConciergeBell className="text-teal-500" />,
+          "Sky Lounge": <FaConciergeBell className="text-purple-500" />
         };
           //end 5 start hotel 
           {/* staff showcase */}
@@ -145,67 +138,67 @@ export default function Delhiescorts({
             const staffMembers = [
               {
                 id: 1,
-                name: 'Sophia Martinez',
-                role: 'Senior Airhostess',
+                name: 'Aisha',
+                role: 'Airhostess-Trained Companion',
                 category: 'airhostess',
-                description: '5+ years experience with international airlines. Fluent in 4 languages.',
-                image: '/Webpimages/follow for more.webp', // Placeholder image path
+                description: 'Polished, well-travelled and easy to talk to — comfortable with business travellers and late landings alike.',
+                image: '/Webpimages/MODEL (1).webp',
               },
               {
                 id: 2,
-                name: 'Alex Johnson',
-                role: 'TV Personality',
+                name: 'Kiara',
+                role: 'TV & Media Personality',
                 category: 'celebrity',
-                description: 'Award-winning host of "Nightlife" show. Known for vibrant personality.',
-                image: '/Webpimages/downloadd6.webp', // Placeholder image pathss
+                description: 'Confident and charismatic, at ease in lounges, dinners, and social settings around Aerocity.',
+                image: '/Webpimages/model1.webp',
               },
               {
                 id: 3,
-                name: 'Emma Wilson',
-                role: 'Marketing Student',
+                name: 'Simran',
+                role: 'College Companion',
                 category: 'college',
-                description: 'Top of her class at NYU. Passionate about digital marketing trends.',
-                image: '/Webpimages/spaStaffInsta.webp', // Placeholder image path
+                description: 'Youthful, easygoing energy — a relaxed, casual companion for an evening out.',
+                image: '/Webpimages/model1 (1).webp',
               },
               {
                 id: 4,
-                name: 'Isabella Rossi',
-                role: 'International Model',
+                name: 'Elena',
+                role: 'Foreign Model',
                 category: 'foreign',
-                description: 'Milan-born fashion model. Featured in Vogue and Elle magazines.',
-                image: '/Webpimages/celebrityspastaff.webp', // Placeholder image path
+                description: 'International model with a sophisticated, global sensibility suited to Aerocity\'s luxury belt.',
+                image: '/Webpimages/downloadd6.webp',
               },
               {
                 id: 5,
-                name: 'Olivia Chen',
-                role: 'Corporate Executive',
+                name: 'Ritu',
+                role: 'High-Profile Companion',
                 category: 'highprofile',
-                description: 'Fortune 500 company board member. MBA from Harvard Business School.',
+                description: 'Poised, articulate, and comfortable in corporate and executive settings.',
                 image: '/Webpimages/49.webp',
               },
               {
                 id: 6,
-                name: 'Mia Thompson',
-                role: 'First Class Hostess',
+                name: 'Meher',
+                role: 'First-Class Hostess',
                 category: 'airhostess',
-                description: 'Specialized in luxury travel experience. Trained in hospitality management.',
-                image: '/Webpimages/smiling.webp', // Placeholder image path
+                description: 'Trained in hospitality and travel etiquette — ideal for guests coming straight from the airport.',
+                image: '/Webpimages/smiling.webp',
               },
               {
                 id: 7,
-                name: 'Chloe Williams',
-                role: 'Film Actress',
+                name: 'Nisha',
+                role: 'Performing Artist',
                 category: 'celebrity',
-                description: 'Rising star in independent cinema. Trained at Royal Academy of Dramatic Art.',
-                image: '/Webpimages/413965.webp', // Placeholder image path
+                description: 'Expressive and engaging, with a natural stage presence that carries into conversation.',
+                image: '/Webpimages/413965.webp',
               },
               {
                 id: 8,
-                name: 'Ava Garcia',
-                role: 'Engineering Student',
+                name: 'Diya',
+                role: 'College Companion',
                 category: 'college',
-                description: 'Robotics club president. Developing AI solutions for sustainable energy.',
-                image: '/Webpimages/image1.webp', // Placeholder image path
+                description: 'Curious, bright, and full of energy — a refreshingly casual companion.',
+                image: '/Webpimages/image1.webp',
               },
             ];
             const filteredStaff = activeCategory === 'all' 
@@ -290,18 +283,12 @@ export default function Delhiescorts({
   };
     //End FAQ Section
     const cities = [
-{ name: 'DELHI', img: '/Webpimages/hotel3.webp' },
-{ name: 'MUMBAI', img: '/Webpimages/lajpatnagahotel.webp' },
-{ name: 'NOIDA', img: '/Webpimages/RoseateHouse.webp' },
-{ name: 'BANGALORE', img: '/Webpimages/paschimvihar.webp' },
-{ name: 'PUNE', img: '/Webpimages/JwMarriott_CP.webp' },
-{ name: 'AHMEDABAD', img: '/Webpimages/connaught-place-delhi.webp' },
-{ name: 'GURGAON', img: '/Webpimages/holidayIn_CP.webp' },
-{ name: 'HYDERABAD', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp' },
-{ name: 'KOLKATA', img: '/Webpimages/paschimvihar.webp' },
-{ name: 'CHENNAI', img: '/Webpimages/hotel2.webp' },
-{ name: 'CHANDIGARH', img: '/Webpimages/pullmanAerocity.webp' },
-{ name: 'JAIPUR', img: '/Webpimages/jwmarriott.webp' },
+{ name: 'Connaught Place', img: '/Webpimages/connaught-place-delhi.webp', href: '/call-girls-in-connaught-place' },
+{ name: 'Dwarka', img: '/Webpimages/RoseateHouse.webp', href: '/call-girls-in-dwarka' },
+{ name: 'Mahipalpur', img: '/Webpimages/pullmanAerocity.webp', href: '/call-girls-in-mahipalpur' },
+{ name: 'Lajpat Nagar', img: '/Webpimages/lajpatnagahotel.webp', href: '/call-girls-in-lajpat-nagar' },
+{ name: 'Noida', img: '/Webpimages/holidayIn_CP.webp', href: '/call-girls-in-noida' },
+{ name: 'Gurgaon', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp', href: '/call-girls-in-gurgaon' },
 ]
 const services = [
     {
@@ -337,7 +324,7 @@ const services = [
     {
       id: "06",
       title: "High End Independent Escorts in Aerocity",
-      desc8: "To people who like genuine chemistry and arousal of natural association, independent escorts provide character, coziness, and reality.",
+      desc: "To people who like genuine chemistry and natural connection, our independent escorts in Aerocity bring character, warmth, and authenticity.",
       tag: "Independent",
     },
   ];
@@ -461,11 +448,39 @@ const benefits = [
 ];
   return (
     <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.delhigirl.in/" },
+            { "@type": "ListItem", position: 2, name: "Delhi NCR Locations", item: "https://www.delhigirl.in/escort-service-in-delhi" },
+            { "@type": "ListItem", position: 3, name: "Aerocity Escorts", item: "https://www.delhigirl.in/aerocity-escorts" },
+          ],
+        }),
+      }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
+          })),
+        }),
+      }}
+    />
     <header className="relative overflow-hidden bg-gradient-to-r from-rose-50 via-white to-amber-50">
       <div className="absolute inset-0">
         <Image
           src={image}
-          alt="Hero background"
+          alt="Call girls in Aerocity near IGI Airport hotels"
           fill
           priority
           sizes="100vw"
@@ -503,7 +518,9 @@ const benefits = [
               className="mt-8 flex flex-col sm:flex-row gap-4"
             >
               <a
-                href="#book"
+                href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20book%20a%20call%20girl%20in%20Aerocity"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-white text-gray-900 px-6 py-3 text-sm font-semibold shadow-md hover:shadow-lg transition"
                 aria-label="Primary action - Book now"
               >
@@ -543,7 +560,7 @@ const benefits = [
                   <div className="relative w-16 h-16 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
                     <Image
                       src="/Webpimages/18244.webp"
-                      alt="Service sample"
+                      alt="Verified Aerocity escort profile"
                       fill
                       sizes="64px"
                       className="object-cover"
@@ -569,7 +586,9 @@ const benefits = [
                 </div>
 
                 <a
-                  href="#quickbook"
+                  href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20quick-book%20a%20call%20girl%20in%20Aerocity"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-6 inline-block w-full text-center rounded-md bg-white text-gray-900 px-4 py-2 font-medium shadow-sm hover:shadow-md transition"
                 >
                   Quick Book
@@ -604,8 +623,8 @@ const benefits = [
           {/* IMAGE AREA */}
           <div className="group relative overflow-hidden rounded-2xl shadow-xl">
             <Image
-              src="/Webpimages/18244.webp" // 👉 apni image yaha lagao
-              alt="Luxury Spa Image"
+              src="/Webpimages/18244.webp"
+              alt="High-profile call girl service in Aerocity, Delhi"
               width={700}
               height={500}
               className="rounded-2xl transition-transform duration-700 group-hover:scale-105"
@@ -636,9 +655,14 @@ const benefits = [
             </p>
 
 
-            <button className="mt-6 px-8 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold text-lg shadow-md hover:bg-emerald-700 transition-all">
+            <a
+              href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20book%20a%20call%20girl%20in%20Aerocity"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-block px-8 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold text-lg shadow-md hover:opacity-90 transition-all"
+            >
               Book Appointment
-            </button>
+            </a>
           </div>
 
         </div>
@@ -667,18 +691,18 @@ const benefits = [
                 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
                 {cities.map((c, i) => (
-                <motion.a
+                <motion.div
                 key={c.name}
-                href={`#/cities/${c.name.toLowerCase()}`}
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.04, duration: 0.35 }}
-                className="group block rounded-2xl overflow-hidden shadow-lg relative transform hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 bg-white"
+                className="group rounded-2xl overflow-hidden shadow-lg relative transform hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 bg-white"
                 >
+                <Link href={c.href} className="block">
                 <div className="relative w-full h-44 sm:h-48 lg:h-52">
                 <Image
                 src={c.img}
-                alt={c.name}
+                alt={`Call girls near ${c.name}, Delhi NCR`}
                 fill
                 sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
                 style={{ objectFit: 'cover' }}
@@ -686,26 +710,27 @@ const benefits = [
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
                 </div>
-                
-                
+
+
                 <div className="absolute left-0 right-0 bottom-4 px-4 text-center">
                 <span className="text-white text-lg sm:text-xl font-semibold tracking-wider drop-shadow-lg uppercase">{c.name}</span>
                 </div>
-                </motion.a>
+                </Link>
+                </motion.div>
                 ))}
                 </div>
-                
-                
+
+
                 <div className="flex justify-center mt-10">
-                <a
-                href="#/cities"
+                <Link
+                href="/escort-service-in-delhi"
                 className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
                 >
-                View All Cities
+                View All Delhi NCR Locations
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                 </svg>
-                </a>
+                </Link>
                 </div>
                 </div>
                 </section>
@@ -776,26 +801,37 @@ const benefits = [
                                     <div className="bg-gradient-to-br from-purple-100 to-pink-100 w-full h-full flex items-center justify-center">
                                       <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
                                       <Image
-                                            src={staff.image} // Make sure `staff.image` has full image URL or path
-                                            alt={staff.name}
+                                            src={staff.image}
+                                            alt={`${staff.name} — ${staff.role} in Aerocity`}
                                             fill
                                             className="object-cover"
                                           />
                                        </div>
                                   </div>
-                                  
+
                                   <div className="p-5">
                                     <p className="text-gray-600 mb-4">{staff.description}</p>
-                                    
+
                                     <div className="flex space-x-3">
-                                      <button className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+                                      <a
+                                        href={`https://api.whatsapp.com/send?phone=918826482370&text=${encodeURIComponent(`Hi, I'd like to book ${staff.name} in Aerocity.`)}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex-1 text-center bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+                                      >
                                         View Profile
-                                      </button>
-                                      <button className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
+                                      </a>
+                                      <a
+                                        href="https://api.whatsapp.com/send?phone=918826482370"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="Chat on WhatsApp"
+                                        className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors"
+                                      >
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                                         </svg>
-                                      </button>
+                                      </a>
                                     </div>
                                   </div>
                                 </motion.div>
@@ -915,9 +951,14 @@ const benefits = [
                                   </div>
                                 </div>
                                 {/* Button */}
-                                <button className="mt-6 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all">
+                                <a
+                                  href={`https://api.whatsapp.com/send?phone=918826482370&text=${encodeURIComponent(`Hi, I'd like to book a call girl at ${hotel.name}, Aerocity.`)}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="mt-6 block text-center w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all"
+                                >
                                   View Details
-                                </button>
+                                </a>
                               </div>
                             </motion.div>
                           ))}
@@ -943,7 +984,7 @@ const benefits = [
                                 {/* <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" /> */}
                                 <Image
                                   src="/Webpimages/ph_ miller_millka.webp"
-                                  alt="Luxury Spa"
+                                  alt="Luxury escort package at 5-star Aerocity hotels"
                                   fill
                                   sizes="(max-width: 1024px) 100vw, 50vw"
                                   className="rounded-2xl shadow-xl object-cover"
@@ -970,12 +1011,22 @@ const benefits = [
                                 <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Free spa credits</li>
                               </ul>
                               <div className="flex space-x-4">
-                                <button className="px-6 py-3 bg-white text-purple-800 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                                <a
+                                  href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20the%20Luxury%20Experience%20Package%20in%20Aerocity"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="px-6 py-3 bg-white text-purple-800 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                                >
                                   Explore Packages
-                                </button>
-                                <button className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+                                </a>
+                                <a
+                                  href="https://api.whatsapp.com/send?phone=918826482370"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
+                                >
                                   Contact Concierge
-                                </button>
+                                </a>
                               </div>
                             </div>
                           </div>
@@ -983,13 +1034,13 @@ const benefits = [
                       </div>
                     </div>
                     {/* END Hotel */}
-                    <section className="w-full bg-slate-950 py-16 lg:py-24">
+                    <section id="services" className="w-full bg-slate-950 py-16 lg:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
           <p className="inline-flex rounded-full border border-purple-500/40 bg-purple-500/10 px-4 py-1 text-xs font-medium tracking-wide text-purple-300 uppercase">
-            Our Escort Services in Gurugram
+            Our Escort Services in Aerocity
           </p>
 
           <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
@@ -1043,7 +1094,7 @@ const benefits = [
                 </span>
 
                 <span className="hidden text-[11px] uppercase tracking-wide text-slate-500 sm:inline">
-                  Gurugram · Premium Companionship
+                  Aerocity · Premium Companionship
                 </span>
               </div>
 
@@ -1148,12 +1199,20 @@ const benefits = [
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300">
+            <a
+              href="#services"
+              className="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300"
+            >
               Browse Profiles
-            </button>
-            <button className="px-8 py-3 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300">
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=918826482370"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300"
+            >
               Contact Support
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -1169,11 +1228,7 @@ const benefits = [
           Benefits of Booking Escort Services in Aerocity
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Benefits of Booking Escort Services in Aerocity
-By selecting Aerocity to spend time with, you are not only selecting a place, but you are also selecting an experience that is being molded by luxury, privacy, and emotional comfort. The development of this section of the Delhi NCR is aimed at travellers, executives, and men looking for a relaxed company after a hard day, lateness, or consecutive meetings.
-
-Delhi Girl takes that ease a notch higher by having friends who will make you feel comfortable, close, and a soothing presence that moves your stay to a whole new level.
-
+          By choosing Aerocity, you&apos;re not just picking a location — you&apos;re choosing an experience shaped by luxury, privacy, and emotional comfort. This part of Delhi NCR is built for travellers, executives, and anyone who wants relaxed company after a hard day, a late landing, or back-to-back meetings. Delhi Girl takes that ease a step further with companions who bring warmth, closeness, and a soothing presence to your stay.
         </p>
       </div>
       
@@ -1222,9 +1277,14 @@ Delhi Girl takes that ease a notch higher by having friends who will make you fe
              Share beautiful company that is warm, conversational, charming and feels comfortable. Be it a business traveller, a business guest, or a person who just wants to relax in his or her luxury suite, Delhi Girl offers an experience that has been customised to his or her mood and comfort.
             </p>
           </div>
-          <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-600/30 transition-all duration-300 whitespace-nowrap">
+          <a
+            href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20book%20a%20call%20girl%20in%20Aerocity"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-600/30 transition-all duration-300 whitespace-nowrap"
+          >
             Book Now
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -1237,29 +1297,33 @@ Delhi Girl takes that ease a notch higher by having friends who will make you fe
         {/* Text Section */}
         <div className="space-y-6">
           <h2 className="text-4xl font-bold leading-tight">
-            Discover the Ultimate Luxury Experience
+            Discover the Ultimate Aerocity Experience
           </h2>
           <p className="text-lg opacity-90 leading-relaxed">
-            Experience a premium level of relaxation, comfort, and personalized care. 
-            Our professional therapists ensure that each session is tailored to your needs, 
-            offering deep relief, stress reduction, and complete mind-body rejuvenation.
+            Experience premium companionship with complete comfort and discretion.
+            Every escort in Aerocity is handpicked for grooming, manners, and social ease,
+            so the evening feels natural rather than staged.
           </p>
           <p className="text-lg opacity-90 leading-relaxed">
-            With world-class ambiance, premium oils, and international techniques, 
-            each therapy gives you a blissful escape from your daily routine. 
-            Book your session today and feel the transformation.
+            From quiet hotel evenings to lounge visits and dinner dates, book your
+            Aerocity call girl today and let the evening unfold at your own pace.
           </p>
 
-          <button className="mt-4 bg-white text-pink-600 px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-gray-100 transition">
+          <a
+            href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20book%20a%20call%20girl%20in%20Aerocity"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-block bg-white text-pink-600 px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-gray-100 transition"
+          >
             Book Now
-          </button>
+          </a>
         </div>
 
         {/* Image Section */}
         <div>
           <Image
             src="/Webpimages/Model2.webp"
-            alt="Luxury Spa"
+            alt="Premium call girl service in Aerocity, Delhi"
             width={736}
             height={412}
             className="rounded-2xl shadow-xl w-full h-auto object-cover"

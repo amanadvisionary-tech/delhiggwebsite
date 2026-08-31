@@ -627,7 +627,7 @@ export default function Home({
       {/* Banner */}
       <section className="relative w-full py-20">
         {/* Background image with dark gradient overlay */}
-        <div className="relative w-full overflow-hidden rounded-2xl shadow-2xl">
+        <div className="relative w-full overflow-hidden ">
           {/* Responsive height: mobile 60vh, md 80vh, lg 90vh */}
           <div className="relative h-[70vh] md:h-[75vh] lg:h-[90vh] w-full">
             <Image
@@ -2346,18 +2346,18 @@ export default function Home({
                 {/* Text on Image */}
                 <div className="absolute bottom-6 left-6 z-20 text-white">
                   <h3 className="text-2xl font-bold">
-                    Luxury Package for call girl Service in Gurgaon
+                    Luxury Escort Package in Delhi
                   </h3>
                   <p className="mt-2 max-w-md">
-                    An exquisite, luxurious, male-oriented experience aimed at men who are
-                    longing to have intimacy, bond, seduce, and the full body experience.
+                    A refined, discreet companionship experience — verified profiles, warm
+                    conversation, and complete privacy for your evening.
                   </p>
                 </div>
 
                 {/* Real Image */}
                 <Image
-                  src="/Webpimages/bannermodel.webp" // 👈 apni image ka path
-                  alt="Luxury call girl Service in Gurgaon"
+                  src="/Webpimages/bannermodel.webp"
+                  alt="Luxury escort service in Delhi"
                   fill
                   className="object-cover"
                   loading="lazy"
@@ -2626,12 +2626,16 @@ export default function Home({
               <div className="absolute inset-0 bg-gradient-to-r from-amber-800/30 to-amber-900/30 z-10"></div>
               <div className="absolute bottom-6 left-6 z-20 text-white">
                 <h3 className="text-2xl font-bold">Luxury Experience Package</h3>
-                <p className="mt-2 max-w-md">Book 3 nights and receive complimentary spa treatments, airport transfers, and dining credits</p>
+                <p className="mt-2 max-w-md">Book 3 nights and receive complimentary airport transfers, dining credits, and a dedicated concierge</p>
               </div>
 
-              <div className="bg-gradient-to-br from-amber-300 to-amber-500 w-full h-full flex items-center justify-center">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
-              </div>
+              <Image
+                src="/Webpimages/hotel-suite-interior.webp"
+                alt="Luxury hotel suite for escort service bookings in Delhi"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                style={{ objectFit: "cover" }}
+              />
             </div>
 
             <div className="p-8 text-white">
