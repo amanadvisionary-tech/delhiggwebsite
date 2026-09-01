@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaCheck, FaStar, FaCrown, FaPlane, FaGraduationCap, FaGlobeAsia, FaSpa } from 'react-icons/fa';
 import {  FaSwimmingPool, FaWifi, FaUtensils, FaConciergeBell, FaParking } from 'react-icons/fa';
@@ -200,27 +201,21 @@ export default function Locations() {
                 //End FAQ Section
       
 const cities = [
-{ name: 'DELHI', img: '/Webpimages/hotel3.webp' },
-{ name: 'MUMBAI', img: '/Webpimages/lajpatnagahotel.webp' },
-{ name: 'NOIDA', img: '/Webpimages/RoseateHouse.webp' },
-{ name: 'BANGALORE', img: '/Webpimages/paschimvihar.webp' },
-{ name: 'PUNE', img: '/Webpimages/JwMarriott_CP.webp' },
-{ name: 'AHMEDABAD', img: '/Webpimages/connaught-place-delhi.webp' },
-{ name: 'GURGAON', img: '/Webpimages/holidayIn_CP.webp' },
-{ name: 'HYDERABAD', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp' },
-{ name: 'KOLKATA', img: '/Webpimages/paschimvihar.webp' },
-{ name: 'CHENNAI', img: '/Webpimages/hotel2.webp' },
-{ name: 'CHANDIGARH', img: '/Webpimages/pullmanAerocity.webp' },
-{ name: 'JAIPUR', img: '/Webpimages/jwmarriott.webp' },
+{ name: 'DLF Cyber City', img: '/Webpimages/hotel3.webp', href: '/call-girls-in-gurgaon' },
+{ name: 'Sohna Road', img: '/Webpimages/lajpatnagahotel.webp', href: '/call-girls-in-gurgaon' },
+{ name: 'Aerocity', img: '/Webpimages/holidayIn_CP.webp', href: '/aerocity-escorts' },
+{ name: 'Connaught Place', img: '/Webpimages/connaught-place-delhi.webp', href: '/call-girls-in-connaught-place' },
+{ name: 'Dwarka', img: '/Webpimages/RoseateHouse.webp', href: '/call-girls-in-dwarka' },
+{ name: 'Noida', img: '/Webpimages/paschimvihar.webp', href: '/call-girls-in-noida' },
 ]
 const profiles = [
-  { image: '/Webpimages/modelg.webp' },
-  { image: '/Webpimages/18244.webp' },
-  { image: '/Webpimages/172420-8871.webp' },
-  { image: '/Webpimages/Model2.webp' },
-  { image: '/Webpimages/7168.webp' },
-  { image: '/Webpimages/49.webp' },
-  { image: '/Webpimages/Model21.webp' },
+  { image: '/Webpimages/modelg.webp', name: 'Riya', age: 24, tag: 'Dinner • Hotel Stays' },
+  { image: '/Webpimages/18244.webp', name: 'Simran', age: 26, tag: 'Events • Travel' },
+  { image: '/Webpimages/172420-8871.webp', name: 'Ananya', age: 23, tag: 'Dining • Nightlife' },
+  { image: '/Webpimages/Model2.webp', name: 'Priya', age: 25, tag: 'Hotel Visits • Parties' },
+  { image: '/Webpimages/7168.webp', name: 'Neha', age: 24, tag: 'Corporate Events • Dinner' },
+  { image: '/Webpimages/49.webp', name: 'Kavya', age: 27, tag: 'Travel • Overnight Stays' },
+  { image: '/Webpimages/Model21.webp', name: 'Isha', age: 23, tag: 'Parties • Dining' },
 ]
 
 const services = [
@@ -291,11 +286,39 @@ const services = [
   ];
   return (
     <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.delhigirl.in/" },
+            { "@type": "ListItem", position: 2, name: "Delhi NCR Locations", item: "https://www.delhigirl.in/escort-service-in-delhi" },
+            { "@type": "ListItem", position: 3, name: "Gurgaon Escorts", item: "https://www.delhigirl.in/call-girls-in-gurgaon" },
+          ],
+        }),
+      }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
+          })),
+        }),
+      }}
+    />
     <header className="relative overflow-hidden bg-gradient-to-r from-rose-50 via-white to-amber-50">
       <div className="absolute inset-0">
         <Image
           src="/Webpimages/fashion-portrait-beautiful-blonde-model.webp"  // 👉 apni banner image yaha lagao
-          alt="Hero background"
+          alt="Escort service in Gurgaon near DLF Cyber City hotels"
           fill
           priority
           sizes="100vw"
@@ -343,7 +366,7 @@ const services = [
               </a>
 
               <a
-                href="#hotels"
+                href="#services"
                 className="inline-flex items-center justify-center rounded-full border border-white/40 text-white px-5 py-3 text-sm font-medium backdrop-blur-sm hover:bg-white/10 transition"
                 aria-label="Secondary action - View services"
               >
@@ -375,7 +398,7 @@ const services = [
                   <div className="relative w-16 h-16 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
                     <Image
                       src="/Webpimages/18244.webp"
-                      alt="Service sample"
+                      alt="Verified Gurgaon escort profile"
                       fill
                       sizes="64px"
                       className="object-cover"
@@ -497,8 +520,8 @@ const services = [
           className="relative"
         >
           <Image
-            src="/Webpimages/RoseateHouse.webp" // apni image path yaha dena
-            alt="Spa & Beauty"
+            src="/Webpimages/RoseateHouse.webp"
+            alt="5-star hotel for escort service in Gurgaon"
             width={700}
             height={500}
             className="rounded-2xl shadow-lg object-cover"
@@ -568,12 +591,12 @@ const services = [
                 </svg>
               </a>
 
-              <a
-                href="#hotels"
+              {/* <a
+                href="#services"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gray-200 bg-white text-gray-800 text-sm font-medium shadow-sm hover:shadow-md transition"
               >
                 View Services
-              </a>
+              </a> */}
             </div>
 
             {/* Feature list */}
@@ -632,10 +655,9 @@ const services = [
       className="min-w-[160px] bg-gray-50 rounded-2xl p-3 shadow-sm"
     >
       <div className="w-full h-48 rounded-lg overflow-hidden bg-gray-200">
-        {/* use p.image not p (object) */}
         <Image
           src={p.image}
-          alt={`profile-${idx}`}
+          alt={`${p.name} — Gurgaon escort companion profile`}
           width={400}
           height={300}
           className="object-cover w-full h-full"
@@ -643,12 +665,19 @@ const services = [
       </div>
 
       <div className="mt-3">
-        <div className="font-medium text-sm">Ari • 26</div>
-        <div className="text-xs text-gray-500">Events • Travel • Dining</div>
+        <div className="font-medium text-sm">{p.name} • {p.age}</div>
+        <div className="text-xs text-gray-500">{p.tag}</div>
       </div>
 
       <div className="mt-3">
-        <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
+        <a
+          href={`https://api.whatsapp.com/send?phone=918826482370&text=${encodeURIComponent(`Hi, I'd like to book ${p.name} in Gurgaon.`)}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white"
+        >
+          Request
+        </a>
       </div>
     </motion.div>
   ))}
@@ -713,18 +742,31 @@ const services = [
                   >
                     <p className="text-gray-600 text-lg leading-relaxed">
                       Everyone in Gurugram is always in a rush — you see sharp workspaces, glitzy buildings, and five-star hotels packed with folks chasing big dreams. Delhi Girl gets that vibe, sending in someone who turns heads with style, walks in with sure confidence, and just has this peaceful energy that puts you at ease and makes you forget the day.{" "}
-                      <strong className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 font-medium">
-                      </strong>
+                      Looking for someone more understated? Our{" "}
+                      <Link href="/independent-escorts-in-delhi" className="text-purple-600 font-medium hover:underline">
+                        independent escorts
+                      </Link>{" "}
+                      bring the same ease with a more personal, one-on-one connection.
                     </p>
                     <p className="text-gray-600 text-lg leading-relaxed">
                       It’s not only about good looks. These women carry themselves with assurance and know how to settle the room. They’ll pick up on your mood right away, chatting with you without awkward small talk or fake lines. Maybe you’ve had a weird meeting or just want someone to shake off the work day with — either way, the women know when to lighten things up or make things meaningful.{" "}
-                      <strong className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 font-medium">
-                      </strong>
+                      Prefer a distinct look? Our{" "}
+                      <Link href="/russian-escorts-in-delhi" className="text-purple-600 font-medium hover:underline">
+                        Russian escorts
+                      </Link>{" "}
+                      and{" "}
+                      <Link href="/high-profile-escorts-in-delhi" className="text-purple-600 font-medium hover:underline">
+                        high-profile companions
+                      </Link>{" "}
+                      are also available on request.
                     </p>
                     <p className="text-gray-600 text-lg leading-relaxed">
                       What sticks is how it never feels forced. They meet you with a smile, listen, and make sure every second feels natural — never awkward or rehearsed. With Delhi Girl, it’s not just another night out. It’s a grown-up escape that feels like it was built exactly for you.{" "}
-                      <strong className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 font-medium">
-                      </strong>
+                      Not in Gurugram right now? Browse{" "}
+                      <Link href="/escort-service-in-delhi" className="text-purple-600 font-medium hover:underline">
+                        all the Delhi NCR locations
+                      </Link>{" "}
+                      we cover.
                     </p>
                   </motion.div>
       {/* <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900">
@@ -764,7 +806,7 @@ const services = [
           <div className="rounded-md overflow-hidden border-1 border-white">
             <Image
               src='/Webpimages1/download (29).webp'
-              alt="property 1"
+              alt="Gurgaon escort service — verified companion profile"
               width={900}
               height={600}
               className="object-cover w-full h-64 sm:h-72 lg:h-[22rem]"
@@ -783,7 +825,7 @@ const services = [
           <div className="rounded-md overflow-hidden border-1 border-white">
             <Image
               src='/Webpimages1/download (36).webp'
-              alt="property 2"
+              alt="Gurgaon escort service — verified companion profile"
               width={900}
               height={600}
               className="object-cover w-full h-64 sm:h-72 lg:h-[22rem]"
@@ -825,12 +867,13 @@ const services = [
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.04, duration: 0.35 }}
-            className="group block rounded-2xl overflow-hidden shadow-lg relative transform hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 bg-white"
+            className="group rounded-2xl overflow-hidden shadow-lg relative transform hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 bg-white"
             >
+            <Link href={c.href} className="block">
             <div className="relative w-full h-44 sm:h-48 lg:h-52">
             <Image
             src={c.img}
-            alt={c.name}
+            alt={`Call girls near ${c.name}, Gurgaon`}
             fill
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
             style={{ objectFit: 'cover' }}
@@ -843,6 +886,7 @@ const services = [
             <div className="absolute left-0 right-0 bottom-4 px-4 text-center">
             <span className="text-white text-lg sm:text-xl font-semibold tracking-wider drop-shadow-lg uppercase">{c.name}</span>
             </div>
+            </Link>
             </motion.div>
             ))}
             </div>
@@ -944,9 +988,14 @@ const services = [
                       </div>
                     </div>
                     {/* Button */}
-                    <button className="mt-6 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all">
+                    <a
+                      href={`https://api.whatsapp.com/send?phone=918826482370&text=${encodeURIComponent(`Hi, I'd like to book a call girl at ${hotel.name}, Gurgaon.`)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-6 block text-center w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all"
+                    >
                       View Details
-                    </button>
+                    </a>
                   </div>
                 </motion.div>
               ))}
@@ -971,7 +1020,7 @@ const services = [
                   <div className="relative bg-gradient-to-br from-purple-300 to-pink-400 w-full h-full flex items-center justify-center">
                     <Image
                         src="/Webpimages/32586.webp"
-                        alt="Luxury Spa"
+                        alt="Luxury escort package at 5-star Gurgaon hotels"
                         fill
                         sizes="(max-width: 1024px) 100vw, 50vw"
                         className="rounded-2xl shadow-xl object-cover"
@@ -999,12 +1048,22 @@ const services = [
                     <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Free spa credits</li>
                   </ul>
                   <div className="flex space-x-4">
-                    <button className="px-6 py-3 bg-white text-purple-800 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                    <a
+                      href="https://www.delhigirl.in/cheap-call-girls-in-delhi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-3 bg-white text-purple-800 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                    >
                       Explore Packages
-                    </button>
-                    <button className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+                    </a>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=918826482370"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
+                    >
                       Contact Concierge
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1012,7 +1071,7 @@ const services = [
           </div>
         </div>
         {/* END Hotel */}
-<section className="w-full bg-slate-950 py-16 lg:py-24">
+<section id="services" className="w-full bg-slate-950 py-16 lg:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
@@ -1328,7 +1387,7 @@ const services = [
         </motion.div>
 
         {/* Category Filters */}
-        <motion.div 
+        {/* <motion.div 
           className="flex flex-wrap justify-center gap-3 mb-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -1347,7 +1406,7 @@ const services = [
               {category.name}
             </button>
           ))}
-        </motion.div>
+        </motion.div> */}
 
         {/* FAQ List */}
         <div className="space-y-4 mb-16">
