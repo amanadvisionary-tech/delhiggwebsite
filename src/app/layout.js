@@ -1,7 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import ModernFooter from "./components/ModernFooter";
+
+const GA_MEASUREMENT_ID = "G-2VVE59D7JS";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -101,6 +104,18 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <Navbar />
         {children}
         <ModernFooter />
