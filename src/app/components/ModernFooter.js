@@ -103,7 +103,7 @@ const ModernFooter = () => {
             </h3>
             <ul className="space-y-3">
               {[
-                { name: "Foreigner Staff", link: "/russian-escorts-in-delhi" },
+                { name: "Russian Escorts", link: "/russian-escorts-in-delhi" },
                 { name: "Air Hostess", link: "/air-hostess-escorts-in-delhi" },
                 { name: "Independent Profile", link: "/independent-escorts-in-delhi" },
                 { name: "High Profile", link: "/high-profile-escorts-in-delhi" },

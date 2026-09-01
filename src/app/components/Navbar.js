@@ -12,7 +12,7 @@ export default function Navbar() {
   const [isLocationsOpen, setIsLocationsOpen] = useState(false);
 
   const Services = [
-    { name: "Foreigner Staff", href: "/russian-escorts-in-delhi" },
+    { name: "Russian Escorts", href: "/russian-escorts-in-delhi" },
     { name: "Air Hostess", href: "/air-hostess-escorts-in-delhi" },
     { name: "Independent Profile", href: "/independent-escorts-in-delhi" },
     // { name: "Russian Model", href: "/Category/Russianmodels" },

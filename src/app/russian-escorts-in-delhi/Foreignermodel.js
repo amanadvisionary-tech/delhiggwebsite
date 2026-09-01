@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaCheck, FaStar, FaCrown, FaPlane, FaGraduationCap, FaGlobeAsia, FaSpa } from 'react-icons/fa';
 import { FiSearch, FiChevronDown, FiMail, FiMessageSquare, FiHelpCircle } from 'react-icons/fi';
@@ -153,7 +154,7 @@ const current = priceMap[tier]
               {
                 id: 4,
                 question: 'Do you provide low price foreigner call girls in Delhi?',
-                answer: 'Yes. We have cheap foreigner call girls in Delhi to clients who want cheap international girls models without affecting their standards of cleanliness or behaviour. Even these profiles are spa-like and professionally presented.',
+                answer: 'Yes. We have affordable foreigner call girls in Delhi for clients who want budget-friendly international profiles without affecting standards of cleanliness or behaviour. Every profile is well-groomed and professionally presented.',
                 category: 'booking',
               },
               {
@@ -165,7 +166,7 @@ const current = priceMap[tier]
               {
                 id: 6,
                 question: 'What makes your Russian escorts in Delhi different?',
-                answer: 'We have Russian escorts in Delhi who are checked, well-trained and polite. They ensure cleanliness, sophistication and spa touch of comfort that makes the clients feel relaxed and easy. Apposite to the hotel sector, corporate men, and first-time users.',
+                answer: 'We have Russian escorts in Delhi who are verified, well-trained and polite. They bring cleanliness, sophistication and a warm sense of comfort that makes clients feel relaxed and at ease — well suited to hotel visits, corporate clients, and first-time users.',
                 category: 'services',
               },
               {
@@ -179,6 +180,12 @@ const current = priceMap[tier]
                 question: 'How safe is it to book foreigner call girls in Delhi?',
                 answer: 'Completely safe. We provide confirmed profiles, personalized coordination, hotel only services, and book-now pay-later services of the Russian Service in Delhi. All clients receive privacy and authentic foreigner models without any danger.',
                 category: 'services',
+              },
+              {
+                id: 9,
+                question: 'Do you have Russian escorts near Aerocity or Connaught Place?',
+                answer: 'Yes, Russian and foreign escorts are available across Delhi NCR including Aerocity, Connaught Place, Dwarka, and Gurgaon — the same verified booking process applies wherever you are.',
+                category: 'account',
               },
             ];
           
@@ -214,28 +221,10 @@ const current = priceMap[tier]
   { image: '/Webpimages/49.webp' },
   
 ]
-const content = `At Delhi Escorts Agency, we redefine personalised luxury by combining professional care, complete discretion, and a client-first approach. Our team of highly trained therapists and hosts are selected for their skills, professionalism, and commitment to exceptional service. Every interaction is handled with respect and sensitivity, ensuring you feel comfortable, valued, and understood from the moment you connect with us.
-
-We take privacy seriously: appointments are confidential, records are protected, and every booking is managed with discrete communication. Whether you prefer a tranquil home visit or the refined setting of a premium hotel, our team adapts to your needs while maintaining the highest safety and hygiene standards. Our rigorous background checks, ongoing training, and quality audits ensure consistency and trust in every experience.
-
-Choice and convenience are at the heart of what we offer. With multiple categories of professionals, flexible booking windows, and seamless online scheduling, finding the right match is quick and intuitive. We provide transparent pricing, clear policies, and attentive customer support so you can make informed decisions with confidence.
-
-Quality is non-negotiable: from luxurious linens and premium oils to elegant presentation and punctual service, we obsess over details so you can relax and enjoy the moment. Clients repeatedly choose us for our reliability, refined standards, and the tailored, memorable experiences we craft.
-
-Ultimately, our mission is to deliver respectful, elevated companionship and spa services that enhance wellbeing and create lasting impressions. We blend modern conveniences with timeless hospitality to offer an experience that is safe, luxurious, and consistently outstanding. Choose Delhi Escorts Agency for discretion, professionalism, and a level of care designed around you. Our commitment to continuous improvement means we listen to feedback, refine our offerings, and innovate services so every visit surpasses expectations and fosters trust, relaxation, and genuine satisfaction for discerning clients. Every time, always.`;
-
-const features1 = [
-  { title: "Professional Team", desc: "Certified therapists and vetted hosts trained for client comfort." },
-  { title: "Discreet Service", desc: "Strict confidentiality and respectful communication at every step." },
-  { title: "Flexible Booking", desc: "Easy online scheduling, hotel or home visits, and multiple time slots." },
-  { title: "Premium Standards", desc: "High hygiene, quality linens, and curated products for relaxation." },
-];
-
-
 // End Locations
  const features3 = [
     { icon: ShieldCheckIcon, title: "Verified Profiles" },
-    { icon: SparklesIcon, title: "Spa-Like Experience" },
+    { icon: SparklesIcon, title: "Premium Companionship" },
     { icon: HeartIcon, title: "Calm & Respectful" },
     { icon: BriefcaseIcon, title: "Corporate Friendly" },
   ];
@@ -365,14 +354,40 @@ const features1 = [
         //end 5 start hotel 
   return (
     <>
-       
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.delhigirl.in/" },
+            { "@type": "ListItem", position: 2, name: "Russian Escorts in Delhi", item: "https://www.delhigirl.in/russian-escorts-in-delhi" },
+          ],
+        }),
+      }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
+          })),
+        }),
+      }}
+    />
     {/* banner */}
                <header className="relative w-full h-screen min-h-[460px] flex items-center">
       {/* Background image - place your image at /public/Webpimages/hero-banner.webp */}
       <div className="absolute inset-0 -z-20">
         <Image
           src="/Webpimages/fashion-portrait-beautiful-blonde-model.webp"
-          alt="Luxury spa background"
+          alt="Russian escorts in Delhi"
           fill
           sizes="(max-width: 1024px) 100vw, 50vw"
           style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -460,7 +475,7 @@ const features1 = [
                   {/* <div className="w-full h-full flex items-center justify-center text-gray-300">Profile Preview</div> */}
                   <Image
           src="/Webpimages/18244.webp"
-          alt="Luxury spa background"
+          alt="Verified Russian escort profile"
           fill
           sizes="(max-width: 1024px) 100vw, 50vw"
           style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -472,8 +487,20 @@ const features1 = [
                   <div className="text-sm font-semibold text-gray-800">Ari • 26</div>
                   <div className="text-xs text-gray-500 mt-1">Events • Travel • Dining</div>
                   <div className="mt-3 flex gap-2">
-                    <button className="flex-1 rounded-full py-2 text-sm bg-gradient-to-r from-pink-500 to-violet-500 text-white">Request</button>
-                    <button className="rounded-full py-2 px-4 text-sm bg-gray-100 text-gray-700">Details</button>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20book%20a%20Russian%20escort%20in%20Delhi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 text-center rounded-full py-2 text-sm bg-gradient-to-r from-pink-500 to-violet-500 text-white"
+                    >
+                      Request
+                    </a>
+                    <a
+                      href="#profiles"
+                      className="rounded-full py-2 px-4 text-sm bg-gray-100 text-gray-700"
+                    >
+                      Details
+                    </a>
                   </div>
                 </div>
               </div>
@@ -661,7 +688,7 @@ const features1 = [
             {/* content section */}
             
         {/* staff showcase */}
-         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+         <div id="profiles" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
               <div className="max-w-7xl mx-auto">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -670,7 +697,7 @@ const features1 = [
                   className="text-center mb-16"
                 >
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
-                    Our Exceptional Team
+                    Our Russian &amp; Foreign Escort Profiles
                   </h2>
                   <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                     Meet our diverse team of professionals who bring excellence and passion to every engagement.
@@ -738,14 +765,25 @@ const features1 = [
                         <p className="text-gray-600 mb-4">{staff.description}</p>
                         
                         <div className="flex space-x-3">
-                          <button className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+                          <a
+                            href={`https://api.whatsapp.com/send?phone=918826482370&text=${encodeURIComponent(`Hi, I'd like to book ${staff.name} in Delhi.`)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 text-center bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+                          >
                             View Profile
-                          </button>
-                          <button className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
+                          </a>
+                          <a
+                            href="https://api.whatsapp.com/send?phone=918826482370"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Chat on WhatsApp"
+                            className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors"
+                          >
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                             </svg>
-                          </button>
+                          </a>
                         </div>
                       </div>
                     </motion.div>
@@ -921,7 +959,7 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
 
           <div className="space-y-6 text-gray-600 text-base md:text-lg leading-relaxed">
             <p>
-              Delhi Girl provides well-trained, well-groomed, and polite foreign call girls in Delhi who know how to create a spa-like experience. These girls are pure and tender, with a natural liking that will immediately make you at ease. Our Russian call girls service in Delhi are just what you want whenever you want someone to enjoy a peaceful evening, to visit the lounge, or to have a relaxing discussion, or to have a relaxing break without stress
+              Delhi Girl provides well-trained, well-groomed, and polite foreign call girls in Delhi who know how to make you feel instantly comfortable. These girls are warm and easygoing, with a natural charm that puts you at ease right away. Our Russian call girls service in Delhi is just what you want whenever you want someone to enjoy a peaceful evening, visit a lounge, or have a relaxing conversation without stress.
             </p>
             <p>
               They treat you well, are full of life, and behave professionally so that you will have no trouble or doubt in spending time with them. Our foreign staff, which includes the European models and the Russian escorts in Delhi, ensures hygiene, grace and a serene demeanour befitting business travellers and other corporate clients. In case you are looking at having a light, smooth and classy experience, our Russian Escorts in Delhi are the best way to go.
@@ -949,14 +987,22 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
 
           {/* CTA */}
           <div className="mt-12 flex flex-wrap gap-6">
-            <button className="group relative px-10 py-4 rounded-full overflow-hidden bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold text-lg shadow-2xl">
+            <a
+              href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20book%20a%20Russian%20escort%20in%20Delhi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative px-10 py-4 rounded-full overflow-hidden bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold text-lg shadow-2xl"
+            >
               <span className="relative z-10">Book Now</span>
               <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition" />
-            </button>
+            </a>
 
-            <button className="px-10 py-4 rounded-full bg-white text-gray-900 font-semibold text-lg border border-gray-200 shadow hover:shadow-md transition">
+            <a
+              href="#profiles"
+              className="px-10 py-4 rounded-full bg-white text-gray-900 font-semibold text-lg border border-gray-200 shadow hover:shadow-md transition"
+            >
               View Profiles
-            </button>
+            </a>
           </div>
         </div>
 
@@ -1033,12 +1079,22 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
 
           {/* CTA */}
           <div className="mt-12 flex gap-6 flex-wrap">
-            <button className="px-10 py-4 rounded-full bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold text-lg shadow-xl hover:scale-[1.03] transition">
+            <a
+              href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20book%20a%20Russian%20escort%20in%20Delhi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-10 py-4 rounded-full bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold text-lg shadow-xl hover:scale-[1.03] transition"
+            >
               Book Now
-            </button>
-            <button className="px-10 py-4 rounded-full border border-gray-300 text-gray-800 font-semibold text-lg hover:bg-gray-100 transition">
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=918826482370"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-10 py-4 rounded-full border border-gray-300 text-gray-800 font-semibold text-lg hover:bg-gray-100 transition"
+            >
               Contact Us
-            </button>
+            </a>
           </div>
         </div>
 
@@ -1190,9 +1246,14 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
                   </div>
                 </div>
                 {/* Button */}
-                <button className="mt-6 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all">
+                <a
+                  href={`https://api.whatsapp.com/send?phone=918826482370&text=${encodeURIComponent(`Hi, I'd like to book a Russian escort at ${hotel.name}, Delhi.`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 block text-center w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all"
+                >
                   View Details
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}
@@ -1215,7 +1276,7 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
               </div>
               <Image
                 src="/Webpimages/young-woman-lying-alone.webp"
-                alt="Luxury Spa"
+                alt="Luxury escort package for Russian escorts in Delhi"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="rounded-2xl shadow-xl object-cover"
@@ -1241,12 +1302,22 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
                 <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Free spa credits</li> */}
               </ul>
               <div className="flex space-x-4">
-                <button className="px-6 py-3 bg-white text-purple-800 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                <a
+                  href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20the%20Luxury%20Experience%20Package"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-white text-purple-800 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                >
                   Explore Packages
-                </button>
-                <button className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+                </a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=918826482370"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
+                >
                   Contact Concierge
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -1451,7 +1522,7 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
                       <div className="flex items-center justify-between">
                       <div>
                       <h4 className="font-bold text-lg">Foreigner</h4>
-                      <p className="text-sm opacity-90">International companions for cultural exchange</p>
+                      <p className="text-sm opacity-90">International companionship, Delhi hotels</p>
                       </div>
                       <div className="opacity-30">🌍</div>
                       </div>
@@ -1467,14 +1538,21 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
 
 
                       <ul className="mt-6 space-y-3 text-gray-700">
-                      <li className="flex items-start gap-3"><FaCheck className="text-green-500 mt-1" /> <span>Cultural exchange</span></li>
-                      <li className="flex items-start gap-3"><FaCheck className="text-green-500 mt-1" /> <span>Language practice</span></li>
-                      <li className="flex items-start gap-3"><FaCheck className="text-green-500 mt-1" /> <span>International cuisine</span></li>
-                      <li className="flex items-start gap-3"><FaCheck className="text-green-500 mt-1" /> <span>Global perspective</span></li>
+                      <li className="flex items-start gap-3"><FaCheck className="text-green-500 mt-1" /> <span>Verified Profile</span></li>
+                      <li className="flex items-start gap-3"><FaCheck className="text-green-500 mt-1" /> <span>5-Star Hotel Friendly</span></li>
+                      <li className="flex items-start gap-3"><FaCheck className="text-green-500 mt-1" /> <span>Pay After You Meet</span></li>
+                      <li className="flex items-start gap-3"><FaCheck className="text-green-500 mt-1" /> <span>Fully Discreet</span></li>
                       </ul>
 
 
-                      <button className="mt-6 w-full py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold shadow-md">Select Package</button>
+                      <a
+                        href={`https://api.whatsapp.com/send?phone=918826482370&text=${encodeURIComponent(`Hi, I'd like to book a Russian/foreign escort (${tier === 'one' ? 'one session' : tier === 'two' ? 'two sessions' : 'full night'}).`)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-6 block text-center w-full py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold shadow-md"
+                      >
+                        Select Package
+                      </a>
                       </div>
                       </div>
                       </div>
@@ -1577,23 +1655,28 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
         {/* Text Section */}
         <div className="space-y-6">
           <h2 className="text-4xl font-bold leading-tight">
-            Get Started With Delhi Girl Agency for High-Profile Russian Escorts in Delhi 
+            Get Started With Delhi Girl for High-Profile Russian Escorts in Delhi
           </h2>
           <p className="text-lg opacity-90 leading-relaxed">
-            Contact us at Delhi Girl at any time, to experience a certified, courteous and high-end Russian Escorts in Delhi at 5-star hotels, home and more in Delhi. Easy reservation, exclusive service, and authentic user profiles ensured.
+            Contact Delhi Girl any time to book a verified, courteous, and high-end Russian escort in Delhi — 5-star hotels, home visits, and more. Easy WhatsApp booking, discreet service, and genuine profiles guaranteed.
           </p>
-          
 
-          <button className="mt-4 bg-white text-pink-600 px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-gray-100 transition">
+
+          <a
+            href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20book%20a%20Russian%20escort%20in%20Delhi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-block bg-white text-pink-600 px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-gray-100 transition"
+          >
             Book Now
-          </button>
+          </a>
         </div>
 
         {/* Image Section */}
         <div className="relative w-full aspect-[4/3]">
           <Image
             src="/Webpimages/young-woman.webp"
-            alt="Luxury Spa"
+            alt="Russian escort service in Delhi"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="rounded-2xl shadow-xl object-cover"

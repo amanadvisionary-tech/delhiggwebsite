@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaCheck, FaStar, FaCrown, FaPlane, FaGraduationCap, FaGlobeAsia, FaSpa } from 'react-icons/fa';
 import { FiSearch, FiChevronDown, FiMail, FiMessageSquare, FiHelpCircle } from 'react-icons/fi';
@@ -15,22 +16,26 @@ export default function Category() {
     {
       icon: <FaUniversity className="text-pink-500 text-4xl" />,
       title: "Independent College Girl",
-      desc: "College girls who go independent are light, friendly, youthful, and seem refreshing and easygoing. They are natural talkers, gentle in their speech, well-groomed, and have innocent flair, not trying so hard. These girls are the best choice when the client is seeking that relaxing no no-pressure atmosphere. They are friendly in nature, have a smile on their faces, and exude a calm persona that instantly puts them at ease. Their ease of use has rendered them very popular amongst first-time users and business travellers who need easy and pleasant company.",
+      desc: "College girls who go independent are light, friendly, youthful, and seem refreshing and easygoing. They are natural talkers, gentle in their speech, well-groomed, and have innocent flair, not trying so hard. These girls are the best choice when the client is seeking that relaxing no-pressure atmosphere. They are friendly in nature, have a smile on their faces, and exude a calm persona that instantly puts them at ease. Their ease of use has rendered them very popular amongst first-time users and business travellers who need easy and pleasant company.",
+      href: "/collage-call-girls-in-delhi",
     },
     {
       icon: <FaCrown className="text-red-500 text-4xl" />,
       title: "Russian Escort",
-      desc: "The Russian escorts are characterized by perfect grooming, composed nature and of course, warm companionship. They have a global appeal that instantly elevates the experience to a higher level as a high-quality and relaxing one. They are soft-spoken, elegant, and polite, thus making them perfect with clients who desire peaceful and high-quality company within the 5-star hotels. You can be a traveller, a business guest or a person who wants to find a perfect mix of friendliness, composedness, and comfort, and upon tha,t Russian escorts can be considered a perfect choice.",
+      desc: "The Russian escorts are characterized by perfect grooming, composed nature and of course, warm companionship. They have a global appeal that instantly elevates the experience to a higher level as a high-quality and relaxing one. They are soft-spoken, elegant, and polite, thus making them perfect with clients who desire peaceful and high-quality company within the 5-star hotels. You can be a traveller, a business guest or a person who wants to find a perfect mix of friendliness, composedness, and comfort, and upon that, Russian escorts can be considered a perfect choice.",
+      href: "/russian-escorts-in-delhi",
     },
     {
       icon: <FaInstagram className="text-purple-500 text-4xl" />,
       title: "Celebrity Escort",
-      desc: "The ideal match to men seeking premium high-profile companionship is celebrity escorts who provide them with their preferred treat. These models have a charismatic image, a beautiful appearance, and a sophisticated yet soft conversational style, which are fitting for a luxury setting. It is either a late-night hotel outing, an outing to a lounge, or a restaurant dinner; celebrity escorts are sophisticated and warm at the same time, making the experience unforgettable. It feels raised at all times with their personality and elegance.",
+      desc: "The ideal match to men seeking premium high-profile companionship is celebrity escorts who provide them with their preferred treat. These models have a charismatic image, a beautiful appearance, and a sophisticated yet soft conversational style, which are fitting for a luxury setting. It is either a late-night hotel outing, an outing to a lounge, or a restaurant dinner; celebrity escorts are sophisticated and warm at the same time, making the experience unforgettable. It feels elevated at all times with their personality and elegance.",
+      href: "/high-profile-escorts-in-delhi",
     },
     {
       icon: <FaPlane className="text-blue-500 text-4xl" />,
       title: "Air Hostess Escort",
-      desc: "The air hostesses are equipped with natural hospitality training, good manners and a well-polished outlook. Their gentle manner, low-pitched voice, and romantic hotel service suit corporate customers and high-end hotel visits. Having international exposure and high standards of grooming, they are aware of how to provide, or rather create, a serene atmosphere in which the client feels relaxed and well managed. The air hostess escort adds grace, warmth, and spa-like ambience that makes the whole experience a smooth and relaxing one.",
+      desc: "The air hostesses are equipped with natural hospitality training, good manners and a well-polished outlook. Their gentle manner, low-pitched voice, and refined hotel etiquette suit corporate customers and high-end hotel visits. Having international exposure and high standards of grooming, they know how to create a serene atmosphere in which the client feels relaxed and well looked after. The air hostess escort adds grace and warmth that makes the whole experience smooth and relaxing.",
+      href: "/air-hostess-escorts-in-delhi",
     },
   ];
   {/* staff showcase */}
@@ -118,17 +123,17 @@ export default function Category() {
         
         const pricingPlans = [
     {
-      id: 'spa',
-      title: 'Spa Staff',
-      icon: <FaSpa className="text-pink-500" />,
-      description: 'Professional spa therapists for ultimate relaxation',
+      id: 'independent',
+      title: 'Independent Model',
+      icon: <FaStar className="text-pink-500" />,
+      description: 'Easygoing, natural companionship',
       color: 'from-pink-500 to-rose-500',
       pricing: {
         session: '5k',
         two: '10k',
         night: '15k'
       },
-      features: [ 'Delhi Local Girls', 'Complete satisfaction', 'Girlfriend Experience', 'Full Body To Body Nuru massage - Nude']
+      features: [ 'Delhi Local Profiles', 'Verified Photos', 'Girlfriend Experience', 'Pay After You Meet']
     },
     {
       id: 'college',
@@ -141,7 +146,7 @@ export default function Category() {
         two: '20k',
         night: '30k'
       },
-      features: ['5 Star Hotel', 'Girlfriend Experience', 'Deep French Kiss', 'Blow Job (BJ)']
+      features: ['5-Star Hotel Friendly', 'Girlfriend Experience', 'Verified Profile', 'Discreet Booking']
     },
     {
       id: 'airhostess',
@@ -154,7 +159,7 @@ export default function Category() {
         two: '30k',
         night: '45k'
       },
-      features: ['5 Star Hotel', 'High Profile Airhostess', 'Girlfriend Experience', 'Deep French Kiss']
+      features: ['5-Star Hotel Friendly', 'High Profile Airhostess', 'Girlfriend Experience', 'Discreet Booking']
     },
     {
       id: 'foreigner',
@@ -167,7 +172,7 @@ export default function Category() {
         two: '40k',
         night: '60k'
       },
-      features: ['5 Star Hotel', 'Foreigner Staff', 'Girlfriend Experience', 'Deep French Kiss']
+      features: ['5-Star Hotel Friendly', 'Foreign Staff', 'Girlfriend Experience', 'Discreet Booking']
     },
     {
       id: 'celebrity',
@@ -180,7 +185,7 @@ export default function Category() {
         two: '60k',
         night: '90k'
       },
-      features: ['5 Star Hotel', 'Insta Model', 'Girlfriend Experience', 'Celebrity Profile']
+      features: ['5-Star Hotel Friendly', 'Insta Model', 'Girlfriend Experience', 'Celebrity Profile']
     }
   ];
           {/* end pricing */}
@@ -240,6 +245,12 @@ export default function Category() {
                 answer: 'Every companion is identity-verified before being listed, and bookings are confirmed only through WhatsApp with minimal details required.',
                 category: 'services',
               },
+              {
+                id: 8,
+                question: 'Do you have model call girls available near Aerocity or Connaught Place?',
+                answer: 'Yes, model escorts are available across Delhi NCR including Aerocity, Connaught Place, Dwarka, and Gurgaon — same booking process wherever you are.',
+                category: 'account',
+              },
             ];
           
             const filteredFaqs = faqs.filter(faq => {
@@ -295,6 +306,33 @@ export default function Category() {
 ];
   return (
     <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.delhigirl.in/" },
+            { "@type": "ListItem", position: 2, name: "Model Call Girls in Delhi", item: "https://www.delhigirl.in/model-call-girls-in-delhi" },
+          ],
+        }),
+      }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
+          })),
+        }),
+      }}
+    />
     {/* banner */}
             <div className="relative overflow-hidden rounded-2xl shadow-xl border border-gray-200 min-h-[400px] md:min-h-[600px]">
       {/* Background Image with Overlay */}
@@ -302,7 +340,7 @@ export default function Category() {
         {/* Use `fill` and `object-cover` (no layout/objectFit) + sizes for responsive loading */}
         <Image
           src="/Webpimages/bannermodel.webp"
-          alt="Spa and Wellness Background"
+          alt="Model call girls service in Delhi"
           fill
           className="object-cover w-full h-full opacity-90"
           quality={90}
@@ -327,14 +365,14 @@ export default function Category() {
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold">
-              Book Your Dating Partner{" "}
+              Model Call Girls in Delhi{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-                With Best Escort Service in Delhi
+                — Verified &amp; High-Profile
               </span>
             </h1>
 
             <p className="text-base md:text-lg text-white/90 max-w-lg">
-              Premium companionship with well-dressed, soft-spoken, high-profile call girls that will make everyone feel charming, comfortable, and warm. Relish the best dating partners in Delhi with hassle-free booking, business-like etiquette, and full privacy suitable to corporate customers as well as high-end travellers.
+              Premium companionship with well-dressed, soft-spoken model escorts in Delhi who make every meeting feel charming, comfortable, and warm. Book verified model call girls with hassle-free WhatsApp booking, business-like etiquette, and full privacy — suitable for corporate clients and high-end travellers alike.
             </p>
 
             {/* Feature Highlights */}
@@ -389,6 +427,9 @@ export default function Category() {
                 {cat.title}
               </h3>
               <p className="text-gray-600 text-sm">{cat.desc}</p>
+              <Link href={cat.href} className="mt-4 inline-block text-purple-600 font-medium text-sm hover:underline">
+                View {cat.title} Profiles →
+              </Link>
             </motion.div>
           ))}
         </div>
@@ -415,7 +456,7 @@ export default function Category() {
       ))}
     </div>
         {/* staff showcase */}
-         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+         <div id="profiles" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
               <div className="max-w-7xl mx-auto">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -492,14 +533,25 @@ export default function Category() {
                         <p className="text-gray-600 mb-4">{staff.description}</p>
                         
                         <div className="flex space-x-3">
-                          <button className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+                          <a
+                            href={`https://api.whatsapp.com/send?phone=918826482370&text=${encodeURIComponent(`Hi, I'd like to book ${staff.name} in Delhi.`)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 text-center bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+                          >
                             View Profile
-                          </button>
-                          <button className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
+                          </a>
+                          <a
+                            href="https://api.whatsapp.com/send?phone=918826482370"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Chat on WhatsApp"
+                            className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors"
+                          >
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                             </svg>
-                          </button>
+                          </a>
                         </div>
                       </div>
                     </motion.div>
@@ -613,7 +665,7 @@ export default function Category() {
               style={{ boxShadow: '0 30px 60px rgba(0,0,0,0.12)' }}
             >
               <div className="relative aspect-[4/3] w-full">
-                <Image src='/Webpimages/Model2.webp' alt="spa" fill style={{ objectFit: 'cover' }} />
+                <Image src='/Webpimages/Model2.webp' alt="Model call girl in Delhi" fill style={{ objectFit: 'cover' }} />
               </div>
             </motion.div>
 
@@ -672,7 +724,7 @@ export default function Category() {
                 <Image
                   loading="lazy"
                   src="/Webpimages/download (17).webp"
-                  alt="Luxury Spa Experience"
+                  alt="Model call girls in Delhi"
                   fill
                   className="object-cover rounded-[2.5rem] transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -893,13 +945,18 @@ export default function Category() {
                               ))}
                             </ul>
                             
-                            <button className={`mt-6 w-full py-3 rounded-lg font-semibold transition-all duration-300 ${
-                              plan.id === 'celebrity' 
-                                ? 'bg-gradient-to-r from-purple-700 to-pink-700 text-white hover:from-purple-800 hover:to-pink-800' 
-                                : 'bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 hover:from-gray-200 hover:to-gray-300'
-                            }`}>
+                            <a
+                              href={`https://api.whatsapp.com/send?phone=918826482370&text=${encodeURIComponent(`Hi, I'd like to book the ${plan.title} package (₹${plan.pricing[selectedDuration]}).`)}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={`mt-6 block text-center w-full py-3 rounded-lg font-semibold transition-all duration-300 ${
+                                plan.id === 'celebrity'
+                                  ? 'bg-gradient-to-r from-purple-700 to-pink-700 text-white hover:from-purple-800 hover:to-pink-800'
+                                  : 'bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 hover:from-gray-200 hover:to-gray-300'
+                              }`}
+                            >
                               Select Package
-                            </button>
+                            </a>
                           </div>
                         </motion.div>
                       ))}
@@ -961,7 +1018,7 @@ export default function Category() {
                     <Image
                       loading="lazy"
                       src="/Webpimages/413965.webp"
-                      alt="Luxury Spa Experience"
+                      alt="Book model call girls in Delhi"
                       fill
                       sizes="100vw"
                       style={{ objectFit: "cover" }}
@@ -1057,8 +1114,8 @@ You want to find a late-night company that is relaxing, respectful and luxurious
 
           <div className="relative rounded-2xl overflow-hidden shadow-xl group">
             <Image
-              src="/Webpimages/write me 👇 tap link.webp"  // ⭐ apni image yaha lagao
-              alt="Luxury Hotel"
+              src="/Webpimages/write me 👇 tap link.webp"
+              alt="Celebrity-style model call girl in Delhi"
               width={800}
               height={550}
               className="rounded-2xl transition-all duration-700 group-hover:scale-105"
@@ -1090,24 +1147,29 @@ Our celebrity escorts are the ideal choice to those clients who desire exclusivi
 
             <div className="grid grid-cols-2 gap-4 mb-6">
               <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">
-                Infinity Pool
+                Verified Profile
               </span>
               <span className="px-4 py-2 bg-pink-100 text-pink-700 rounded-full text-sm font-semibold">
                 High Profile Models
               </span>
               <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">
-                24/7 Avaliability
+                24/7 Availability
               </span>
               <span className="px-4 py-2 bg-pink-100 text-pink-700 rounded-full text-sm font-semibold">
-                Private & Discreet
+                Private &amp; Discreet
               </span>
             </div>
 
             <div className="flex items-center justify-between mt-4">
               <p className="text-2xl font-bold text-purple-600">₹25,000</p>
-              <button className="px-7 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white rounded-xl font-medium shadow-md hover:opacity-90 transition-all">
+              <a
+                href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20book%20a%20celebrity-style%20model%20call%20girl%20in%20Delhi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-7 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white rounded-xl font-medium shadow-md hover:opacity-90 transition-all"
+              >
                 Book Now
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -1173,13 +1235,21 @@ Our celebrity escorts are the ideal choice to those clients who desire exclusivi
 
       {/* CTA */}
       <div className="mt-10 flex flex-wrap gap-5">
-        <button className="px-9 py-4 rounded-full bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold text-lg shadow-xl hover:scale-[1.03] transition">
+        <a
+          href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20book%20a%20model%20call%20girl%20in%20Delhi"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-9 py-4 rounded-full bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold text-lg shadow-xl hover:scale-[1.03] transition"
+        >
           Book Now
-        </button>
+        </a>
 
-        <button className="px-9 py-4 rounded-full border border-gray-300 text-gray-800 font-semibold text-lg hover:bg-gray-100 transition">
+        <a
+          href="#profiles"
+          className="px-9 py-4 rounded-full border border-gray-300 text-gray-800 font-semibold text-lg hover:bg-gray-100 transition"
+        >
           View Profiles
-        </button>
+        </a>
       </div>
     </div>
 
@@ -1329,11 +1399,7 @@ Our celebrity escorts are the ideal choice to those clients who desire exclusivi
                       >
                         <div className="max-w-lg">
                           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                             Our high-end escorts will be a touch of soft hospitality that will match well with the luxury hotels of Delhi. The presence of these call girls is very warm and calm, and they can make you relax after hard days of work or travelling. Their cleanliness, courtesy and mild conversation make you relaxed immediately.{" "}
-                            <span className="font-medium text-gray-800">
-                              
-                            </span>
-                            
+                             Our high-end escorts will be a touch of soft hospitality that will match well with the luxury hotels of Delhi. The presence of these call girls is very warm and calm, and they can make you relax after hard days of work or travelling. Their cleanliness, courtesy and mild conversation make you relaxed immediately.
                           </p>
                           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                             You can be in rooms of The Leela, JW Marriott, Taj Palace, and The Oberoi, and all our escorts fit in that elite mood. They come unobtrusively, are gentlemanly towards the hotels and form a relaxing companion experience.
@@ -1345,23 +1411,23 @@ Our celebrity escorts are the ideal choice to those clients who desire exclusivi
                             {[
                               {
                                 icon: "★",
-                                title: "5 Star Hotel",
-                                desc: "5-star rated luxury spa",
+                                title: "5-Star Hotels",
+                                desc: "The Leela, JW Marriott & more",
                               },
                               {
-                                icon: "💆🏻",
-                                title: "Nuru Massage",
-                                desc: "Steam, sauna & jacuzzi",
+                                icon: "✓",
+                                title: "Verified Profiles",
+                                desc: "Same person as the photos",
                               },
                               {
-                                icon: "👩‍❤️‍👨",
-                                title: "Couples Welcome",
-                                desc: "Private couple suites",
+                                icon: "🤝",
+                                title: "Pay After You Meet",
+                                desc: "No advance payment",
                               },
                               {
-                                icon: "🧖",
-                                title: "Erotic Massage",
-                                desc: "Natural & sustainable",
+                                icon: "🔒",
+                                title: "Fully Discreet",
+                                desc: "Privacy guaranteed",
                               },
                             ].map((f, i) => (
                               <div
@@ -1374,17 +1440,23 @@ Our celebrity escorts are the ideal choice to those clients who desire exclusivi
                               </div>
                             ))}
                           </div>
-                
+
                           <div className="flex flex-col sm:flex-row gap-4">
-                            <a href="/Services">
-                              <button className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium py-3 px-6 rounded-xl shadow-lg hover:opacity-90 transition-all">
-                                View Treatments
-                              </button>
+                            <a
+                              href="#profiles"
+                              className="flex-1 text-center bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium py-3 px-6 rounded-xl shadow-lg hover:opacity-90 transition-all"
+                            >
+                              View Profiles
                             </a>
-                
-                            <button className="flex-1 bg-gradient-to-r from-pink-500 to-purple-700 text-white font-medium py-3 px-6 rounded-xl shadow-lg hover:opacity-90 transition-all">
-                              Book Appointment
-                            </button>
+
+                            <a
+                              href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20book%20a%20model%20call%20girl%20in%20Delhi"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex-1 text-center bg-gradient-to-r from-pink-500 to-purple-700 text-white font-medium py-3 px-6 rounded-xl shadow-lg hover:opacity-90 transition-all"
+                            >
+                              Book Now
+                            </a>
                           </div>
                         </div>
                       </motion.div>
@@ -1555,12 +1627,20 @@ Our celebrity escorts are the ideal choice to those clients who desire exclusivi
               Simple, select your preferred profile and have that warm and comfortable companionship that is tailored to your comfort. Individual booking, certified escorts and hassle-free coordination ensured.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full font-semibold text-lg hover:opacity-90 transition-all">
+              <a
+                href="#profiles"
+                className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full font-semibold text-lg hover:opacity-90 transition-all"
+              >
                 Browse Verified Profiles
-              </button>
-              <button className="px-8 py-4 bg-gray-800 border border-gray-600 rounded-full font-semibold text-lg hover:bg-gray-700 transition-all">
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=918826482370"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-gray-800 border border-gray-600 rounded-full font-semibold text-lg hover:bg-gray-700 transition-all text-white text-center"
+              >
                 Contact for Booking
-              </button>
+              </a>
             </div>
             <p className="text-gray-500 mt-6 text-sm">
               * Strictly for adults only. All services are legal and consensual.

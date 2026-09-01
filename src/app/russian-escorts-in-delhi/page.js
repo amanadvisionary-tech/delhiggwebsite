@@ -1,16 +1,28 @@
 import Foreignermodel from "./Foreignermodel";
 
 export const metadata = {
-  title: "Foreigner & Russian Call Girls in Delhi | Verified Profiles, 30-Min Delivery",
-  description: "Foreigner and Russian call girls in Delhi with verified pics and 30 minute hotel delivery. Cash on delivery service available 24/7. Book now ",
+  title: "Russian Escorts in Delhi | Verified Foreign Call Girls",
+  description: "Book verified Russian & foreign escorts in Delhi for 5-star hotel visits. Same-day WhatsApp booking, pay after you meet, discreet & professional.",
   alternates: { canonical: "/russian-escorts-in-delhi" },
+  // Reference list only — Google has ignored this tag for ranking since 2009.
+  // Kept here so it's easy to see the target keyword set for backlink/anchor-text planning.
+  keywords: [
+    "Russian Escorts in Delhi",
+    "Foreign Call Girls in Delhi",
+    "Russian Call Girls Delhi",
+    "Verified Russian Escorts Delhi NCR",
+    "Russian Escorts near Aerocity",
+    "International Escorts in Delhi",
+    "Book Russian Escorts WhatsApp",
+    "Russian Model Escorts Delhi",
+  ],
   openGraph: {
-    title: "Foreigner & Russian Call Girls in Delhi | Verified Profiles, 30-Min Delivery",
-    description: "Foreigner and Russian call girls in Delhi with verified pics and 30 minute hotel delivery. Cash on delivery service available 24/7. Book now ",
-    images: ["/Webpimages/JwMarriott_CP.webp"], 
+    title: "Russian Escorts in Delhi | Verified Foreign Call Girls",
+    description: "Book verified Russian & foreign escorts in Delhi for 5-star hotel visits. Same-day WhatsApp booking, pay after you meet, discreet & professional.",
+    images: ["/Webpimages/JwMarriott_CP.webp"],
     type: "website",
   },
-  
+
 };
 export default function page() {
   return <Foreignermodel />;

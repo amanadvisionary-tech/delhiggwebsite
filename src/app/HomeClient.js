@@ -349,6 +349,18 @@ export default function Home({
       answer: 'Yes, high profile Delhi girls are well-trained, confident, and experienced. Delhi Girl ensures they meet premium standards of behavior, communication, and professionalism.',
       category: 'services',
     },
+    {
+      id: 11,
+      question: 'Do you offer call girls across Aerocity, Gurgaon, Noida, Dwarka and Connaught Place?',
+      answer: 'Yes, Delhi Girl covers all major Delhi NCR locations — Aerocity, Gurgaon, Noida, Dwarka, Connaught Place, Mahipalpur, and Lajpat Nagar — with the same verified, discreet booking process.',
+      category: 'account',
+    },
+    {
+      id: 12,
+      question: 'Is there a WhatsApp number to book call girls in Delhi directly?',
+      answer: 'Yes, every booking on Delhi Girl goes through WhatsApp for speed and privacy — just tap any "Book Now" button on the site to start a chat and confirm your location and time.',
+      category: 'booking',
+    },
   ];
 
   const filteredFaqs = faqs.filter(faq => {
@@ -532,95 +544,18 @@ export default function Home({
   };
   return (
     <>
-      {/* FAQPage structured data — static, hardcoded to match the 10 visible FAQ items exactly */}
+      {/* FAQPage structured data — generated from the faqs array below, always in sync with visible FAQ text */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "Are airhostess call girls in Delhi listed on Delhi Girl verified and trustworthy?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, Delhi Girl verifies every airhostess call girls in Delhi through proper checks. These Delhi call girls are professionally managed, well-mannered, and focused on providing safe, comfortable, and premium companionship with complete client satisfaction.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Can I book an airhostess Delhi call girls for hotels or private locations?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, airhostess Delhi call girls from Delhi Girl are available for hotels and private locations. Bookings are handled smoothly with proper coordination, ensuring privacy, comfort, and a stress-free experience for clients.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What makes celebrity call girls in Delhi from Delhi Girl special and premium?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Celebrity call girls in Delhi offer glamorous looks, confident personalities, and high-profile companionship. Delhi Girl carefully manages these profiles to deliver premium experiences with class, elegance, and complete discretion.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Can celebrity Delhi girls attend parties, events, or private meetings?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, celebrity Delhi girls are available for parties, social events, and private meetings. Delhi Girl ensures proper coordination so clients enjoy smooth companionship without stress or unnecessary complications.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Are Delhi college girls on Delhi Girl genuine and properly verified?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, every Delhi college girls profile listed on Delhi Girl is verified for safety and authenticity. These Delhi college girls are managed professionally to ensure reliable and comfortable companionship.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Can I book a Delhi college girls for short duration meetings?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, Delhi Girl offers flexible booking options for Delhi college girl services. You can choose short or extended time slots based on your comfort and requirement.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Are foreign call girls in Delhi available through Delhi Girl brand?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, Delhi Girl offers verified foreign call girls in Delhi for clients seeking premium and international-style companionship with professional service standards.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What kind of experience do foreign Delhi girls usually provide?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Foreign Delhi girls provide classy, modern, and premium companionship. Their confident personalities and international style make them suitable for clients wanting a luxury call girl in Delhi.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Who should book high profile call girls in Delhi from Delhi Girl?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "High profile call girls in Delhi are ideal for businessmen, corporate clients, and VIP guests seeking mature, professional, and premium companionship through Delhi Girl.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Are high profile Delhi girls trained and experienced companions?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, high profile Delhi girls are well-trained, confident, and experienced. Delhi Girl ensures they meet premium standards of behavior, communication, and professionalism.",
-                },
-              },
-            ],
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: { "@type": "Answer", text: faq.answer },
+            })),
           }),
         }}
       />
@@ -656,10 +591,10 @@ export default function Home({
                     <p className="inline-block px-3 py-1 rounded-full bg-white/10 text-xs sm:text-sm mb-3">Premium • Discreet • Verified</p>
 
                     <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mt-2">
-                      Hire Premium Call Girls in Delhi | Book Now, Pay Later
+                      Verified Call Girls &amp; Escorts in Delhi NCR
                     </h1>
 
-                    <p className="mt-3 text-sm sm:text-base md:text-lg text-white/90 max-w-prose">Find verified call girls in Delhi for VIP full service with no questions asked. Book now & pay later for premium Delhi escorts. Instant 24/7 booking available.</p>
+                    <p className="mt-3 text-sm sm:text-base md:text-lg text-white/90 max-w-prose">Book discreet, verified companions across Aerocity, Gurgaon, Noida, Dwarka &amp; Connaught Place — same-day 5-star hotel bookings, pay after you meet.</p>
 
                     <div className="mt-6 flex items-center gap-3 flex-wrap">
                       <a

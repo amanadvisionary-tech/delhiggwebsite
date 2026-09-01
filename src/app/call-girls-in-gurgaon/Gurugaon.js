@@ -186,6 +186,18 @@ export default function Locations() {
                   answer: 'Delhi Girl screens every woman for style, smarts, and honesty. You get someone who’s real — no awkward surprises, only genuine conversation and a good atmosphere every time.',
                   category: 'services',
                 },
+                {
+                  id: 9,
+                  question: 'Do you offer call girls near Cyber Hub, Golf Course Road, or Sohna Road?',
+                  answer: 'Yes. Bookings are available across DLF Cyber City, Cyber Hub, Golf Course Road, Sohna Road, MG Road, Sushant Lok, and near Ambience Mall — wherever your meeting is in Gurugram.',
+                  category: 'account',
+                },
+                {
+                  id: 10,
+                  question: 'Is there a WhatsApp number to book call girls in Gurgaon directly?',
+                  answer: 'Yes, all bookings go through WhatsApp for speed and privacy — just tap any "Book Now" button on this page to start a chat.',
+                  category: 'booking',
+                },
               ];
             
               const filteredFaqs = faqs.filter(faq => {
@@ -854,7 +866,7 @@ const services = [
                         Our Prime Locations for Escort Service in Gurugram
                       </h2>
                       <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Easy access across high-end spots, main business areas, and all the prime neighborhoods — smooth connection, wherever you are.
+                        Easy access across high-end spots, main business areas, and all the prime neighborhoods — including call girls near DLF Cyber City, Golf Course Road, Sohna Road, MG Road, Sushant Lok, and Ambience Mall — smooth connection, wherever you are.
                       </p>
                     </motion.div>
             
