@@ -1,16 +1,26 @@
 import Servic from "./Servic";
 
 export const metadata = {
-  title: "Call Girls Service in Delhi | Doorstep Delivery 30 min",
-  description: "Call girls service in Delhi with doorstep delivery in 30 minutes. Verified companions, cash or UPI accepted after you meet. Book 24×7 on WhatsApp.",
+  title: "Call Girl Service in Delhi | Verified & Discreet",
+  description: "Book verified call girls in Delhi for hotel & home visits across Delhi NCR. Discreet WhatsApp booking, pay after you meet, same-day availability.",
   alternates: { canonical: "/delhi-call-girl-service" },
+  // Reference list only — Google has ignored this tag for ranking since 2009.
+  // Kept here so it's easy to see the target keyword set for backlink/anchor-text planning.
+  keywords: [
+    "Call Girl Service in Delhi",
+    "Delhi Call Girl Service WhatsApp",
+    "Verified Call Girls Delhi NCR",
+    "Same Day Call Girl Service Delhi",
+    "Call Girl Service near Aerocity",
+    "24x7 Call Girl Service Delhi",
+  ],
   openGraph: {
-    title: "Call Girls Service in Delhi | Doorstep Delivery 30 min",
-    description: "Call girls service in Delhi with doorstep delivery in 30 minutes. Verified companions, cash or UPI accepted after you meet. Book 24×7 on WhatsApp.",
-    images: ["/Webpimages/JwMarriott_CP.webp"], 
+    title: "Call Girl Service in Delhi | Verified & Discreet",
+    description: "Book verified call girls in Delhi for hotel & home visits across Delhi NCR. Discreet WhatsApp booking, pay after you meet, same-day availability.",
+    images: ["/Webpimages/JwMarriott_CP.webp"],
     type: "website",
   },
-  
+
 };
 export default function page() {
   return <Servic />;

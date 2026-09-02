@@ -83,7 +83,7 @@ export default function Foreignmodel() {
       role: 'First Class Hostess',
       category: 'foreign',
       description: 'Specialized in luxury travel experience. Trained in hospitality management.',
-      image: '/Webpimages/smiling.webp', // Placeholder image path
+      image: '/Webpimages/signin.webp', // Placeholder image path
     },
     {
       id: 7,
@@ -202,24 +202,14 @@ const current = priceMap[tier]
               //End FAQ Section
 
               const profiles = [
-  { image: '/Webpimages/download7.webp' },
-  { image: '/Webpimages/download (7).webp' },
-  { image: '/Webpimages/download (19).webp' },
-  { image: '/Webpimages/download (14).webp' },
-  { image: '/Webpimages/modelg.webp' },
-  { image: '/Webpimages/18244.webp' },
-  { image: '/Webpimages/172420-8871.webp' },
-  
-  { image: '/Webpimages/7168.webp' },
-  { image: '/Webpimages/49.webp' },
-  
-
-  { image: '/Webpimages/modelg.webp' },
-  { image: '/Webpimages/18244.webp' },
-  { image: '/Webpimages/172420-8871.webp' },
-  { image: '/Webpimages/7168.webp' },
-  { image: '/Webpimages/49.webp' },
-  
+  { image: '/Webpimages/call-girl-7.webp', name: 'Diya', age: 24, tag: 'Dinner • Hotel Stays' },
+  { image: '/Webpimages/download (7).webp', name: 'Meera', age: 26, tag: 'Events • Travel' },
+  { image: '/Webpimages/Watch Full Video.webp', name: 'Tanya', age: 23, tag: 'Nightlife • Dining' },
+  { image: '/Webpimages/download (14).webp', name: 'Pooja', age: 25, tag: 'Hotel Visits • Parties' },
+  { image: '/Webpimages/modelg.webp', name: 'Riya', age: 24, tag: 'Corporate Events • Dinner' },
+  { image: '/Webpimages/SSWSW.webp', name: 'Simran', age: 26, tag: 'Travel • Overnight Stays' },
+  { image: '/Webpimages/stafff.webp', name: 'Ananya', age: 23, tag: 'Parties • Dining' },
+  { image: '/Webpimages/staf1.webp', name: 'Neha', age: 24, tag: 'Dinner Dates • Travel' },
 ]
 // End Locations
  const features3 = [
@@ -237,7 +227,7 @@ const current = priceMap[tier]
     },
     {
       icon: MoonIcon,
-      text: "Spa-like soothing behaviour",
+      text: "Warm, easygoing company",
     },
     {
       icon: CheckBadgeIcon,
@@ -386,40 +376,45 @@ const current = priceMap[tier]
       {/* Background image - place your image at /public/Webpimages/hero-banner.webp */}
       <div className="absolute inset-0 -z-20">
         <Image
-          src="/Webpimages/fashion-portrait-beautiful-blonde-model.webp"
-          alt="Russian escorts in Delhi"
+          src="/Webpimages/banner-1.webp"
+          alt="Russian escorts in Delhi at 5-star hotels"
           fill
-          sizes="(max-width: 1024px) 100vw, 50vw"
+          sizes="100vw"
           style={{ objectFit: 'cover', objectPosition: 'center' }}
           priority
         />
-        {/* dark overlay to keep text readable */}
-        <div className="absolute inset-0 bg-black/35 backdrop-blur-sm -z-10" />
-        {/* soft gradient vignette */}
-        <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent via-black/10 to-black/30" />
+        {/* Stronger dark overlay so text stays readable regardless of how bright the photo is */}
+        <div className="absolute inset-0 bg-black/55 -z-10" />
+        {/* Left-side scrim, heavier where the heading/text sits */}
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-black/60 via-black/25 to-transparent" />
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/20 via-transparent to-black/40" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full pt-24 lg:pt-0">
         <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-8">
           {/* Left content */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 mt-17">
             <motion.h1
               initial={{ opacity: 0, y: -12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white"
+              style={{ textShadow: '0 2px 16px rgba(0,0,0,0.65), 0 1px 4px rgba(0,0,0,0.8)' }}
             >
-              Try Russian <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">Escorts in Delhi</span>
-              <br /> Now <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">| Pay Later</span>
+              Russian Escorts in Delhi{" "}
+              <span className="text-amber-300">
+                — Verified &amp; Discreet
+              </span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mt-6 max-w-2xl text-gray-600"
+              className="mt-6 max-w-2xl text-gray-100"
+              style={{ textShadow: '0 1px 8px rgba(0,0,0,0.7)' }}
             >
-              Enjoy a high-quality, comfortable, and cozy session with verified Russian Escorts in Delhi: convenient reservations, hygienic plans, and luxurious models available only at 5-star hotels.
+              Meet verified Russian and foreign escorts in Delhi for relaxed, unhurried company at 5-star hotels across Aerocity, Connaught Place, and Gurgaon. Easy WhatsApp booking, and you pay only after you meet.
             </motion.p>
 
             <motion.div
@@ -432,8 +427,8 @@ const current = priceMap[tier]
                 Book on WhatsApp
               </a>
 
-              <a href="#faq" className="inline-flex items-center gap-3 bg-white border border-gray-200 px-6 py-3 rounded-full shadow-sm text-gray-700 hover:shadow-md transition">
-                View Services
+              <a href="#profiles" className="inline-flex items-center gap-3 bg-white border border-gray-200 px-6 py-3 rounded-full shadow-sm text-gray-700 hover:shadow-md transition">
+                View Profiles
               </a>
             </motion.div>
 
@@ -635,26 +630,44 @@ const current = priceMap[tier]
               className="min-w-[160px] bg-gray-50 rounded-2xl p-3 shadow-sm"
             >
               <div className="w-full h-48 rounded-lg overflow-hidden bg-gray-200">
-                {/* use p.image not p (object) */}
                 <Image
                   src={p.image}
-                  alt={`profile-${idx}`}
+                  alt={`${p.name} — Russian/foreign escort profile in Delhi`}
                   width={400}
                   height={300}
                   className="object-cover w-full h-full"
                 />
               </div>
-        
+
               <div className="mt-3">
-                <div className="font-medium text-sm">Ari • 26</div>
-                <div className="text-xs text-gray-500">Events • Travel • Dining</div>
+                <div className="font-medium text-sm">{p.name} • {p.age}</div>
+                <div className="text-xs text-gray-500">{p.tag}</div>
               </div>
-        
+
               <div className="mt-3">
-                <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white">Request</a>
+                <a
+                  href={`https://api.whatsapp.com/send?phone=918826482370&text=${encodeURIComponent(`Hi, I'd like to book ${p.name} in Delhi.`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white"
+                >
+                  Request
+                </a>
               </div>
             </motion.div>
           ))}
+
+          {/* View more profiles -> WhatsApp */}
+          <a
+            href="https://api.whatsapp.com/send?phone=918826482370&text=Hi%2C%20I%27d%20like%20to%20see%20more%20Russian%2Fforeign%20escort%20profiles%20in%20Delhi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="min-w-[160px] flex flex-col items-center justify-center text-center bg-gray-50 rounded-2xl p-3 shadow-sm border-2 border-dashed border-purple-200 hover:border-purple-400 transition-colors"
+          >
+            <span className="text-2xl mb-2">💬</span>
+            <span className="text-sm font-medium text-purple-700">View More Profiles</span>
+            <span className="text-xs text-gray-500 mt-1">on WhatsApp</span>
+          </a>
         </div>
         
                       <div className="mt-4 text-xs text-gray-500">
@@ -829,9 +842,7 @@ const current = priceMap[tier]
           </h2>
 
           <p className="mt-8 text-gray-600 max-w-xl">
-            <span className="font-semibold text-purple-600"> </span>, Delhi Girl provides you with the best if you are looking for high-class foreign call girls service in Delhi with a soothing, calming, and quality experience. Our agency offers Russian call girls in Delhi, European escorts, Uzbek Model, and foreign celebrity models with spa-like comfort.
-Such girls know how to create a calm atmosphere, maintain hygiene and a warm mood, and make you feel cared for. 
-
+            Delhi Girl connects you with high-class foreign call girls in Delhi for a calm, quality experience. We offer Russian call girls in Delhi, European escorts, Uzbek models, and foreign celebrity-style companions. Each one knows how to keep the mood relaxed and warm, so you feel genuinely looked after.
           </p>
           <p className="mt-8 text-gray-600 max-w-xl">
             Their soft manner, courteous voice, and goodwill and liking in each session make them feel relaxed. Our Russian escorts in Delhi are invited by many corporate, business, and hospitality clients who prefer them since a level of class, elegance, and a comfortable international atmosphere always accompanies them.
@@ -951,20 +962,19 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
           </span>
 
           <h2 className="text-3xl md:text-4xl xl:text-5xl font-extrabold text-gray-900 leading-tight mb-8">
-            Professional Call Girls in Delhi
+            Russian &amp; Foreign Escorts in Delhi
             <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600">
-              For Erotic Fun
+              For Every Occasion
             </span>
           </h2>
 
           <div className="space-y-6 text-gray-600 text-base md:text-lg leading-relaxed">
             <p>
-              Delhi Girl provides well-trained, well-groomed, and polite foreign call girls in Delhi who know how to make you feel instantly comfortable. These girls are warm and easygoing, with a natural charm that puts you at ease right away. Our Russian call girls service in Delhi is just what you want whenever you want someone to enjoy a peaceful evening, visit a lounge, or have a relaxing conversation without stress.
+              Delhi Girl connects you with well-groomed, easygoing Russian and foreign escorts in Delhi who know how to make an evening feel comfortable rather than staged. Whether it&apos;s a quiet evening near Aerocity, a lounge visit in Connaught Place, or a relaxed conversation over dinner, our Russian call girls service in Delhi is built around your pace, not a script.
             </p>
             <p>
-              They treat you well, are full of life, and behave professionally so that you will have no trouble or doubt in spending time with them. Our foreign staff, which includes the European models and the Russian escorts in Delhi, ensures hygiene, grace and a serene demeanour befitting business travellers and other corporate clients. In case you are looking at having a light, smooth and classy experience, our Russian Escorts in Delhi are the best way to go.
+              Our foreign escorts, including European and Russian models, are chosen for their warmth, grace, and easy professionalism — the kind that suits business travellers and corporate clients as much as anyone looking for good company. If you want a smooth, classy evening at a 5-star hotel in Delhi or Gurgaon, our Russian escorts are a solid choice.
             </p>
-            
           </div>
 
           {/* ICON HIGHLIGHTS – INLINE */}
@@ -1275,7 +1285,7 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
                 <p className="mt-2 max-w-md">The ultimate packages of pleasure are made to fatten you with beauty, fire, intimacy, and wild satisfaction.</p>
               </div>
               <Image
-                src="/Webpimages/young-woman-lying-alone.webp"
+                src="/Webpimages/hotel-lounge-chandelier.webp"
                 alt="Luxury escort package for Russian escorts in Delhi"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -1295,9 +1305,9 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
               </div>
               <h3 className="text-3xl font-bold mb-4">World Class Call Girls in Delhi: 100+ Profiles, Multiple Locations and Professional Team</h3>
               <ul className="space-y-3 mb-6">
-                <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Ready Elite high-profile models 24/7</li>
-                <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Erotic fantasies made to order</li>
-                <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Confirmed escorts keeping class, discretion and passion.</li>
+                <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> High-profile models available 24/7</li>
+                <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Verified profiles, no surprises</li>
+                <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Discreet, professional, and always on time</li>
                 {/* <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Michelin restaurant reservations</li>
                 <li className="flex items-center"><FaCheck className="text-green-400 mr-2" /> Free spa credits</li> */}
               </ul>
@@ -1392,9 +1402,9 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
               </svg>
             </div>
             <div>
-              <h4 className="font-semibold text-base">Professional Behaviour/ Spa-Touch Attitude</h4>
+              <h4 className="font-semibold text-base">Professional, Composed, and Well-Groomed</h4>
               <p className="mt-1 text-sm text-white/90 leading-relaxed">
-                Our foreigner employees talk in low tones, are hygienic, and have a composed presence. They are respectable, thus making them ideal for hotels, corporate clients, and first-time users.
+                Our foreign escorts speak softly, present themselves well, and carry a calm, composed presence — ideal for hotels, corporate clients, and first-time users.
               </p>
             </div>
           </div>
@@ -1577,7 +1587,7 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
       <div className="w-16 h-1 bg-gradient-to-r from-purple-600 to-pink-500 rounded mt-4 mb-6"></div>
 
       <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-        Seeking a person who is relaxed, fashionable and quiet? The foreigner call girls in Delhi, like the Russians, Uzbek models, and European profiles, provide a clean spa-like experience to our clients. They are soft-spoken, clear,and get you to feel at home within minutes. Perfect on the quiet days, dinner dates, lounge outings,and  corporate travellers seeking warm companionship. You receive certified foreign escorts of professional manners and good nature.
+        Looking for someone relaxed, stylish, and easy to be around? Our foreign call girls in Delhi — Russian, Uzbek, and European profiles — are soft-spoken and quick to put you at ease. Perfect for quiet evenings, dinner dates, lounge outings, and corporate travellers looking for warm, genuine company. Every profile is verified, well-mannered, and good-natured.
       </p>
 
     </div>
@@ -1588,11 +1598,11 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
 
       <div className="relative bg-gradient-to-br from-purple-700 via-pink-500 to-rose-400 rounded-3xl p-8 sm:p-10 text-white shadow-xl">
         <h3 className="text-2xl sm:text-3xl font-semibold mb-4">
-          Enjoy the Erotic Fun With Russian Escorts in Delhi
+          A Relaxed Evening With Russian Escorts in Delhi
         </h3>
 
         <p className="text-white/90 text-sm sm:text-base leading-relaxed">
-          Our Russian call girls in Delhi and other foreigner employees provide our clients with easy, natural, and soothing company. They do not hurry, do not put pressure, and are not artificial. However, they are polite in their communication and gentle in character, so you will remember your time there. Ideal for customers who desire a light, pleasant, and high-end international company.
+          Our Russian and foreign escorts in Delhi offer easy, natural, and unhurried company. Nothing feels rushed or scripted — just polite conversation and a genuinely pleasant evening. Ideal for clients who want relaxed, high-end international company.
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3">
@@ -1617,7 +1627,7 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
             {/* end */}
             {/* next start */}
             <section className="relative bg-white py-20 px-4 sm:px-6 lg:px-10 overflow-hidden">
-  <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_24rem] gap-14 items-center">
 
     {/* LEFT CONTENT */}
     <div>
@@ -1638,12 +1648,23 @@ If you are fond of soft-spoken, well-groomed, clean, and premium foreign models 
       <div className="w-16 h-1 bg-gradient-to-r from-purple-600 to-pink-500 rounded mt-4 mb-6"></div>
 
       <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-       Delhi Girl simplifies the process of clients having the best foreigner companionship at low charges. We know that lots of clients desire clean, polite, well-groomed foreigner model at an affordable price and developed low price offers that do not compromise quality. Our Russian call girls in Delhi, Uzbek models and European staff members add a soft spa feel, a pleasant communication and a friendly manner that would instantly make you relax.
+       Delhi Girl makes it simple to book great foreign companionship without overpaying. We know clients want polite, well-groomed companions at a fair price, so we&apos;ve kept our rates honest without cutting corners on quality. Our Russian call girls in Delhi, Uzbek models, and European companions bring pleasant conversation and a friendly manner that puts you at ease instantly.
       </p>
 
       <p className="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed">
-        You have clean, tested, and presentable foreign escorts who know how to create a peaceful, serene, and pleasant atmosphere, even at low prices. These girls are fitting business travellers, first-time users and clients seeking quiet companionship rather than loud behaviour. Our low-price foreigner call girls in Delhi will offer you a safe, secretive, and quality experience within 5-star hotels - no shortcut to comfort, no shortcut to hospitality. Just basic reservation, reasonable prices, and high-quality companionship.
+        Every profile is verified and well-presented, and knows how to keep the mood calm and pleasant — even at a lower price point. Well suited to business travellers, first-time clients, and anyone who wants quiet, easygoing company rather than a loud night out. Our affordable foreign call girls in Delhi still meet you at genuine 5-star hotels, with the same discretion and quality — just simple booking and honest pricing.
       </p>
+    </div>
+
+    {/* RIGHT IMAGE */}
+    <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-[4/5] max-w-sm mx-auto lg:mx-0">
+      <Image
+        src="/Webpimages/stafff.webp"
+        alt="Affordable foreign call girls in Delhi at 5-star hotels"
+        fill
+        sizes="(max-width: 1024px) 60vw, 24rem"
+        style={{ objectFit: 'cover' }}
+      />
     </div>
   </div>
 </section>
