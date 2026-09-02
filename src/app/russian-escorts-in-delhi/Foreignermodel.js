@@ -83,7 +83,7 @@ export default function Foreignmodel() {
       role: 'First Class Hostess',
       category: 'foreign',
       description: 'Specialized in luxury travel experience. Trained in hospitality management.',
-      image: '/Webpimages/signin.webp', // Placeholder image path
+      image: '/Webpimages/Signin.webp', // Placeholder image path
     },
     {
       id: 7,
@@ -404,7 +404,7 @@ const current = priceMap[tier]
               Russian Escorts in Delhi{" "}
               <span className="text-amber-300">
                 — Verified &amp; Discreet
-              </span>
+              </span>   
             </motion.h1>
 
             <motion.p
