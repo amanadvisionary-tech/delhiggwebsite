@@ -108,6 +108,7 @@ const ModernFooter = () => {
                 { name: "Independent Profile", link: "/independent-escorts-in-delhi" },
                 { name: "High Profile", link: "/high-profile-escorts-in-delhi" },
                 { name: "College Girl", link: "/collage-call-girls-in-delhi" },
+                { name: "Housewife", link: "/housewife-escorts-in-delhi" },
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.link} className="text-gray-400 hover:text-amber-400 transition-colors flex items-center">
@@ -137,6 +138,9 @@ const ModernFooter = () => {
                 { name: "Mahipalpur", link: "/call-girls-in-mahipalpur" },
                 { name: "Dwarka", link: "/call-girls-in-dwarka" },
                 { name: "Lajpat Nagar", link: "/call-girls-in-lajpat-nagar" },
+                { name: "Karol Bagh", link: "/call-girls-in-karol-bagh" },
+                { name: "Vasant Kunj", link: "/call-girls-in-vasant-kunj" },
+                { name: "Saket", link: "/call-girls-in-saket" },
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.link} className="text-gray-400 hover:text-amber-400 transition-colors flex items-center">

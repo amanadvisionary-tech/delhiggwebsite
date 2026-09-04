@@ -240,6 +240,9 @@ export default function Locations() {
     { name: 'LAJPAT NAGAR', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp', href: '/call-girls-in-lajpat-nagar' },
     { name: 'NOIDA', img: '/Webpimages/hotel3.webp', href: '/call-girls-in-noida' },
     { name: 'GURGAON', img: '/Webpimages/hotel-exterior-night.webp', href: '/call-girls-in-gurgaon' },
+    { name: 'KAROL BAGH', img: '/Webpimages/hotel-exterior-night.webp', href: '/call-girls-in-karol-bagh' },
+    { name: 'VASANT KUNJ', img: '/Webpimages/hotel-lounge-chandelier.webp', href: '/call-girls-in-vasant-kunj' },
+    { name: 'SAKET', img: '/Webpimages/hotel-lounge-nook.webp', href: '/call-girls-in-saket' },
   ]
   const profiles = [
     { image: '/Webpimages/modelg.webp', name: 'Riya', age: 24, tag: 'Dinner • Hotel Stays' },
@@ -514,8 +517,11 @@ export default function Locations() {
               <Link href="/call-girls-in-dwarka" className="text-purple-700 font-medium hover:underline">Dwarka</Link>,{' '}
               <Link href="/call-girls-in-mahipalpur" className="text-purple-700 font-medium hover:underline">Mahipalpur</Link>,{' '}
               <Link href="/call-girls-in-lajpat-nagar" className="text-purple-700 font-medium hover:underline">Lajpat Nagar</Link>,{' '}
-              <Link href="/call-girls-in-noida" className="text-purple-700 font-medium hover:underline">Noida</Link> &amp;{' '}
-              <Link href="/call-girls-in-gurgaon" className="text-purple-700 font-medium hover:underline">Gurgaon</Link> — same-day booking at premium hotels.
+              <Link href="/call-girls-in-noida" className="text-purple-700 font-medium hover:underline">Noida</Link>,{' '}
+              <Link href="/call-girls-in-gurgaon" className="text-purple-700 font-medium hover:underline">Gurgaon</Link>,{' '}
+              <Link href="/call-girls-in-karol-bagh" className="text-purple-700 font-medium hover:underline">Karol Bagh</Link>,{' '}
+              <Link href="/call-girls-in-vasant-kunj" className="text-purple-700 font-medium hover:underline">Vasant Kunj</Link> &amp;{' '}
+              <Link href="/call-girls-in-saket" className="text-purple-700 font-medium hover:underline">Saket</Link> — same-day booking at premium hotels.
             </p>
 
             {/* CTA Button */}

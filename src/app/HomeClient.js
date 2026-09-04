@@ -460,9 +460,11 @@ export default function Home({
     { name: 'New Friends Colony', img: '/Webpimages/holidayIn_CP.webp', href: '/escort-service-in-delhi' },
     { name: 'Dwarka', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp', href: '/call-girls-in-dwarka' },
     { name: 'Paharganj', img: '/Webpimages/paschimvihar.webp', href: '/escort-service-in-delhi' },
-    { name: 'Vasant kunj', img: '/Webpimages/hotel2.webp', href: '/escort-service-in-delhi' },
+    { name: 'Vasant kunj', img: '/Webpimages/hotel-lounge-chandelier.webp', href: '/call-girls-in-vasant-kunj' },
     { name: 'Lajpat Nagar ', img: '/Webpimages/pullmanAerocity.webp', href: '/call-girls-in-lajpat-nagar' },
     { name: 'Kalkaji', img: '/Webpimages/jwmarriott.webp', href: '/escort-service-in-delhi' },
+    { name: 'Karol Bagh', img: '/Webpimages/hotel-exterior-night.webp', href: '/call-girls-in-karol-bagh' },
+    { name: 'Saket', img: '/Webpimages/hotel-lounge-nook.webp', href: '/call-girls-in-saket' },
   ]
   const profiles = [
     { image: '/Webpimages/call-girl-4.webp', name: 'Diya', age: 24, tag: 'Dinner • Hotel Stays' },
@@ -523,6 +525,7 @@ export default function Home({
     "Call girl in Vasant Kunj",
     "Call girl in Karol Bagh",
     "Call girl in Saket",
+    "Call girl housewife",
     "Call girl in Hauz Khas",
     "Call girl in Greater Kailash",
     "Call girl in Dilshad Garden",
@@ -540,6 +543,10 @@ export default function Home({
     if (l.includes('mahipalpur')) return '/call-girls-in-mahipalpur';
     if (l.includes('dwaka') || l.includes('dwarka')) return '/call-girls-in-dwarka';
     if (l.includes('lajpat')) return '/call-girls-in-lajpat-nagar';
+    if (l.includes('karol bagh')) return '/call-girls-in-karol-bagh';
+    if (l.includes('vasant kunj')) return '/call-girls-in-vasant-kunj';
+    if (l.includes('saket')) return '/call-girls-in-saket';
+    if (l.includes('housewife')) return '/housewife-escorts-in-delhi';
     return '/escort-service-in-delhi';
   };
   return (

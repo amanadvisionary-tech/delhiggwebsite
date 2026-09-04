@@ -31,6 +31,9 @@ const otherAreas = [
   { name: 'Connaught Place', href: '/call-girls-in-connaught-place' },
   { name: 'Dwarka', href: '/call-girls-in-dwarka' },
   { name: 'Lajpat Nagar', href: '/call-girls-in-lajpat-nagar' },
+  { name: 'Karol Bagh', href: '/call-girls-in-karol-bagh' },
+  { name: 'Vasant Kunj', href: '/call-girls-in-vasant-kunj' },
+  { name: 'Saket', href: '/call-girls-in-saket' },
 ];
 
 const nearbyAreas = [

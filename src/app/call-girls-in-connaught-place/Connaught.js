@@ -31,6 +31,9 @@ const otherAreas = [
   { name: 'Lajpat Nagar', href: '/call-girls-in-lajpat-nagar' },
   { name: 'Noida', href: '/call-girls-in-noida' },
   { name: 'Gurgaon', href: '/call-girls-in-gurgaon' },
+  { name: 'Karol Bagh', href: '/call-girls-in-karol-bagh' },
+  { name: 'Vasant Kunj', href: '/call-girls-in-vasant-kunj' },
+  { name: 'Saket', href: '/call-girls-in-saket' },
 ];
 
 const microAreas = [

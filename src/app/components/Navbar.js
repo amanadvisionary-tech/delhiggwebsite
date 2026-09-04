@@ -19,7 +19,8 @@ export default function Navbar() {
     { name: "High Profile", href: "/high-profile-escorts-in-delhi" },
     // { name: "Spa Staff", href: "/Category/spastaff" },
     { name: "College Girl", href: "/collage-call-girls-in-delhi" },
-    
+    { name: "Housewife", href: "/housewife-escorts-in-delhi" },
+
   ];
   const Locations = [
     { name: "Delhi Escorts", href: "/delhi-escorts" },
@@ -30,6 +31,9 @@ export default function Navbar() {
     { name: "Mahipalpur Escorts", href: "/call-girls-in-mahipalpur" },
     { name: "Dwarka Escorts", href: "/call-girls-in-dwarka" },
     { name: "Lajpat Nagar Escorts", href: "/call-girls-in-lajpat-nagar" },
+    { name: "Karol Bagh Escorts", href: "/call-girls-in-karol-bagh" },
+    { name: "Vasant Kunj Escorts", href: "/call-girls-in-vasant-kunj" },
+    { name: "Saket Escorts", href: "/call-girls-in-saket" },
   ];
 
   return (
