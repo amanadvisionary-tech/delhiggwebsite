@@ -1,16 +1,16 @@
 import AboutUs from "./AboutUs";
 
 export const metadata = {
-  title: "About Us | Delhi Girl – Trusted Escort Service in Delhi NCR",
+  title: "About Us - Trusted Escort Service in Delhi NCR | Delhi Girl",
   description:
-    "Learn about Delhi Girl, a trusted escort service across Delhi NCR offering verified companions, discreet booking, and premium hotel outcall across the city.",
+    "Delhi Girl, a trusted escort service in Delhi NCR — verified companions, discreet booking, premium hotel outcall. Chat on WhatsApp to know more.",
   alternates: {
     canonical: "/about-us",
   },
   openGraph: {
-    title: "About Us | Delhi Girl – Trusted Escort Service in Delhi NCR",
+    title: "About Us - Trusted Escort Service in Delhi NCR | Delhi Girl",
     description:
-      "Learn about Delhi Girl, a trusted escort service across Delhi NCR offering verified companions, discreet booking, and premium hotel outcall across the city.",
+      "Delhi Girl, a trusted escort service in Delhi NCR — verified companions, discreet booking, premium hotel outcall. Chat on WhatsApp to know more.",
     url: "/about-us",
     type: "website",
   },

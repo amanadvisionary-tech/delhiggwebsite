@@ -1,8 +1,8 @@
 import Gurugaon from "./Gurugaon";
 
 export const metadata = {
-  title: "Escort Service in Gurgaon | High-Profile Models & Russians",
-  description: "Call girls near DLF Cyber City, Sohna Road & Golf Course Road, Gurgaon. Verified, discreet 5-star hotel bookings. Choose Russian, model or high-profile escorts on WhatsApp.",
+  title: "Call Girls in Gurgaon - High-Profile Models & Russians | Delhi Girl",
+  description: "Call girls in Gurgaon near DLF Cyber City, Sohna Road & Golf Course Road — verified, discreet 5-star hotel bookings. Choose Russian or model escorts on WhatsApp.",
   alternates: { canonical: "/call-girls-in-gurgaon" },
   // Reference list only — Google has ignored this tag for ranking since 2009.
   // Kept here so it's easy to see the target keyword set for backlink/anchor-text planning.
@@ -25,8 +25,8 @@ export const metadata = {
     "Call Girls WhatsApp Number Gurgaon",
   ],
   openGraph: {
-    title: "Escort Service in Gurgaon | High-Profile Models & Russians",
-    description: "Call girls near DLF Cyber City, Sohna Road & Golf Course Road, Gurgaon. Verified, discreet 5-star hotel bookings. Choose Russian, model or high-profile escorts on WhatsApp.",
+    title: "Call Girls in Gurgaon - High-Profile Models & Russians | Delhi Girl",
+    description: "Call girls in Gurgaon near DLF Cyber City, Sohna Road & Golf Course Road — verified, discreet 5-star hotel bookings. Choose Russian or model escorts on WhatsApp.",
     images: ["/Webpimages/JwMarriott_CP.webp"],
     type: "website",
   },

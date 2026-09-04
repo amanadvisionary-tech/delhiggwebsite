@@ -1,8 +1,8 @@
 import Airhist from "./Airhist";
 
 export const metadata = {
-  title: "Air Hostess Escorts in Delhi | Verified & Discreet",
-  description: "Book verified air hostess-style escorts in Delhi for hotel visits across Aerocity, Connaught Place & Mahipalpur. Discreet WhatsApp booking, pay after you meet.",
+  title: "Air Hostess Escorts in Delhi - Verified & Discreet | Delhi Girl",
+  description: "Air hostess-style escorts in Delhi for hotel visits across Aerocity, CP & Mahipalpur — verified profiles, pay after you meet. Book now on WhatsApp.",
   alternates: { canonical: "/air-hostess-escorts-in-delhi" },
   // Reference list only — Google has ignored this tag for ranking since 2009.
   // Kept here so it's easy to see the target keyword set for backlink/anchor-text planning.
@@ -16,8 +16,8 @@ export const metadata = {
     "Book Air Hostess Escort WhatsApp",
   ],
   openGraph: {
-    title: "Air Hostess Escorts in Delhi | Verified & Discreet",
-    description: "Book verified air hostess-style escorts in Delhi for hotel visits across Aerocity, Connaught Place & Mahipalpur. Discreet WhatsApp booking, pay after you meet.",
+    title: "Air Hostess Escorts in Delhi - Verified & Discreet | Delhi Girl",
+    description: "Air hostess-style escorts in Delhi for hotel visits across Aerocity, CP & Mahipalpur — verified profiles, pay after you meet. Book now on WhatsApp.",
     images: ["/Webpimages/JwMarriott_CP.webp"],
     type: "website",
   },

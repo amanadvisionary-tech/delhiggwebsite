@@ -1,9 +1,9 @@
 import Dwarka from "./Dwarka";
 
 export const metadata = {
-  title: "Call Girls in Dwarka | Sector-Matched, Discreet Booking",
+  title: "Call Girls in Dwarka - Sector-Matched, Discreet | Delhi Girl",
   description:
-    "Call girls in Dwarka matched to your exact sector — verified companions near you, discreet booking for residents and corporate travellers. Message on WhatsApp.",
+    "Call girls in Dwarka matched to your exact sector — verified companions for residents & corporate travellers, pay after you meet. Message on WhatsApp now.",
   alternates: { canonical: "/call-girls-in-dwarka" },
   // Reference list only — Google has ignored this tag for ranking since 2009.
   // Kept here so it's easy to see the target keyword set for backlink/anchor-text planning.
@@ -20,9 +20,9 @@ export const metadata = {
     "Pay Later Dwarka",
   ],
   openGraph: {
-    title: "Call Girls in Dwarka | Sector-Matched, Discreet Booking",
+    title: "Call Girls in Dwarka - Sector-Matched, Discreet | Delhi Girl",
     description:
-      "Call girls in Dwarka matched to your exact sector — verified companions near you, discreet booking for residents and corporate travellers. Message on WhatsApp.",
+      "Call girls in Dwarka matched to your exact sector — verified companions for residents & corporate travellers, pay after you meet. Message on WhatsApp now.",
     images: ["/Webpimages/hotel2.webp"],
     type: "website",
   },

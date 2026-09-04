@@ -1,16 +1,16 @@
 import Contact from "./Contact";
 
 export const metadata = {
-  title: "Contact Us | Delhi Girl – Book via WhatsApp 24×7",
+  title: "Contact Us - Book via WhatsApp 24x7 | Delhi Girl",
   description:
-    "Get in touch with Delhi Girl for bookings and enquiries. Discreet, fast WhatsApp booking for verified escort service across Delhi NCR, 24×7.",
+    "Contact Delhi Girl for bookings & enquiries across Delhi NCR — verified escort service, fully discreet, fast replies. Message us on WhatsApp 24x7.",
   alternates: {
     canonical: "/contact-us",
   },
   openGraph: {
-    title: "Contact Us | Delhi Girl – Book via WhatsApp 24×7",
+    title: "Contact Us - Book via WhatsApp 24x7 | Delhi Girl",
     description:
-      "Get in touch with Delhi Girl for bookings and enquiries. Discreet, fast WhatsApp booking for verified escort service across Delhi NCR, 24×7.",
+      "Contact Delhi Girl for bookings & enquiries across Delhi NCR — verified escort service, fully discreet, fast replies. Message us on WhatsApp 24x7.",
     url: "/contact-us",
     type: "website",
   },

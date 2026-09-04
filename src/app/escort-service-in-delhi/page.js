@@ -1,8 +1,8 @@
 import Locat from "./Locat";
 
 export const metadata = {
-  title: "Delhi Escorts | Verified Call Girls in Delhi – Delhi Girl",
-  description: "Book verified Delhi escorts across Aerocity, Connaught Place, Dwarka, Noida & Gurgaon. Same-day hotel bookings, fully discreet, pay after you meet.",
+  title: "Escort Service in Delhi - Verified Call Girls Citywide | Delhi Girl",
+  description: "Escort service in Delhi across Aerocity, Connaught Place, Dwarka, Noida & Gurgaon — verified profiles, pay after you meet. Book same-day on WhatsApp.",
   alternates: { canonical: "/escort-service-in-delhi" },
   // Reference list only — Google has ignored this tag for ranking since 2009.
   // Kept here so it's easy to see the target keyword set for backlink/anchor-text planning.
@@ -19,8 +19,8 @@ export const metadata = {
     "24x7 Escort Service Delhi",
   ],
   openGraph: {
-    title: "Delhi Escorts | Verified Call Girls in Delhi – Delhi Girl",
-    description: "Book verified Delhi escorts across Aerocity, Connaught Place, Dwarka, Noida & Gurgaon. Same-day hotel bookings, fully discreet, pay after you meet.",
+    title: "Escort Service in Delhi - Verified Call Girls Citywide | Delhi Girl",
+    description: "Escort service in Delhi across Aerocity, Connaught Place, Dwarka, Noida & Gurgaon — verified profiles, pay after you meet. Book same-day on WhatsApp.",
     images: ["/Webpimages/5-star-hotels.webp"],
     type: "website",
   },

@@ -1,16 +1,16 @@
 import Blogs from "./Blogs";
 
 export const metadata = {
-  title: "Blog | Delhi Girl – Tips, Guides & Updates",
+  title: "Blog - Tips, Guides & Updates | Delhi Girl",
   description:
-    "Read the Delhi Girl blog for guides, tips, and updates on premium escort service across Delhi, Gurgaon, Noida, and Aerocity.",
+    "Delhi Girl blog covering Delhi, Gurgaon, Noida & Aerocity — practical guides and updates on premium escort service. Read the latest posts now.",
   alternates: {
     canonical: "/blogs",
   },
   openGraph: {
-    title: "Blog | Delhi Girl – Tips, Guides & Updates",
+    title: "Blog - Tips, Guides & Updates | Delhi Girl",
     description:
-      "Read the Delhi Girl blog for guides, tips, and updates on premium escort service across Delhi, Gurgaon, Noida, and Aerocity.",
+      "Delhi Girl blog covering Delhi, Gurgaon, Noida & Aerocity — practical guides and updates on premium escort service. Read the latest posts now.",
     url: "/blogs",
     type: "website",
   },

@@ -1,9 +1,9 @@
 import LajpatNagar from "./LajpatNagar";
 
 export const metadata = {
-  title: "Call Girls in Lajpat Nagar | South Delhi, Fast Booking",
+  title: "Call Girls in Lajpat Nagar - Fast, Discreet Booking | Delhi Girl",
   description:
-    "Call girls in Lajpat Nagar, South Delhi — central, well-connected, and one of our longest-served areas. Verified companions, pay after you meet.",
+    "Call girls in Lajpat Nagar, South Delhi — central and well-connected, verified companions, pay after you meet. Fast WhatsApp booking, every day.",
   alternates: { canonical: "/call-girls-in-lajpat-nagar" },
   // Reference list only — Google has ignored this tag for ranking since 2009.
   // Kept here so it's easy to see the target keyword set for backlink/anchor-text planning.
@@ -20,9 +20,9 @@ export const metadata = {
     "Pay After Meeting Lajpat Nagar",
   ],
   openGraph: {
-    title: "Call Girls in Lajpat Nagar | South Delhi, Fast Booking",
+    title: "Call Girls in Lajpat Nagar - Fast, Discreet Booking | Delhi Girl",
     description:
-      "Call girls in Lajpat Nagar, South Delhi — central, well-connected, and one of our longest-served areas. Verified companions, pay after you meet.",
+      "Call girls in Lajpat Nagar, South Delhi — central and well-connected, verified companions, pay after you meet. Fast WhatsApp booking, every day.",
     images: ["/Webpimages/tajmahalhotel_lajpatnagar.webp"],
     type: "website",
   },

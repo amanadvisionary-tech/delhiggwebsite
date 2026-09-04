@@ -1,9 +1,9 @@
 import Mahipalpur from "./Mahipalpur";
 
 export const metadata = {
-  title: "Call Girls in Mahipalpur | 20-Min Airport-Fast Delivery",
+  title: "Call Girls in Mahipalpur - 20-Min Airport-Fast Delivery | Delhi Girl",
   description:
-    "Book call girls in Mahipalpur near IGI Airport for same-day, fast hotel delivery. Verified companions, pay after you meet, bookings built around your flight time.",
+    "Call girls in Mahipalpur near IGI Airport for same-day, fast hotel delivery — verified companions, pay after you meet. Book around your flight time now.",
   alternates: { canonical: "/call-girls-in-mahipalpur" },
   // Reference list only — Google has ignored this tag for ranking since 2009.
   // Kept here so it's easy to see the target keyword set for backlink/anchor-text planning.
@@ -20,9 +20,9 @@ export const metadata = {
     "Call Girls near Aerocity",
   ],
   openGraph: {
-    title: "Call Girls in Mahipalpur | 20-Min Airport-Fast Delivery",
+    title: "Call Girls in Mahipalpur - 20-Min Airport-Fast Delivery | Delhi Girl",
     description:
-      "Book call girls in Mahipalpur near IGI Airport for same-day, fast hotel delivery. Verified companions, pay after you meet, bookings built around your flight time.",
+      "Call girls in Mahipalpur near IGI Airport for same-day, fast hotel delivery — verified companions, pay after you meet. Book around your flight time now.",
     images: ["/Webpimages/paschimvihar.webp"],
     type: "website",
   },

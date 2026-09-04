@@ -1,8 +1,8 @@
 import Price from "./Price";
 
 export const metadata = {
-  title: "Cheap Call Girls in Delhi | Affordable & Verified",
-  description: "Book affordable, verified call girls in Delhi with transparent pricing and no advance payment. Discreet WhatsApp booking across Delhi NCR.",
+  title: "Cheap Call Girls in Delhi - Affordable & Verified | Delhi Girl",
+  description: "Cheap call girls in Delhi NCR with transparent pricing and no advance payment — verified profiles, fully discreet. Book on WhatsApp now.",
   alternates: { canonical: "/cheap-call-girls-in-delhi" },
   // Reference list only — Google has ignored this tag for ranking since 2009.
   // Kept here so it's easy to see the target keyword set for backlink/anchor-text planning.
@@ -15,8 +15,8 @@ export const metadata = {
     "Book Affordable Call Girls WhatsApp",
   ],
   openGraph: {
-    title: "Cheap Call Girls in Delhi | Affordable & Verified",
-    description: "Book affordable, verified call girls in Delhi with transparent pricing and no advance payment. Discreet WhatsApp booking across Delhi NCR.",
+    title: "Cheap Call Girls in Delhi - Affordable & Verified | Delhi Girl",
+    description: "Cheap call girls in Delhi NCR with transparent pricing and no advance payment — verified profiles, fully discreet. Book on WhatsApp now.",
     images: ["/Webpimages/JwMarriott_CP.webp"],
     type: "website",
   },

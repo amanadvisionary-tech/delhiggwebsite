@@ -1,8 +1,8 @@
 import HomeClient from "./HomeClient";
 
 export const metadata = {
-  title: "Delhi Girl — Call Girls & Escorts in Delhi NCR | Book Now",
-  description: "Book verified call girls & escorts across Delhi, Aerocity, Gurgaon, Noida & Dwarka. Discreet 5-star hotel visits, pay after you meet. Chat on WhatsApp now.",
+  title: "Call Girls in Delhi NCR - Verified & Discreet Booking | Delhi Girl",
+  description: "Call girls & escorts across Delhi NCR — Aerocity, Gurgaon, Noida & Dwarka. Verified profiles, discreet 5-star hotel visits, pay after you meet. Chat on WhatsApp now!",
   alternates: { canonical: "/" },
   // Reference list only — Google has ignored this tag for ranking since 2009.
   // Kept here so it's easy to see the target keyword set for backlink/anchor-text planning.
@@ -19,8 +19,8 @@ export const metadata = {
     "Same Day Call Girl Booking Delhi",
   ],
   openGraph: {
-    title: "Delhi Girl — Call Girls & Escorts in Delhi NCR | Book Now",
-    description: "Book verified call girls & escorts across Delhi, Aerocity, Gurgaon, Noida & Dwarka. Discreet 5-star hotel visits, pay after you meet. Chat on WhatsApp now.",
+    title: "Call Girls in Delhi NCR - Verified & Discreet Booking | Delhi Girl",
+    description: "Call girls & escorts across Delhi NCR — Aerocity, Gurgaon, Noida & Dwarka. Verified profiles, discreet 5-star hotel visits, pay after you meet. Chat on WhatsApp now!",
     images: ["/Webpimages/JwMarriott_CP.webp"],
     type: "website",
   },

@@ -1,8 +1,8 @@
 import Noida from "./Noida";
 
 export const metadata = {
-  title: "Call Girls in Noida | Escort Service in Noida – Delhi Girl",
-  description: "Call girls in Noida across Sector 18, Sector 62, Film City & Greater Noida — verified companions for hotels and private stays. Easy booking, full discretion.",
+  title: "Call Girls in Noida - Verified Escort Service | Delhi Girl",
+  description: "Call girls in Noida across Sector 18, Sector 62, Film City & Greater Noida — verified companions, full discretion. Book easily on WhatsApp today.",
   alternates: { canonical: "/call-girls-in-noida" },
   // Reference list only — Google has ignored this tag for ranking since 2009.
   // Kept here so it's easy to see the target keyword set for backlink/anchor-text planning.
@@ -19,8 +19,8 @@ export const metadata = {
     "Call Girls near Noida Metro",
   ],
   openGraph: {
-    title: "Call Girls in Noida | Escort Service in Noida – Delhi Girl",
-    description: "Call girls in Noida across Sector 18, Sector 62, Film City & Greater Noida — verified companions for hotels and private stays. Easy booking, full discretion.",
+    title: "Call Girls in Noida - Verified Escort Service | Delhi Girl",
+    description: "Call girls in Noida across Sector 18, Sector 62, Film City & Greater Noida — verified companions, full discretion. Book easily on WhatsApp today.",
     images: ["/Webpimages/hotel3.webp"],
     type: "website",
   },
