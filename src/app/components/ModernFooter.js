@@ -109,6 +109,8 @@ const ModernFooter = () => {
                 { name: "High Profile", link: "/high-profile-escorts-in-delhi" },
                 { name: "College Girl", link: "/collage-call-girls-in-delhi" },
                 { name: "Housewife", link: "/housewife-escorts-in-delhi" },
+                { name: "Punjabi Escorts", link: "/punjabi-escorts-in-delhi" },
+                { name: "Hotel Escorts", link: "/hotel-escorts-in-delhi" },
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.link} className="text-gray-400 hover:text-amber-400 transition-colors flex items-center">
@@ -141,6 +143,8 @@ const ModernFooter = () => {
                 { name: "Karol Bagh", link: "/call-girls-in-karol-bagh" },
                 { name: "Vasant Kunj", link: "/call-girls-in-vasant-kunj" },
                 { name: "Saket", link: "/call-girls-in-saket" },
+                { name: "Paharganj", link: "/call-girls-in-paharganj" },
+                { name: "Hauz Khas", link: "/call-girls-in-hauz-khas" },
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.link} className="text-gray-400 hover:text-amber-400 transition-colors flex items-center">

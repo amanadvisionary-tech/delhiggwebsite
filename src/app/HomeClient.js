@@ -459,12 +459,13 @@ export default function Home({
     { name: 'Connaught Place', img: '/Webpimages/connaught-place-delhi.webp', href: '/call-girls-in-connaught-place' },
     { name: 'New Friends Colony', img: '/Webpimages/holidayIn_CP.webp', href: '/escort-service-in-delhi' },
     { name: 'Dwarka', img: '/Webpimages/tajmahalhotel_lajpatnagar.webp', href: '/call-girls-in-dwarka' },
-    { name: 'Paharganj', img: '/Webpimages/paschimvihar.webp', href: '/escort-service-in-delhi' },
+    { name: 'Paharganj', img: '/Webpimages/banner-1.webp', href: '/call-girls-in-paharganj' },
     { name: 'Vasant kunj', img: '/Webpimages/hotel-lounge-chandelier.webp', href: '/call-girls-in-vasant-kunj' },
     { name: 'Lajpat Nagar ', img: '/Webpimages/pullmanAerocity.webp', href: '/call-girls-in-lajpat-nagar' },
     { name: 'Kalkaji', img: '/Webpimages/jwmarriott.webp', href: '/escort-service-in-delhi' },
     { name: 'Karol Bagh', img: '/Webpimages/hotel-exterior-night.webp', href: '/call-girls-in-karol-bagh' },
     { name: 'Saket', img: '/Webpimages/hotel-lounge-nook.webp', href: '/call-girls-in-saket' },
+    { name: 'Hauz Khas', img: '/Webpimages/young-woman.webp', href: '/call-girls-in-hauz-khas' },
   ]
   const profiles = [
     { image: '/Webpimages/call-girl-4.webp', name: 'Diya', age: 24, tag: 'Dinner • Hotel Stays' },
@@ -526,6 +527,8 @@ export default function Home({
     "Call girl in Karol Bagh",
     "Call girl in Saket",
     "Call girl housewife",
+    "Call girl Punjabi",
+    "Call girl in hotel",
     "Call girl in Hauz Khas",
     "Call girl in Greater Kailash",
     "Call girl in Dilshad Garden",
@@ -546,7 +549,11 @@ export default function Home({
     if (l.includes('karol bagh')) return '/call-girls-in-karol-bagh';
     if (l.includes('vasant kunj')) return '/call-girls-in-vasant-kunj';
     if (l.includes('saket')) return '/call-girls-in-saket';
+    if (l.includes('paharganj')) return '/call-girls-in-paharganj';
+    if (l.includes('hauz khas')) return '/call-girls-in-hauz-khas';
     if (l.includes('housewife')) return '/housewife-escorts-in-delhi';
+    if (l.includes('punjabi')) return '/punjabi-escorts-in-delhi';
+    if (l.includes('hotel')) return '/hotel-escorts-in-delhi';
     return '/escort-service-in-delhi';
   };
   return (

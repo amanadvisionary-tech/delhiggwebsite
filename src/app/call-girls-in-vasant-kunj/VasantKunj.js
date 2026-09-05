@@ -32,6 +32,8 @@ const otherAreas = [
   { name: 'Lajpat Nagar', href: '/call-girls-in-lajpat-nagar' },
   { name: 'Karol Bagh', href: '/call-girls-in-karol-bagh' },
   { name: 'Saket', href: '/call-girls-in-saket' },
+  { name: 'Paharganj', href: '/call-girls-in-paharganj' },
+  { name: 'Hauz Khas', href: '/call-girls-in-hauz-khas' },
 ];
 
 const pockets = [

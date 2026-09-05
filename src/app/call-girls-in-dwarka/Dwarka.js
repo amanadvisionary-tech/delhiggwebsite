@@ -34,6 +34,8 @@ const otherAreas = [
   { name: 'Karol Bagh', href: '/call-girls-in-karol-bagh' },
   { name: 'Vasant Kunj', href: '/call-girls-in-vasant-kunj' },
   { name: 'Saket', href: '/call-girls-in-saket' },
+  { name: 'Paharganj', href: '/call-girls-in-paharganj' },
+  { name: 'Hauz Khas', href: '/call-girls-in-hauz-khas' },
 ];
 
 const sectors = [

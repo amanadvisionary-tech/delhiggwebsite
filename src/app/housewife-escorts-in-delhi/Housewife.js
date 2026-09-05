@@ -38,6 +38,8 @@ const otherCategories = [
   { name: 'Air Hostess', href: '/air-hostess-escorts-in-delhi' },
   { name: 'Russian Escorts', href: '/russian-escorts-in-delhi' },
   { name: 'Model Call Girls', href: '/model-call-girls-in-delhi' },
+  { name: 'Punjabi Escorts', href: '/punjabi-escorts-in-delhi' },
+  { name: 'Hotel Escorts', href: '/hotel-escorts-in-delhi' },
 ];
 
 const reasons = [
