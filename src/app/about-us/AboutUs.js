@@ -1573,23 +1573,17 @@ export default function Abpage({
                             </div>
                           </button>
           
-                          <AnimatePresence>
-                            {activeIndex === index && (
-                              <motion.div
-                                initial={{ height: 0, opacity: 0 }}
-                                animate={{ height: 'auto', opacity: 1 }}
-                                exit={{ height: 0, opacity: 0 }}
-                                transition={{ duration: 0.3 }}
-                                className="overflow-hidden"
-                              >
-                                <div className="px-6 pb-6 pt-2 border-t border-purple-50">
-                                  <p className="text-purple-700">
-                                    {faq.answer}
-                                  </p>
-                                </div>
-                              </motion.div>
-                            )}
-                          </AnimatePresence>
+                          <div
+                            className={`overflow-hidden transition-all duration-300 ${
+                              activeIndex === index ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
+                            }`}
+                          >
+                            <div className="px-6 pb-6 pt-2 border-t border-purple-50">
+                              <p className="text-purple-700">
+                                {faq.answer}
+                              </p>
+                            </div>
+                          </div>
                         </motion.div>
                       ))}
                     </div>

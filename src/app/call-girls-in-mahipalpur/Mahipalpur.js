@@ -462,9 +462,13 @@ export default function Mahipalpur() {
                     className={`flex-shrink-0 transition-transform ${openFaq === i ? 'rotate-180 text-purple-600' : 'text-gray-400'}`}
                   />
                 </button>
-                {openFaq === i && (
-                  <div className="px-6 pb-5 text-gray-600 text-sm leading-relaxed">{item.a}</div>
-                )}
+                <div
+                  className={`px-6 text-gray-600 text-sm leading-relaxed overflow-hidden transition-all duration-300 ${
+                    openFaq === i ? 'max-h-96 pb-5 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  {item.a}
+                </div>
               </div>
             ))}
           </div>

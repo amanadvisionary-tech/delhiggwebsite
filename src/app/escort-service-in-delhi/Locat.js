@@ -385,7 +385,7 @@ export default function Locations() {
     }
   ];
   return (
-    <>
+    <main>
       {/* BreadcrumbList structured data */}
       <script
         type="application/ld+json"
@@ -669,7 +669,7 @@ export default function Locations() {
                     <h3 className="text-sm font-semibold text-gray-700">Featured Companions</h3>
                     <p className="text-xs text-gray-500">Curated for quality & style</p>
                   </div>
-                  <div className="text-xs text-gray-400">Delhi</div>
+                  <div className="text-xs text-gray-500">Delhi</div>
                 </div>
 
                 {/* Carousel-like simple row (replace with real carousel if you want) */}
@@ -1744,21 +1744,15 @@ export default function Locations() {
                     </motion.div>
                   </button>
 
-                  <AnimatePresence>
-                    {openQuestion === faq.id && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="px-6 pb-6 text-gray-600"
-                      >
-                        <div className="pt-2 border-t border-gray-100">
-                          {faq.answer}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                  <div
+                    className={`px-6 text-gray-600 overflow-hidden transition-all duration-300 ${
+                      openQuestion === faq.id ? 'max-h-[600px] opacity-100 pb-6' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="pt-2 border-t border-gray-100">
+                      {faq.answer}
+                    </div>
+                  </div>
                 </motion.div>
               ))
             ) : (
@@ -1815,6 +1809,6 @@ export default function Locations() {
       </div>
       {/* End FAQ Section */}
 
-    </>
+    </main>
   );
 }

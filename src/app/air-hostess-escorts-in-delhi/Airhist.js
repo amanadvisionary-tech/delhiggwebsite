@@ -369,7 +369,7 @@ const features1 = [
       };
         //end 5 start hotel 
   return (
-    <>
+    <main>
        
     {/* banner */}
                <header className="relative w-full h-screen min-h-[560px] flex items-center">
@@ -692,7 +692,7 @@ const features1 = [
                           <h3 className="text-sm font-semibold text-gray-700">Featured Companions</h3>
                           <p className="text-xs text-gray-500">Curated for quality & style</p>
                         </div>
-                        <div className="text-xs text-gray-400">Delhi</div>
+                        <div className="text-xs text-gray-500">Delhi</div>
                       </div>
         
                       {/* Carousel-like simple row (replace with real carousel if you want) */}
@@ -837,7 +837,7 @@ const features1 = [
                           <button className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
                             View Profile
                           </button>
-                          <button className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
+                          <button aria-label="View more options" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                             </svg>
@@ -1674,21 +1674,15 @@ Their spotless grooming, fresh appearance, and polite behaviour clearly set them
                                   </motion.div>
                                 </button>
                                 
-                                <AnimatePresence>
-                                  {openQuestion === faq.id && (
-                                    <motion.div
-                                      initial={{ height: 0, opacity: 0 }}
-                                      animate={{ height: 'auto', opacity: 1 }}
-                                      exit={{ height: 0, opacity: 0 }}
-                                      transition={{ duration: 0.3 }}
-                                      className="px-6 pb-6 text-gray-600"
-                                    >
-                                      <div className="pt-2 border-t border-gray-100">
-                                        {faq.answer}
-                                      </div>
-                                    </motion.div>
-                                  )}
-                                </AnimatePresence>
+                                <div
+                                  className={`px-6 text-gray-600 overflow-hidden transition-all duration-300 ${
+                                    openQuestion === faq.id ? 'max-h-[600px] opacity-100 pb-6' : 'max-h-0 opacity-0'
+                                  }`}
+                                >
+                                  <div className="pt-2 border-t border-gray-100">
+                                    {faq.answer}
+                                  </div>
+                                </div>
                               </motion.div>
                             ))
                           ) : (
@@ -1744,6 +1738,6 @@ Their spotless grooming, fresh appearance, and polite behaviour clearly set them
                       </div>
                     </div>
                     {/* End FAQ Section */}
-    </>
+    </main>
   );
 }

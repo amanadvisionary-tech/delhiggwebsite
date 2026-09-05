@@ -550,7 +550,7 @@ export default function Home({
     return '/escort-service-in-delhi';
   };
   return (
-    <>
+    <main>
       {/* FAQPage structured data — generated from the faqs array below, always in sync with visible FAQ text */}
       <script
         type="application/ld+json"
@@ -885,7 +885,7 @@ export default function Home({
           <div className="max-w-5xl mx-auto text-center mb-16">
 
 
-            <h2 className="text-3xl Female to Male Massagemd:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Affordable call girl services in Delhi
             </h2>
 
@@ -937,7 +937,7 @@ export default function Home({
             </div>
 
           </div>
-          <h2 className="text-2xl mt-5 Female to Male Massagemd:text-4xl font-bold text-gray-700 mb-4">
+          <h2 className="text-2xl mt-5 md:text-4xl font-bold text-gray-700 mb-4">
             We offer services in prime location of Delhi
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
@@ -1017,7 +1017,7 @@ export default function Home({
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <h4 className="text-sm font-semibold">Verified Profiles</h4>
+                  <h3 className="text-sm font-semibold">Verified Profiles</h3>
                   <p className="mt-1 text-xs text-gray-500">We have escorts in Delhi with full verification and background checks.</p>
                 </div>
 
@@ -1027,7 +1027,7 @@ export default function Home({
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 7v4a1 1 0 001 1h3m10 0h3a1 1 0 001-1V7M5 7V5a2 2 0 012-2h10a2 2 0 012 2v2" />
                     </svg>
                   </div>
-                  <h4 className="text-sm font-semibold">No Advance Payment</h4>
+                  <h3 className="text-sm font-semibold">No Advance Payment</h3>
                   <p className="mt-1 text-xs text-gray-500">We don&apos;t recommend you to give advance payment. After attending a satisfying session, then payment will be made.</p>
                 </div>
 
@@ -1038,7 +1038,7 @@ export default function Home({
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14v6" />
                     </svg>
                   </div>
-                  <h4 className="text-sm font-semibold">High Profile Model</h4>
+                  <h3 className="text-sm font-semibold">High Profile Model</h3>
                   <p className="mt-1 text-xs text-gray-500">We do have high profile models as per your needs. We offer escorts in Delhi.</p>
                 </div>
               </div>
@@ -1052,7 +1052,7 @@ export default function Home({
                     <h3 className="text-sm font-semibold text-gray-700">Featured Profiles</h3>
                     <p className="text-xs text-gray-500">Trusted & Verified Profiles</p>
                   </div>
-                  <div className="text-xs text-gray-400">Delhi</div>
+                  <div className="text-xs text-gray-500">Delhi</div>
                 </div>
 
                 {/* Carousel-like simple row (replace with real carousel if you want) */}
@@ -1342,7 +1342,7 @@ export default function Home({
                     <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="flex-1 text-center bg-gradient-to-r from-purple-600 to-pink-600 text-white py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
                       View Profile
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
+                    <a href="https://api.whatsapp.com/send?phone=918826482370" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                       </svg>
@@ -1541,9 +1541,9 @@ export default function Home({
                     {feature.icon}
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-800 text-base mb-1 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-pink-600 transition-colors">
+                    <h3 className="font-bold text-gray-800 text-base mb-1 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-pink-600 transition-colors">
                       {feature.title}
-                    </h4>
+                    </h3>
                     <p className="text-gray-600 text-xs">
 
                     </p>
@@ -2132,7 +2132,7 @@ export default function Home({
 
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a href="/call-girls-in-gurgaon" className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-lg hover:opacity-90 transition-opacity">
-                    Read More
+                    Read More About Gurgaon Call Girls
                   </a>
                   <button className="px-6 py-3 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">
                     Share Article
@@ -2474,7 +2474,7 @@ export default function Home({
               <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden">
                 <Image
                   src='/Webpimages/cda1687d-1464-4b62-9549-2dd04a5cbb05.webp'
-                  alt='{hotel.name}'
+                  alt="Call girl service in Noida, Delhi Girl"
                   fill                                        
                   className="object-cover object-center"     
                   priority={false}                            
@@ -2753,21 +2753,15 @@ export default function Home({
                     </motion.div>
                   </button>
 
-                  <AnimatePresence>
-                    {openQuestion === faq.id && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="px-6 pb-6 text-gray-600"
-                      >
-                        <div className="pt-2 border-t border-gray-100">
-                          {faq.answer}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                  <div
+                    className={`px-6 text-gray-600 overflow-hidden transition-all duration-300 ${
+                      openQuestion === faq.id ? 'max-h-[600px] opacity-100 pb-6' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="pt-2 border-t border-gray-100">
+                      {faq.answer}
+                    </div>
+                  </div>
                 </motion.div>
               ))
             ) : (
@@ -2823,6 +2817,6 @@ export default function Home({
         </div>
       </div>
       {/* End FAQ Section */}
-    </>
+    </main>
   );
 }

@@ -305,7 +305,7 @@ export default function Category() {
   // Add more categories as needed
 ];
   return (
-    <>
+    <main>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
@@ -1754,21 +1754,15 @@ Our celebrity escorts are the ideal choice to those clients who desire exclusivi
                                   </motion.div>
                                 </button>
                                 
-                                <AnimatePresence>
-                                  {openQuestion === faq.id && (
-                                    <motion.div
-                                      initial={{ height: 0, opacity: 0 }}
-                                      animate={{ height: 'auto', opacity: 1 }}
-                                      exit={{ height: 0, opacity: 0 }}
-                                      transition={{ duration: 0.3 }}
-                                      className="px-6 pb-6 text-gray-600"
-                                    >
-                                      <div className="pt-2 border-t border-gray-100">
-                                        {faq.answer}
-                                      </div>
-                                    </motion.div>
-                                  )}
-                                </AnimatePresence>
+                                <div
+                                  className={`px-6 text-gray-600 overflow-hidden transition-all duration-300 ${
+                                    openQuestion === faq.id ? 'max-h-[600px] opacity-100 pb-6' : 'max-h-0 opacity-0'
+                                  }`}
+                                >
+                                  <div className="pt-2 border-t border-gray-100">
+                                    {faq.answer}
+                                  </div>
+                                </div>
                               </motion.div>
                             ))
                           ) : (
@@ -1824,6 +1818,6 @@ Our celebrity escorts are the ideal choice to those clients who desire exclusivi
                       </div>
                     </div>
                     {/* End FAQ Section */}
-    </>
+    </main>
   );
 }
