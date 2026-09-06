@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { FaWhatsapp, FaHeart, FaUserTie, FaShieldAlt, FaClock, FaFire, FaLock, FaStar } from 'react-icons/fa';
 import { FiChevronDown } from 'react-icons/fi';
+import TrustBar from '../components/TrustBar';
+import StickyWhatsApp from '../components/StickyWhatsApp';
 
 const gallery = [
   { image: '/Webpimages/download331.webp', label: 'Simran • 25', tag: 'Evening Visits' },
@@ -90,6 +92,7 @@ export default function Punjabi() {
 
   return (
     <main className="bg-white">
+      <StickyWhatsApp />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -154,6 +157,8 @@ export default function Punjabi() {
           </div>
         </div>
       </section>
+
+      <TrustBar />
 
       {/* Intro */}
       <section className="py-16 px-6">
@@ -450,6 +455,28 @@ export default function Punjabi() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Save our number */}
+      <section className="py-16 px-6 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">
+            Searching for Punjabi Call Girls Near You? Save This Number
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            If you searched for Punjabi call girls near me, Punjabi escort service in Delhi, or
+            cheap Punjabi call girls in Delhi NCR, you&apos;re in the right place — this category is
+            available across every location we cover, not limited to one part of the city. Save our
+            Punjabi call girl WhatsApp number so you don&apos;t have to search again next time; one
+            message gets you a verified, genuinely Punjabi profile matched to your area.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            You can book a Punjabi escort online directly through WhatsApp — no forms, no signup, no
+            waiting. Whether you&apos;re after a Punjabi model escort in Delhi, an independent Punjabi
+            call girl, or simply the closest verified profile for tonight, the process stays
+            identical: transparent pricing shared on chat, and payment only after you&apos;ve met.
+          </p>
         </div>
       </section>
 

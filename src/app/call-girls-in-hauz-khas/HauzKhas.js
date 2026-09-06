@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { FaWhatsapp, FaBuilding, FaMoon, FaUserTie, FaShieldAlt, FaClock, FaStar, FaConciergeBell } from 'react-icons/fa';
 import { FiChevronDown } from 'react-icons/fi';
+import TrustBar from '../components/TrustBar';
+import StickyWhatsApp from '../components/StickyWhatsApp';
 
 const gallery = [
   { image: '/Webpimages/download (6).webp', label: 'Naina • 25', tag: 'Village Evenings' },
@@ -87,6 +89,7 @@ export default function HauzKhas() {
 
   return (
     <main className="bg-white">
+      <StickyWhatsApp />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -151,6 +154,8 @@ export default function HauzKhas() {
           </div>
         </div>
       </section>
+
+      <TrustBar />
 
       {/* Intro */}
       <section className="py-16 px-6">
@@ -470,6 +475,29 @@ export default function HauzKhas() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Save our number */}
+      <section className="py-16 px-6 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">
+            Searching for Call Girls Near You in Hauz Khas? Save This Number
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            If you searched for call girls near me in Hauz Khas, escort service in Hauz Khas, or
+            cheap call girls in Hauz Khas, you&apos;re in the right place — we cover the Village, the
+            market, and the residential blocks around it, not just the obvious strip. Save our Hauz
+            Khas call girl WhatsApp number so you don&apos;t have to search again next time you&apos;re
+            heading to the Village — one message gets you a verified match.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            You can book call girls in Hauz Khas online directly through WhatsApp — no forms, no
+            signup, no waiting. Whether you need a Hauz Khas call girl service for tonight, a
+            same-day booking straight from the bars, or you&apos;re planning ahead for the weekend, the
+            process stays the same: verified profiles, transparent pricing shared on chat, and
+            payment only after you&apos;ve met.
+          </p>
         </div>
       </section>
 

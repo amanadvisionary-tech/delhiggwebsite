@@ -14,7 +14,7 @@ const gallery = [
   { image: '/Webpimages/downloadd4.webp', label: 'Kavita • 29', tag: 'Corporate Evenings' },
   { image: '/Webpimages/downloadd5.webp', label: 'Poonam • 33', tag: 'Discreet Home Visits' },
 ];
-
+  
 const WHATSAPP = 'https://api.whatsapp.com/send?phone=918826482370';
 const SITE_URL = 'https://www.delhigirl.in';
 

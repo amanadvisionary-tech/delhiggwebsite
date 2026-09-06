@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { FaWhatsapp, FaBuilding, FaTrain, FaUserTie, FaShieldAlt, FaClock, FaStar, FaConciergeBell } from 'react-icons/fa';
 import { FiChevronDown } from 'react-icons/fi';
+import TrustBar from '../components/TrustBar';
+import StickyWhatsApp from '../components/StickyWhatsApp';
 
 const gallery = [
   { image: '/Webpimages/download (1).webp', label: 'Meher • 24', tag: 'Main Bazaar Regular' },
@@ -86,6 +88,7 @@ export default function Paharganj() {
 
   return (
     <main className="bg-white">
+      <StickyWhatsApp />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -150,6 +153,8 @@ export default function Paharganj() {
           </div>
         </div>
       </section>
+
+      <TrustBar />
 
       {/* Intro */}
       <section className="py-16 px-6">
@@ -470,6 +475,30 @@ export default function Paharganj() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Save our number */}
+      <section className="py-16 px-6 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">
+            Searching for Call Girls Near You in Paharganj? Save This Number
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            If you searched for call girls near me in Paharganj, escort service in Paharganj, or
+            cheap call girls in Paharganj, you&apos;re in the right place — we cover the entire Main
+            Bazaar and railway station belt end to end, not just a couple of well-known lanes. Save
+            our Paharganj call girl WhatsApp number so you don&apos;t have to search again the next time
+            you&apos;re passing through — one message gets you a verified match, whether it&apos;s your
+            first visit or your fifth.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            You can book call girls in Paharganj online directly through WhatsApp — no forms, no
+            signup, no waiting on hold. Whether you need a Paharganj call girl service for tonight, a
+            same-day booking between trains, or you&apos;re planning a visit next week, the process stays
+            the same: verified profiles, transparent pricing shared on chat, and payment only after
+            you&apos;ve met.
+          </p>
         </div>
       </section>
 

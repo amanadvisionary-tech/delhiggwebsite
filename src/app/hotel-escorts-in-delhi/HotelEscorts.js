@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { FaWhatsapp, FaHotel, FaUserTie, FaShieldAlt, FaClock, FaConciergeBell, FaLock, FaKey } from 'react-icons/fa';
 import { FiChevronDown } from 'react-icons/fi';
+import TrustBar from '../components/TrustBar';
+import StickyWhatsApp from '../components/StickyWhatsApp';
 
 const gallery = [
   { image: '/Webpimages/call-girl-1.webp', label: 'Aisha • 25', tag: '5-Star Incall' },
@@ -91,6 +93,7 @@ export default function HotelEscorts() {
 
   return (
     <main className="bg-white">
+      <StickyWhatsApp />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -155,6 +158,8 @@ export default function HotelEscorts() {
           </div>
         </div>
       </section>
+
+      <TrustBar />
 
       {/* Intro */}
       <section className="py-16 px-6">
@@ -452,6 +457,28 @@ export default function HotelEscorts() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Save our number */}
+      <section className="py-16 px-6 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">
+            Searching for a Hotel Escort Service Near You? Save This Number
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            If you searched for hotel call girls in Delhi, 5-star hotel escorts in Delhi, or incall
+            escorts near your hotel, you&apos;re in the right place — we cover business hotels, 5-star
+            properties and budget guesthouses across every part of Delhi NCR. Save our hotel escort
+            WhatsApp number so you don&apos;t have to search again on your next stay; one message with
+            your hotel name gets you a verified match.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            You can book a hotel escort online directly through WhatsApp — no forms, no signup, no
+            waiting at reception for an answer. Whether you need a cheap hotel escort in Delhi for a
+            budget stay or a 5-star hotel call girl for a business trip, the process stays identical:
+            transparent pricing shared on chat, and payment only after you&apos;ve met.
+          </p>
         </div>
       </section>
 
