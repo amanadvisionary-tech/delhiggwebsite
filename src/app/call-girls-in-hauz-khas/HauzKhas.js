@@ -44,12 +44,12 @@ const localities = [
 ];
 
 const companionTypes = [
-  { name: 'High Profile Escorts', href: '/high-profile-escorts-in-delhi', body: 'Polished, premium companions suited to an evening around the Hauz Khas Village bar-and-lounge scene.' },
-  { name: 'Independent Call Girls', href: '/independent-escorts-in-delhi', body: 'For clients who specifically want independent escorts in Hauz Khas rather than an agency roster.' },
-  { name: 'Model Call Girls', href: '/model-call-girls-in-delhi', body: 'Stylish, presentable companions that fit naturally into the Village&apos;s upscale evening crowd.' },
-  { name: 'Russian & Foreign Escorts', href: '/russian-escorts-in-delhi', body: 'For clients specifically searching Russian call girls in Hauz Khas — verified foreign profiles with advance notice.' },
-  { name: 'College Call Girls', href: '/collage-call-girls-in-delhi', body: 'Younger, easygoing companions for a relaxed, low-formality evening near Aurobindo Place.' },
-  { name: 'Housewife Companions', href: '/housewife-escorts-in-delhi', body: 'Mature, experienced companions for clients who prefer a calmer, more confident evening.' },
+  { name: 'High Profile Escorts', href: '/high-profile-escorts-in-delhi' },
+  { name: 'Independent Call Girls', href: '/independent-escorts-in-delhi' },
+  { name: 'Model Call Girls', href: '/model-call-girls-in-delhi' },
+  { name: 'Russian & Foreign Escorts', href: '/russian-escorts-in-delhi' },
+  { name: 'College Call Girls', href: '/collage-call-girls-in-delhi' },
+  { name: 'Housewife Companions', href: '/housewife-escorts-in-delhi' },
 ];
 
 const steps = [
@@ -190,11 +190,39 @@ export default function HauzKhas() {
         </div>
       </section>
 
-      {/* Services */}
+      {/* Featured Companions Gallery — moved right after intro */}
       <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Featured Companions in Hauz Khas</h2>
+              <p className="text-gray-600 text-sm mt-1">Verified profiles, updated regularly</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {gallery.map((p, idx) => (
+              <motion.div key={idx} whileHover={{ scale: 1.03 }} className="bg-white rounded-2xl p-3 shadow-md border border-gray-100">
+                <div className="relative w-full h-56 rounded-xl overflow-hidden bg-gray-100">
+                  <Image src={p.image} alt="Call girl profile in Hauz Khas, Delhi" fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw" className="object-cover" />
+                </div>
+                <div className="mt-3">
+                  <div className="font-semibold text-sm text-gray-900">{p.label}</div>
+                  <div className="text-xs text-gray-500">{p.tag}</div>
+                </div>
+                <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium">
+                  Request
+                </a>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-            Escorts in Hauz Khas, Block by Block
+            Matching You to the Right Block in Hauz Khas
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Search call girls near Hauz Khas Village or call girls near Hauz Khas Metro and you&apos;ll
@@ -220,11 +248,34 @@ export default function HauzKhas() {
         </div>
       </section>
 
+      {/* Locality grid */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 text-center">
+            Hauz Khas, Broken Down by Block
+          </h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+            A rough guide — if your block isn&apos;t listed, message us anyway, we likely still cover it.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {localities.map((s, i) => (
+              <motion.div key={s.name} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }} className="flex items-start gap-4 p-5 rounded-xl border border-gray-100 bg-white">
+                <FaBuilding className="text-purple-600 w-5 h-5 mt-1 flex-shrink-0" />
+                <div>
+                  <div className="font-semibold text-gray-900">{s.name}</div>
+                  <div className="text-sm text-gray-600 mt-0.5">{s.note}</div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 text-center">
-            Why Book Call Girls in Hauz Khas Through Us
+            The Hauz Khas Difference
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-14">
             South Delhi bookings live or die on how well the coordination is handled — this is what
@@ -267,56 +318,30 @@ export default function HauzKhas() {
         </div>
       </section>
 
-      {/* Types of Companions */}
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 text-center">
-            Types of Call Girls Available in Hauz Khas
+      {/* Types of Companions — inline paragraph with pill links, not a card grid */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+            Prefer a Specific Kind of Companion?
           </h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-14">
-            Not every client wants the same thing. Here&apos;s how clients usually narrow it down.
+          <p className="text-gray-700 leading-relaxed mb-8 max-w-2xl mx-auto">
+            Clients booking in Hauz Khas often ask for a particular category rather than a general
+            match — polished profiles for the Village crowd, or something more relaxed for a quiet
+            night in. Tap a category below to see how it works, or just tell us your preference on
+            WhatsApp directly.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-wrap justify-center gap-3">
             {companionTypes.map((c) => (
-              <Link key={c.href} href={c.href} className="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-purple-300 transition">
-                <h3 className="font-semibold text-gray-900 mb-2">{c.name}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{c.body}</p>
+              <Link key={c.href} href={c.href} className="px-5 py-2.5 rounded-full bg-white border border-gray-200 text-gray-700 text-sm font-medium hover:border-purple-400 hover:text-purple-700 transition">
+                {c.name}
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Featured Companions Gallery */}
-      <section className="py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-between mb-8">
-            <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Featured Companions in Hauz Khas</h2>
-              <p className="text-gray-600 text-sm mt-1">Verified profiles, updated regularly</p>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            {gallery.map((p, idx) => (
-              <motion.div key={idx} whileHover={{ scale: 1.03 }} className="bg-white rounded-2xl p-3 shadow-md border border-gray-100">
-                <div className="relative w-full h-56 rounded-xl overflow-hidden bg-gray-100">
-                  <Image src={p.image} alt="Call girl profile in Hauz Khas, Delhi" fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw" className="object-cover" />
-                </div>
-                <div className="mt-3">
-                  <div className="font-semibold text-sm text-gray-900">{p.label}</div>
-                  <div className="text-xs text-gray-500">{p.tag}</div>
-                </div>
-                <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium">
-                  Request
-                </a>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Where clients stay */}
-      <section className="py-16 px-6 bg-gray-50">
+      <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">
             Where Clients Usually Stay in Hauz Khas
@@ -342,56 +367,11 @@ export default function HauzKhas() {
         </div>
       </section>
 
-      {/* Locality grid */}
-      <section className="py-20 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 text-center">
-            Areas We Cover Inside Hauz Khas
-          </h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            A rough guide — if your block isn&apos;t listed, message us anyway, we likely still cover it.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {localities.map((s, i) => (
-              <motion.div key={s.name} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }} className="flex items-start gap-4 p-5 rounded-xl border border-gray-100 bg-white">
-                <FaBuilding className="text-purple-600 w-5 h-5 mt-1 flex-shrink-0" />
-                <div>
-                  <div className="font-semibold text-gray-900">{s.name}</div>
-                  <div className="text-sm text-gray-600 mt-0.5">{s.note}</div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Booking Tips */}
+      {/* What to expect */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 text-center">
-            First Time Booking Call Girls in Hauz Khas? Read This
-          </h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            A few honest tips from clients who&apos;ve booked here before.
-          </p>
-          <div className="space-y-5">
-            {tips.map((tip, i) => (
-              <div key={i} className="flex gap-4 p-5 rounded-xl border border-gray-100 bg-white">
-                <span className="font-bold text-purple-600">{i + 1}.</span>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  <strong className="font-semibold text-gray-900">{tip.t}</strong> {tip.b}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What to expect */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">
-            What to Expect When You Book Call Girls in Hauz Khas
+            How a Typical Hauz Khas Booking Plays Out
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Weekend nights around Hauz Khas Village tend to be the busiest, once the bars and lounges
@@ -424,7 +404,7 @@ export default function HauzKhas() {
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 justify-center mb-3">
             <FaUserTie className="text-purple-600 w-6 h-6" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">How Booking Works in Hauz Khas</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">The Hauz Khas Booking Process, Simplified</h2>
           </div>
           <p className="text-gray-600 text-center max-w-xl mx-auto mb-14">
             Popular with the Village evening crowd and South Delhi residents alike — the process is
@@ -442,11 +422,33 @@ export default function HauzKhas() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Booking Tips */}
       <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 text-center">
+            Before You Message Us — A Few Pointers
+          </h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+            A few honest tips from clients who&apos;ve booked here before.
+          </p>
+          <div className="space-y-5">
+            {tips.map((tip, i) => (
+              <div key={i} className="flex gap-4 p-5 rounded-xl border border-gray-100 bg-white">
+                <span className="font-bold text-purple-600">{i + 1}.</span>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  <strong className="font-semibold text-gray-900">{tip.t}</strong> {tip.b}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-10 text-center">
-            Hauz Khas Booking Questions
+            Everything Clients Ask About Booking in Hauz Khas
           </h2>
           <div className="space-y-3">
             {faqs.map((item, i) => (
@@ -459,20 +461,6 @@ export default function HauzKhas() {
                   {item.a}
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Other Areas We Serve */}
-      <section className="py-16 px-6 border-t border-gray-100">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Other Areas We Serve</h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            {otherAreas.map((area) => (
-              <Link key={area.href} href={area.href} className="px-5 py-2.5 rounded-full border border-gray-200 text-gray-700 text-sm font-medium hover:border-purple-400 hover:text-purple-700 transition">
-                Call Girls in {area.name}
-              </Link>
             ))}
           </div>
         </div>
@@ -498,6 +486,20 @@ export default function HauzKhas() {
             process stays the same: verified profiles, transparent pricing shared on chat, and
             payment only after you&apos;ve met.
           </p>
+        </div>
+      </section>
+
+      {/* Other Areas We Serve */}
+      <section className="py-16 px-6 border-t border-gray-100">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Other Areas We Serve</h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {otherAreas.map((area) => (
+              <Link key={area.href} href={area.href} className="px-5 py-2.5 rounded-full border border-gray-200 text-gray-700 text-sm font-medium hover:border-purple-400 hover:text-purple-700 transition">
+                Call Girls in {area.name}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

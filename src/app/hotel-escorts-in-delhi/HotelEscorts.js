@@ -330,7 +330,7 @@ export default function HotelEscorts() {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 text-center">
-            Why Book Hotel Escorts in Delhi Through Us
+            What You Get When You Book Through Us
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-8 border border-gray-100">
@@ -384,7 +384,7 @@ export default function HotelEscorts() {
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 text-center">
-            First Time Booking an Escort to Your Hotel? Read This
+            Practical Tips Before Your First Hotel Booking
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
             A few honest tips that make hotel visits go smoothly.
@@ -407,7 +407,7 @@ export default function HotelEscorts() {
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 justify-center mb-3">
             <FaUserTie className="text-purple-600 w-6 h-6" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">How Hotel Booking Works</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">The Hotel Booking Flow, Step by Step</h2>
           </div>
           <p className="text-gray-600 text-center max-w-xl mx-auto mb-14">
             Built around your hotel and room, not just your city.
@@ -428,7 +428,7 @@ export default function HotelEscorts() {
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-10 text-center">
-            Hotel Escorts — Common Questions
+            Questions Clients Ask About Hotel Bookings
           </h2>
           <div className="space-y-3">
             {faqs.map((item, i) => (

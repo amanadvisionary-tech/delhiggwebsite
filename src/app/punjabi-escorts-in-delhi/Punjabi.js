@@ -195,11 +195,39 @@ export default function Punjabi() {
         </div>
       </section>
 
+      {/* Featured Companions Gallery — moved right after intro */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Featured Punjabi Companions</h2>
+              <p className="text-gray-600 text-sm mt-1">Verified profiles, updated regularly</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {gallery.map((p, idx) => (
+              <motion.div key={idx} whileHover={{ scale: 1.03 }} className="bg-white rounded-2xl p-3 shadow-md border border-gray-100">
+                <div className="relative w-full h-56 rounded-xl overflow-hidden bg-gray-100">
+                  <Image src={p.image} alt="Punjabi escort profile in Delhi" fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw" className="object-cover" />
+                </div>
+                <div className="mt-3">
+                  <div className="font-semibold text-sm text-gray-900">{p.label}</div>
+                  <div className="text-xs text-gray-500">{p.tag}</div>
+                </div>
+                <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium">
+                  Request
+                </a>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Why Punjabi companions */}
-      <section className="py-20 px-6 bg-gray-50">
+      <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 text-center">
-            Why Clients Choose Punjabi Companions
+            What Makes Punjabi Companions Stand Out
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-14">
             It usually comes down to energy and comfort, not just the booking itself.
@@ -297,39 +325,11 @@ export default function Punjabi() {
         </div>
       </section>
 
-      {/* Featured Companions Gallery */}
-      <section className="py-16 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-between mb-8">
-            <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Featured Punjabi Companions</h2>
-              <p className="text-gray-600 text-sm mt-1">Verified profiles, updated regularly</p>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            {gallery.map((p, idx) => (
-              <motion.div key={idx} whileHover={{ scale: 1.03 }} className="bg-white rounded-2xl p-3 shadow-md border border-gray-100">
-                <div className="relative w-full h-56 rounded-xl overflow-hidden bg-gray-100">
-                  <Image src={p.image} alt="Punjabi escort profile in Delhi" fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw" className="object-cover" />
-                </div>
-                <div className="mt-3">
-                  <div className="font-semibold text-sm text-gray-900">{p.label}</div>
-                  <div className="text-xs text-gray-500">{p.tag}</div>
-                </div>
-                <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium">
-                  Request
-                </a>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Why Choose Us */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 text-center">
-            Why Book Punjabi Escorts in Delhi Through Us
+            Booking Punjabi Escorts With Confidence
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
@@ -382,7 +382,7 @@ export default function Punjabi() {
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 text-center">
-            First Time Booking a Punjabi Escort? Read This
+            A Few Pointers Before Your First Booking
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
             A few honest tips from clients who&apos;ve booked this category before.
@@ -405,7 +405,7 @@ export default function Punjabi() {
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 justify-center mb-3">
             <FaUserTie className="text-purple-600 w-6 h-6" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">How Booking Works</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">From First Message to Meeting</h2>
           </div>
           <p className="text-gray-600 text-center max-w-xl mx-auto mb-14">
             Kept simple and low-pressure, exactly the way this kind of booking should feel.
@@ -426,7 +426,7 @@ export default function Punjabi() {
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-10 text-center">
-            Punjabi Escorts — Common Questions
+            Answers to What Clients Usually Ask
           </h2>
           <div className="space-y-3">
             {faqs.map((item, i) => (

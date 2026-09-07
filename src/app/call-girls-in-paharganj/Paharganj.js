@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { FaWhatsapp, FaBuilding, FaTrain, FaUserTie, FaShieldAlt, FaClock, FaStar, FaConciergeBell } from 'react-icons/fa';
+import { FaWhatsapp, FaBuilding, FaTrain, FaUserTie, FaShieldAlt, FaClock, FaStar, FaConciergeBell, FaCheck } from 'react-icons/fa';
 import { FiChevronDown } from 'react-icons/fi';
 import TrustBar from '../components/TrustBar';
 import StickyWhatsApp from '../components/StickyWhatsApp';
@@ -44,12 +44,12 @@ const localities = [
 ];
 
 const companionTypes = [
-  { name: 'Independent Call Girls', href: '/independent-escorts-in-delhi', body: 'For clients who specifically want independent escorts in Paharganj rather than an agency roster — direct, verified profiles, booked the same way.' },
-  { name: 'High Profile Escorts', href: '/high-profile-escorts-in-delhi', body: 'Polished, premium companions for clients passing through who want an elevated evening despite Paharganj’s budget reputation.' },
-  { name: 'College Call Girls', href: '/collage-call-girls-in-delhi', body: 'Younger, easygoing companions for a relaxed, low-formality evening near the Main Bazaar strip.' },
-  { name: 'Air Hostess-Style Escorts', href: '/air-hostess-escorts-in-delhi', body: 'Groomed, well-travelled companions suited to guests transiting through the railway station.' },
-  { name: 'Russian & Foreign Escorts', href: '/russian-escorts-in-delhi', body: 'For clients specifically searching Russian call girls in Paharganj — verified foreign profiles with advance notice.' },
-  { name: 'Housewife Companions', href: '/housewife-escorts-in-delhi', body: 'Mature, experienced companions for clients who prefer a calmer, more confident evening over a younger profile.' },
+  { name: 'Independent call girls', href: '/independent-escorts-in-delhi', note: 'a direct, verified profile instead of an agency roster' },
+  { name: 'High profile escorts', href: '/high-profile-escorts-in-delhi', note: 'a more polished evening despite the area’s budget reputation' },
+  { name: 'College call girls', href: '/collage-call-girls-in-delhi', note: 'a relaxed, low-formality evening near Main Bazaar' },
+  { name: 'Air hostess-style escorts', href: '/air-hostess-escorts-in-delhi', note: 'groomed companions suited to guests transiting through the station' },
+  { name: 'Russian and foreign escorts', href: '/russian-escorts-in-delhi', note: 'verified foreign profiles with advance notice' },
+  { name: 'Housewife companions', href: '/housewife-escorts-in-delhi', note: 'a calmer, more experienced companion over a younger profile' },
 ];
 
 const steps = [
@@ -58,12 +58,12 @@ const steps = [
   { n: '03', title: 'Confirm and relax', body: 'Once confirmed, arrival is typically 15–25 minutes given how compact the area is — payment only after you meet.' },
 ];
 
-const tips = [
-  { t: 'Share your lane, not just "Paharganj".', b: 'Main Bazaar alone has dozens of narrow lanes and guesthouses — a specific name or landmark gets you a faster match.' },
-  { t: 'Confirm on WhatsApp, not a phone call.', b: 'Text keeps a clear record of timing, location and rate, avoiding confusion for either side at the door.' },
-  { t: 'Pay only after you meet.', b: 'We never ask for advance payment or a booking fee. If anyone claiming to be from Delhi Girl asks for money upfront, it isn’t us.' },
-  { t: 'Mention if you’re catching a train.', b: 'Many Paharganj bookings are timed around a train — tell us your departure window and we’ll plan the visit around it.' },
-  { t: 'Tell us guesthouse or home visit upfront.', b: 'Some guesthouses are stricter about visitors than others — knowing in advance helps us pick a companion used to that specific property.' },
+const mistakes = [
+  { t: 'Saying only "Paharganj" and nothing else.', b: 'Main Bazaar alone has dozens of narrow lanes and guesthouses — a specific name or landmark gets you a faster match.' },
+  { t: 'Negotiating by phone call instead of WhatsApp.', b: 'A call leaves no record of timing, location or rate. Text keeps everything clear for both sides at the door.' },
+  { t: 'Sending an advance payment.', b: 'We never ask for one, hotel bookings included. If anyone claiming to be from Delhi Girl asks for money upfront, it isn’t us.' },
+  { t: 'Leaving out your train timing.', b: 'Many Paharganj bookings are timed around a train — tell us your departure window and we’ll plan the visit around it.' },
+  { t: 'Not mentioning guesthouse rules upfront.', b: 'Some guesthouses are stricter about visitors than others — knowing in advance helps us pick a companion used to that specific property.' },
 ];
 
 const faqs = [
@@ -190,11 +190,34 @@ export default function Paharganj() {
         </div>
       </section>
 
+      {/* Locality grid — moved up, this is what makes the page useful */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 text-center">
+            The Paharganj Lanes We Actually Cover
+          </h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+            A rough guide — if your lane isn&apos;t listed, message us anyway, we likely still cover it.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {localities.map((s, i) => (
+              <motion.div key={s.name} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }} className="flex items-start gap-4 p-5 rounded-xl border border-gray-100 bg-white">
+                <FaBuilding className="text-purple-600 w-5 h-5 mt-1 flex-shrink-0" />
+                <div>
+                  <div className="font-semibold text-gray-900">{s.name}</div>
+                  <div className="text-sm text-gray-600 mt-0.5">{s.note}</div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services */}
-      <section className="py-16 px-6 bg-gray-50">
+      <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-            Escorts in Paharganj, Lane by Lane
+            How We Match You Inside Paharganj
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Search call girls near New Delhi Railway Station or call girls in Main Bazaar Paharganj
@@ -218,11 +241,39 @@ export default function Paharganj() {
         </div>
       </section>
 
+      {/* Featured Companions Gallery */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Featured Companions in Paharganj</h2>
+              <p className="text-gray-600 text-sm mt-1">Verified profiles, updated regularly</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {gallery.map((p, idx) => (
+              <motion.div key={idx} whileHover={{ scale: 1.03 }} className="bg-white rounded-2xl p-3 shadow-md border border-gray-100">
+                <div className="relative w-full h-56 rounded-xl overflow-hidden bg-gray-100">
+                  <Image src={p.image} alt="Call girl profile in Paharganj, Delhi" fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw" className="object-cover" />
+                </div>
+                <div className="mt-3">
+                  <div className="font-semibold text-sm text-gray-900">{p.label}</div>
+                  <div className="text-xs text-gray-500">{p.tag}</div>
+                </div>
+                <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium">
+                  Request
+                </a>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 text-center">
-            Why Book Call Girls in Paharganj Through Us
+            What Sets Our Paharganj Service Apart
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-14">
             Transit-area bookings live or die on speed and discretion — this is what we get right.
@@ -264,54 +315,6 @@ export default function Paharganj() {
         </div>
       </section>
 
-      {/* Types of Companions */}
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 text-center">
-            Types of Call Girls Available in Paharganj
-          </h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-14">
-            Not every traveller wants the same thing. Here&apos;s how clients usually narrow it down.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {companionTypes.map((c) => (
-              <Link key={c.href} href={c.href} className="block bg-white rounded-2xl p-6 border border-gray-100 hover:border-purple-300 transition">
-                <h3 className="font-semibold text-gray-900 mb-2">{c.name}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{c.body}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Companions Gallery */}
-      <section className="py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-between mb-8">
-            <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Featured Companions in Paharganj</h2>
-              <p className="text-gray-600 text-sm mt-1">Verified profiles, updated regularly</p>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            {gallery.map((p, idx) => (
-              <motion.div key={idx} whileHover={{ scale: 1.03 }} className="bg-white rounded-2xl p-3 shadow-md border border-gray-100">
-                <div className="relative w-full h-56 rounded-xl overflow-hidden bg-gray-100">
-                  <Image src={p.image} alt="Call girl profile in Paharganj, Delhi" fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw" className="object-cover" />
-                </div>
-                <div className="mt-3">
-                  <div className="font-semibold text-sm text-gray-900">{p.label}</div>
-                  <div className="text-xs text-gray-500">{p.tag}</div>
-                </div>
-                <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block w-full text-center text-sm py-2 rounded-md bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium">
-                  Request
-                </a>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Where clients stay */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -339,56 +342,34 @@ export default function Paharganj() {
         </div>
       </section>
 
-      {/* Locality grid */}
+      {/* Types of Companions — reformatted as a checklist, not a card grid */}
       <section className="py-20 px-6">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 text-center">
-            Areas We Cover Inside Paharganj
+            Not Every Traveller Wants the Same Thing
           </h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            A rough guide — if your lane isn&apos;t listed, message us anyway, we likely still cover it.
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
+            A quick guide to how clients usually narrow it down before messaging us.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {localities.map((s, i) => (
-              <motion.div key={s.name} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }} className="flex items-start gap-4 p-5 rounded-xl border border-gray-100 bg-white">
-                <FaBuilding className="text-purple-600 w-5 h-5 mt-1 flex-shrink-0" />
-                <div>
-                  <div className="font-semibold text-gray-900">{s.name}</div>
-                  <div className="text-sm text-gray-600 mt-0.5">{s.note}</div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Booking Tips */}
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 text-center">
-            First Time Booking Call Girls in Paharganj? Read This
-          </h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            A few honest tips from travellers who&apos;ve booked here before.
-          </p>
-          <div className="space-y-5">
-            {tips.map((tip, i) => (
-              <div key={i} className="flex gap-4 p-5 rounded-xl border border-gray-100 bg-white">
-                <span className="font-bold text-purple-600">{i + 1}.</span>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  <strong className="font-semibold text-gray-900">{tip.t}</strong> {tip.b}
+          <div className="space-y-4">
+            {companionTypes.map((c) => (
+              <Link key={c.href} href={c.href} className="flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition group">
+                <FaCheck className="text-purple-600 w-4 h-4 mt-1.5 flex-shrink-0" />
+                <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+                  <span className="font-semibold text-gray-900 group-hover:text-purple-700">{c.name}</span>{' '}
+                  — if you want {c.note}.
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       {/* What to expect */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">
-            What to Expect When You Book Call Girls in Paharganj
+            A Realistic Picture of How a Paharganj Booking Goes
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Evenings around the railway station tend to be the busiest, with travellers arriving on
@@ -424,7 +405,7 @@ export default function Paharganj() {
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 justify-center mb-3">
             <FaUserTie className="text-purple-600 w-6 h-6" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">How Booking Works in Paharganj</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Getting a Companion to Your Guesthouse, Step by Step</h2>
           </div>
           <p className="text-gray-600 text-center max-w-xl mx-auto mb-14">
             Popular with transit travellers and backpackers — speed matters here more than most
@@ -442,11 +423,33 @@ export default function Paharganj() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Mistakes to avoid — reframed from "booking tips" */}
       <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 text-center">
+            Mistakes First-Timers Make Booking in Paharganj
+          </h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+            Avoidable slip-ups, based on what actually trips up new clients here.
+          </p>
+          <div className="space-y-5">
+            {mistakes.map((m, i) => (
+              <div key={i} className="flex gap-4 p-5 rounded-xl border border-gray-100 bg-white">
+                <span className="font-bold text-purple-600">{i + 1}.</span>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  <strong className="font-semibold text-gray-900">{m.t}</strong> {m.b}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-10 text-center">
-            Paharganj Booking Questions
+            Common Questions From Paharganj Clients
           </h2>
           <div className="space-y-3">
             {faqs.map((item, i) => (
@@ -459,20 +462,6 @@ export default function Paharganj() {
                   {item.a}
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Other Areas We Serve */}
-      <section className="py-16 px-6 border-t border-gray-100">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Other Areas We Serve</h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            {otherAreas.map((area) => (
-              <Link key={area.href} href={area.href} className="px-5 py-2.5 rounded-full border border-gray-200 text-gray-700 text-sm font-medium hover:border-purple-400 hover:text-purple-700 transition">
-                Call Girls in {area.name}
-              </Link>
             ))}
           </div>
         </div>
@@ -499,6 +488,20 @@ export default function Paharganj() {
             the same: verified profiles, transparent pricing shared on chat, and payment only after
             you&apos;ve met.
           </p>
+        </div>
+      </section>
+
+      {/* Other Areas We Serve */}
+      <section className="py-16 px-6 border-t border-gray-100">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Other Areas We Serve</h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {otherAreas.map((area) => (
+              <Link key={area.href} href={area.href} className="px-5 py-2.5 rounded-full border border-gray-200 text-gray-700 text-sm font-medium hover:border-purple-400 hover:text-purple-700 transition">
+                Call Girls in {area.name}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
