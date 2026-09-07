@@ -111,6 +111,10 @@ const ModernFooter = () => {
                 { name: "Housewife", link: "/housewife-escorts-in-delhi" },
                 { name: "Punjabi Escorts", link: "/punjabi-escorts-in-delhi" },
                 { name: "Hotel Escorts", link: "/hotel-escorts-in-delhi" },
+                { name: "Girlfriend Experience", link: "/girlfriend-experience-in-delhi" },
+                { name: "Bachelor Party", link: "/bachelor-party-escorts-in-delhi" },
+                { name: "Dinner Date", link: "/dinner-date-escorts-in-delhi" },
+                { name: "Bengali Escorts", link: "/bengali-escorts-in-delhi" },
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.link} className="text-gray-400 hover:text-amber-400 transition-colors flex items-center">

@@ -22,6 +22,10 @@ export default function Navbar() {
     { name: "Housewife", href: "/housewife-escorts-in-delhi" },
     { name: "Punjabi Escorts", href: "/punjabi-escorts-in-delhi" },
     { name: "Hotel Escorts", href: "/hotel-escorts-in-delhi" },
+    { name: "Girlfriend Experience", href: "/girlfriend-experience-in-delhi" },
+    { name: "Bachelor Party", href: "/bachelor-party-escorts-in-delhi" },
+    { name: "Dinner Date", href: "/dinner-date-escorts-in-delhi" },
+    { name: "Bengali Escorts", href: "/bengali-escorts-in-delhi" },
 
   ];
   const Locations = [

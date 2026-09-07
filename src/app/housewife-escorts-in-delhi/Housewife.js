@@ -40,6 +40,8 @@ const otherCategories = [
   { name: 'Model Call Girls', href: '/model-call-girls-in-delhi' },
   { name: 'Punjabi Escorts', href: '/punjabi-escorts-in-delhi' },
   { name: 'Hotel Escorts', href: '/hotel-escorts-in-delhi' },
+  { name: 'Girlfriend Experience', href: '/girlfriend-experience-in-delhi' },
+  { name: 'Bengali Escorts', href: '/bengali-escorts-in-delhi' },
 ];
 
 const reasons = [
